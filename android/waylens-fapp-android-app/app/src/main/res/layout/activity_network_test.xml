@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.mk.autosecure.ui.activity.settings.NetworkTestActivity">
+
+    <include layout="@layout/default_toolbar" />
+
+    <include
+        android:id="@+id/layout_select_camera"
+        layout="@layout/layout_select_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp" />
+
+    <ViewAnimator
+        android:id="@+id/va_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_connect_camera" />
+
+        <include layout="@layout/layout_network_test" />
+
+    </ViewAnimator>
+
+    <ViewAnimator
+        android:id="@+id/va_network_es"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_es_connect" />
+
+        <include layout="@layout/layout_es_network" />
+
+    </ViewAnimator>
+
+</RelativeLayout>

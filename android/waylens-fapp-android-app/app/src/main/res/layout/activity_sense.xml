@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical"
+    tools:context="com.mk.autosecure.ui.activity.settings.SenseActivity">
+
+    <include
+        layout="@layout/default_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider_small"
+            android:dividerPadding="8dp"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/ll_monitoring_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:background="@color/colorEmergencyOff"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:tabSelectedTextColor="@color/colorAccent"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="@color/colorPrimary" />
+
+                <com.mk.autosecure.ui.view.WrapContentViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_motion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_common_background"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_motion_sensitivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_22">
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sense_motion" />
+
+                    <ImageView
+                        android:id="@+id/iv_motion_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:src="@drawable/btn_settings_list_show" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_motion_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_motion_sensitivity"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/SettingItemGraySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_40"
+                        android:text="@string/motion_sensitivity_tips" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorBackgroundWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_77"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_motion_low"
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/low" />
+
+                        <TextView
+                            android:id="@+id/tv_motion_high"
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/high" />
+
+                        <SeekBar
+                            android:id="@+id/seek_motion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/tv_motion_high"
+                            android:layout_toEndOf="@id/tv_motion_low" />
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_motion_low"
+                            android:text="@string/less_events" />
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_motion_high"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/more_events" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_below="@id/ll_motion_tips"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:background="@color/colorBackgroundWhite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_impact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bg_white">
+
+                <LinearLayout
+                    android:id="@+id/ll_impact_sensitivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_22">
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sense_impact" />
+
+                    <ImageView
+                        android:id="@+id/iv_impact_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:src="@drawable/btn_settings_list_show" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_impact_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_impact_sensitivity"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/SettingItemGraySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_40"
+                        android:text="@string/impact_sensitivity_tips" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorBackgroundWhite" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_77"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_impact_low"
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/low" />
+
+                        <TextView
+                            android:id="@+id/tv_impact_high"
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/high" />
+
+                        <View
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="@dimen/dp_8"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:background="@color/colorPrimary" />
+
+                        <SeekBar
+                            android:id="@+id/seek_impact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/tv_impact_high"
+                            android:layout_toEndOf="@id/tv_impact_low" />
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_impact_low"
+                            android:text="@string/less_events" />
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_impact_high"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/more_events" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_below="@id/ll_impact_tips"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:background="@color/colorBackgroundWhite" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:background="@drawable/item_common_background"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/notification" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_26"
+                    android:src="@drawable/btn_settings_list_next" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

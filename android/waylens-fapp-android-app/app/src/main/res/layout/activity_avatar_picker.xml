@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mk.autosecure.ui.view.ClipImageView
+            android:id="@+id/civ_cropper_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.mk.autosecure.ui.view.ClipView
+            android:id="@+id/cv_clipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

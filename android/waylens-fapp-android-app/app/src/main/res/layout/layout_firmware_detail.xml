@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border_bg_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_latest_ver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_77"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_latest_version"
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_25"
+                    tools:text="Latest: 1.10.09 (2.56.40.86.320)" />
+
+                <TextView
+                    android:id="@+id/tv_update_tips"
+                    style="@style/SettingItemGraySmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:visibility="gone"
+                    tools:text="Keep camera’s power on while updating" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_latest_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_34"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_12"
+                tools:text="Downloaded" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_28"
+                android:layout_marginRight="@dimen/dp_28"
+                android:background="@color/colorBackgroundWhite" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginEnd="@dimen/dp_25"
+            android:text="@string/what_is_new"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/dp_25"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_note_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14"
+                tools:text="Waylens is pleased to release Secure360 firmware version 1.10.08 with the following enhancements: - Fixed a bug preventing cameras from generating a WiFi signal to join - Fixed a bug causing cameras to wake up and record video while parked with no alerts or improperly detected motion - Fixed a bug preventing cameras from waking up from 4G connected mobile device (phone or tablet) - Eliminated a few additional behind the scenes bugs for a better user experience" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_33"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_action"
+                style="@style/BorderButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/download"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_uploading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/uploading_point"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/sp_12"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:layout_below="@id/tv_uploading"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dp_7"
+                android:max="100"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

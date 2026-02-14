@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZGd-ej-aNE" customClass="DriverFilterView" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajm-pv-NIu" userLabel="Seperator">
+                    <rect key="frame" x="0.0" y="291" width="384" height="1"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ax1-T2-YRY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNW-Ib-P2N">
+                    <rect key="frame" x="0.0" y="292" width="192" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FPe-Sc-zTm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Clear"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clearButtonTapped:" destination="ZGd-ej-aNE" eventType="touchUpInside" id="gvD-Bu-JJR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TET-xr-05Q">
+                    <rect key="frame" x="192" y="292" width="192" height="50"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.56862745100000001" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="vQl-ao-Av9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Done"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonTapped:" destination="ZGd-ej-aNE" eventType="touchUpInside" id="kJ8-jd-VOD"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbu-Kp-ZpC">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="291"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qRB-Kw-vmQ">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="291"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="ZGd-ej-aNE" id="uih-vo-diI"/>
+                                <outlet property="delegate" destination="ZGd-ej-aNE" id="un8-wa-wYG"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qRB-Kw-vmQ" secondAttribute="bottom" id="CIR-mG-OoQ"/>
+                        <constraint firstItem="qRB-Kw-vmQ" firstAttribute="leading" secondItem="cbu-Kp-ZpC" secondAttribute="leading" id="ZBD-V3-wwc"/>
+                        <constraint firstAttribute="trailing" secondItem="qRB-Kw-vmQ" secondAttribute="trailing" id="jEP-Oj-MiM"/>
+                        <constraint firstItem="qRB-Kw-vmQ" firstAttribute="top" secondItem="cbu-Kp-ZpC" secondAttribute="top" id="m64-Ur-eb3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ajm-pv-NIu" secondAttribute="trailing" id="9a9-md-RYL"/>
+                <constraint firstAttribute="trailing" secondItem="TET-xr-05Q" secondAttribute="trailing" id="AF6-dC-VTG"/>
+                <constraint firstItem="cbu-Kp-ZpC" firstAttribute="leading" secondItem="bFe-vO-KaF" secondAttribute="leading" id="GCt-eu-vDe"/>
+                <constraint firstItem="TET-xr-05Q" firstAttribute="top" secondItem="Ajm-pv-NIu" secondAttribute="bottom" id="NNU-ZC-Ksi"/>
+                <constraint firstItem="TET-xr-05Q" firstAttribute="width" secondItem="JNW-Ib-P2N" secondAttribute="width" id="R5q-yh-06X"/>
+                <constraint firstItem="JNW-Ib-P2N" firstAttribute="leading" secondItem="ZGd-ej-aNE" secondAttribute="leading" id="U7p-51-OLt"/>
+                <constraint firstItem="cbu-Kp-ZpC" firstAttribute="top" secondItem="ZGd-ej-aNE" secondAttribute="top" id="aqu-FF-FKD"/>
+                <constraint firstItem="Ajm-pv-NIu" firstAttribute="top" secondItem="cbu-Kp-ZpC" secondAttribute="bottom" id="bFZ-gr-0e1"/>
+                <constraint firstItem="JNW-Ib-P2N" firstAttribute="top" secondItem="Ajm-pv-NIu" secondAttribute="bottom" id="miM-bd-8fc"/>
+                <constraint firstItem="Ajm-pv-NIu" firstAttribute="leading" secondItem="ZGd-ej-aNE" secondAttribute="leading" id="pt9-od-Tdc"/>
+                <constraint firstItem="bFe-vO-KaF" firstAttribute="trailing" secondItem="cbu-Kp-ZpC" secondAttribute="trailing" id="u0I-wk-059"/>
+                <constraint firstItem="TET-xr-05Q" firstAttribute="leading" secondItem="JNW-Ib-P2N" secondAttribute="trailing" id="vVZ-Xo-Oby"/>
+                <constraint firstItem="bFe-vO-KaF" firstAttribute="bottom" secondItem="TET-xr-05Q" secondAttribute="bottom" id="zQb-Di-Qnn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bFe-vO-KaF"/>
+            <connections>
+                <outlet property="doneButton" destination="TET-xr-05Q" id="Nhd-mx-eyn"/>
+                <outlet property="seperatorView" destination="Ajm-pv-NIu" id="bTX-TG-LUY"/>
+                <outlet property="tableView" destination="qRB-Kw-vmQ" id="RRM-fO-pFY"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="-95.758928571428569"/>
+        </view>
+    </objects>
+</document>

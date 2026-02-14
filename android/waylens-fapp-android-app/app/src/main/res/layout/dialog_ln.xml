@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_marginBottom="30dp"
+    android:layout_height="wrap_content"
+    android:background="@color/trans"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/none"
+        android:text="None"
+        android:background="@drawable/bg_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/blink"
+        android:text="Blink"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+    <TextView
+        android:id="@+id/passive"
+        android:text="Passive"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/back"
+        android:text="@string/cancel"
+        android:tag="cancel"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_tv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItem_set_drv_info"
+        android:title="@string/set_driver_info">
+        <menu></menu>
+    </item>
+    <item
+        android:id="@+id/menuItem_setting_cfg"
+        android:title="@string/setting_config">
+        <menu></menu>
+    </item>
+    <item
+        android:id="@+id/menuItem_login_cmr"
+        android:title="@string/log_in">
+        <menu></menu>
+    </item>
+
+</menu>

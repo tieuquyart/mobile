@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimelineCardContentView" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="326"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQX-f0-M8X" customClass="TimelineCardAxisView" customModule="Fleet" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="17" width="76" height="292"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="JB5-cj-ne8"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="RM5-eE-9aP">
+                    <rect key="frame" x="93" y="62" width="30" height="200"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nQX-f0-M8X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="7q6-XE-pBE"/>
+                <constraint firstItem="RM5-eE-9aP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CZR-dU-8EC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RM5-eE-9aP" secondAttribute="trailing" constant="8" id="a7g-8f-mLp"/>
+                <constraint firstItem="nQX-f0-M8X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eMd-Xp-JiZ"/>
+                <constraint firstItem="RM5-eE-9aP" firstAttribute="leading" secondItem="nQX-f0-M8X" secondAttribute="trailing" constant="17" id="lTp-zJ-017"/>
+                <constraint firstAttribute="bottom" secondItem="nQX-f0-M8X" secondAttribute="bottom" constant="17" id="nUd-uR-HG2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="itemsStackView" destination="RM5-eE-9aP" id="RKD-ss-QBx"/>
+                <outlet property="timelineView" destination="nQX-f0-M8X" id="6VM-nH-Noc"/>
+            </connections>
+            <point key="canvasLocation" x="-347.10144927536237" y="-57.589285714285708"/>
+        </view>
+    </objects>
+</document>

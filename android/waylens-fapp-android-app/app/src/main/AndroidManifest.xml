@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mk.autosecure">
+
+    <uses-sdk tools:overrideLibrary="com.xfdingustc.mjpegview.library,com.waylens.mediatranscoder,         com.xfdingustc.mjpegview.library,         com.waylens.mediatranscoder,         cn.jpush.android.thirdpush.fcm,         com.google.firebase.firebase_core,         com.google.firebase.messaging,         com.google.firebase.analytics.connector.impl,         com.google.firebase.measurement ,         com.google.android.gms.measurement.api,         com.google.firebase.measurement_impl,         com.google.firebase.iid,         com.google.firebase ,         com.google.firebase.iid.internal     ,         com.google.android.gms.base     ,         com.google.android.gms.tasks     ,         com.google.firebase.analytics.connector     ,         com.google.android.gms.stats     ,         com.google.android.gms.ads_identifier     ,         com.google.android.gms.common     ,         com.google.android.gms.measurement_base     ,  ,         android.support.mediacompat     ,         android.support.fragment     ,         android.support.coreutils     ,         android.support.coreui     ,         android.support.compat     ,         android.arch.lifecycle" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Dangerous Permissions -->
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Required only if your app needs to access videos
+         that other apps created. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- Required only if your app needs to access audio files
+         that other apps created. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+<!--    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- wifi direct在android 8.0扫描附近设备 需要此权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- wowza gocoder audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo 角标 -->
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- Android Q后台定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".HornApplication"
+        android:allowBackup="true"
+        android:allowNativeHeapPointerTagging="false"
+        android:hardwareAccelerated="true"
+        android:icon="${app_icon}"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="r">
+        <activity
+            android:name=".ui.activity.settings.NotiTabManagerActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+
+        <service android:name=".service.CheckKillAppService" />
+
+        <activity
+            android:name=".ui.activity.settings.AccountSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NotiManageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NotificationInfoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.activity.settings.ViewLogActivity"
+            android:exported="true"
+            android:label="@string/title_activity_view_log"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBYarY6_L9Oy_hO1bjSkbeW1Ss5VTj_PR4" />
+
+        <provider
+            android:name="com.mkgroup.provider.WaylensCameraInitProvider"
+            android:authorities="${applicationId}.WaylensCameraInitProvider"
+            android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${provider_name}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".eid.InitSdkActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eid.ReadCardActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/tech_list" />
+        </activity>
+        <activity
+            android:name=".ui.activity.MJPEGPlayerActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="MJPEGPlayerActivity" />
+        <activity
+            android:name=".ui.activity.VideoPlayerActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="VideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LiveViewActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="LiveViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.VideosActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="VideosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LocalLiveActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="LocalLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.EmergencyAlertActivity"
+            android:configChanges="screenSize"
+            android:exported="true"
+            android:label="EmergencyAlertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:configChanges="screenSize"
+            android:exported="true"
+            android:label="SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SetupActivity"
+            android:configChanges="screenSize"
+            android:exported="true"
+            android:label="SetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DebugMenuActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="DebugMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ui.activity.SignUpActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DevicesActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="DeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.MacActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="MacActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SradarActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="SradarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SpaceInfoActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="SpaceInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.FirmwareUpdateActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="FirmwareUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AvatarActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="AvatarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.UsernameActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="UsernameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ChangePwdActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ForgetPwdActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="ForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.WebViewActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.CameraInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.VersionCheckActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.FeedbackActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SupportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ExportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NightVisionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/mk_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.mkgroup.camera.glide_adapter.DefaultGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".ui.activity.ScaleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AudioActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.VideoSpaceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SenseActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.settings.VideoQualityActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebPlanActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DirectTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NetworkTestActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LocationMapActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NetworkInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.NotificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DetectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DirectSwitchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.LensActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.CameraServerActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ProtectVoltageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.EventParamActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ApnSettingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.WifiModeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AlertsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FleetLiveActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="FleetLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FleetVideoActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="FleetVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TimelineActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:label="TimeLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AlbumActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AlertSettingsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.PersonnelActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.MemberInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.PersonnelEditActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AssetActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AssetDeviceEditActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AssetVehicleEditActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AssetDriverInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.BindCameraActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.CameraDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AddVehicleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AddCameraActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DriverActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DataUsageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SetupFleetActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SimActivateActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.VinMirrorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.GeoFenceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.DraftBoxActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AddFenceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.FenceMapActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.FenceRangeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.TrigVehicleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.FenceDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.CalibActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.SelectCameraActvity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.AdasCfgActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.TCVNActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ReportLogActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ViewLogWithTimeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.CheckSimDataActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ExboardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.ModeVisionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.settings.LoginWithFaceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".fcm.FirebaseService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        
+        <receiver android:name=".fcm.ReceiverCustom"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="key_is_show_update"/>
+            </intent-filter>
+            </receiver>
+    </application>
+
+</manifest>

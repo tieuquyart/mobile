@@ -1,0 +1,4 @@
+framework module eID_SDK_MKV {
+  header "eID_SDK_MKV-Swift.h"
+  requires objc
+}

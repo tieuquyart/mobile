@@ -1,0 +1,251 @@
+package com.mkgroup.camera.data.vdb;
+
+import org.apache.mina.core.buffer.IoBuffer;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.nio.ByteOrder;
+
+/**
+ * Created by doanvt on 2015/8/18.
+ */
+public class VdbAcknowledge {
+    private static final String TAG = VdbAcknowledge.class.getSimpleName();
+    public final int statusCode;
+    public final boolean notModified;
+    public byte[] mReceiveBuffer;
+    public byte[] mMsgBuffer;
+    private final VdbConnection mVdbConnection;
+    private int mMsgIndex;
+    protected static final int MSG_MAGIC = 0xFAFBFCFF;
+    private static final int VDB_ACK_SIZE = 160;
+    protected int mMsgSeqid;
+    protected int mUser1;
+    protected int mUser2;
+
+    private int mCmdRetCode;
+    private int mMsgCode;
+
+    protected int mMsgFlags;
+    protected int mCmdTag;
+
+    private int mMark = -1;
+
+    private static final int MAX_VALID_SIZE = 1024 * 1024 * 10;
+
+    public VdbAcknowledge(int statusCode, VdbConnection vdbConnection) throws IOException {
+        this.statusCode = statusCode;
+        this.notModified = false;
+        this.mVdbConnection = vdbConnection;
+        mReceiveBuffer = mVdbConnection.receivedAck();
+        parseAcknowledge();
+    }
+
+    private void parseAcknowledge() throws IOException {
+        IoBuffer ioBuffer = IoBuffer.wrap(mReceiveBuffer);
+        ioBuffer.order(ByteOrder.LITTLE_ENDIAN);
+
+        if (ioBuffer.getInt() != MSG_MAGIC) {
+            // error here
+        }
+        mMsgSeqid = ioBuffer.getInt(); // ++ each time, set by server
+        mUser1 = ioBuffer.getInt(); // cmd->user1
+        mUser2 = ioBuffer.getInt(); // cmd->user2
+        mMsgCode = ioBuffer.getUnsignedShort(); // cmd->cmd_code
+        mMsgFlags = ioBuffer.getUnsignedShort(); // cmd->cmd_flags
+        mCmdTag = ioBuffer.getInt(); // cmd->cmd_tag
+        mCmdRetCode = ioBuffer.getInt();
+
+
+//        Logger.t(TAG).v(String.format(Locale.getDefault(), "VdbAcknowledge: StatusCode[%d], CmdCode[%d]",
+//                statusCode, mMsgCode));
+
+        int extra_bytes = ioBuffer.getInt();
+        if (extra_bytes > 0) {
+            int size = VDB_ACK_SIZE + extra_bytes;
+            if (size > MAX_VALID_SIZE) {
+                throw new IOException("Abnormal size: " + size);
+            }
+            mMsgBuffer = new byte[size];
+            System.arraycopy(mReceiveBuffer, 0, mMsgBuffer, 0, VDB_ACK_SIZE);
+            mVdbConnection.readFully(mMsgBuffer, VDB_ACK_SIZE, extra_bytes);
+            mReceiveBuffer = mMsgBuffer;
+        }
+
+        mMsgIndex = 32;
+    }
+
+    public byte[] getByteBuffer() {
+        return mReceiveBuffer;
+    }
+
+    public int getMsgIndex() {
+        return mMsgIndex;
+    }
+
+    public int getRetCode() {
+        return mCmdRetCode;
+    }
+
+    public void mark() {
+        mMark = mMsgIndex;
+    }
+
+    public void reset() {
+        if (mMark >= 0) {
+            mMsgIndex = mMark;
+            mMark = -1;
+        }
+    }
+
+    public int getMsgCode() {
+        return mMsgCode;
+    }
+
+    public int getUser1() {
+        return mUser1;
+    }
+
+    public boolean isMessageAck() {
+        return (mMsgCode >= VdbCommand.Factory.MSG_VdbReady) && (mMsgCode <= VdbCommand.Factory.MSG_MarkLiveClipInfo);
+    }
+
+    public int readi32() {
+        int result = (int) mReceiveBuffer[mMsgIndex] & 0xFF;
+        mMsgIndex++;
+        result |= ((int) mReceiveBuffer[mMsgIndex] & 0xFF) << 8;
+        mMsgIndex++;
+        result |= ((int) mReceiveBuffer[mMsgIndex] & 0xFF) << 16;
+        mMsgIndex++;
+        result |= ((int) mReceiveBuffer[mMsgIndex] & 0xFF) << 24;
+        mMsgIndex++;
+        return result;
+    }
+
+    public long readui32() {
+        int firstByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int secondByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int thirdByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int fourthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+
+        long unsignedLong = ((long) (firstByte | secondByte << 8 | thirdByte << 16 | fourthByte << 24)) & 0xFFFFFFFFL;
+
+        return unsignedLong;
+    }
+
+    public float readLEfloat() {
+        int firstByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int secondByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int thirdByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int fourthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        int i = (firstByte | secondByte << 8 | thirdByte << 16 | fourthByte << 24);
+        return Float.intBitsToFloat(i);
+    }
+
+    public double readLEDouble() {
+        long firstByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long secondByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long thirdByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long fourthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long fifthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long sixthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long seventhByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+        long eighthByte = (0x000000FF & mReceiveBuffer[mMsgIndex++]);
+
+        long longBitLow = (firstByte | secondByte << 8 | thirdByte << 16 | fourthByte << 24);
+        long longBitHigh = (fifthByte << 32 | sixthByte << 40 | seventhByte << 48 | eighthByte << 56);
+
+        return Double.longBitsToDouble(longBitLow | longBitHigh);
+    }
+
+    public byte readi8() {
+        byte result = mReceiveBuffer[mMsgIndex];
+        mMsgIndex++;
+        return result;
+    }
+
+    public short readi16() {
+        int result = (int) mReceiveBuffer[mMsgIndex] & 0xFF;
+        mMsgIndex++;
+        result |= ((int) mReceiveBuffer[mMsgIndex] & 0xFF) << 8;
+        mMsgIndex++;
+        return (short) result;
+    }
+
+    public long readi64() {
+        int lo = readi32();
+        int hi = readi32();
+        return ((long) hi << 32) | ((long) lo & 0xFFFFFFFFL);
+    }
+
+    public void skip(int n) {
+        mMsgIndex += n;
+    }
+
+    public byte[] readByteArray() {
+        int size = readi32();
+        return readByteArray(size);
+    }
+
+    public byte[] readByteArray(int size) {
+        byte[] result = new byte[size];
+        System.arraycopy(mReceiveBuffer, mMsgIndex, result, 0, size);
+        mMsgIndex += size;
+        return result;
+    }
+
+    public void readByteArray(byte[] output, int size) {
+        System.arraycopy(mReceiveBuffer, mMsgIndex, output, 0, size);
+        mMsgIndex += size;
+    }
+
+    public String readString() {
+        int size = readi32();
+        String result;
+        try {
+            result = new String(mReceiveBuffer, mMsgIndex, size - 1, "US-ASCII");
+        } catch (UnsupportedEncodingException | StringIndexOutOfBoundsException ex) {
+            result = "";
+        }
+        mMsgIndex += size;
+        return result;
+    }
+
+    public String readStringAligned() {
+        int size = readi32();
+        if (size <= 0)
+            return "";
+        String result;
+        try {
+            result = new String(mMsgBuffer, mMsgIndex, size - 1, "US-ASCII");
+        } catch (UnsupportedEncodingException ex) {
+            result = "";
+        }
+        mMsgIndex += size;
+        if ((size % 4) != 0) {
+            mMsgIndex += 4 - (size % 4);
+        }
+        return result;
+    }
+
+    public int readStringAlignedReturnSize(String str) {
+        int origialSize = mMsgIndex;
+        int size = readi32();
+        if (size <= 0) {
+            str = "";
+            return mMsgIndex - origialSize;
+        }
+
+        try {
+            str = new String(mMsgBuffer, mMsgIndex, size - 1, "US-ASCII");
+        } catch (UnsupportedEncodingException ex) {
+            str = "";
+        }
+        mMsgIndex += size;
+        if ((size % 4) != 0) {
+            mMsgIndex += 4 - (size % 4);
+        }
+        return mMsgIndex - origialSize;
+    }
+
+}

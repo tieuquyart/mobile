@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_257"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/bg_fence_vehicle"
+        android:elevation="@dimen/dp_2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_toStartOf="@id/iv_next_detail"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_not_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_not_verified"
+                    android:padding="@dimen/dp_4"
+                    android:text="@string/not_used"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:id="@+id/tv_fence_name"
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Zone 1 (Enter)" />
+
+                <TextView
+                    android:id="@+id/tv_fence_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxEms="18"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="1000 Massachusetts Avenue 1000 Massachusetts Avenue 1000 Massachusetts Avenue" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_next_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_settings_list_next" />
+        </RelativeLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            map:liteMode="true"
+            map:mapType="none" />
+    </LinearLayout>
+</FrameLayout>

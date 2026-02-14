@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_profile_driver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_81"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_25"
+            android:src="@drawable/icon_driver" />
+
+        <TextView
+            android:id="@+id/tv_nickname_driver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_17"
+            android:layout_weight="1"
+            android:text="@string/log_in"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_start_tour"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/ll_profile_driver">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_tour" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/support_start_tour"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_network"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_start_tour">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_network" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/network"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_power_cord"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_network">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_power" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/support_power_cord"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_calib_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/ll_power_cord">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_calibration" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/calib_the_driving_facing_camera"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_report_issue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_calib_camera">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_report" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/report_an_issue"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/ll_report_issue">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_about" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/setting_item_about"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/ll_about">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_fleet_clean" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/setting_item_clean_cache"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_continue_tour_fleet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/ll_clean_cache"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_18"
+            android:src="@drawable/icon_continue_tour" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="@string/continue_tour"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wifi_trouble_fleet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/ll_continue_tour_fleet"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/icon_wifi_trouble" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_weight="1"
+            android:text="@string/wifi_trouble"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@drawable/btn_settings_list_next" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

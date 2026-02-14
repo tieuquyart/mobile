@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewAnimator
+            android:id="@+id/va_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <com.tubb.smrv.SwipeMenuRecyclerView
+                android:id="@+id/recycler_message_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_154"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_icon_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_message_empty" />
+
+                <TextView
+                    android:id="@+id/tv_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_icon_empty"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:text="@string/no_message"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_empty"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:text="@string/no_message_tips"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_14" />
+            </RelativeLayout>
+
+        </ViewAnimator>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

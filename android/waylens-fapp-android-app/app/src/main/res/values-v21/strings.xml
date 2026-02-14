@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="id" translatable="false">ID</string>
+    <string name="s_n" translatable="false">Camera S/N</string>
+    <string name="fcc_id" translatable="false">FCC ID</string>
+    <string name="phone" translatable="false">Số điện thoại</string>
+    <string name="camera_status" translatable="false">Trạng thái camera</string>
+    <string name="xin_nh_p_ssid" translatable="false">Xin nhập SSID</string>
+    <string name="xin_nh_p_m_t_kh_u" translatable="false">Xin nhập mật khẩu</string>
+    <string name="xin_nh_p_s_n" translatable="false">Xin nhập S/N</string>
+    <string name="xin_nh_p_fcc_id" translatable="false">Xin nhập FCC ID</string>
+    <string name="xin_nh_p_camera_type" translatable="false">Xin nhập loại Camera</string>
+    <string name="camera_type" translatable="false">Camera Type</string>
+    <string name="xin_nh_p_i_n_tho_i" translatable="false">Xin nhập điện thoại</string>
+    <string name="x_c_nh_n" translatable="false">Xác nhận</string>
+    <string name="capacity" translatable="false">Số ghế</string>
+    <string name="vehicle_number" translatable="false">Mã hiệu xe</string>
+    <string name="vehicle_detail" translatable="false">Thông tin xe</string>
+    <string name="device_information">Thông tin camera</string>
+    <string name="type" translatable="false">Loại</string>
+    <string name="vehicle_type" translatable="false">Kiểu xe</string>
+    <string name="business_license" translatable="false">Business License</string>
+    <string name="employee_id" translatable="false">Mã hiệu</string>
+    <string name="driver_name" translatable="false">Tên tài xế</string>
+    <string name="gender" translatable="false">Giới tính</string>
+    <string name="male" translatable="false">Nam</string>
+    <string name="female" translatable="false">Nữ</string>
+    <string name="id_number" translatable="false">Số CCCD</string>
+    <string name="driver_license" translatable="false">Giấy phép lái xe</string>
+    <string name="license_type" translatable="false">Hạng</string>
+    <string name="driving_years" translatable="false">Có giá trị đến</string>
+    <string name="driver_detail" translatable="false">Thông tin tài xế</string>
+    <string name="driver_edit" translatable="false">Sửa thông tin tài xế</string>
+    <string name="xin_nh_p_t_n" translatable="false">Xin nhập tên</string>
+    <string name="xin_ch_n_gi_i_t_nh" translatable="false">Xin chọn giới tính</string>
+    <string name="xin_nh_p_s_cccd" translatable="false">Xin nhập số CCCD</string>
+    <string name="xin_nh_p_gi_y_ph_p_l_i_xe" translatable="false">Xin nhập giấy phép lái xe</string>
+    <string name="xin_nh_p_h_ng_gi_y_ph_p" translatable="false">Xin nhập hạng giấy phép</string>
+    <string name="xin_nh_p_gi_tr" translatable="false">Xin nhập giá trị</string>
+    <string name="xin_nh_p_m_hi_u" translatable="false">Xin nhập mã hiệu</string>
+    <string name="tcvn01">TCVN01</string>
+    <string name="tcvn02">TCVN02</string>
+    <string name="tcvn03">TCVN03</string>
+    <string name="tcvn04">TCVN04</string>
+    <string name="tcvn05">TCVN05</string>
+    <string name="supplier_cmrgsht">Đơn vị cung cấp CMRGSHT</string>
+    <string name="type_cmrgsht">Loại CMRGSHT</string>
+    <string name="sn_cmrgsht">S/N CMRGSHT</string>
+    <string name="license_plates">Số giấy phép lái xe</string>
+    <string name="driven_status">Trạng thái lái xe</string>
+    <string name="method_speed">Phương pháp đo tốc độ</string>
+    <string name="pulse_cfg">Cấu hình xung</string>
+    <string name="speed_limit">Cấu hình giới hạn tốc độ</string>
+    <string name="date_modified">Ngày cài đặt</string>
+    <string name="last_of_update">Ngày cập nhật phần mềm</string>
+    <string name="signal_status_mobile">Tín hiệu sóng di động</string>
+    <string name="gps_status">Tín hiệu Gps</string>
+    <string name="memory_status">Tình trạng bộ nhớ</string>
+    <string name="memory_capacity">Dung lượng bộ nhớ</string>
+    <string name="current_driver">Lái xe</string>
+    <string name="continuous_driving_time_rp">B3.Thời gian lái xe liên tục</string>
+    <string name="continuous_driving_time">Thời gian lái xe liên tục</string>
+    <string name="gps_info">Thông tin Gps</string>
+    <string name="speed">Tốc độ</string>
+    <string name="stop_time_config">Cài đặt thời gian dừng</string>
+    <string name="type_data_tcvn">Dữ liệu theo TCVN</string>
+    <string name="data_basic">Thông tin cơ bản</string>
+    <string name="time_work_driver">Thời gian làm việc của tài xế</string>
+    <string name="parking_stop_time">Thời gian dừng dỗ</string>
+    <string name="second_speed_of_car">Second speed of Car</string>
+    <string name="speed_real_time">Thời gian thực tế</string>
+    <string name="start_time">Thời gian bắt đầu</string>
+    <string name="start_gps">Thông tin Gps bắt đầu</string>
+    <string name="finish_time">Thời gian kết thúc</string>
+    <string name="finish_gps">Thông tin Gps kết thúc</string>
+    <string name="time_stop">Thời gian dừng đỗ (phút)</string>
+    <string name="time_driving">Thời gian lái xe (phút)</string>
+    <string name="time_stop_title">Thời gian dừng đỗ</string>
+    <string name="time_driving_title">Thời gian lái xe</string>
+    <string name="current_time">Thời gian hiện tại</string>
+    <string name="camera_config">Cấu hình camera</string>
+    <string name="set_driver_info">Cấu hình thông tin tài xế</string>
+    <string name="setting_config">Cấu hình</string>
+    <string name="showMirror_settings">showMirror_settings</string>
+    <string name="input_param">Nhập thông số</string>
+    <string name="get_logs">Xem báo cáo</string>
+    <string name="title_check_data">Data SIM</string>
+    <string name="log_speed">Báo cáo tốc độ</string>
+    <string name="noti_listTitle">Danh sách thông báo</string>
+    <string name="noti_info">Nội dung thông báo</string>
+    <string name="status_update_phone_title">Trạng thái:</string>
+    <string name="phone_updated">Đã cập nhật</string>
+    <string name="phone_not_update">Chưa cập nhật</string>
+    <string name="please_input_phone_no">Vui lòng nhập số điện thoại</string>
+    <string name="add_driver">Thêm tài xế</string>
+    <string name="warning_remove_vehicle">Are you sure to remove the vehicle from your fleet?</string>
+    <string name="warning_remove_driver">Bạn chắc chắn muốn xóa tài xế?</string>
+    <string name="warning_unbind_device">Are you sure to unbind the camera to the vehicle?</string>
+    <string name="input_plate_no">Nhập biển số xe</string>
+    <string name="input_vehicle_brand">Nhập hãng xe</string>
+    <string name="input_vehicle_no">Nhập mã hiệu xe</string>
+    <string name="input_vehicle_type">Nhập kiểu xe</string>
+    <string name="edit_vehicle_info">Sửa thông tin xe</string>
+    <string name="replace_driver">Đổi tài xế</string>
+    <string name="replace_camera">Đổi camera</string>
+    <string name="title_driver_list">Danh sách tài xế</string>
+    <string name="title_camera_list">Danh sách camera</string>
+    <string name="select_driver">Chọn tài xế</string>
+    <string name="driver_name_na">Rỗng</string>
+    <string name="select_device_of_of_vehicle">Chọn camera</string>
+    <string name="data_sdcard">Dữ liệu thẻ nhớ</string>
+    <string name="check_sim_card">Kiểm tra thẻ SIM</string>
+    <string name="camera_base_info">Thông tin cơ bản</string>
+    <string name="check_data_4g">Kiểm tra dung lượng 4G của SIM</string>
+    <string name="account_info">Thông tin tài khoản</string>
+    <string name="config_login_face">Cài đặt đăng nhập</string>
+    <string name="btn_get_log">Lấy thông tin báo cáo</string>
+    <string name="vehicles">Xe</string>
+    <string name="cameras">Camera</string>
+    <string name="no_func">Chưa có tính năng này</string>
+    <string name="driving">Lái xe</string>
+    <string name="parking">Đỗ xe</string>
+    <string name="warning_upgrade_vip">Vui lòng nâng cấp tài khoản để sử dụng chức năng này!</string>
+    <string name="change_pwd_success">Đổi mật khẩu thành công</string>
+    <string name="select_mobile_cfg_login">Mobile: sử dụng mobile chụp và gửi ảnh xuống camera để đăng nhập.</string>
+    <string name="btn_cfg_mobile">Mobile</string>
+    <string name="btn_cfg_auto">Tự động</string>
+    <string name="cfg_login_title">Cài đặt đăng nhập</string>
+    <string name="new_app_version_title">Ứng dụng có phiên bản mới</string>
+    <string name="app_new_version_content">Ứng dụng đã có phiên bản mới!\nQuý khách vui lòng cập nhật bản mới nhất để có trải nghiệm tốt hơn!</string>
+    <string name="app_new_version_content_force_update">Ứng dụng đã có phiên bản mới!\nQuý khách vui lòng cập nhật bản mới nhất để tiếp tục sử dụng ứng dụng!</string>
+    <string name="btn_confirm_forgot_pwd">Gửi yêu cầu</string>
+    <string name="dashboard">Báo cáo</string>
+    <string name="get_driver_name_err">Không lấy được tên tài xế</string>
+    <string name="json_format_err">Lỗi định dạng json</string>
+    <string name="json_empty">Lỗi,json rỗng</string>
+    <string name="remove_faceId_in_vehicle_err">Lỗi, không thể xóa faceId trong dữ liệu xe</string>
+    <string name="driver_not_found">Lỗi, không tìm thấy tài xế</string>
+    <string name="camera_in_vehicle_not_found">Lỗi, không tìm thấy cameraSn trong dữ liệu xe</string>
+    <string name="remove_old_driver_in_vehicle_err">Lỗi, không thể xóa tài xế cũ trong dữ liệu xe</string>
+    <string name="camera_driver_not_match">Lỗi, tài xế và camera không khớp</string>
+    <string name="add_faceId_to_vehicle_data_err">Lỗi, không thể thêm faceId vào dữ liệu xe</string>
+    <string name="add_faceId_to_driver_data_err">Lỗi, không thể thêm faceId vào dữ liệu tài xế</string>
+    <string name="fms_response_timeout">Lỗi, không nhận được thông tin từ FMS</string>
+    <string name="unknown_err">Lỗi không xác định</string>
+    <string name="remove_success">Xóa thành công!</string>
+    <string name="remove_failure">Xóa lỗi!</string>
+    <string name="send_add_faceid_failure">Gửi lệnh lỗi!</string>
+    <string name="send_add_faceid_success">Gửi lệnh thêm khuôn mặt thành công!</string>
+    <string name="warning_remove_faceId">Bạn chắc chắn muốn xóa khuôn mặt (%s)?</string>
+    <string name="invalid_idnumber_format">Số CCCD không đúng định dạng</string>
+    <string name="timeFrom">Từ: </string>
+    <string name="timeTo">Đến: </string>
+    <string name="expired_license">expired license</string>
+    <string name="register_success">device registration successful</string>
+    <string name="register_failure">device registration failed</string>
+    <string name="scan">Tìm kiếm</string>
+    <string name="verify_face_title">Xác thực khuôn mặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="get_license">Get license...</string>
+    <string name="moc_faceId">Xác thực khuôn mặt</string>
+    <string name="using_moc">Sử dụng MOC</string>
+    <string name="capture_face">Chụp ảnh khuôn mặt</string>
+    <string name="waiting_process">Please waiting</string>
+    <string name="loading_process">Loading...</string>
+    <string name="register_device">Đăng ký thiết bị</string>
+</resources>

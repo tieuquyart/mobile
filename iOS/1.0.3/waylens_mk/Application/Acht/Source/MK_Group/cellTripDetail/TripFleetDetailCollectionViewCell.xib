@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Medium.ttf">
+            <string>BeVietnamPro-Medium</string>
+        </array>
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TripFleetDetailCollectionViewCell" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="71"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LlV-1H-R7t">
+                        <rect key="frame" x="2" y="4" width="235" height="63"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYr-Iu-nyv">
+                                <rect key="frame" x="5" y="5" width="225" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhà bếp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7a-aY-7cv">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="YXt-FJ-sno"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.10588235294117647" green="0.11372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZa-PK-ba0">
+                                        <rect key="frame" x="0.0" y="24.5" width="225" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="YeN-iE-Vns"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhà bếp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLv-Nx-H4X">
+                                        <rect key="frame" x="0.0" y="29.5" width="225" height="23.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="12"/>
+                                        <color key="textColor" red="0.10588235294117647" green="0.11372549019607843" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vZa-PK-ba0" firstAttribute="top" secondItem="Y7a-aY-7cv" secondAttribute="bottom" constant="4" id="1Zy-Kp-ZSz"/>
+                                    <constraint firstItem="Y7a-aY-7cv" firstAttribute="top" secondItem="cYr-Iu-nyv" secondAttribute="top" id="GRR-CO-RVY"/>
+                                    <constraint firstItem="cLv-Nx-H4X" firstAttribute="leading" secondItem="cYr-Iu-nyv" secondAttribute="leading" id="IFO-6O-ZYX"/>
+                                    <constraint firstAttribute="bottom" secondItem="cLv-Nx-H4X" secondAttribute="bottom" id="O8T-K6-IdY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cLv-Nx-H4X" secondAttribute="trailing" id="QcK-Ye-US9"/>
+                                    <constraint firstItem="Y7a-aY-7cv" firstAttribute="leading" secondItem="cYr-Iu-nyv" secondAttribute="leading" id="T2F-9R-ROy"/>
+                                    <constraint firstItem="vZa-PK-ba0" firstAttribute="leading" secondItem="cYr-Iu-nyv" secondAttribute="leading" id="ebF-AR-ocJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y7a-aY-7cv" secondAttribute="trailing" id="f23-eN-jYk"/>
+                                    <constraint firstItem="cLv-Nx-H4X" firstAttribute="top" secondItem="vZa-PK-ba0" secondAttribute="bottom" constant="4" id="nHQ-9r-GIr"/>
+                                    <constraint firstAttribute="trailing" secondItem="vZa-PK-ba0" secondAttribute="trailing" id="wNo-s4-Ohy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cYr-Iu-nyv" secondAttribute="bottom" constant="5" id="Lvd-qB-nUT"/>
+                            <constraint firstItem="cYr-Iu-nyv" firstAttribute="leading" secondItem="LlV-1H-R7t" secondAttribute="leading" constant="5" id="VSc-zK-rCr"/>
+                            <constraint firstItem="cYr-Iu-nyv" firstAttribute="top" secondItem="LlV-1H-R7t" secondAttribute="top" constant="5" id="e6V-sd-Jyf"/>
+                            <constraint firstAttribute="trailing" secondItem="cYr-Iu-nyv" secondAttribute="trailing" constant="5" id="hhn-4f-y1M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LlV-1H-R7t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="EpL-Cp-Pdk"/>
+                <constraint firstAttribute="bottom" secondItem="LlV-1H-R7t" secondAttribute="bottom" constant="4" id="GzO-lr-0zX"/>
+                <constraint firstItem="LlV-1H-R7t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="LMm-6Q-mqO"/>
+                <constraint firstAttribute="trailing" secondItem="LlV-1H-R7t" secondAttribute="trailing" constant="2" id="uuS-Vr-uOe"/>
+            </constraints>
+            <size key="customSize" width="239" height="71"/>
+            <connections>
+                <outlet property="lineView" destination="vZa-PK-ba0" id="omi-OE-vmD"/>
+                <outlet property="toTimeLabel" destination="cLv-Nx-H4X" id="KyO-Yw-fYd"/>
+                <outlet property="totalTimeLabel" destination="Y7a-aY-7cv" id="xmz-Qq-fVi"/>
+                <outlet property="viewContainer" destination="LlV-1H-R7t" id="1uR-1c-haX"/>
+            </connections>
+            <point key="canvasLocation" x="268.84057971014494" y="213.95089285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>

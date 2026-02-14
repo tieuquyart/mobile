@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_export_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_41"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_28"
+                android:text="@string/export_as"
+                android:textColor="@color/darkBgWithAlpha"
+                android:textSize="@dimen/sp_14" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_34"
+                android:layout_marginStart="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_27"
+                android:background="@drawable/bg_unselect_screen"
+                app:tabBackground="@color/transparent"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabRippleColor="@color/transparent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            app:layout_constraintTop_toBottomOf="@id/ll_export_screen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_28"
+                android:text="@string/timestamp"
+                android:textColor="@color/darkBgWithAlpha"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_25"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_28"
+                android:checked="false" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_exported_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/rl_timestamp"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/exported_video" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_stream_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_13"
+                android:layout_marginEnd="@dimen/dp_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_46"
+            android:paddingStart="@dimen/dp_28"
+            android:paddingEnd="@dimen/dp_28"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/ll_exported_library">
+
+            <ImageView
+                android:id="@+id/iv_export_icon"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:src="@drawable/icon_export_warning" />
+
+            <TextView
+                android:id="@+id/tv_export"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_warning"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_warning">
+
+            <Button
+                android:id="@+id/btn_export_library"
+                style="@style/BorderButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:text="@string/export_to_photo_library" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

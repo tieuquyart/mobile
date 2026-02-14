@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterDeviceViewController" customModule="Acht" customModuleProvider="target">
+            <connections>
+                <outlet property="activeButton" destination="mgR-gi-BUG" id="fbC-Hn-yht"/>
+                <outlet property="appIdTf" destination="FDr-49-WCH" id="eQ0-Dh-jTQ"/>
+                <outlet property="customerIdTf" destination="Yfq-wo-XKM" id="UfK-fr-pQf"/>
+                <outlet property="providerCodeTf" destination="WWx-ER-Red" id="yCz-W0-Ceu"/>
+                <outlet property="view" destination="Wmu-CA-Kao" id="M0i-YU-fc3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wmu-CA-Kao">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YpM-tS-O5w">
+                    <rect key="frame" x="32" y="147" width="329" height="88"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rar_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-F4-3Ma">
+                            <rect key="frame" x="0.0" y="0.0" width="164.66666666666666" height="88"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mk_vision_logo" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-qg-y0D">
+                            <rect key="frame" x="164.66666666666663" y="0.0" width="164.33333333333337" height="88"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YUH-qg-y0D" firstAttribute="centerY" secondItem="YpM-tS-O5w" secondAttribute="centerY" id="2IU-Py-tMZ"/>
+                        <constraint firstAttribute="height" constant="88" id="McH-7s-ydu"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="CjB-Vc-avj">
+                    <rect key="frame" x="32" y="302" width="329" height="248"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="doanvt-hn2" borderStyle="roundedRect" placeholder="Cusomer Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yfq-wo-XKM">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00001" borderStyle="roundedRect" placeholder="Provider Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-ER-Red">
+                            <rect key="frame" x="0.0" y="68" width="329" height="44"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" placeholder="App Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FDr-49-WCH">
+                            <rect key="frame" x="0.0" y="136" width="329" height="44"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgR-gi-BUG">
+                            <rect key="frame" x="0.0" y="204" width="329" height="44"/>
+                            <color key="backgroundColor" red="0.49019607840000001" green="0.75294117650000003" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="cd0-qb-Kbd"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Active">
+                                <fontDescription key="titleFontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="activeButton:" destination="-1" eventType="touchUpInside" id="fOa-HA-5C5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8kF-7t-ZCo"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CjB-Vc-avj" firstAttribute="leading" secondItem="8kF-7t-ZCo" secondAttribute="leading" constant="32" id="9aZ-KQ-Ft3"/>
+                <constraint firstItem="8kF-7t-ZCo" firstAttribute="trailing" secondItem="CjB-Vc-avj" secondAttribute="trailing" constant="32" id="Hm4-kD-O9s"/>
+                <constraint firstItem="CjB-Vc-avj" firstAttribute="centerY" secondItem="Wmu-CA-Kao" secondAttribute="centerY" id="SFn-EW-kXZ"/>
+                <constraint firstItem="YpM-tS-O5w" firstAttribute="leading" secondItem="8kF-7t-ZCo" secondAttribute="leading" constant="32" id="aRa-4t-S69"/>
+                <constraint firstAttribute="trailing" secondItem="YpM-tS-O5w" secondAttribute="trailing" constant="32" id="cIP-G2-Lon"/>
+                <constraint firstItem="YpM-tS-O5w" firstAttribute="top" secondItem="8kF-7t-ZCo" secondAttribute="top" constant="88" id="reE-8N-bkK"/>
+                <constraint firstItem="CjB-Vc-avj" firstAttribute="centerX" secondItem="Wmu-CA-Kao" secondAttribute="centerX" id="x6x-pa-Pjb"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mk_vision_logo" width="121.33333587646484" height="27.333333969116211"/>
+        <image name="rar_logo" width="285.33334350585938" height="284.66665649414062"/>
+    </resources>
+</document>

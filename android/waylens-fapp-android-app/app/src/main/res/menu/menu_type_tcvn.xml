@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItem_basic"
+        android:title="@string/data_basic">
+        <menu></menu>
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/menuItem_time_work_dr"
+        android:title="@string/time_work_driver">
+        <menu></menu>
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/menuItem_prk_stop_time"
+        android:title="@string/parking_stop_time"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        >
+        <menu></menu>
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/menuItem_journey_car"
+        android:title="@string/parking_stop_time">
+        <menu></menu>
+    </item>
+    <item
+        android:visible="false"
+        android:id="@+id/menuItem_spd_real_time"
+        android:title="@string/speed_real_time">
+        <menu></menu>
+    </item>
+
+    <item
+        android:id="@+id/menuItem_getLogFile"
+        android:title="@string/get_logs">
+        <menu></menu>
+    </item>
+    <item
+        android:id="@+id/menuItem_checkSimData"
+        android:title="@string/check_sim_card">
+        <menu></menu>
+    </item>
+</menu>

@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:layout_scrollFlags="scroll"
+            app:navigationIcon="@drawable/icon_change_preview"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/tv_toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorToolbarTitle"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                tools:text="BMW" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/ll_setting_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DC4250"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/icon_setting_fail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/setting_request_fail"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notRecording"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="@string/camera_information_recordStopped"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+                android:id="@+id/media_window"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:farfl_xratio="16dp"
+                app:farfl_yratio="9dp">
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/gl_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/gl_videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <android.opengl.GLSurfaceView
+                    android:id="@+id/gl_cloudView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/iv_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/ll_view_status"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@drawable/bg_videosrc"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_curStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_6"
+                        tools:src="@drawable/icon_live_view" />
+
+                    <TextView
+                        android:id="@+id/tv_curStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        tools:text="@string/to_live" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_notRecording"-->
+                <!--android:layout_width="@dimen/x120"-->
+                <!--android:layout_height="@dimen/y57"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/bg_pinch_drag"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/recording_stopped"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:visibility="gone" />-->
+
+                <LinearLayout
+                    android:id="@+id/ll_pinch_drag"
+                    android:layout_width="137dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_pinch_drag"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_pinch_drag" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="@string/guide_pinch_drag"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_message_remind"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_msg_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dp_10"
+                    android:src="@drawable/icon_msg_cancel" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dp_10"
+                    android:src="@drawable/icon_msg_action" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_videoSrc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_videosrc"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="24dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_videoSrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_videoSrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/live_remote"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ib_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/background_capture"
+                    android:checked="true"
+                    android:visibility="gone" />
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/ib_highlight"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_highlight"
+                        android:visibility="invisible" />
+
+                    <ProgressBar
+                        android:id="@+id/pb_highlight"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_highlight_c"
+                        android:progressDrawable="@drawable/circle_progress_bar"
+                        android:visibility="invisible"
+                        tools:max="100"
+                        tools:progress="100" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_thumbnail_landscape"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_alignBottom="@id/media_window"
+                android:background="@drawable/background_control_bar"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_record_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_recording_land"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:thumb="@drawable/switch_thumb_selector"
+                        android:track="@drawable/switch_track_selector" />
+
+                    <TextView
+                        android:id="@+id/tv_recording_land"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnPlayPause_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/bg_stop_play_selector"
+                    android:padding="8dp"
+                    android:visibility="invisible" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_videoProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/btnStream_land"
+                    android:layout_toEndOf="@+id/ll_record_land"
+                    android:visibility="invisible">
+
+                    <SeekBar
+                        android:id="@+id/sb_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/sb_video"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:id="@+id/tv_playProgress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            tools:text="0:00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/thick_stick"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            tools:text="0:32" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <ImageButton
+                    android:id="@+id/btnFullscreen_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_narrow_screen_selector"
+                    android:padding="8dp" />
+
+
+                <ImageButton
+                    android:id="@+id/btnProjection_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btnFullscreen_land"
+                    android:background="@drawable/bg_panorama_selector"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btn_evcam_stream_land"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btnProjection_land"
+                    android:background="@drawable/bg_switch_stream_selector"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btnStream_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@+id/btnProjection_land"
+                    android:background="@drawable/bg_sd_selector"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_control_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@id/media_window"
+                android:background="@color/colorPrimary">
+
+                <LinearLayout
+                    android:id="@+id/ll_record_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/switch_recording_port"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:thumb="@drawable/switch_thumb_selector"
+                        android:track="@drawable/switch_track_selector" />
+
+                    <TextView
+                        android:id="@+id/tv_recording_port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnPlayPause_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/bg_stop_play_selector"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btnFullscreen_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_full_screen_selector"
+                    android:padding="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnProjection_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btnFullscreen_port"
+                    android:background="@drawable/bg_panorama_selector"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/iv_guideSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btnFullscreen_port"
+                    android:background="@drawable/bg_tap_shadow"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_evcam_stream_port"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btnProjection_port"
+                    android:background="@drawable/bg_switch_stream_selector"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btnStream_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@+id/btnProjection_port"
+                    android:background="@drawable/bg_sd_selector"
+                    android:padding="8dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btn_evcam_faceId"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toStartOf="@id/btn_evcam_stream_port"
+                    android:background="@drawable/icon_evcam_faceid"
+                    android:padding="8dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_4k"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#b3ffffff"
+                android:visibility="visible"
+                app:layout_scrollFlags="scroll"
+                app:navigationIcon="@drawable/icon_change_preview"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <ImageView
+                    android:id="@+id/iv_videoSrc_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp_8" />
+
+                <TextView
+                    android:id="@+id/tv_toolbarTitle_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorToolbarTitle"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    tools:text="BMW" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/ll_message_remind_4k"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/toolbar_4k"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_msg_content_4k"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_close_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dp_10"
+                    android:src="@drawable/icon_msg_cancel" />
+
+                <ImageButton
+                    android:id="@+id/ib_msg_action_4k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dp_10"
+                    android:src="@drawable/icon_msg_action" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_event_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_event_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-12dp"
+            android:text="@string/video_videos"
+            android:textColor="#E5E5E5"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_event"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/video_source"
+            android:textColor="#919191"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_source"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/tv_source"
+            android:layout_margin="16dp">
+
+            <RadioGroup
+                android:id="@+id/rg_source"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/rb_sdcard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_video_source"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/video_sd_card"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_cloud"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_video_source"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/video_cloud"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll_source"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="#776F6F" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_type"
+                android:textColor="#919191"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_filter_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_filter_finish_n" />
+    </RelativeLayout>
+
+    <ViewAnimator
+        android:id="@+id/va_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateFirstView="true"
+        android:animateLayoutChanges="true"
+        android:inAnimation="@anim/fade_in_slide_in_left"
+        android:outAnimation="@anim/fade_out_slide_out_left"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/layout_guide_export"
+            layout="@layout/layout_guide_export" />
+
+        <include
+            android:id="@+id/layout_guide_info"
+            layout="@layout/layout_guide_info" />
+
+        <include
+            android:id="@+id/layout_guide_detail"
+            layout="@layout/layout_guide_detail" />
+
+        <include
+            android:id="@+id/layout_guide_complete"
+            layout="@layout/layout_guide_complete" />
+
+    </ViewAnimator>
+
+    <include
+        android:id="@+id/include_highlight_success"
+        layout="@layout/layout_highlight_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_sliding_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_37"
+            android:gravity="center"
+            android:text="@string/slide_the_thumbnail_to_change_a_camera"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <FrameLayout
+            android:id="@+id/frame_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_sliding_tips"
+            android:layout_marginStart="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_marginEnd="@dimen/dp_34"
+            android:layout_marginBottom="@dimen/dp_68" />
+
+        <ImageView
+            android:id="@+id/iv_close_preview"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignTop="@id/frame_preview"
+            android:layout_alignEnd="@id/frame_preview"
+            android:layout_margin="@dimen/dp_15"
+            android:src="@drawable/icon_close_grey" />
+    </RelativeLayout>
+</RelativeLayout>

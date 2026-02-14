@@ -1,0 +1,100 @@
+//
+//  BillingHistoryCardContentView.swift
+//  Fleet
+//
+//  Created by forkon on 2019/11/20.
+//  Copyright © 2019 waylens. All rights reserved.
+//
+
+import UIKit
+import AloeStackView
+
+class BillingHistoryCardContentView: CardFlowViewCardContentView<CardFlowViewCardEventHandler<BillingData>> {
+
+    private enum Config {
+        static let rowHeight: CGFloat = 50.0
+    }
+
+    private let itemsStackView: AloeStackView = {
+        let itemsStackView = AloeStackView()
+        itemsStackView.backgroundColor = UIColor.clear
+        itemsStackView.translatesAutoresizingMaskIntoConstraints = false
+        itemsStackView.rowInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        itemsStackView.separatorInset = UIEdgeInsets.zero
+        itemsStackView.automaticallyHidesLastSeparator = true
+        return itemsStackView
+    }()
+
+    public var items: [BillingData] = [] {
+        didSet {
+            updateUI()
+        }
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        setup()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
+
+//MARK: - Private
+
+private extension BillingHistoryCardContentView {
+
+    func setup() {
+        addSubview(itemsStackView)
+
+        itemsStackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        itemsStackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        itemsStackView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        itemsStackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    }
+
+    func updateUI() {
+        itemsStackView.removeAllRows()
+
+        items.forEach { (item) in
+            var segmentItems: [StatisticsSegmentedControlItem] = []
+
+            let monthLabel = UILabel()
+            monthLabel.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.medium)
+            let fleetDate = item.cycleEndDate.dateManager.fleetDate
+            monthLabel.text = fleetDate.toString(.custom(fleetDate.compare(.isThisYear) ? "MMM" : "MMM, yyyy"))
+            segmentItems.append(StatisticsSegmentedControlItem(view: monthLabel, widthProportion: 1))
+
+            let usageLabel = UILabel()
+            usageLabel.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.regular)
+            usageLabel.textAlignment = .right
+            usageLabel.text = String(format: "%.2f GB", item.totalDataVolumeInMB / 1024.0)
+            segmentItems.append(StatisticsSegmentedControlItem(view: usageLabel, widthProportion: 1))
+
+            let statusLabel = UILabel()
+            statusLabel.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.regular)
+            statusLabel.textColor = UIColor.semanticColor(.label(.primary))
+            statusLabel.textAlignment = .right
+            statusLabel.text = NSLocalizedString(item.status.wl.capitalizingFirstLetter(), comment: "")
+            segmentItems.append(StatisticsSegmentedControlItem(view: statusLabel, widthProportion: 1))
+
+            segmentItems.append(StatisticsSegmentedControlItem.disclosureIndicatorItem(withWidthProportion: 0.3))
+
+            let segmentedControl = StatisticsSegmentedControl(items: segmentItems, segmentInset: UIEdgeInsets(top: 12.0, left: 16.0, bottom: 12.0, right: 10.0))
+            segmentedControl.backgroundColor = UIColor.clear
+            segmentedControl.autoresizingMask = [.flexibleWidth]
+            segmentedControl.heightAnchor.constraint(equalToConstant: Config.rowHeight).isActive = true
+
+            itemsStackView.addRow(segmentedControl)
+            itemsStackView.setTapHandler(forRow: segmentedControl, handler: { [weak self] (rowView) in
+                self?.eventHandler?.selectBlock?(item)
+            })
+        }
+
+        frame.size.height = CGFloat(items.count) * Config.rowHeight
+    }
+
+}

@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_small"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.mk.autosecure.ui.fragment.FenceTrigFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_trig_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_148"
+        android:layout_marginStart="@dimen/dp_26"
+        android:layout_marginEnd="@dimen/dp_26"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/how_will_the_vehicles_trigger_the_geo_fence" />
+
+        <CheckBox
+            android:id="@+id/cb_trig_enter"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/enter" />
+
+        <CheckBox
+            android:id="@+id/cb_trig_exit"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_174"
+        android:layout_marginStart="@dimen/dp_26"
+        android:layout_marginEnd="@dimen/dp_26"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/which_vehicles_will_trigger_the_geo_fence" />
+
+        <RadioGroup
+            android:id="@+id/rg_trig_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <RadioButton
+                android:id="@+id/rb_specific_vehicle"
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specific_vehicles" />
+
+            <RadioButton
+                android:id="@+id/rb_all_vehicle"
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/all_vehicles_in_the_fleet" />
+
+            <TextView
+                style="@style/SettingItemGraySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_28"
+                android:text="@string/all_vehicles_in_the_fleet_are_included_including_vehicles_added_to_the_fleet_later" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorBackgroundBlue">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_76"
+            android:background="@color/colorBaseFleet"
+            android:text="@string/forget_password_next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_42"
+        android:src="@drawable/icon_wifi_disconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_not_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_33"
+        android:gravity="center"
+        android:text="@string/direct_not_connect"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_disconnect" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_65"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_65"
+        android:background="@color/colorBackgroundWhite"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_connect" />
+
+    <TextView
+        android:id="@+id/tv_connect_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_52"
+        android:paddingStart="@dimen/dp_48"
+        android:paddingEnd="@dimen/dp_48"
+        android:text="@string/connect_device_tips"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_19"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_connect_tips">
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginStart="@dimen/dp_11"
+            android:background="@drawable/blue_stroke_background"
+            android:text="@string/copy"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_wifi_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:background="@color/colorAccent"
+        android:text="@string/setup_second_wifi_setting"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

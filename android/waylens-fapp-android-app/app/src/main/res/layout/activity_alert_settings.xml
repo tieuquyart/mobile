@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back"
+        app:theme="@style/ToolbarStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/alert_settings"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        style="@style/SettingItemGrayBig"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center"
+        android:text="@string/please_select_the_type_of_alert_you_would_like_to_receive" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/border_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/driver_return_the_vehicle"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_return_vehicle"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/drivers_driving_or_parking"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_driving_parking"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/drivers_enter_or_exit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_geo_fence"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/drivers_confirm_start_arrive_orders"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_drivers_orders"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/SettingItemGrayBig"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_26"
+            android:text="@string/video_events" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/behavior_type_events"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_behavior_type"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="@color/transparent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="@string/hit_type_events"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14" />
+
+            <Switch
+                android:id="@+id/switch_hit_type"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_25"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:checked="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

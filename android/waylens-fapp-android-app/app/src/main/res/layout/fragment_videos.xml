@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWhite">
+
+    <com.mk.autosecure.ui.view.CustomRecyclerView
+        android:id="@+id/rv_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewAnimator
+        android:id="@+id/va_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/layout_camera_offline" />
+
+        <include layout="@layout/layout_sdcard_error" />
+
+        <include layout="@layout/layout_sdcard_no_detected" />
+
+        <include layout="@layout/layout_no_videos" />
+
+        <include layout="@layout/layout_user_action" />
+
+    </ViewAnimator>
+
+    <TextView
+        android:id="@+id/tv_videoStat"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:background="@color/colorBgWhite"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:textColor="@color/colorDescription"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/va_base"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Today\n4 Clips" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_playTime"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/background_play_time"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_videoStat"
+        app:layout_constraintStart_toStartOf="@+id/tv_videoStat"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:text="12:37:15" />
+
+    <TextView
+        android:id="@+id/tv_liveView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/background_play_time"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/to_live"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_white_gradient_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_white_gradient_btm"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_toLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@null"
+        android:padding="16dp"
+        android:src="@drawable/btn_go_live"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ib_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@null"
+        android:src="@drawable/btn_funnel"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/rl_bottomToolbar"
+        layout="@layout/dialog_video_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:background="@color/colorUnlockBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_slide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/iv_slide"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/export_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/whiteWithAlpha"
+            android:layout_centerVertical="true"
+            android:text="@string/export_slide_to_cancel"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    android:divider="@drawable/divider_small"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:theme="@style/ToolbarStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back">
+
+        <TextView
+            android:id="@+id/tv_toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:maxEms="9"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/adas_settings"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundBlue"
+            android:divider="@drawable/divider_small"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vui_l_ng_nh_p_chi_u_cao_c_a_m_y_nh_so_v_i_m_t_t" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_input_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_ed"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_4" />
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:text="@string/meters" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_input_the_width_of_the_vehicle_from_wheel_to_wheel" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_input_width"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_ed"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_4" />
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:text="@string/meters" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputOffset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_input_the_windshield_offset" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_input_offset"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_ed"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_4" />
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:text="@string/meters" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputFcttc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:text="Forward Collision TTC" />
+
+                <EditText
+                    android:id="@+id/et_input_fcttc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_ed"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_4" />
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:text="s" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputFctr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:text="Forward Collision TR" />
+
+                <EditText
+                    android:id="@+id/et_input_fctr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_ed"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_4" />
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:text="%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputHmttc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:text="Headway Monitoring TTC" />
+
+                <EditText
+                    android:id="@+id/et_input_hmttc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_ed"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_4" />
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:text="s" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputHmtr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:text="Headway Monitoring TR" />
+
+                <EditText
+                    android:id="@+id/et_input_hmtr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_ed"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_8"
+                    android:paddingBottom="@dimen/dp_4" />
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_8"
+                    android:text="%" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputTips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_3"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TTC: Time to Collision" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TR: Time Ratio" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save_setting"
+        style="@style/BorderButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:enabled="false"
+        android:text="@string/username_menu_save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+
+</LinearLayout>

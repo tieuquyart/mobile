@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Bold.ttf">
+            <string>BeVietnamPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoleListViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="mLy-oJ-Wzy" id="hxx-gL-p55"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-6Y-Gd2">
+                    <rect key="frame" x="16" y="216" width="382" height="464"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Roles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkJ-TZ-fyj">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="22"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Bold" family="Be Vietnam Pro" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mLy-oJ-Wzy">
+                            <rect key="frame" x="0.0" y="46" width="382" height="350"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="350" id="BUl-bz-yyJ"/>
+                            </constraints>
+                        </tableView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7sU-6d-9Oa">
+                            <rect key="frame" x="0.0" y="420" width="382" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-UO-aqn">
+                                    <rect key="frame" x="0.0" y="0.0" width="183" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="gH4-IJ-uYY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjI-qB-yAy">
+                                    <rect key="frame" x="199" y="0.0" width="183" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Ok"/>
+                                    <connections>
+                                        <action selector="okBtn:" destination="-1" eventType="touchUpInside" id="ICv-XE-GDg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="8DM-9G-aq4"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mLy-oJ-Wzy" firstAttribute="leading" secondItem="dk8-6Y-Gd2" secondAttribute="leading" id="4Xo-Ae-h3i"/>
+                        <constraint firstItem="7sU-6d-9Oa" firstAttribute="leading" secondItem="dk8-6Y-Gd2" secondAttribute="leading" id="9jv-xx-7dL"/>
+                        <constraint firstAttribute="trailing" secondItem="mLy-oJ-Wzy" secondAttribute="trailing" id="PBz-px-lnI"/>
+                        <constraint firstAttribute="trailing" secondItem="7sU-6d-9Oa" secondAttribute="trailing" id="VJK-aO-h5s"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dk8-6Y-Gd2" secondAttribute="trailing" constant="16" id="IX2-9b-TUr"/>
+                <constraint firstItem="dk8-6Y-Gd2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="U5b-eX-L8Y"/>
+                <constraint firstItem="dk8-6Y-Gd2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="df7-9M-Bmc"/>
+                <constraint firstItem="dk8-6Y-Gd2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qxb-bI-cXG"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="82.366071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

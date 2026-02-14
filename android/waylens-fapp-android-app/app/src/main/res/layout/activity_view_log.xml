@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_12"
+        android:background="@color/colorBackgroundWhite" />
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="wrap_content"
+                android:text="Stt"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="wrap_content"
+                android:text="@string/finish_time"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/time_stop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ll_titleTimeDriving"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="wrap_content"
+                android:text="Stt"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="wrap_content"
+                android:text="@string/driver_name"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:text="@string/start_time"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="wrap_content"
+                android:text="@string/finish_time"
+                android:gravity="center"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/dp_50"
+                android:background="@color/colorBackgroundWhite" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/time_driving" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/dp_50"
+            android:id="@+id/space1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/colorBackgroundWhite" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/space2"
+            android:layout_below="@+id/space1" />
+        <View
+            android:id="@+id/space2"
+            android:layout_above="@+id/tvTotalTimeStop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/colorBackgroundWhite" />
+
+        <TextView
+            android:id="@+id/tvTotalTimeStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/space_end"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:background="@drawable/bg_uncheck_filter"
+            android:gravity="center"
+            android:text="@string/total_time_stop"
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/space_end"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/colorBackgroundWhite" />
+
+    </RelativeLayout>
+
+</LinearLayout>

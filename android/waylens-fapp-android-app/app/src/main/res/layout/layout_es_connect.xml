@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_es_prompt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/_1_please_connect_your_phone_to_camera_wifi"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_es_prompt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_es_prompt_1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/you_can_find_the_wifi_name_and_wifi_password_on_the_screen_of_the_camera"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_es_prompt_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/use_your_phone_to_connect_to_the_camera_s_wifi"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_es_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="#4EAEE3"
+        android:text="@string/forget_password_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf_pro_display_bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeviceViewController" customModule="Acht" customModuleProvider="target">
+            <connections>
+                <outlet property="labelConectWifi" destination="JZy-rT-1xw" id="aOf-S2-bNA"/>
+                <outlet property="labelConnectCamera" destination="JZy-rT-1xw" id="wYa-cO-1Qe"/>
+                <outlet property="roleLabel" destination="l1B-lZ-E7o" id="vxV-eV-sOf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="tny-WF-xfA" id="7w1-An-p6D"/>
+                <outlet property="viewContainerConnectCamera" destination="ZXo-uz-r3V" id="aDR-pn-a4w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MgT-F0-8gy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tny-WF-xfA">
+                            <rect key="frame" x="0.0" y="99.5" width="414" height="796.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXo-uz-r3V">
+                            <rect key="frame" x="268" y="40" width="130" height="49.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bấm để kết nối 6b2bn9mk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZy-rT-1xw">
+                                    <rect key="frame" x="5" y="8" width="120" height="33.5"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="14"/>
+                                    <color key="textColor" red="0.49019607843137253" green="0.75294117647058822" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90135669709999999" green="0.97644072770000001" blue="0.93765324350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="JZy-rT-1xw" secondAttribute="bottom" constant="8" id="0I3-ti-zxD"/>
+                                <constraint firstItem="JZy-rT-1xw" firstAttribute="top" secondItem="ZXo-uz-r3V" secondAttribute="top" constant="8" id="ABd-XF-jPc"/>
+                                <constraint firstAttribute="width" constant="130" id="AJc-zc-6GU"/>
+                                <constraint firstItem="JZy-rT-1xw" firstAttribute="leading" secondItem="ZXo-uz-r3V" secondAttribute="leading" constant="5" id="KAt-j4-PUM"/>
+                                <constraint firstAttribute="trailing" secondItem="JZy-rT-1xw" secondAttribute="trailing" constant="5" id="deK-yK-t8i"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MK Vision" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1B-lZ-E7o">
+                            <rect key="frame" x="15" y="54.5" width="77" height="21"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tny-WF-xfA" secondAttribute="bottom" id="8yP-Di-qeD"/>
+                        <constraint firstItem="l1B-lZ-E7o" firstAttribute="leading" secondItem="MgT-F0-8gy" secondAttribute="leading" constant="15" id="G9e-qK-Shp"/>
+                        <constraint firstAttribute="trailing" secondItem="tny-WF-xfA" secondAttribute="trailing" id="HbH-s0-MY6"/>
+                        <constraint firstItem="tny-WF-xfA" firstAttribute="leading" secondItem="MgT-F0-8gy" secondAttribute="leading" id="MiM-Fp-dXp"/>
+                        <constraint firstItem="tny-WF-xfA" firstAttribute="top" secondItem="ZXo-uz-r3V" secondAttribute="bottom" constant="10" id="Pmb-s5-BvB"/>
+                        <constraint firstItem="l1B-lZ-E7o" firstAttribute="centerY" secondItem="ZXo-uz-r3V" secondAttribute="centerY" id="bkT-IW-xpO"/>
+                        <constraint firstItem="ZXo-uz-r3V" firstAttribute="top" secondItem="MgT-F0-8gy" secondAttribute="top" constant="40" id="io7-Tq-dT0"/>
+                        <constraint firstAttribute="trailing" secondItem="ZXo-uz-r3V" secondAttribute="trailing" constant="16" id="ws4-Vu-99e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MgT-F0-8gy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C2d-oI-st3"/>
+                <constraint firstItem="MgT-F0-8gy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q6s-P1-dcr"/>
+                <constraint firstAttribute="bottom" secondItem="MgT-F0-8gy" secondAttribute="bottom" id="r0J-tG-Gqx"/>
+                <constraint firstAttribute="trailing" secondItem="MgT-F0-8gy" secondAttribute="trailing" id="uOu-lv-k0n"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-SemiBold.ttf">
+            <string>BeVietnamPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginFaceMKViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCancel" destination="WP4-LY-pBl" id="ulA-gC-OJf"/>
+                <outlet property="btnSend" destination="JjH-Nc-RKA" id="oly-UA-IQj"/>
+                <outlet property="imageView" destination="Cdt-wV-hkG" id="IK1-rW-7np"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="jeJ-HC-Efg" id="mWr-97-LLv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeJ-HC-Efg">
+                    <rect key="frame" x="16" y="115.5" width="343" height="436"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vGS-Zw-BgV">
+                            <rect key="frame" x="16" y="16" width="311" height="404"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập bằng khuôn mặt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPg-XM-QIc">
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="28" id="VzW-pn-gcb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="BeVietnamPro-SemiBold" family="Be Vietnam Pro" pointSize="20"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-wV-hkG">
+                                    <rect key="frame" x="0.0" y="44" width="311" height="300"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="300" id="zhy-We-d4i"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PAN-g2-cSp">
+                                    <rect key="frame" x="0.0" y="360" width="311" height="44"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WP4-LY-pBl">
+                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="44"/>
+                                            <color key="tintColor" red="0.60392156862745094" green="0.65490196078431373" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Hủy">
+                                                <fontDescription key="titleFontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="16"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnCancel:" destination="-1" eventType="touchUpInside" id="IBF-wO-ERC"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-Nc-RKA">
+                                            <rect key="frame" x="160.5" y="0.0" width="150.5" height="44"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Gửi">
+                                                <fontDescription key="titleFontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="16"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnSend:" destination="-1" eventType="touchUpInside" id="kxm-Et-kZj"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="RbK-6D-0RY"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Cdt-wV-hkG" secondAttribute="trailing" id="Bfc-tm-tsm"/>
+                                <constraint firstAttribute="trailing" secondItem="QPg-XM-QIc" secondAttribute="trailing" id="Ye4-Qw-xjc"/>
+                                <constraint firstItem="Cdt-wV-hkG" firstAttribute="leading" secondItem="vGS-Zw-BgV" secondAttribute="leading" id="gdV-Zw-Di9"/>
+                                <constraint firstItem="QPg-XM-QIc" firstAttribute="leading" secondItem="vGS-Zw-BgV" secondAttribute="leading" id="na1-Ve-fbX"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="vGS-Zw-BgV" firstAttribute="leading" secondItem="jeJ-HC-Efg" secondAttribute="leading" constant="16" id="KLB-1O-8Jh"/>
+                        <constraint firstAttribute="trailing" secondItem="vGS-Zw-BgV" secondAttribute="trailing" constant="16" id="NMJ-ME-1wG"/>
+                        <constraint firstAttribute="bottom" secondItem="vGS-Zw-BgV" secondAttribute="bottom" constant="16" id="gUa-fe-ncD"/>
+                        <constraint firstItem="vGS-Zw-BgV" firstAttribute="top" secondItem="jeJ-HC-Efg" secondAttribute="top" constant="16" id="j7A-UM-tvx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jeJ-HC-Efg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5Xg-fX-0R2"/>
+                <constraint firstItem="jeJ-HC-Efg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GwW-s2-Omu"/>
+                <constraint firstItem="jeJ-HC-Efg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VYG-Z3-zaZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jeJ-HC-Efg" secondAttribute="trailing" constant="16" id="nnA-af-P77"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlue"
+    android:divider="@drawable/divider_small"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.mk.autosecure.ui.activity.settings.FenceRangeActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_26"
+            android:text="@string/range_miles" />
+
+        <EditText
+            android:id="@+id/et_fence_range"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_26"
+            android:layout_marginEnd="@dimen/dp_26"
+            android:background="@null"
+            tools:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_export_warning" />
+
+        <TextView
+            style="@style/SettingItemGrayBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:text="@string/the_maximal_range_is_500_miles" />
+    </LinearLayout>
+</LinearLayout>

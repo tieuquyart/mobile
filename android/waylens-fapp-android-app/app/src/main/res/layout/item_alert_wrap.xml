@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tubb.smrv.SwipeHorizontalMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sml="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sml"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    sml:sml_auto_open_percent="0.2"
+    sml:sml_scroller_duration="250">
+
+    <include
+        android:id="@id/smContentView"
+        layout="@layout/item_alert" />
+
+    <LinearLayout
+        android:id="@id/smMenuViewRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_read"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_alert_read" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:text="@string/read"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_alert_delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:text="@string/hide"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.tubb.smrv.SwipeHorizontalMenuLayout>

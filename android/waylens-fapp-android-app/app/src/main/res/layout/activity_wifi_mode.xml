@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mk.autosecure.ui.activity.settings.WifiModeActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <RadioGroup
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:id="@+id/rg_wifi_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/border_bg_white"
+        app:layout_constraintTop_toBottomOf="@id/default_toolbar">
+
+        <RadioButton
+            android:id="@+id/rb_ap_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:text="@string/ap_mode" />
+
+        <RadioButton
+            android:id="@+id/rb_client_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:text="@string/client_mode" />
+
+        <RadioButton
+            android:id="@+id/rb_p2p_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_6"
+            android:background="@color/colorUnsetting"
+            android:text="@string/p2p_mode" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_manage_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_26"
+        android:paddingTop="@dimen/dp_7"
+        android:paddingBottom="@dimen/dp_7"
+        android:text="@string/manage_hosts"
+        android:textColor="#99A0A9"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintTop_toBottomOf="@id/rg_wifi_mode" />
+
+    <FrameLayout
+        android:padding="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bg_white"
+        app:layout_constraintTop_toBottomOf="@id/tv_manage_host">
+
+        <TextView
+            android:id="@+id/tv_empty_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            android:gravity="center"
+            android:text="@string/empty_host" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_add_host"
+        style="@style/BorderButton"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="@string/add_host"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

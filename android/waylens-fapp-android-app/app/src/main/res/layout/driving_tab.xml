@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="@string/camera_setting_drive"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/tv_active_tag"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:background="@drawable/bg_color_accent_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignBottom="@+id/tv_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:textSize="8sp"
+        android:layout_toRightOf="@+id/tv_content"
+        android:gravity="center_vertical"
+        android:text="@string/camera_mode_active"
+        android:scaleType="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_cycle_from"
+            style="@style/SettingItemGrayBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/billing_cycle_from" />
+
+        <TextView
+            android:id="@+id/tv_cycle_date"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cycle_from"
+            tools:text="June 19 - July 10" />
+
+        <TextView
+            android:id="@+id/tv_camera_size"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_cycle_date"
+            android:layout_alignParentEnd="true"
+            tools:text="12 cameras" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data_usage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_weight="1"
+        android:background="@drawable/background_section"
+        android:elevation="@dimen/dp_2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:background="@color/colorDarkBlue">
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/total"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_expected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_13"
+            android:text="@string/expected_to_charge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_gb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_total"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:text="@string/gb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_total_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_total"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:layout_toStartOf="@id/tv_gb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            tools:text="5.43" />
+
+        <TextView
+            android:id="@+id/tv_expected_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_expected"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            tools:text="$58.23" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="host_server_list" translatable="false">
+        <item>https://tscastle.cam2cloud.com:9002/</item>
+        <item>http://horn.vidit.com.cn/</item>
+        <item>https://wstest.waylens.com/360</item>
+        <item>https://ws.waylens.com/360/</item>
+    </string-array>
+
+    <string-array name="host_server_list_fleet">
+<!--        <item>http://fms02.mkvision.com:31190/</item>-->
+        <item>http://fms.mkvision.com/</item>
+    </string-array>
+
+    <string-array name="camera_server_list">
+        <item>wss://horn.vidit.com.cn/api/4g/</item>
+        <item>wss://tscastle.cam2cloud.com:9002/api/4g/</item>
+        <item>wss://ws.waylens.com/360/api/4g/</item>
+        <item>wss://wstest.waylens.com/360/api/4g/</item>
+    </string-array>
+
+    <string name="sam_5" translatable="false">https://dev.mk.com.vn:35503/api/</string>
+    <string name="register_5" translatable="false">https://10.30.100.50:15601/api/device-reg/registerDevice</string>
+    <string name="register_public" translatable="false">https://dev.mk.com.vn:35503/api/device-reg/registerDevice</string>
+    <integer name="anim_duration">300</integer>
+    <string-array name="camera_server_list_fleet" translatable="false">
+        <item>ws://dev.fleet.waylens.com:9000/api/4g/</item>
+        // DEV
+        <item>wss://fleet-api.waylens.com/api/4g/</item>
+        // API
+        <item>wss://fleet.waylens.com/api/4g/</item>
+        // Prod
+    </string-array>
+
+    <string-array name="web_url_list" translatable="false">
+        <item>http://beta.waylens.cn</item>
+        <item>https://www.waylens.com</item>
+    </string-array>
+
+    <string-array name="firmware_server_list" translatable="false">
+        <item>https://tscastle.cam2cloud.com:9000</item>
+        <item>https://upload.test.waylens.com/</item>
+        <item>https://agent.waylens.com/</item>
+    </string-array>
+
+    <string-array name="parking_event_levels">
+        <item>Off</item>
+        <item>Impact</item>
+        <item>Bump</item>
+        <item>Motion</item>
+    </string-array>
+
+    <string-array name="parking_event_detection_title">
+        <item>Detection: Off</item>
+        <item>Detection: Only Impact</item>
+        <item>Detection: Bump and More</item>
+        <item>Detection: Motion and More</item>
+    </string-array>
+
+    <string-array name="parking_event_detection_content">
+        <item>No events will be recorded</item>
+        <item>Video is recorded when a impact is detected.</item>
+        <item>Video is recorded when any bump or impact is detected.</item>
+        <item>Video is recorded when any activity is detected.</item>
+    </string-array>
+
+    <string-array name="driving_event_levels">
+        <item>Off</item>
+        <item>Impact</item>
+        <item>Bump</item>
+    </string-array>
+
+    <string-array name="driving_event_detection_title">
+        <item>Detection: Off</item>
+        <item>Detection: Only Impact</item>
+        <item>Detection: Bump and More</item>
+    </string-array>
+
+    <string-array name="driving_event_detection_content">
+        <item>No events will be recorded</item>
+        <item>Video is recorded when a impact is detected.</item>
+        <item>Video is recorded when any bump or impact is detected.</item>
+    </string-array>
+
+    <string-array name="event_alert_title">
+        <item>Alert: Off</item>
+        <item>Alert: Only Impact</item>
+        <item>Alert: Bump and More</item>
+        <item>Alert: Motion and More</item>
+    </string-array>
+
+    <string-array name="event_alert_content">
+        <item>No notifications will be sent.</item>
+        <item>You\'ll be notified when a impact is detected.</item>
+        <item>You\'ll be notified when any bump or impact is detected.</item>
+        <item>You\'ll be notified when any activity is detected.</item>
+    </string-array>
+
+    <string-array name="event_upload_title">
+        <item>Upload: Off</item>
+        <item>Upload: Only Impact</item>
+        <item>Upload: Bump and More</item>
+        <item>Upload: Motion and More</item>
+    </string-array>
+
+    <string-array name="event_upload_content">
+        <item>No videos will be uploaded to the cloud.</item>
+        <item>Event video will be uploaded to the cloud when a impact is detected.</item>
+        <item>Event video will be uploaded to the cloud when any bump or impact is detected.</item>
+        <item>Event video will be uploaded to the cloud when any activity is detected.</item>
+    </string-array>
+
+    <string-array name="emergency_alert_setting" translatable="false">
+        <item>Off</item>
+        <item>SMS</item>
+        <item>Call</item>
+    </string-array>
+</resources>

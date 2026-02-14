@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/default_toolbar"
+        android:id="@+id/top"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/top"
+        android:id="@+id/llFiltter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:text="@string/time" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="@dimen/dp_40"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="@dimen/dp_5"-->
+<!--            android:text="@string/mins" />-->
+
+<!--        <EditText-->
+<!--            android:inputType="number"-->
+<!--            android:id="@+id/etMins"-->
+<!--            android:layout_width="@dimen/dp_80"-->
+<!--            android:layout_height="@dimen/dp_40"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="@dimen/dp_5"-->
+<!--            android:text="@string/seconds" />-->
+
+<!--        <EditText-->
+<!--            android:inputType="number"-->
+<!--            android:id="@+id/etSeconds"-->
+<!--            android:layout_width="@dimen/dp_80"-->
+<!--            android:layout_height="@dimen/dp_40"/>-->
+    </LinearLayout>
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/llFiltter"
+        android:background="@color/colorBackgroundWhite" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@+id/space"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Stt" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/colorBackgroundWhite" />
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/time" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/colorBackgroundWhite" />
+
+        <TextView
+            android:layout_width="@dimen/dp_120"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/gps_info" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/colorBackgroundWhite" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/speed" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@+id/ll_title"
+        android:background="@color/colorBackgroundWhite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space1" />
+</RelativeLayout>

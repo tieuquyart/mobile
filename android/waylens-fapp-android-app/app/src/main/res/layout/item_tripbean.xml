@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_trip"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginEnd="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:background="@drawable/bg_item_trip"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52,8 Mins"
+        style="@style/PrimaryNormalText"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTripName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52,8 Mins"
+        style="@style/PrimaryNormalText"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_timeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From: 06:32"
+        style="@style/SettingItemGraySmall"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTimeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: 07:25"
+        style="@style/SettingItemGraySmall"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/SettingItemGraySmall"
+        android:id="@+id/tv_noTrips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_trips" />
+
+</LinearLayout>

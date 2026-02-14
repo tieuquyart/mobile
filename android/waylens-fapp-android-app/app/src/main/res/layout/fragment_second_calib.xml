@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.autosecure.ui.fragment.SecondCalibFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/_2_make_sure_that_the_video_is_upright"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14" />
+
+    <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+        android:id="@+id/media_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:farfl_xratio="8dp"
+        app:farfl_yratio="5dp">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+
+    <ImageButton
+        android:id="@+id/iv_invert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_18"
+        android:background="@drawable/icon_calib_invert"
+        android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_invert_next"
+            style="@style/BorderButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:text="@string/forget_password_next" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_14"
+            android:layout_marginBottom="@dimen/dp_47"
+            android:text="@string/_2_5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+</LinearLayout>

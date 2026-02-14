@@ -1,1 +1,41 @@
+# Android build files and caches
+android/**/build/
+android/**/caches/
+android/**/build-scan-data/
+android/**/daemon/
+android/**/native/
+android/**/wrapper/dists/
+android/**/.gradle/
+android/**/local.properties
+android/**/*.iml
+android/**/.idea/
+android/**/captures/
+android/**/*.apk
+android/**/*.ap_
+android/**/*.aab
+
+# iOS build files and dependencies
+iOS/**/Pods/
+iOS/**/Podfile.lock
+iOS/**/*.xcworkspace/xcuserdata/
+iOS/**/*.xcodeproj/xcuserdata/
+iOS/**/*.xcodeproj/project.xcworkspace/xcuserdata/
+iOS/**/DerivedData/
+iOS/**/build/
+iOS/**/.build/
+iOS/**/*.ipa
+iOS/**/*.dSYM.zip
+iOS/**/*.dSYM
+
+# Gradle wrapper (keep only the jar)
+!gradle-wrapper.jar
+
+# SVN
 .svn/
+
+# OS Files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_70"
+    android:background="@drawable/item_common_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/dp_62"
+        android:layout_height="@dimen/dp_62"
+        android:layout_marginStart="@dimen/dp_16"
+        android:src="@drawable/icon_camera_fourg" />
+
+    <TextView
+        android:id="@+id/tv_camera_sn"
+        style="@style/SettingItemPrimary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_weight="1"
+        tools:text="2B12KKX" />
+
+    <TextView
+        android:id="@+id/tv_data_usage"
+        style="@style/SettingItemPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_40"
+        tools:text="1.23 GB" />
+
+</LinearLayout>

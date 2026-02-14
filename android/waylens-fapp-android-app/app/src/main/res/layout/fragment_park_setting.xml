@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mstb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_common_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_setting_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_19"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_setting_albert_n" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_alert_title"
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="false"
+                tools:text="@string/camera_setting_parking_alert_title" />
+
+            <TextView
+                android:id="@+id/tv_alert_content"
+                style="@style/SettingItemGraySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:text="@string/camera_setting_parking_alert_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.mk.autosecure.ui.view.multistatetogglebutton.MultiStateToggleButton
+        android:id="@+id/mstb_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_34"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        mstb:color0="@color/colorSettingOff"
+        mstb:color1="@color/colorSettingHeavyHit"
+        mstb:color2="@color/colorSettingHit"
+        mstb:color3="@color/colorSettingMotion"
+        mstb:values="@array/parking_event_levels" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_setting_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_18"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_setting_upload_n" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_upload_title"
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textStyle="normal"
+                tools:text="@string/camera_setting_parking_upload_title" />
+
+            <TextView
+                android:id="@+id/tv_upload_content"
+                style="@style/SettingItemGraySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:text="@string/camera_setting_parking_upload_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.mk.autosecure.ui.view.multistatetogglebutton.MultiStateToggleButton
+        android:id="@+id/mstb_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_34"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_26"
+        mstb:color0="@color/colorSettingOff"
+        mstb:color1="@color/colorSettingHeavyHit"
+        mstb:color2="@color/colorSettingHit"
+        mstb:color3="@color/colorSettingMotion"
+        mstb:values="@array/parking_event_levels" />
+
+</LinearLayout>

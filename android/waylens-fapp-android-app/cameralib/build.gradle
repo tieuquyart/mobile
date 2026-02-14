@@ -1,0 +1,108 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+    ndkVersion  "21.1.6352462"
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a' //, 'x86', 'x86_64'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    productFlavors {
+//        applicationId = "com.waylens.camera"
+//        buildConfigField "String", "FLAVOR_NAME", "\"waylens\""
+//    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+greendao {
+    schemaVersion 3
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar" ])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    /* mina */
+    implementation 'org.apache.mina:mina-core:2.0.19'
+    /* Jmdns */
+    implementation 'javax.jmdns:jmdns:3.4.1'
+
+    /* Rxjava2 */
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+    /* Rxrelay2 */
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
+    /* support Gson parse */
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+
+    /* print Log */
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar"
+
+    implementation 'org.greenrobot:greendao:3.3.0'
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+
+//    api 'com.waylens.videosdk:videosdk:1.0.5'
+
+//    implementation 'com.opencsv:opencsv:4.1'
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
+    }
+}
+
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "https://repo.rdc.aliyun.com/repository/135827-release-ppYKEu") {
+            authentication(userName: "Mpey7w", password: "RM66obuuEQ")
+        }
+        pom.groupId = "com.waylens.camerasdk"
+        pom.artifactId = "camerasdk"
+        pom.version = "1.4.8"
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LL4-BT-btS">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2QF-aS-CBT">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="LL4-BT-btS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zun-Dd-htp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Fel-e1-3OK">
+                                <rect key="frame" x="157.5" y="315.5" width="60" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="TIL-fn-cF9"/>
+                                    <constraint firstAttribute="height" constant="36" id="ajJ-a8-5AS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fel-e1-3OK" firstAttribute="centerX" secondItem="Zun-Dd-htp" secondAttribute="centerX" id="RPj-Rr-zO3"/>
+                            <constraint firstItem="Fel-e1-3OK" firstAttribute="centerY" secondItem="Zun-Dd-htp" secondAttribute="centerY" id="oku-jR-yiu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eTM-cF-JqQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTs-bl-Ixn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_blue" width="60" height="36"/>
+    </resources>
+</document>

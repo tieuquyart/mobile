@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_videoLocation"
+        style="@style/DescriptionTextStyle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_thumbnails"
+        android:layout_toLeftOf="@id/ll_thumbnails"
+        android:layout_toRightOf="@+id/v_videoIndicator"
+        android:textSize="14sp"
+        tools:text="2300 E Ocean Blvd, Long Beach, CA" />
+
+
+    <com.mk.autosecure.ui.view.MultiSegBar
+        android:id="@+id/v_videoIndicator"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_thumbnails"
+        android:layout_alignTop="@+id/ll_thumbnails"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/tv_videoTime" />
+
+    <TextView
+        android:id="@id/tv_videoTime"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_thumbnails"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        tools:text="12:19 PM" />
+
+    <LinearLayout
+        android:id="@+id/ll_thumbnails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_firstThumbnail"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/menu_360_album_n" />
+    </LinearLayout>
+
+    <com.mk.autosecure.ui.view.SelectClipView
+        android:id="@+id/select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_thumbnails"
+        android:layout_alignLeft="@id/ll_thumbnails"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ll_thumbnails"/>
+
+</RelativeLayout>

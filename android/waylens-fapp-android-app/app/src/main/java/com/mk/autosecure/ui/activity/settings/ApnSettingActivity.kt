@@ -1,0 +1,112 @@
+package com.mk.autosecure.ui.activity.settings
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.text.TextUtils
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.Toast;
+import com.google.android.material.snackbar.Snackbar
+import com.mk.autosecure.R
+import com.mk.autosecure.rest.ServerErrorHandler
+import com.mk.autosecure.ui.activity.LocalLiveActivity
+import com.orhanobut.logger.Logger
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
+import com.mkgroup.camera.CameraWrapper
+import com.mkgroup.camera.VdtCameraManager
+import com.mkgroup.camera.rest.Optional
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.functions.Consumer
+import kotlinx.android.synthetic.main.activity_apn_setting.*
+import kotlinx.android.synthetic.main.default_toolbar.*
+
+class ApnSettingActivity : RxAppCompatActivity() {
+
+    private var mCamera: CameraWrapper? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_apn_setting)
+        initView()
+    }
+
+    @SuppressLint("CheckResult")
+    override fun onResume() {
+        super.onResume()
+        VdtCameraManager.getManager().currentCamera()
+                .compose(bindToLifecycle())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(Consumer<Optional<CameraWrapper>> { this.onCurrentCamera(it) },
+                    ServerErrorHandler(TAG)
+                )
+    }
+
+    private fun onCurrentCamera(cameraOptional: Optional<CameraWrapper>) {
+        val vdtCamera = cameraOptional.includeNull
+        Logger.t(TAG).d("onCurrentCamera: $vdtCamera")
+
+        if (vdtCamera != null) {
+            mCamera = vdtCamera
+        } else {
+            Logger.t(TAG).d("onDisconnectCamera")
+            Toast.makeText(this, resources.getString(R.string.camera_disconnected), Toast.LENGTH_SHORT).show()
+            LocalLiveActivity.launch(this, true)
+        }
+    }
+
+    private fun initView() {
+        (findViewById<View>(R.id.toolbar) as androidx.appcompat.widget.Toolbar).setNavigationOnClickListener { finish() }
+        tv_toolbarTitle!!.setText(R.string.apn)
+
+        mCamera = VdtCameraManager.getManager().currentCamera
+        if (mCamera != null) {
+            val apnSetting = mCamera!!.apnSetting
+            et_apn_setting!!.setText(apnSetting)
+
+            btn_apn_apply.setOnClickListener {
+                val trim = et_apn_setting!!.text.toString().lowercase().trim { it <= ' ' }
+                if (TextUtils.isEmpty(trim)) {
+                    return@setOnClickListener
+                }
+
+                if (mCamera != null) {
+                    val setting = mCamera!!.apnSetting
+
+                    if (trim == setting) {
+                       Toast.makeText(this, getString(R.string.apn_no_change), Toast.LENGTH_SHORT).show()
+                    } else {
+                        hideSoftInput(et_apn_setting)
+
+                        mCamera!!.apnSetting = trim
+
+                        Snackbar.make(et_apn_setting!!, getString(R.string.apply_success), Snackbar.LENGTH_LONG).show()
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            this.finish()
+                        }, 2000)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun hideSoftInput(view: View) {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
+    companion object {
+
+        private val TAG = ApnSettingActivity::class.java.simpleName
+
+        fun launch(activity: Activity) {
+            val intent = Intent(activity, ApnSettingActivity::class.java)
+            activity.startActivity(intent)
+        }
+    }
+
+}

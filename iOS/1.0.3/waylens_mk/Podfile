@@ -1,0 +1,86 @@
+source 'https://cdn.cocoapods.org/'
+source 'https://git.cm.eveus.com/Camera/waylens-fapp-CocoaPods-iOS.git'
+
+
+
+platform :ios, '12.0'
+
+use_frameworks!
+
+workspace 'Acht'
+
+def pods
+  pod 'SwiftAlertView', '~> 2.2.1'
+  pod 'BMPlayer/CacheSupport', :git => 'https://github.com/BrikerMan/BMPlayer.git'
+  pod 'Firebase', '~>10.16'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Performance'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Messaging'
+  pod 'DropDown'
+  pod 'ExpandableCell'
+  pod 'CocoaAsyncSocket'
+  pod 'Alamofire', '~> 4.0'
+  pod 'KeychainAccess'
+  pod 'Whisper'
+  pod 'AppCenter', '3.3.1'
+  pod 'MJRefresh'
+  pod 'AlamofireImage'
+  pod 'SVProgressHUD'
+  pod 'Zip'
+  pod 'RxSwift', '6.1.0'
+  pod 'RxCocoa', '6.1.0'
+  pod 'SwiftMessages', '~> 7.0'
+  pod 'Moya', '~> 13.0'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'ReSwift'
+  pod 'PopupDialog', '~> 1.1'
+  pod 'PromiseKit'
+  pod 'CocoaLumberjack/Swift'
+  pod 'FLEX', '4.4.0', :configurations => ['Debug']
+  pod 'WaylensCarlos'
+  pod 'WaylensAPNGKit', '~> 1.1'
+  pod 'WaylensCameraSDK', '~> 1.1.0'
+  pod 'WaylensVideoSDK', '~> 1.0.2'
+  pod 'WaylensUIKit', '~> 1.0.0'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Parchment', '~> 3.2'
+  pod "SwiftCSV"
+  pod 'SSZipArchive'
+  pod 'FloatingPanel', '~> 1.7.5'
+  pod 'DifferenceKit'
+  pod 'Charts'
+  pod 'AloeStackView'
+  pod 'FSCalendar'
+  pod 'SwiftDate'
+  pod 'Former'
+  pod 'XLPagerTabStrip'
+  pod 'YNDropDownMenu'
+  pod "StatefulViewController", :git => 'https://github.com/YK-Unit/StatefulViewController'
+  pod 'LBTATools'
+  pod 'GooglePlaces'
+end
+
+
+target 'Fleet' do
+  project 'Application/Acht.project'
+  pods
+end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['Whisper'].include? target.name
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '4.2'
+      end
+    end
+  end
+  installer.generated_projects.each do |project|
+      project.targets.each do |target|
+          target.build_configurations.each do |config|
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+          end
+      end
+  end
+end

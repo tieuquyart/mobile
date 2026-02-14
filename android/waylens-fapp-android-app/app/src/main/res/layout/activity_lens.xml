@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    tools:context=".ui.activity.settings.LensActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorGrayBackground"
+        app:layout_constraintTop_toBottomOf="@id/default_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_installed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_53"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:gravity="center"
+        android:text="@string/lens_installed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <RadioGroup
+        android:background="@color/transparent"
+        android:id="@+id/rg_lens_install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_34"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_installed">
+
+        <RadioButton
+            android:id="@+id/rb_lens_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_96"
+            android:background="@drawable/bg_power_cable"
+            android:button="@null"
+            android:drawableEnd="@drawable/icon_lens_up"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_49"
+            android:paddingEnd="@dimen/dp_16"
+            android:text="@string/lens_up"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:id="@+id/rb_lens_down"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_96"
+            android:layout_marginTop="@dimen/dp_25"
+            android:background="@drawable/bg_power_cable"
+            android:button="@null"
+            android:drawableEnd="@drawable/icon_lens_down"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_49"
+            android:paddingEnd="@dimen/dp_16"
+            android:text="@string/lens_down"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_8"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:paddingStart="@dimen/dp_5"
+        android:paddingEnd="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_18"
+        android:background="@drawable/background_chart_marker"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_10"
+        tools:text="6-27   |   100 miles" />
+
+    <!--    <View-->
+    <!--        android:layout_width="@dimen/dp_2"-->
+    <!--        android:layout_height="@dimen/dp_11"-->
+    <!--        android:layout_below="@id/tvContent"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:background="@color/colorDriving" />-->
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navi_camera"
+        android:icon="@drawable/icon_camera_unselect"
+        android:title="@string/camera" />
+
+    <item
+        android:id="@+id/navi_album"
+        android:icon="@drawable/icon_album_unselect"
+        android:title="@string/album" />
+
+    <item
+        android:id="@+id/navi_profile"
+        android:icon="@drawable/icon_profile_unselect"
+        android:title="@string/profile" />
+</menu>

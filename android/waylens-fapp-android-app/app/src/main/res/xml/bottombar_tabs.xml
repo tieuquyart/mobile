@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_videos"
+        icon="@drawable/ic_video_library_black_24dp"
+        title="Videos" />
+    <tab
+        id="@+id/tab_account"
+        icon="@drawable/ic_person_black_24dp"
+        title="Account" />
+</tabs>

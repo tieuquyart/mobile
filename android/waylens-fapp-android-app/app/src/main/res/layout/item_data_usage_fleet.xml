@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/item_common_background">
+
+    <TextView
+        android:id="@+id/tv_billing_month"
+        style="@style/SettingItemPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_20"
+        tools:text="March" />
+
+    <TextView
+        android:id="@+id/tv_data_usage"
+        style="@style/SettingItemPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:text="5.43 GB" />
+
+    <TextView
+        android:id="@+id/tv_billing_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_toStartOf="@+id/iv_billing_detail"
+        android:textSize="@dimen/sp_14"
+        tools:text="Paid" />
+
+    <ImageView
+        android:id="@+id/iv_billing_detail"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/icon_next_grey" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/overflowMenu"
+        android:icon="@drawable/ic_account_circle"
+        android:title=""
+        android:iconTint="@color/colorBottomTab"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:icon="@drawable/ic_user_account"
+                android:title="@string/account"
+                />
+            <item
+                android:icon="@drawable/ic_password_account"
+                android:title="@string/password"
+                />
+        </menu>
+    </item>
+</menu>

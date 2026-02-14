@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_108">
+
+    <View
+        android:id="@+id/alertType"
+        android:layout_width="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ll_alerts"
+        android:layout_alignBottom="@id/ll_alerts"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_24" />
+
+    <LinearLayout
+        android:id="@+id/ll_alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_toStartOf="@id/rl_video"
+        android:layout_toEndOf="@id/alertType"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_camera_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14"
+            tools:text="ABCDEF" />
+
+        <TextView
+            android:id="@+id/tv_alert_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            tools:text="09:31" />
+
+        <TextView
+            android:id="@+id/tv_alert_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/colorDescription"
+            android:textSize="@dimen/sp_14"
+            tools:text="Zhangheng Road" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_57"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp_25">
+
+        <com.mk.autosecure.ui.view.RoundCornerImageView
+            android:id="@+id/iv_alert_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_alert_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp_3"
+            android:background="@color/opaque"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_8"
+            android:textStyle="bold"
+            tools:text="10.5s" />
+
+        <LinearLayout
+            android:id="@+id/ll_uploading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccentWithAlpha"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_upload_n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uploading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBackgroundWhite" />
+
+</RelativeLayout>

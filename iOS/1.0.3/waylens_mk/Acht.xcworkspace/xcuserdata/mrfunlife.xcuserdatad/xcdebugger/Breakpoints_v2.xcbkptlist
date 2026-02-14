@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FFD05C4B-8510-42AF-881B-69320E525093"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CE7EC23-B282-4313-8067-ADB7839C8413"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "handleMsg(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1CE7EC23-B282-4313-8067-ADB7839C8413 - e102aea8be37a3e0"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "27948">
+               </Location>
+               <Location
+                  uuid = "1CE7EC23-B282-4313-8067-ADB7839C8413 - e102aea8be37a226"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "28848">
+               </Location>
+               <Location
+                  uuid = "1CE7EC23-B282-4313-8067-ADB7839C8413 - e102aea8be37a207"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "310"
+                  endingLineNumber = "310"
+                  offsetFromSymbolStart = "28260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5293B86F-4953-4EF2-BB88-4ABF2F874438"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1415"
+            endingLineNumber = "1415"
+            landmarkName = "parseSingleMsg(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5293B86F-4953-4EF2-BB88-4ABF2F874438 - 2199832809bc2e18"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parseSingleMsg(Foundation.Data) -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1409"
+                  endingLineNumber = "1409"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  uuid = "5293B86F-4953-4EF2-BB88-4ABF2F874438 - 2199832809bc215e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parseSingleMsg(Foundation.Data) -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1415"
+                  endingLineNumber = "1415"
+                  offsetFromSymbolStart = "1332">
+               </Location>
+               <Location
+                  uuid = "5293B86F-4953-4EF2-BB88-4ABF2F874438 - 2199832809bc215e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parseSingleMsg(Foundation.Data) -&gt; Swift.Optional&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1415"
+                  endingLineNumber = "1415"
+                  offsetFromSymbolStart = "860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "710E0BB4-E7AF-446F-A772-AE517800920D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1376"
+            endingLineNumber = "1376"
+            landmarkName = "parse()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "710E0BB4-E7AF-446F-A772-AE517800920D - 524d3babfca062f9"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parse() -&gt; Swift.Array&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1370"
+                  endingLineNumber = "1370"
+                  offsetFromSymbolStart = "4340">
+               </Location>
+               <Location
+                  uuid = "710E0BB4-E7AF-446F-A772-AE517800920D - 524d3babfca06383"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parse() -&gt; Swift.Array&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1376"
+                  endingLineNumber = "1376"
+                  offsetFromSymbolStart = "4500">
+               </Location>
+               <Location
+                  uuid = "710E0BB4-E7AF-446F-A772-AE517800920D - 524d3babfca06383"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WaylensCameraSDK.WLEvcamMsgParser.parse() -&gt; Swift.Array&lt;Any&gt;"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1376"
+                  endingLineNumber = "1376"
+                  offsetFromSymbolStart = "4340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EC8D0B1-3F19-4970-A0FA-FDE04D203DA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
+            landmarkName = "handleMsg(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5EC8D0B1-3F19-4970-A0FA-FDE04D203DA5 - e102aea8be37bf00"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "18844">
+               </Location>
+               <Location
+                  uuid = "5EC8D0B1-3F19-4970-A0FA-FDE04D203DA5 - e102aea8be37bf00"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "18616">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "788A87F9-3A49-402D-B418-C1579337B9CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "handleMsg(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "788A87F9-3A49-402D-B418-C1579337B9CB - e102aea8be37b0ed"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "18304">
+               </Location>
+               <Location
+                  uuid = "788A87F9-3A49-402D-B418-C1579337B9CB - e102aea8be37b0ed"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.WLCameraClient.handleMsg(Any) -&gt; ()"
+                  moduleName = "WaylensCameraSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "18312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85BD85E7-3A54-41AC-BB7F-CB9CE2D0DEC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/WLCameraClient+Evcam.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "313"
+            endingLineNumber = "313"
+            landmarkName = "handleMsg(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67112002-5A96-45F8-B80A-E74B387EB1E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/WaylensCameraSDK/WaylensCameraSDK/Evcam/EvcamProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "647"
+            endingLineNumber = "647"
+            landmarkName = "decode(_:category:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "166055FA-11DD-4368-8511-D75B584F73C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSNetworkViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "refresh(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34E557B2-B595-4D4C-9D37-3D03C2233121"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "miliSecFromDate()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4331D38A-B0EF-4E0A-87B7-3638E79418FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/Model/HNClip.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "toString()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "931B1BDF-DFFE-47DF-85F9-C52464995ED9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/Model/RemoteCamera/RemoteCamera.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "390"
+            endingLineNumber = "390"
+            landmarkName = "heartBeat()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B23AB75-3523-4CD3-B282-BD90DD7C0B2F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/MK_Group/DetailTimeline/view/TripCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "config(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B21A1F0-7DE4-46F1-80AB-E22FD0A10D81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Fleet/Overview/EventDetailHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "update(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C49E165-F671-44C3-868E-74E1A0FAE7D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Fleet/Overview/EventDetailHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "EventDetailHeaderView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8538DCDC-C092-44D6-B5AD-2B4553F01632"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Fleet/Overview/EventDetailHeaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "EventDetailHeaderView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53024345-8B9F-4803-937E-896666E7728E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "sendFeedBack(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60372C65-4DC7-4083-A643-48D7F1867DEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "sendFeedBack(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B6ABF22-8B22-4C8B-8545-4E7C8E4BC122"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "sendFeedBack(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6567FB0B-B797-4D31-A279-3EC5A906739C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/WayLens/WaylensClientS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "621"
+            endingLineNumber = "621"
+            landmarkName = "report(_:camera:logFile:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "D9462BAA-3E96-4ABC-9EA2-DC5218555010"
+            shouldBeEnabled = "No"
+            nameForDebugger = "doanVu"
+            condition = "doanVu"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1200222-02BB-43FC-BBB3-E478EBE12477"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
+            landmarkName = "onSend(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
+            landmarkName = "onSend(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244 - a8101a6a4e4f67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Float) -&gt; () in closure #1 () -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244 - 800952686bdb88a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "309"
+                  endingLineNumber = "309"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244 - 800952686bdbf6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "310"
+                  endingLineNumber = "310"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244 - 11c5d17d9c1ee571"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/MKVison/autosecure/01062023/iOS/1.0.2/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "311"
+                  endingLineNumber = "311"
+                  offsetFromSymbolStart = "5564">
+               </Location>
+               <Location
+                  uuid = "B8342B13-DB02-4B20-9E2A-B43BA2ECE244 - 8c224bf804a5b813"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/MKVison/autosecure/01062023/iOS/1.0.2/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "325"
+                  endingLineNumber = "325"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "onSend(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - 861ca314e003cb12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "317"
+                  endingLineNumber = "317"
+                  offsetFromSymbolStart = "1840">
+               </Location>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - af7fc7b7d79fce4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "327"
+                  endingLineNumber = "327"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - af7fc7b7d79fce4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "327"
+                  endingLineNumber = "327"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - af7fc7b7d79fce6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "328"
+                  endingLineNumber = "328"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - af7fc7b7d79fce6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "328"
+                  endingLineNumber = "328"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "4AE33C1F-41FA-45F4-9E6B-1EC39DFDF8F7 - 2b5d19695587cc1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swift.Bool, Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable (__C.NSTimer) -&gt; () in Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/MKVison/autosecure/01062023/iOS/1.0.2/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "330"
+                  endingLineNumber = "330"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD9C1BCF-103D-4714-B54A-71923E9C1FB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "342"
+            endingLineNumber = "342"
+            landmarkName = "onSend(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CD9C1BCF-103D-4714-B54A-71923E9C1FB3 - 95e70fa31e06e205"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "332"
+                  endingLineNumber = "332"
+                  offsetFromSymbolStart = "6164">
+               </Location>
+               <Location
+                  uuid = "CD9C1BCF-103D-4714-B54A-71923E9C1FB3 - 95e70fa31e06dcfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "341"
+                  endingLineNumber = "341"
+                  offsetFromSymbolStart = "6092">
+               </Location>
+               <Location
+                  uuid = "CD9C1BCF-103D-4714-B54A-71923E9C1FB3 - 95e70fa31e06dcdb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/fleet_22052023/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "342"
+                  endingLineNumber = "342"
+                  offsetFromSymbolStart = "6092">
+               </Location>
+               <Location
+                  uuid = "CD9C1BCF-103D-4714-B54A-71923E9C1FB3 - 11c5d17d9c1ee151"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.FeedbackController.onSend(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mrfunlife/Documents/MKVison/autosecure/01062023/iOS/1.0.2/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Support/FeedbackController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "343"
+                  endingLineNumber = "343"
+                  offsetFromSymbolStart = "5824">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B58E59D4-94B5-4DDE-86C8-E505C06C21BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Fleet/Overview/OverviewViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "setInfoApp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Acht" customModuleProvider="target">
+            <connections>
+                <outlet property="locationLabel" destination="uyR-KH-lsL" id="5ry-0s-Cuv"/>
+                <outlet property="locationView" destination="mTc-Rw-ivU" id="oCL-tE-OWE"/>
+                <outlet property="mapView" destination="g5m-GC-Psj" id="0Fe-8T-UxS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g5m-GC-Psj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTc-Rw-ivU">
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyR-KH-lsL">
+                            <rect key="frame" x="25" y="36.5" width="260" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qA-ZL-GiU">
+                            <rect key="frame" x="297" y="20" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3s2-Ts-JHQ"/>
+                                <constraint firstAttribute="width" secondItem="1qA-ZL-GiU" secondAttribute="height" multiplier="1:1" id="b7a-I8-v6e"/>
+                            </constraints>
+                            <state key="normal" image="icon_route"/>
+                            <connections>
+                                <action selector="onOpenMap:" destination="-1" eventType="touchUpInside" id="rx3-82-yj9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50460188356164382" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="900" constant="90" id="63H-9N-QIJ"/>
+                        <constraint firstItem="1qA-ZL-GiU" firstAttribute="centerY" secondItem="mTc-Rw-ivU" secondAttribute="centerY" priority="900" id="6Le-XF-pAc"/>
+                        <constraint firstItem="ThH-Oq-wXc" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1qA-ZL-GiU" secondAttribute="bottom" id="Jdl-6A-MQe"/>
+                        <constraint firstItem="1qA-ZL-GiU" firstAttribute="leading" secondItem="uyR-KH-lsL" secondAttribute="trailing" constant="12" id="ShB-G5-3Ws"/>
+                        <constraint firstItem="uyR-KH-lsL" firstAttribute="centerY" secondItem="1qA-ZL-GiU" secondAttribute="centerY" id="bk0-Eo-VOS"/>
+                        <constraint firstItem="1qA-ZL-GiU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ThH-Oq-wXc" secondAttribute="top" constant="20" id="bmn-QY-mFd"/>
+                        <constraint firstItem="uyR-KH-lsL" firstAttribute="leading" secondItem="mTc-Rw-ivU" secondAttribute="leading" constant="25" id="eLH-HU-vaf"/>
+                        <constraint firstAttribute="trailing" secondItem="1qA-ZL-GiU" secondAttribute="trailing" constant="28" id="mU1-ob-apE"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="ThH-Oq-wXc"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g5m-GC-Psj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2zx-Tt-r4c"/>
+                <constraint firstItem="mTc-Rw-ivU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9nf-km-LO4"/>
+                <constraint firstItem="mTc-Rw-ivU" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Mod-3H-SmR"/>
+                <constraint firstItem="g5m-GC-Psj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TQs-NZ-GTo"/>
+                <constraint firstItem="g5m-GC-Psj" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="hDa-oZ-GS2"/>
+                <constraint firstItem="g5m-GC-Psj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nkg-Vh-bhe"/>
+                <constraint firstItem="mTc-Rw-ivU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="wVn-Td-NKP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="110.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_route" width="50" height="50"/>
+    </resources>
+</document>

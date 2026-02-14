@@ -1,0 +1,13 @@
+//
+//  ProfileActions.swift
+//  Fleet
+//
+//  Created by forkon on 2019/11/13.
+//  Copyright © 2019 waylens. All rights reserved.
+//
+
+import ReSwift
+
+enum ProfileActions: ReSwift.Action {
+    case composingProfileInfo(ProfileInfoType)
+}

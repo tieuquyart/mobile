@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HNSignBoard" customModule="Acht" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="kax-BP-41Y" id="y0H-sr-VJE"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jBs-T8-wna"/>
+                <outlet property="detailLabel" destination="0ph-Co-GLD" id="k9e-qh-o6U"/>
+                <outlet property="icon" destination="JEF-5e-XEu" id="tCa-Hd-Rcx"/>
+                <outlet property="loadingIcon" destination="7wJ-k7-d6x" id="gxu-iY-55n"/>
+                <outlet property="titleLabel" destination="WhT-5c-Jff" id="pjP-DU-P7M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-SC-tzm">
+                    <rect key="frame" x="159.66666666666666" y="114.66666666666666" width="94.666666666666657" height="185.99999999999997"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wJ-k7-d6x" customClass="APNGImageView" customModule="WaylensAPNGKit">
+                            <rect key="frame" x="32.333333333333343" y="0.0" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="9eD-I1-ywy"/>
+                                <constraint firstAttribute="height" constant="30" id="v44-EM-siS"/>
+                            </constraints>
+                        </view>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_sign_error" translatesAutoresizingMaskIntoConstraints="NO" id="JEF-5e-XEu">
+                            <rect key="frame" x="22.333333333333343" y="38" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JEF-5e-XEu" secondAttribute="height" multiplier="1:1" id="GwN-hI-XNt"/>
+                                <constraint firstAttribute="height" constant="50" id="L7L-VA-j1I"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SD Card Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhT-5c-Jff">
+                            <rect key="frame" x="0.0" y="96" width="94.666666666666671" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" red="0.20392156862745098" green="0.25882352941176467" blue="0.32941176470588235" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="SD Card Error"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ph-Co-GLD">
+                            <rect key="frame" x="10.666666666666686" y="121.00000000000003" width="73.333333333333329" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <color key="textColor" red="0.20392156862745098" green="0.25882352941176467" blue="0.32941176470588235" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kax-BP-41Y">
+                            <rect key="frame" x="6.3333333333333428" y="146.00000000000003" width="82" height="40"/>
+                            <color key="backgroundColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="ROe-xt-vcw"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="18" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="tJ4-SC-tzm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.6" id="G9S-tJ-ZMN"/>
+                <constraint firstItem="tJ4-SC-tzm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UAO-2C-1df"/>
+                <constraint firstItem="tJ4-SC-tzm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" id="eZN-Tn-FGH"/>
+                <constraint firstItem="tJ4-SC-tzm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pq0-Us-c4c"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="34" y="-42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_sign_error" width="50" height="50"/>
+    </resources>
+</document>

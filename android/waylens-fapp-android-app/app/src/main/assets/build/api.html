@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+    <title>React Transform Boilerplate</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+</head>
+<body unselectable="on">
+<div id="root" class="hachi-ban">
+</div>
+<script type="text/javascript" src="prefix.js"></script><script type="text/javascript" src="api.js"></script></body>
+<script>
+    // For on-the-fly (e.g. live view) usage ONLY
+    /**
+     * @method set the overlay params to the buffer, not take effect immediately
+     * @param { json }
+     *
+     * Style
+     * @param { {theme: "neo"} } -change the theme , value of acceptance:["neo","default","rifle","None"]
+     *
+     * @param { {rpm: number} } -set the value of RPM gauge
+     * @param { {psi: number} } -set the value of BOOST gauge, Unit of acceptance: inHg
+     * @param { {throttle: number} } -set the value of speed gauge, range of acceptance :[]
+     * @param { {whp: number} }
+     *
+     * @param { {gpsSpeed: number} } -set the value of speed gauge, Unit of acceptance: km/h
+     * @param { {obdSpeed: number} } -set the value of speed gauge, Unit of acceptance: km/h
+     * @param { {mph: number} } -deprecated set the value of speed gauge, unit of acceptance:mph
+     *
+     * @param { {gforceBA: number} } -set the value of beforeAfter of Gforce gauge
+     * @param { {gforceLR: number} } -set the value of LeftRight of Gforce gauge
+     *
+     * @param { {lat: number} } -set latitude for GPS
+     * @param { {lng: number} } -set longitude for GPS
+     *
+     * @param { {roll: number} } -set roll
+     * @param { {pitch: number} } -set pitch
+     *
+     * @param { {startTail: number} -set the start time point of showing up tail, Unit of acceptance:ms
+     *
+     * @param { {playTime: number} -set the process of video playing, Unit of acceptance:ms
+     * playTime will influence the opacity of tail,countDown gauge, and LapTimer gauge
+     *
+     * @param { {time: Date} }
+     * @param { {ambient: {tempF: number,windSpeedMiles: number, pressure: number,humidity: number,weatherCode: number} } }
+     * unit of tempF: ℉, windSpeedMiles:mph, pressure: hPa
+     * @example
+     * setState({ambient:{tempF: 0, windSpeedMiles: 0, pressure: 88.8, humidity: 0, weatherCode: 88}})
+     *
+     * Waylens GO!
+     * @param { {countTimePoints: {t1: number,t2: number ,t3: number,t4: number,t5: number,t6: number, t7:number, t8:number} }} -unit of number: Millisecond
+     * @description t1: countDown point, t2: car runing point, t3:30mph, t4:50kmh, t5:60mph,t6:100kmh, t7:100mph, t8:160kmh,t9:400m,t10:1/4mile
+     *
+     * Config
+     * @param { {ifRotate: Boolean} } -this should set true when the camera is upside down
+     * @param { {showMap: Boolean} }  -use only for desktop
+     * @param { {perUnit: String} }  -转换公英制,value of acceptance:["metric","US","imperial"]
+     * @param { {colorScheme: number| String} } -change the color of theme
+     * Laptimer Param
+     * @param { {totalLaps: number} }
+     * @param { {bestLapTime: number} } - ms
+     * @param { {topSpeedKmh: number} } -kmh
+     * @param { {maxGForce: number} }   -mg
+     * @param { {trackName: string} }
+     * @param { {rifleLayout: string} } -change the layout , value of acceptance:["L","M"]
+     * @param { {lapTimeList: list} }
+     * @param { {gpsList: object} }
+
+     *
+     * @example common method to change the properties of dashboard
+     * setState({ name : value })
+     *
+     * @example setTime
+     * setState({time: new Date('December 17, 1995 03:24:00')});
+     * setState({time: numericMonthDate('12 17, 1995 03:24:00')});
+     *
+     * @example set Count Down
+     * setState({countTimePoints:{t1:1000,t2:2000,t3:3000,t4:4000,t5:5000,t6:6000,t7:7000,t8:8000,t9:9000,t10:10000,}})
+     * setState({playTime: 1});
+     *
+     * @example set Tail time of video
+     * setState({startTail: 100000});
+     * setState({playTime: 1});
+     *
+     * @example change the layout of theme
+     * setState({showMap: false}); //used for desktop to hide the map
+     * setState({showSpeedThrottle:"L"});update()
+     * setState({showCountDown:"L"});update()
+     * setState({showAmbient:"L"});update()
+     * setState({showTimeDate:"S"});update()
+     * setState({showGforce:"L"});update()
+     * setState({showRollPitch:"L"});update()
+     * setState({showGps:"M"});update()
+     * setState({showPsi:"M"});update()
+     * setState({showCountDown:"L"});update()
+     *
+     * @example  how to set the lap Timer info
+     * setState( {gpsList: {
+     *  "captureTime": [0, 10000, 20000, 25000, 30000, 40000, 45000, 50000, 60000, 70000, 80000, 85000, 90000, 95000, 990000],
+     *  "coordinate": {
+     *    "coordinates": [[21, 51],[22, 50],[23, 51],[24, 54],[25, 35],[26, 21],[27, 29],[28, 30],[29, 41],[28, 51],[27, 55],[26, 57],[25, 58],[24, 52],[23, 51],[22, 52],[21, 34],[20, 43],]}
+     *    })
+     *
+     * setState({
+        lapTimeList: [
+            {
+              totalLapTime: 25000,
+              startOffsetMs: 0,
+              checkIntervalMs: 10000,
+              deltaMsToBest: [1000.1, 200.3]
+            },
+            {
+              totalLapTime: 25000,
+              startOffsetMs: 25000,
+              checkIntervalMs: 8000,
+              deltaMsToBest: [1000.1, 123, 999]
+            },
+            {
+              totalLapTime: 30000,
+              startOffsetMs: 50000,
+              checkIntervalMs: 10000,
+              deltaMsToBest: [1000.1, 123, 999]
+            },
+            {
+              totalLapTime: 19000,
+              startOffsetMs: 80000,
+              checkIntervalMs: 5000,
+              deltaMsToBest: [1000.1, 123, 999, 123, 45345]
+            }
+          ]})
+     *
+     * @return {null}
+     * @static
+     */
+    var setState = hachi.gauge.setBuffer.bind(hachi.gauge);
+    /**
+     * @method
+     * @requires this method should called after setState({...})
+     * @param null
+     * @return {null}
+     * @static
+     */
+    var update = hachi.gauge.setStateByBuffer.bind(hachi.gauge);
+
+    /**
+     * @description
+     * update data: in previous version ,you use the setState to update the data.but now it is recommended to use setRawData,for setState method wont auto hide or show gauge.
+     * 更新数据的时候我们建议你使用setRawData 而不是setState.因为使用setState不能自动隐藏 gauge.
+     * setRawData will clear the previous status:
+     * setRawData({A:a,B:b,C:c});   |
+     * setRawData({B:b});           | == setState({B:b});update();
+     * setRawData({A:a,B:b,C:c});   |
+     * setRawData({B:b,C:c});       | ==setState({B:b,C:c});update();
+     * following command will hide all gauge expect rpm gauge
+     * setRawData({rpm: 88.8})
+     * 等价于:
+     * setState({rpm: 88.8, mph: null, throttle: null, psi: null, gforceBA: null, gforceLR: null, lat:null, lng:null, roll:null, pitch: null, ambient:null, time:null, gpsSpeed: null, obdSpeed: null})
+     * @example
+     * setRawData({
+                            rpm: 88.8,
+                            mph: 88.8, //deprecated ,please set gpsSpeed and obdSpeed
+                            throttle: 88.8,
+                            whp: 88.8,
+                            psi: 88.8,
+                            gforceBA: 88.8,
+                            gforceLR: 88.8,
+                            lat: 8.8,
+                            lng: 8.8,
+                            roll: 88.8,
+                            pitch: 88.8,
+                            ambient: {
+                                tempF: 0,
+                                windSpeedMiles: 0,
+                                pressure: 88.8,
+                                humidity: 0,
+                                weatherCode: 88
+                            },
+                            time: new Date(),
+                            gpsSpeed: 88.8, // gps speed unit is km/h  it will auto transformed to mph
+                            obdSpeed: 77.8,// gps speed unit is km/h  it will auto transformed to mph
+                           })
+     * following command will hide all gauge expect speed gauge,
+     * setRawData({
+                        mph: 66.6,
+                        gpsSpeed: 55.5, // we will use gps speed,obd speed and mph will not work;
+                        obdSpeed: 77.8,
+                    })
+     */
+    var setRawData = hachi.gauge.setRawData.bind(hachi.gauge);
+    /**
+     * @description reset layout,you needn't reset the layout by youself ,you can just use this method to achieve it.
+     *              将gauge 设置为默认的布局,可以通过此函数来实现.
+     *              setDefaultLayout();等价于:
+     *                setState({
+     *                  showSpeedThrottle: 'L',//options:(L,M,S)
+     *                  showRpm: 'M',//options:(L,M,S)
+     *                  showAmbient: 'S',//options:(L,M,S)
+     *                  showTimeDate: 'S',//options:(S)
+     *                  showGforce: 'L',//options:(L,M,S)
+     *                  showRollPitch: 'M',//options:(L,M,S)
+     *                  showGps: 'L',//options:(L,M)
+     *                  showPsi: "S",//options:(L,M,S)
+     *              });
+     *              update()
+     * @example setDefaultLayout();
+     * @return null
+     * @static
+     */
+    var setDefaultLayout = hachi.gauge.setDefaultLayout.bind(hachi.gauge);
+
+    var getCurrentLayout = hachi.gauge.getCurrentLayout.bind(hachi.gauge);
+
+    /**
+     * @description  the default behavior of every gauge is hidden.  you must init gauge when there is no style config or raw data,you can use this method to show the default gauge ,even when the data is empty.
+     * 当没有设置style数据或者任何rawdata数据的时候,你必须调用此函数,来显示默认的gauge ,因为所有的gauge默认都是隐藏的.
+     * if you apply the gauge style config and set rawData to gauge,this method is useless.
+     * 如果你已经设置了 gauge 的style 并且设置了gauge的数值,那么没有必要使用它
+     * @example initDefaultGauge()
+     * @static
+     * */
+    var initDefaultGauge = hachi.gauge.initDefaultGauge.bind(hachi.gauge);
+
+
+    /**
+     * @description change the gauge size
+     *              改变gauge 的大小
+     * @param { String } -gaugeName, value of acceptance:[ Rpm, SpeedThrottle,  Ambient, Psi, TimeDate, Gforce, RollPitch, Gps]
+     * @param { String } -gaugeSIze, value of acceptance:['L', 'S', 'M', 'None']
+     * @example setGauge("Rpm", "S");
+     * setState({showRpm: "S"});update();
+     * @static
+     */
+    var setGauge = hachi.gauge.setGauge.bind(hachi.gauge);
+
+    /**
+     * @description change the gauge theme
+     *              改变gauge的 风格
+     * @param { String } -gaugeName, value of acceptance:[ 'neo', 'default', 'None']
+     * @example setTheme("neo");
+     * setState({theme: "neo"}); update();
+     * @static
+     */
+    var setTheme = hachi.gauge.setTheme.bind(hachi.gauge);
+
+    /**
+     * @description 告诉gauge 现在的播放时间
+     * @deprecated please use setState({playTime:123});update()
+     * @param { Number } -unit of acceptance: millisecond
+     * @example  setPlayTime(123)
+     * @static
+     */
+    var setPlayTime = hachi.gauge.setPlayTime.bind(hachi.gauge);
+
+    /**
+     * @description 配置countdown gauge 的时间节点
+     * @deprecated please use setState({countTimePoints:{t1:1,t2:2,t3:3,t4:4,t5:5,t6:6,t7:7,t8:8,t9:9,t10:10}});update()
+     * @param { Number } -unit of acceptance: millisecond
+     * @example  setTimePoints({t1:1,t2:2,t3:3,t4:4,t5:5,t6:6,t7:7,t8:8,t9:9,t10:10})
+     * @static
+     */
+    var setTimePoints = hachi.gauge.setTimePoints.bind(hachi.gauge);
+
+    /**
+     * @description 返回 是否显示了地图，注意这里的地图不是指GPS gauge
+     * @return { Boolean }
+     * @static
+     */
+    var isShowMap = function () {
+        return document.getElementsByClassName('map-core')[0]
+    }
+
+    /**
+     * @description 取得地图的位置和大小
+     * @return { {bottom:Number, height:Number, left:Number, right:Number, top:Number, width: Number} }
+     * @static
+     */
+    var getMapCorePosition = function () {
+        setRawData({
+                    lat: 1,
+                    lng: 1
+                }
+        )
+        var tmp = document.getElementsByClassName('map-core')[0].getBoundingClientRect();
+        return tmp;
+    };
+
+    // For static (e.g. transcoding) usage ONLY
+    /**
+     * @description server transcoding test demo
+     *  injectRawData([
+     * {
+     *  "duration": 2000,
+     *  "url": "http://ws.waylens.com:8999/api/v3/moments/raw?guid=0c0651a3-1b46-4701-a434-d6f6166ec43e_00094ae800001388&offset=0&count=2000&start=2000&freq=0"
+     * }],20);
+     * updateByFrame(102);
+     */
+    var injectRawData = hachi.gauge.injectRawData.bind(hachi.gauge);
+    var updateByFrame = hachi.gauge.updateByFrame.bind(hachi.gauge);
+
+
+    var getOverlayOption = hachi.gauge.getOverlayOption.bind(hachi.gauge);
+    var fixRenderingsByResizeMap = function () {
+        var BackgroundEl = document.getElementsByClassName('hack-className-for-renderings-changeBackground')
+        if (!BackgroundEl || !BackgroundEl.length) {
+            setTimeout(fixRenderingsByResizeMap, 80)
+        }
+        var mapEl = document.getElementsByClassName('map-core')
+        if (BackgroundEl && BackgroundEl[0]) {
+            BackgroundEl[0].style.fill = 'rgb(77,69,90)'
+        }
+        if (mapEl && mapEl[0]) {
+            mapEl[0].style.borderRadius = '0%'
+            mapEl[0].style.zIndex = 1;
+            if (getOverlayOption('theme') == 'neo') {
+                mapEl[0].style.width = '73%';
+                mapEl[0].style.height = '65%';
+                mapEl[0].style.marginTop = '11%'
+
+            }
+            else if (getOverlayOption('theme') == 'default') {
+                mapEl[0].style.width = '60%';
+                mapEl[0].style.height = '60%';
+            }
+        }
+    }
+    // Utils
+    var isMapLoaded = hachi.gauge.isMapLoaded.bind(hachi.gauge)
+    var isThemeLoaded = hachi.gauge.isThemeLoaded.bind(hachi.gauge)
+    var clearAllState = hachi.gauge.clearAllState.bind(hachi.gauge)
+    var getAllGaugeOptions = hachi.gauge.getAllGaugeOptions.bind(hachi.gauge)
+    var numericMonthDate = hachi.numericMonthDate
+    var getHachiVersion = hachi.getHachiVersion
+    var swapLatlngForGpsList = function (gpsList) {
+        if (!gpsList.coordinate.coordinates) {
+            console.log("The gps Format is incorrect!")
+            return null
+        }
+        gpsList.coordinate.coordinates = gpsList.coordinate.coordinates.map(function (o) {
+            return [o[1], o[0]]
+        })
+        return gpsList
+    }
+</script>
+</html>

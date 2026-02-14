@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite">
+
+    <RelativeLayout
+        android:id="@+id/rl_current_ver"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@drawable/border_bg_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_current_version"
+            style="@style/SettingItemGraySmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_25"
+            tools:text="Current: 1.10.04 (2.45.32.72.277)" />
+
+    </RelativeLayout>
+
+    <ViewAnimator
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:id="@+id/va_firmware"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/ll_beta_tester"
+        android:layout_below="@id/rl_current_ver">
+
+        <include layout="@layout/layout_firmware_detail" />
+
+        <include layout="@layout/layout_firmware_latest" />
+
+    </ViewAnimator>
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:id="@+id/ll_beta_tester"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/item_common_background"
+        android:visibility="invisible">
+
+        <TextView
+            style="@style/SettingItemPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_26"
+            android:layout_weight="1"
+            android:text="@string/support_beta_firmware" />
+
+        <Button
+            android:id="@+id/btn_beta_tester"
+            android:layout_width="@dimen/dp_82"
+            android:layout_height="@dimen/dp_26"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_26"
+            android:background="@drawable/blue_stroke_background"
+            android:text="@string/support_beta_tester_no"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</RelativeLayout>

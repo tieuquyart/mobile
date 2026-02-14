@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_small"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.mk.autosecure.ui.activity.settings.AssetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/asset_management"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:visibility="gone"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorBackgroundBlue"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:tabSelectedTextColor="@color/colorBaseFleet"
+        app:tabTextAppearance="@style/MyTablayoutstyle"
+        app:tabTextColor="@color/colorPrimary" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        android:layout_above="@id/lyBottom"
+        />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lyBottom"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundBlue">
+
+        <Button
+            android:id="@+id/btn_add_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/background_add_member"
+            android:text="@string/_add_new_vehicle"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBaseFleet" />
+
+        <Button
+            android:id="@+id/btn_add_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/background_add_member"
+            android:text="@string/_add_new_camera"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBaseFleet"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_add_driver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/background_add_member"
+            android:text="@string/_add_new_driver"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBaseFleet"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

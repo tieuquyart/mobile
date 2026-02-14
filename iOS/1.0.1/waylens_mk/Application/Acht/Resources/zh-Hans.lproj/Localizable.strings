@@ -1,0 +1,2514 @@
+
+/*  May increase data usage rapidly. */
+" May increase data usage rapidly." = " 会迅速用掉更多流量。";
+
+/* Date format */
+"%dh%dm%ds" = "%d小时%d分钟%d秒";
+
+/* Date format */
+"%dhour" = "%d小时";
+
+/* Date format */
+"%dm%ds" = "%d分钟%d秒";
+
+/* Date format */
+"%dmin" = "%d分钟";
+
+/* Date format */
+"%ds" = "%d秒";
+
+/* Date format */
+"%dsec" = "%d秒";
+
+/* %d dBm or less */
+"%d dBm or less" = "%d dBm或者更小";
+
+/* %d dBm or greater */
+"%d dBm or greater" = "%d dBm或者更大";
+
+/* Date format */
+"%.f days ago" = "%.f天前";
+
+/* Date format */
+"%.f hours ago" = "%.f小时前";
+
+/* Date format */
+"%.f minutes ago" = "%.f分钟前";
+
+/* Date format */
+"%.f months ago" = "%.f个月前";
+
+/* Date format */
+"%.f seconds ago" = "%.f秒前";
+
+/* Date format */
+"%.f weeks ago" = "%.f周前";
+
+/* Date format */
+"%.f years ago" = "%.f年前";
+
+/* %@ disconnected */
+"%@ disconnected" = "%@已断开连接";
+
+/* %@ of %@ used */
+"%@ of %@ used" = "已用%@，共%@";
+
+/* Date format */
+"1 minute ago" = "1分钟前";
+
+"1300 Anchorage Rd, Wilmington" = "上海市浦东新区张衡路1000弄21号";
+
+"2300 E Ocean Blvd, Long Beach, CA" = "上海市浦东新区哈雷路1299号";
+
+"40 S Locust Ave, Long Beach, CA" = "上海市浦东新区金科路2889号";
+
+/* 4G Live */
+"4G Live" = "直播";
+
+"4G Plan" = "4G套餐";
+
+"5:01 AM" = "上午5:01";
+
+"8:00 AM" = "上午8:00";
+
+"8:06 AM" = "上午8:06";
+
+"8:20 AM" = "上午8:20";
+
+/* About */
+"About" = "关于";
+
+/* Account */
+"Account" = "账号";
+
+/* ACTIVE */
+"ACTIVE" = "当前";
+
+/* Add */
+"Add" = "添加";
+
+/* Add Camera */
+"Add Camera" = "添加摄像机";
+
+/* Add camera to your account. */
+"Add camera to your account." = "请添加摄像机到你的账号。";
+
+"Add new camera" = "添加新摄像机";
+
+/* Add to My Account */
+"Add to My Account" = "添加到到我名下";
+
+"Advanced Settings" = "高级设置";
+
+/* Album */
+"Album" = "视频库";
+
+"Alert when bumps occur while driving" = "当开车时发送震动，推送通知";
+
+"Alert when bumps occur while parked" = "当停车时发送震动，推送通知";
+
+"Alert when impact is detected while driving" = "当开车时发生撞击，推送通知";
+
+"Alert when impact is detected while parked" = "当停车时发生撞击，推送通知";
+
+"Alert when motion is detected while parked" = "当停车时有人靠近，推送通知";
+
+/* Alert: Bump and More */
+"Alert: Bump and More" = "提醒: 震动或更严重的事件";
+
+/* Alert: Motion and More */
+"Alert: Motion and More" = "提醒: 有人靠近或更严重的事件";
+
+/* Alert: Off */
+"Alert: Off" = "提醒: 关";
+
+/* Alert: Only Impact */
+"Alert: Only Impact" = "提醒: 仅撞击事件";
+
+/* Alerts */
+"Alerts" = "提醒";
+
+/* Events from Secure360 4G will be here */
+"Events from Secure360 4G will be here" = "来自 Secure360 4G 的事件会出现在这里";
+
+/* All */
+"All" = "全部";
+
+/* All data will be erased from SD card.\nAre you sure? */
+"all_data_will_be_erased_from_sd_card" = "所有SD卡里的数据都将删除，确定格式化?";
+
+/* Always Send */
+"Always Send" = "总是发送";
+
+"and" = "和";
+
+/* App Crashed */
+"App Crashed" = "刚从崩溃中恢复";
+
+/* App Update Available */
+"App Update Available" = "应用有更新";
+
+/* %@(%@)\nUpdated at %@\n\n%@ */
+"app_update_available_message" = "%@(%@)\n更新于 %@\n\n%@";
+
+/* Applying camera settings... */
+"Applying camera settings..." = "正在修改设置...";
+
+/* Audio */
+"Audio" = "声音";
+
+"Audio Prompt" = "声音提示";
+
+/* SD Card Available Storage */
+"Available" = "可用空间";
+
+"Back" = "返回";
+
+/* Band */
+"Band" = "频段";
+
+/* Beta Firmware Tester */
+"Beta Firmware Tester" = "固件测试";
+
+/* Bind Failed */
+"Bind Failed" = "绑定失败";
+
+/* Binding */
+"Binding" = "正在绑定";
+
+/* Buffered */
+"Buffered" = "普通视频";
+
+"Buffered Videos" = "普通视频";
+
+/* Bump */
+"Bump" = "震动";
+
+/* Bump   */
+"Bump  " = "震动  ";
+
+/* Bump while driving */
+"Bump while driving" = "行驶中的震动";
+
+/* Bump while parked */
+"Bump while parked" = "停车时的震动";
+
+/* Cache cleared */
+"Cache cleared" = "缓存数据已清空";
+
+/* Camera */
+"Camera" = "摄像机";
+
+/* Camera added */
+"Camera added" = "摄像机已添加";
+
+"Camera log is only available via WiFi connection" = "设备日志仅在WiFi连接下才可获取";
+
+/* Camera may reboot several times during the update process. Standy by. */
+"Camera may reboot several times during the update process. Standy by." = "更新过程中摄像机可能会重启几次，已准备就绪。";
+
+/* Camera Not Added */
+"Camera Not Added" = "摄像机尚未添加";
+
+/* Camera offline */
+"Camera offline" = "摄像机离线";
+
+/* Camera Offline */
+"Camera Offline" = "摄像机离线";
+
+/* Camera Removed */
+"Camera Removed" = "摄像机已移除";
+
+/* Camera Settings */
+"Camera Settings" = "摄像机设置";
+
+/* Camera settings applied. */
+"Camera settings applied." = "摄像机设置已生效.";
+
+/* Camera Setup */
+"Camera Setup" = "摄像机安装";
+
+/* Camera Updating */
+"Camera Updating" = "摄像机固件更新";
+
+/* Camera will sleep and lose connection after %ds */
+"Camera will sleep and lose connection after %ds" = "%d秒后摄像机将进入睡眠模式并断开连接。";
+
+"Camera will sleep and lose connection after 30s" = "30秒后摄像机将进入睡眠模式并断开连接。";
+
+/* camera's SD card */
+"camera's SD card" = "摄像机的SD卡";
+
+/* Connection failed. Try to long-press the button on camera dock to reboot. */
+"camera_client_failure_message" = "连接失败，请尝试长按底座上的按钮重新启动。";
+
+"CAMERA_ONLINE_FORMAT" = "你的%@已上线!";
+
+"CAMERA_OFFLINE_FORMAT" = "你的%@已离线!";
+
+/* Cameras */
+"Cameras" = "摄像机";
+
+/* Cancel */
+"Cancel" = "取消";
+
+"Cancelled" = "已取消";
+
+/* Cancel download video */
+"Cancel download video" = "取消下载";
+
+/* Cellular network */
+"Cellular network" = "蜂窝网络";
+
+/* Cellular network is not available. Please move to another location and try again. */
+"cellular_network_outage_message" = "没有蜂窝网络，请换个地方再试。";
+
+/* Sorry, roaming not supported. */
+"cellular_network_roaming_message" = "不支持漫游，很抱歉。";
+
+/* CEREG */
+"CEREG" = "CEREG";
+
+"Change Password" = "修改密码";
+
+/* Check 4G network connection */
+"Check 4G network connection" = "检查4G网络连接";
+
+"Check power cord" = "检查电源线";
+
+/* Check it out */
+"Check it out" = "立即更新";
+
+/* Checking */
+"Checking" = "正在获取";
+
+"Checking for update" = "检查更新";
+
+/* Choose a photo */
+"Choose a photo" = "选取照片";
+
+/* Clear */
+"Clear" = "清除";
+
+/* Clear Cache */
+"Clear Cache" = "清除缓存";
+
+/* total cache size: calculating... */
+"clear_cache_message" = "总缓存大小: 计算中...";
+
+/* Clip duration is %f */
+"Clip duration is %f" = "视频时长是%f";
+
+/* clip length */
+"Clip Length" = "视频长度";
+
+"Clips" = "视频片段";
+
+/* cloud */
+"cloud" = "云端";
+
+/* Cloud */
+"Cloud" = "云端";
+
+/* Come back and retry later. */
+"Come back and retry later." = "请稍后重试。";
+
+"Confirm new password" = "确认新密码";
+
+/* Password does not match */
+"passowrd_not_match_tip" = "密码不匹配";
+
+/* Connect Waylens-XXXXX, then return to app. */
+"Connect Waylens-XXXXX, then return to app." = "连接Waylens-XXXXX，然后返回应用。";
+"Connect camera's Wi-Fi, then return to app." = "连接相机的Wi-Fi，然后返回应用。";
+
+/* Connect your camera's Wi-Fi and update. */
+"Connect your camera's Wi-Fi and update." = "连接摄像机的Wi-Fi进行更新。";
+
+/* Connect your camera's Wi-Fi to access videos. */
+"Connect your camera's Wi-Fi to access videos." = "连接摄像机的Wi-Fi来访问视频。";
+
+/* Connect your Secure360 camera */
+"Connect your Secure360 camera" = "连接你的Secure360摄像机";
+
+/* Locate the WiFi password on the label attached to the camera or Installation Guide.\nConnect your device to “Waylens-XXXXX” hotspot and return to the app. */
+"connect_device_description" = "在摄像机底部的标签或《安装指南》上找到Wi-Fi密码。\n连接你的设备到“Waylens-XXXXX”Wi-Fi热点，然后返回应用。";
+"connect_device_description_fleet" = "在摄像机底部的标签或《安装指南》上找到Wi-Fi密码。\n连接你设备的Wi-Fi热点，然后返回应用。";
+
+/* Connected */
+"Connected" = "已连接";
+
+/* Connecting */
+"Connecting" = "正在连接";
+
+/* connecting */
+"connecting" = "正在连接";
+
+/* Connecting... */
+"Connecting..." = "正在连接...";
+
+/* Continue */
+"Continue" = "继续";
+
+"Create Account" = "创建账号";
+
+"Create Password" = "设置密码";
+
+/* current firmware version */
+"Current" = "当前版本";
+
+"Current password" = "当前密码";
+
+/* Custom */
+"Custom" = "自定义";
+
+/* Custom settings */
+"Custom settings" = "自定义设置";
+
+/* day */
+"d" = "天";
+
+/* Data plan */
+"Data plan" = "流量套餐";
+
+/* Subscription expired. Please renew or select a new subscription. */
+"data_plan_expired_message" = "套餐已过期。请续订或重新购买套餐。";
+
+/* No subscription. Please subscribe to a data plan for the camera. */
+"data_plan_not_subscribed_message" = "没有套餐。请为摄像机购买流量套餐。";
+
+/* Service suspended. You can purchase add-on to recover the service. */
+"data_plan_suspended_message" = "服务已暂停。请购买流量包来恢复服务。";
+
+/* Debug */
+"Debug" = "调试";
+
+/* Debug Options */
+"Debug Options" = "调试选项";
+
+/* Default setting */
+"Default setting" = "默认设置";
+
+/* Delete */
+"Delete" = "删除";
+
+/* Delete video */
+"Delete video" = "删除视频";
+
+"Detected vehicle power" = "检测到的汽车电源状态";
+
+/* Detection: Bump and More */
+"Detection: Bump and More" = "检测: 震动或更严重的事件";
+
+/* Detection: Motion and More */
+"Detection: Motion and More" = "检测: 雷达或更严重的事件";
+
+/* Detection: Off */
+"Detection: Off" = "检测: 关";
+
+/* Detection: Only Impact */
+"Detection: Only Impact" = "检测: 仅撞击事件";
+
+/* The camera is already added to another account, remove it first. */
+"device_bound_to_another_user_message" = "该摄像机已经添加到另一个帐户，请先将其移除。";
+
+/* Disable Alerts */
+"Disable Alerts" = "关闭通知";
+
+/* Disable notification for all events? */
+"Disable notification for all events?" = "确定要关闭所有事件的通知吗？";
+
+/* Done */
+"Done" = "完成";
+
+/* Download */
+"Download" = "下载";
+
+/* Download failed */
+"Download failed" = "下载失败";
+
+/* Download video */
+"Download video" = "下载视频";
+
+/* Downloaded */
+"Downloaded" = "已下载";
+
+/* Downloading */
+"Downloading" = "正在下载";
+
+/* Downloading camera log */
+"Downloading camera log" = "正在获取设备日志";
+
+"Download firmware from this link?" = "从这个链接下载固件吗？";
+
+/* Drag handles within a video to specifically select the range for export. */
+"Drag handles within a video to specifically select the range for export." = "拖动视频中的控制条来选择要导出的范围。";
+
+/* Drive Mode */
+"Drive Mode" = "开车模式";
+
+/* Driving */
+"Driving" = "开车模式";
+
+/* %@ detected an impact while driving */
+"DRIVING_HEAVY_HIT" = "%@开车模式下检测到一次撞击";
+
+"DRIVING_HIT" = "%@开车模式下检测到一次碰撞";
+
+"DATA_WARNING" = "%@当日流量使用超过了%@MB";
+
+"Email" = "邮箱";
+
+/* Email still not received? \nUse a different email address */
+"email_not_received_button_title" = "邮件仍未收到？ \n使用其它邮箱地址。";
+
+/* Please enter valid email address */
+"email_tip" = "请输入有效的邮箱地址";
+
+/* Enable %@ notifications via your device menu:\n\"Settings\"->\"Notifications\"->\"%@\" */
+"enable_notifications_alert_message" = "从系统设置中打开%@的消息推送:\n“设置”->“通知”->“%@”";
+
+/* Error */
+"Error" = "错误";
+
+/* Event Video Management */
+"Event Video Management" = "事件视频管理";
+
+/* Event video will be uploaded to the cloud when an impact is detected. */
+"Event video will be uploaded to the cloud when an impact is detected." = "检测到撞击时会上传事件视频到云端。";
+
+/* Event video will be uploaded to the cloud when any activity is detected. */
+"Event video will be uploaded to the cloud when any activity is detected." = "检测到任何事件时会上传事件视频到云端。";
+
+/* Event video will be uploaded to the cloud when any bump or impact is detected. */
+"Event video will be uploaded to the cloud when any bump or impact is detected." = "检测到震动或撞击时会上传事件视频到云端。";
+
+"Event Videos" = "事件视频";
+
+/* Event videos are labeled in different colors according to their type.\n\n */
+"event_videos_labeled_in_different_colors" = "事件视频根据其类型被标记为不同的颜色。\n\n";
+
+/* Expired */
+"Expired" = "已过期";
+
+/* Explore the videos on camera */
+"Explore the videos on camera" = "浏览摄像机里的视频";
+
+/* Export */
+"Export" = "导出";
+
+/* Exporting   %d%% */
+"Exporting   %.2f%%" = "正在导出   %.2f%%";
+
+"Export As" = "导出为";
+
+/* Export Cancelled */
+"Export Cancelled" = "已取消导出";
+
+/* Export to Photo Library */
+"Export to Photo Library" = "导出到系统相册";
+
+/* For higher video quality and completeness, try to export videos from SD card via Wi-Fi connection. */
+"export_session_tip" = "要获得更完整更高质量的视频，请尝试通过Wi-Fi连接从SD卡导出视频。";
+
+/* Exported successfully */
+"Exported successfully" = "导出成功";
+
+/* Exported to Photo Library */
+"Exported to Photo Library" = "已导出到系统相册";
+
+/* Exported videos will be here */
+"Exported videos will be here" = "导出的视频会出现在这里";
+
+/* Exporting failed */
+"Exporting failed" = "导出失败";
+
+"External Firmware" = "外部固件下载";
+
+/* Factory Reset */
+"Factory Reset" = "恢复出厂设置";
+
+/* Your camera's settings will be reset to factory default(recorded videos will not be affected) */
+"factory_reset_message" = "摄像机将重置为出厂默认设置（录制的视频不会受到影响）";
+
+/* Fail to archive log files */
+"Fail to archive log files" = "获取日志文件失败";
+
+/* Fail to change password */
+"Fail to change password" = "修改密码失败";
+
+/* Fail to download camera log */
+"Fail to download camera log" = "下载摄像机日志失败";
+
+/* Fail to download the video */
+"Fail to download the video" = "下载视频失败";
+
+/* Fail to export video */
+"Fail to export video" = "导出视频失败";
+
+/* Fail to export video! */
+"Fail to export video!" = "导出视频失败！";
+
+/* Fail to get download url */
+"Fail to get download url" = "获取下载地址失败。";
+
+/* Fail to init transcoder: %@ */
+"Fail to init transcoder: %@" = "初始化转码器失败: %@";
+
+/* Fail to re-send verification */
+"Fail to re-send verification" = "重发验证邮件失败";
+
+/* Fail to reset password */
+"Fail to reset password" = "重置密码失败";
+
+/* Fail to save exported video to album */
+"Fail to save exported video to album" = "保存导出的视频到系统相册失败";
+
+/* Fail to save name */
+"Fail to save name" = "保存名称失败";
+
+/* Fail to send feedback */
+"Fail to send feedback" = "发送反馈失败";
+
+/* Fail to send verification */
+"Fail to send verification" = "发送验证邮件失败";
+
+/* failed */
+"failed" = "失败";
+
+/* Failed */
+"Failed" = "失败";
+
+/* Failed to add camera */
+"Failed to add camera" = "无法添加摄像机";
+
+/* Failed to apply camera settings to %@ */
+"Failed to apply camera settings to %@" = "修改%@摄像机设置失败";
+
+/* Failed to apply camera settings. */
+"Failed to apply camera settings." = "修改摄像机设置失败。";
+
+/* Failed to delete video */
+"Failed to delete video" = "删除视频失败";
+
+/* Failed to unzip file. */
+"Failed to unzip file." = "解压文件失败。";
+
+/* Failed to zip file. */
+"Failed to zip file." = "压缩文件失败。";
+
+/* FAQ */
+"FAQ" = "常见问题";
+
+/* Feedback */
+"Feedback" = "反馈";
+
+"Feedback on Secure360" = "关于Secure360的反馈";
+
+/* Feedback sent */
+"Feedback sent" = "反馈已经发送";
+
+/* Fetching events failed */
+"Fetching events failed" = "获取事件失败";
+
+/* No comment provided by engineer. */
+"File not found." = "找不到文件。";
+
+/* Finish */
+"Finish" = "完成";
+
+/* You've set up your Secure360 and have learned the basics of the app. Enjoy the peace of mind that comes with owning a Secure360! */
+"finish_setting_up_camera_detail" = "一切就绪，请享受Secure360带来的安心体验！";
+
+"Finished." = "已完成.";
+
+/* Finished.\nYour Direct Wire connection is verified! */
+"direct_wire_connection_finished_verifying" = "测试完成。\n直连线连接正确。";
+
+/* Firmware */
+"Firmware" = "固件";
+
+/* Firmware not downloaded yet. */
+"Firmware not downloaded yet." = "固件还没有下载。";
+
+/* Firmware out of date.\nPlease update your camera's firmware. */
+"firmware_out_of_date" = "固件版本过低，请更新。";
+
+/* Firmware update */
+"Firmware update" = "固件更新";
+
+/* Firmware update available for %@ */
+"Firmware update available for %@" = "%@有新的固件可用";
+
+"Fix it later" = "稍后修复";
+
+"Forgot Password" = "忘记密码";
+
+"Forgot Password?" = "忘记密码？";
+
+/* Please enter the email address used to create your Waylens account. We will send you a verification code shortly. */
+"forgot_password_description" = "请输入用于创建Waylens账号的邮箱地址，我们会尽快给你发送验证码。";
+
+/* Format */
+"Format" = "格式化";
+
+/* Format Failed */
+"Format Failed" = "格式化失败";
+
+/* Format SD Card */
+"Format SD Card" = "格式化SD卡";
+
+/* Format Succeeded */
+"Format Succeeded" = "格式化成功";
+
+/* Format your SD card */
+"Format your SD card" = "格式化SD卡";
+
+/* Format... */
+"Format..." = "正在格式化...";
+
+/* Formatting is only available via direct Wi-Fi connection */
+"Formatting is only available via direct Wi-Fi connection" = "只能通过Wi-Fi连接进行格式化";
+
+/* Formatting may fix it. */
+"Formatting may fix it." = "可通过格式化来尝试修复它.";
+
+/* clip start time */
+"From" = "从";
+
+/* Full Screen */
+"Full Screen" = "全屏";
+
+/* Get help with camera */
+"Get help with camera" = "获取摄像机帮助信息";
+
+/* Get started */
+"Get started" = "开始";
+
+/* Go */
+"Go" = "Go";
+
+/* Go to Wi-Fi Settings */
+"Go to Wi-Fi Settings" = "跳转到Wi-Fi设置";
+
+/* Good to go. */
+"Good to go." = "准备好了。";
+
+"Got it" = "知道了";
+
+/* Great!\nContinue to\nset up your camera */
+"continue_to_set_up_camera" = "真棒！\n继续设置摄像机";
+
+/* You've set up your account.\nNext, we’ll guide you to add camera to your account. Make sure you've installed the camera in your car.\nNot installed yet? Follow instructions on Quick Start Guide to get started. */
+"great_continue_to_set_up_camera_following" = "账号创建好了。\n接下来，我们会引导你添加摄像机到这个账号。请确保已将摄像机安装到车内。\n还没安装？请按照《安装指南》中的说明来进行安装。";
+
+/* Thank you for choosing the Waylens Secure360, the breakthrough automotive security camera.\nLet's go through the basics of the camera and app! */
+"guide_welcome_page_detail" = "感谢选择Waylens Secure360，这是一款突破性的车载安防摄像机。\n\n来了解一下摄像机和应用程序的基础知识吧！";
+
+"h" = "小时";
+
+/* h:mm a */
+"h:mm a" = "a h:mm";
+
+/* h:mm:ss a */
+"h:mm:ss a" = "a h:mm:ss";
+
+"hh:mm:ss a" = "a hh:mm:ss";
+
+"Have fun!" = "开始使用！";
+
+/* That's it. You've learned the basics of the app. Have fun with it. */
+"have_fun_following" = "就这么简单，你已了解了所需的基础知识，开始使用吧。";
+
+"HDR" = "HDR(高动态范围)";
+
+"HDR balances exposure of video." = "HDR可以在阳光直射等亮度差别大的场景改善曝光";
+
+/* Heavy Hit */
+"Heavy Hit" = "重击";
+
+/* heavy impact\n */
+"heavy_impact" = "强烈撞击\n";
+
+"Hello again" = "欢迎回来";
+
+/* Hide */
+"Hide" = "隐藏";
+
+/* High */
+"High" = "高";
+
+/* Highlight */
+"Highlight" = "标记过的";
+
+/* Highlight Successfully */
+"Highlight Successfully" = "已标记";
+
+/* Hit */
+"Hit" = "撞击";
+
+"Hours Ago" = "小时前";
+
+"How to install direct wire?" = "怎样安装直连线？";
+
+/* How to reproduce this crash? */
+"How to reproduce this crash?" = "崩溃是怎么发生的？";
+
+/* I agree to */
+"I agree to" = "我同意";
+
+"I agree with Waylens Agreement" = "我同意Waylens协议";
+
+/* ICCID */
+"ICCID" = "ICCID";
+
+/* Idle */
+"rec_idle" = "录像停止";
+
+/* Idle */
+"Idle" = "未连接";
+
+/* Impact */
+"Impact" = "撞击";
+
+/* Impact   */
+"Impact  " = "撞击  ";
+
+/* Impact Sensitivity */
+"Impact Sensitivity" = "震动灵敏度";
+
+/* Impact while driving */
+"Impact while driving" = "行驶中的撞击";
+
+/* Impact while parked */
+"Impact while parked" = "停车时的撞击";
+
+/* Date format */
+"in %.f days" = "在%.f天内";
+
+/* Date format */
+"in %.f hours" = "在%.f小时内";
+
+/* Date format */
+"in %.f minutes" = "在%.f分钟内";
+
+/* Date format */
+"in %.f months" = "在%.f个月内";
+
+/* Date format */
+"in %.f seconds" = "在%.f秒内";
+
+/* Date format */
+"in %.f weeks" = "在%.f周内";
+
+/* Date format */
+"in %.f years" = "在%.f年内";
+
+/* Date format */
+"in 1 minute" = "在1分钟内";
+
+/* Date format */
+"in a few seconds" = "在几秒中内";
+
+/* In service */
+"In service" = "服务中";
+
+/* Incorrect email or password */
+"Incorrect email or password" = "请输入正确的邮箱和密码";
+
+/* Incorrect verification code */
+"Incorrect verification code" = "验证码不对";
+
+/* Input current password. */
+"Input current password." = "输入当前密码。";
+
+/* Input your email address */
+"Input your email address" = "请输入邮箱地址";
+
+/* Input your password */
+"Input your password" = "请输入密码";
+
+/* Insert a SD card to enable monitoring. */
+"Insert a SD card to enable monitoring." = "插入SD卡后开始监控。";
+
+/* Insert an SD card */
+"Insert an SD card" = "请插入SD卡";
+
+/* Insert the SIM card and replug the cable. */
+"Insert the SIM card and replug the cable." = "插入SIM卡并重新插入电源接口。";
+
+/* IP Address */
+"IP Address" = "IP地址";
+
+/* It may take a few seconds. */
+"It may take a few seconds." = "可能要几秒钟时间。";
+
+/* Join */
+"Join" = "加入";
+
+/* Join Beta Program? */
+"Join Beta Program?" = "加入测试组?";
+
+/* Join Now */
+"Join now" = "现在加入";
+
+/* Because features are in development, beta firmwares may be unstable.\nPlease check firmware from \"Camera Settings\" -> \"Firmware\". */
+"join_beta_program_message" = "新功能处于开发阶段，测试版固件可能会不稳定。\n请从“摄像机设置”->“固件”检查固件。";
+
+/* Date format */
+"just now" = "刚刚";
+
+/* Keep camera's power on while updating */
+"Keep camera's power on while updating" = "更新过程请不要断电";
+
+/* Keep downloading */
+"Keep downloading" = "继续下载";
+
+/* Keep it on */
+"Keep it on" = "仍然通知";
+
+/* knocking, bumps\n */
+"knocking_bumps" = "发生震动\n";
+
+/* Last 7 days of videos are stored on the cloud. */
+"Last 7 days of videos are stored on the cloud." = "云端可以保存过去7天的视频";
+
+/* Date format */
+"last hour" = "1小时前";
+
+/* Date format */
+"last month" = "上个月";
+
+/* Date format */
+"last week" = "上周";
+
+/* Date format */
+"last year" = "去年";
+
+/* Later */
+"Later" = "稍后";
+
+/* latest firmware version */
+"Latest: " = "最新版本: ";
+
+/* Leave */
+"Leave" = "退出";
+
+/* Leave Beta Program? */
+"Leave Beta Program?" = "确定退出测试组？";
+
+/* If you leave, you might want to reinstall the public firmware version. */
+"leave_beta_program_message" = "如果退出，你可以选择重新安装正式版固件。";
+
+/* used in Sensitivity settings */
+"Less events" = "更少事件";
+
+"Less\nevents" = "更少\n事件";
+
+"Let's go!" = "开始!";
+
+/* License Agreement */
+"License Agreement" = "许可协议";
+
+"Light is on" = "灯亮着";
+
+/* Live */
+"live_wifi" = "实时预览";
+
+/* Live */
+"Live" = "直播";
+
+/* Live stream failed */
+"Live stream failed" = "直播失败";
+
+/* Live stream stopped */
+"Live stream stopped" = "直播已停止";
+
+/* Live stream timed out */
+"Live stream timed out" = "直播超时";
+
+/* No comment provided by engineer. */
+"Loading" = "加载中";
+
+/* Location */
+"Location" = "位置";
+
+/* Log In */
+"Log In" = "登录";
+
+/* Log in */
+"Log in" = "登录";
+
+/* Log into your account. */
+"Log into your account." = "登录你的账号。";
+
+"Log Out" = "退出登录";
+
+/* Log Out! */
+"Log Out" = "退出登录";
+
+/* Log Out? */
+"Log Out?" = "确定退出登录？";
+
+/* Login Failed */
+"Login Failed" = "登录失败";
+
+/* Log in to enable more features. */
+"login_tip" = "登录以启用更多功能。";
+
+"Logo LED" = "Logo灯";
+
+"Logo LED blinks. See manual for details." = "Logo灯闪烁。详情请参阅手册。";
+
+/* Low */
+"Low" = "低";
+
+"m" = "分钟";
+
+"Make sure the camera has at least 100MB free space" = "请确保摄像机至少有100MB的可用空间";
+
+/* Mark all as read failed */
+"Mark all as read failed" = "标记已读操作失败";
+
+/* Mark all as read? */
+"Mark all as read?" = "要将全部视频标记为已读吗?";
+
+/* Mark as Read */
+"Mark as Read" = "标记为已读";
+
+/* Medium */
+"Medium" = "中";
+
+"Microphone" = "麦克风";
+
+"Minutes Ago" = "分钟前";
+
+/* Mismatched Camera Server */
+"Mismatched Camera Server" = "摄像机服务器配置不匹配";
+
+/* Date format */
+"MMM d" = "M月d日";
+
+/* Date format */
+"MMM d, yyyy" = "yyyy年M月d日";
+
+/* Model */
+"Model" = "型号";
+
+/* Modem Version */
+"Modem Version" = "调制解调器版本";
+
+/* used in Sensitivity settings */
+"More events" = "更多事件";
+
+"More\nevents" = "更多\n事件";
+
+/* Motion */
+"Motion" = "有人靠近";
+
+/* Motion   */
+"Motion  " = "有人靠近  ";
+
+/* Motion while parked */
+"Motion while parked" = "停车时有人靠近";
+
+/* Motion Sensitivity */
+"Motion Sensitivity" = "雷达灵敏度";
+
+/* Mount Model */
+"Mount Model" = "底座型号";
+
+/* Mount Version */
+"Mount Version" = "底座版本";
+
+/* Name */
+"Name" = "名称";
+
+/* Network */
+"Network" = "网络";
+
+/* Network Error */
+"Network Error" = "网络错误";
+
+/* Network not available */
+"Network not available" = "网络不可用";
+
+/* Network Not Available */
+"Network Not Available" = "网络不可用";
+
+/* Network Test */
+"Network Test" = "网络测试";
+
+"New password" = "新密码";
+
+/* New update available */
+"New update available" = "有更新";
+
+/* Next */
+"Next" = "下一步";
+
+/* Date format */
+"next hour" = "下一小时";
+
+/* Date format */
+"next month" = "下个月";
+
+/* Date format */
+"next week" = "下周";
+
+/* Date format */
+"next year" = "明年";
+
+/* Night Vision */
+"Night Vision" = "夜视";
+
+"Night Vision in Driving Mode" = "开车时的夜视";
+
+"Night Vision in Parking Mode" = "停车时的夜视";
+
+/* Night vision will turn on in following period when Secure360 is in driving mode. */
+"night_vision_manual_in_driving_mode_description" = "当Secure360处于开车模式时，夜视将在以下时段打开:";
+
+/* Night vision will automatically turn on in dim lighting when Secure360 is in driving mode. */
+"night_vision_auto_in_driving_mode_description" = "当Secure360处于开车模式时，夜视会在昏暗的环境下自动打开。";
+
+/* Night vision will not turn on when Secure360 is in driving mode. */
+"night_vision_off_in_driving_mode_description" = "当Secure360处于开车模式时，夜视不会打开。";
+
+/* Night vision will automatically turn on in dim lighting when Secure360 is in parking mode. */
+"night_vision_on_in_parking_mode_description" = "当Secure360处于停车模式时，夜视会在昏暗的环境下自动打开。";
+
+/* Night vision will not turn on when Secure360 is in parking mode. */
+"night_vision_off_in_parking_mode_description" = "当Secure360处于停车模式时，夜视不会打开。";
+
+/* No Alerts */
+"No Events" = "没有事件";
+
+/* No alerts will be sent. */
+"No alerts will be sent." = "将不会发送警报。";
+
+/* No events will be recorded. */
+"No events will be recorded." = "将不会记录任何事件。";
+
+/* No More Videos */
+"No More Videos" = "没有更多视频了";
+
+/* No network */
+"No network" = "没有网络";
+
+/* No SD Card Detected */
+"No SD Card Detected" = "未检测到SD卡";
+
+/* No Videos */
+"No Videos" = "没有视频";
+
+/* No videos uploaded in last 7 days. */
+"No videos uploaded in last 7 days." = "过去7天没有上传过视频";
+
+/* No videos will be uploaded to the cloud. */
+"No videos will be uploaded to the cloud." = "任何视频都不会上传到云端。";
+
+/* Subscribe to a data plan to enable 4G features. */
+"no_data_plan" = "订阅流量套餐开启4G功能";
+
+/* The app has no permission to access your camera.\nYou can enable it at Privacy Settings */
+"no_permission_to_access_camera_message" = "无权访问手机的摄像功能。\n请在“隐私设置”中打开它。";
+
+"Normal" = "标准";
+
+/* Not Authorized */
+"Not Authorized" = "未授权";
+
+/* Not Connected */
+"Not Connected" = "未连接";
+
+/* Not enough free space.\nNeed at least %@ more */
+"not_enough_free_space" = "可用空间不足，至少需要%@的空间。";
+
+/* Not Logged In */
+"Not Logged In" = "未登录";
+
+/* Notifications */
+"Notifications" = "通知";
+
+/* Secure360 4G sends a mobile app alert when events are detected */
+"notifications_setting_description" = "当检测到事件时，给手机推送应用通知。";
+
+"Now" = "现在";
+
+"OFF" = "关";
+
+/* Off */
+"Off" = "关";
+
+/* offline */
+"offline" = "离线";
+
+/* Offline */
+"Offline" = "离线";
+
+/* OK */
+"OK" = "好的";
+
+"ON" = "开";
+
+/* On  */
+"On " = "打开 ";
+
+/* On  */
+"on_topic" = "关于%@";
+
+"On which subject" = "选择相关的设备";
+
+/* Oops, the Direct Wire\nconnection is not working. */
+"direct_wire_connection_not_working" = "糟糕，直连线没有正确连接。";
+
+/* Oops. Something is wrong. */
+"Oops. Something is wrong." = "糟糕，出了点问题。";
+
+/* Oops! Your camera is offline now. */
+"Oops! Your camera is offline now." = "噢！摄像机处于离线状态。";
+
+"Other Files" = "其它文件";
+
+/* Park Mode */
+"Park Mode" = "停车模式";
+
+/* Parking */
+"Parking" = "停车模式";
+
+/* %@ detected an impact while parked */
+"PARKING_HEAVY_HIT" = "停车模式下%@检测到撞击事件";
+
+/* %@ detected a bump while parked */
+"PARKING_HIT" = "停车模式下%@检测到震动事件";
+
+"PARKING_MOTION" = "停车模式下%@检测到旁边有物体移动";
+
+"password" = "密码";
+
+/* Password */
+"Password" = "密码";
+
+/* Password changed */
+"Password changed" = "密码修改成功";
+
+/* Password must contain at least 8 characters, including both letters and numbers. */
+"password_tip" = "密码必须至少有8个字符，且同时包含数字和字母。";
+
+/* people approaching, car keying\n */
+"people_approaching_car_keying" = "有人靠近，车辆发报\n";
+
+/* Pinch and drag */
+"Pinch and drag" = "缩放和拖拽";
+
+"Pinch and drag to choose angle" = "缩放和拖拽以选择视角";
+
+"Please check the connection and try again." = "请检查连接，然后重试。";
+
+/* Please check you network settings and try again. */
+"Please check your network settings and try again." = "请检查网络设置然后重试。";
+
+/* Please connect to your camera's Wi-Fi. */
+"Please connect to your camera's Wi-Fi." = "请连接摄像机的Wi-Fi。";
+
+/* Please connect via Wi-Fi to enable this setting */
+"Please connect via Wi-Fi to enable this setting" = "请通过Wi-Fi连接以启用该设置";
+
+/* Please describe the issue. */
+"Please describe the issue" = "请详细描述你的问题";
+
+/* Please enable photo access in system settings */
+"Please enable photo access in system settings" = "请在系统设置中启用照片访问权限";
+
+/* Please enter your email address used to create your Waylens account.  */
+"Please enter your email address used to create your Waylens account. " = "请输入用于创建Waylens账号的邮箱地址。";
+
+"Please enter your new password." = "请输入新密码。";
+
+/* Please open System Settings app and select Wi-Fi */
+"Please open System Settings app and select Wi-Fi" = "请打开“系统设置”，选择Wi-Fi。";
+
+/* Please power on your vehicle. */
+"Please power on your vehicle." = "请打开汽车电源。";
+
+"Plug in power cord and power on your vehicle." = "接上电源线并打开汽车电源。";
+
+"Power off" = "关闭电源";
+
+/* Power off your vehicle. */
+"Power off your vehicle." = "请关闭汽车电源。";
+
+"Power on" = "打开电源";
+
+/* Power on your vehicle now */
+"Power on your vehicle now" = "现在打开汽车电源";
+
+/* We'll walk you through the procedure to test the power cord connection.\n\nIt takes two steps and a few seconds: */
+"pre_diagnosis_description" = "我们将引导你完成电源线测试。\n\n整个流程不到一分钟，有两个步骤：";
+
+/* Preparing camera log */
+"Preparing camera log" = "正在生成设备日志";
+
+"Privacy" = "隐私";
+
+/* Privacy Policy */
+"Privacy Policy" = "隐私协议";
+
+/* Quit */
+"Quit" = "退出";
+
+/* Quit downloading? */
+"Quit downloading?" = "要停止下载吗？";
+
+/* Re-send */
+"Re-send" = "重新发送";
+
+/* Re-send(%ds) */
+"Re-send(%ds)" = "重新发送(%d秒)";
+
+/* Re-send Verification */
+"Re-send Verification" = "重发验证邮件";
+
+/* Re-send Verification(%ds) */
+"Re-send Verification(%ds)" = "重发验证邮件(%d秒)";
+
+/* Ready */
+"Ready" = "可用";
+
+/* Rebooting */
+"Rebooting" = "正在重启";
+
+/* Record error occurred. */
+"record_error" = "发生录制错误。";
+
+/* Monitoring and recording stopped. */
+"record_stopped" = "监控录像已停止。";
+
+/* Recording */
+"Recording" = "录像中";
+
+/* Recording Stopped */
+"Recording Stopped" = "已停止录像";
+
+/* Records less events */
+"Records less events" = "记录更少事件";
+
+/* Records more events */
+"Records more events" = "记录更多事件";
+
+/* Refused */
+"Refused" = "注册被拒";
+
+/* Release to zoom in */
+"Release to zoom in" = "抬起手指后放大";
+
+/* Release to zoom out */
+"Release to zoom out" = "抬起手指后缩小";
+
+/* Remove */
+"Remove" = "移除";
+
+/* Remove camera */
+"Remove Camera" = "移除摄像机";
+
+/* Are you sure to remove this camera from your account? */
+"remove_camera_message" = "确定要从账号里移除该摄像机吗？";
+
+"Reset password" = "重置密码";
+
+/* Reset password successfully.\nLogin with new password */
+"reset_password_successfully" = "重置密码成功！\n请使用新密码登录。";
+
+/* Retry */
+"Retry" = "重试";
+
+/* Return to app to continue exporting. */
+"Return to app to continue exporting." = "返回应用继续导出。";
+
+/* Roaming */
+"Roaming" = "漫游";
+
+"s" = "秒";
+
+"Save" = "保存";
+
+"Saving clip to album..." = "保存视频片段到视频库...";
+
+/* Saving... */
+"Saving..." = "正在保存...";
+
+/* SD Card */
+"SD Card" = "SD卡";
+
+/* SD Card Error */
+"SD Card Error" = "SD卡错误";
+
+/* SD card is full, not enough free space for update. */
+"SD card is full, not enough free space for update." = "SD卡已满，没有足够的空间来更新。";
+
+"SD Card is working great." = "SD卡状态良好。";
+
+/* SD card unreadable. Formatting may fix it. */
+"SD card unreadable. Formatting may fix it." = "SD卡无法读取，请尝试格式化来修复。";
+
+/* SD card capacity too low. Use an SD card with at least 16 GB. */
+"sd_card_capacity_too_low" = "SD卡容量太低，使用至少16GB的SD卡。";
+
+/* SD card not optimized. Format the SD card to optimize it. */
+"sd_card_format_recommended" = "SD卡未优化，请先格式化SD卡。";
+
+/* No SD card inserted. */
+"sd_card_not_detected" = "没有插入SD卡。";
+
+/* SD card is installed and functioning. */
+"sd_card_ready" = "SD卡工作正常。";
+
+/* SD card state unknown. */
+"sd_card_state_unknown" = "SD卡状态未知";
+
+/* Set the maximum space to allocate for event videos. When events reach the selected value, the oldest event video will be removed automatically when a new event video is generated. */
+"sdcard_event_videos_maximum_space_explanation" = "设置为事件视频分配的最大空间。当事件达到所选值时，将在生成新事件视频时自动删除最早的事件视频。";
+
+/* Searching */
+"Searching" = "正在搜索";
+
+"Seconds Ago" = "秒前";
+
+/* Secure360 WiFi does not have Internet access. */
+"Secure360 WiFi does not have Internet access." = "Secure360 WiFi不能直接连接因特网。";
+
+/* Select Range */
+"Select Range" = "选择范围";
+
+/* Send */
+"Send" = "发送";
+
+"Send app log" = "发送应用日志";
+
+"Send camera log" = "发送设备日志";
+
+/* Send crash report to developers. Thanks! */
+"Send crash report to developers. Thanks!" = "发送崩溃报告给开发者。十分感谢！";
+
+"Send Feedback" = "发送反馈";
+
+/* Sending... */
+"Sending..." = "正在发送...";
+
+/* Sensitivity */
+"Sensitivity" = "灵敏度";
+
+/* Adjust Impact Sensitivity settings if you want less or more Impact events to be detected. */
+"sensitivity_settings_impact_description" = "修改震动灵敏度以调整检测到震动或撞击的次数。";
+
+/* Adjust Motion Sensitivity settings if you want less or more Motion events to be detected. */
+"sensitivity_settings_motion_description" = "修改雷达灵敏度以调整检测到有人靠近的次数。";
+
+/* Split Screen */
+"Split Screen" = "上下分屏";
+
+/* Serial Number */
+"Serial Number" = "序列号";
+
+"Server" = "服务器";
+
+/* Server connection */
+"Server connection" = "服务器连接";
+
+/* Server temporarily down */
+"Server temporarily down" = "服务器开小差了";
+
+/* The service is temporarily not available. Please try again later. */
+"server_not_reachable_message" = "服务暂时不可用，请稍后重试。";
+
+"Service is temporarily unavailable" = "服务暂时不可用";
+
+/* Settings */
+"Settings" = "设置";
+
+"shows bumps occuring while vehicle is parked or driving" = "表示车辆停放或行驶时发生的震动事件";
+
+"shows clips marked by user" = "表示用户手动标记的片段";
+
+"shows heavy impact to a parked or moving vehicle" = "表示停车或开车时发生撞击";
+
+"shows motion detected near a parked vehicle" = "表示在停车时雷达检测到车周物体发生运动";
+
+"shows video captured while vehicle is powered on or live streamed" = "表示开车或直播时录制的视频";
+
+/* Sign Up Failed */
+"Sign Up Failed" = "注册失败";
+
+/* Signal Strength */
+"Signal Strength" = "信号强度";
+
+/* SIM card */
+"No SIM card" = "未插入SIM卡";
+
+/* SIM card */
+"SIM card" = "SIM卡";
+
+/* SIM card not inserted. Please insert the supplied SIM card and plug in the cable. */
+"sim_card_not_detected" = "SIM卡未插入，请插入随附的SIM卡并接上电源。";
+
+/* SIM card not reported. Please make sure the SIM card is inserted, then reconnect the camera via Wi-Fi */
+"sim_card_not_reported" = "SIM卡未上报. 请确保SIM卡已插入, 并连接设备Wi-Fi以重试。";
+
+/* SIM card not supported. Please use the supplied SIM card for Secure360. */
+"sim_card_not_supported" = "不支持该SIM卡，请使用Secure360随附的SIM卡。";
+
+/* SIM card's status incorrect. Check the SIM card, plug the cable back in and try again. */
+"sim_card_wrong_state_message" = "SIM卡状态异常，请检查SIM卡，接回电源线后再试。";
+
+"Siren" = "警报声";
+
+/* Secure360 plays audible warning when events are detected. */
+"Secure360 plays audible warning when events are detected." = "Secure360检测到事件时播放警报声。";
+
+/* Skip */
+"Skip" = "跳过";
+
+/* Sleep */
+"Sleep" = "睡眠";
+
+"Slide to Cancel" = "滑动以取消";
+
+/* \nSlide to change sensitivity. */
+"slide_to_change_sensitivity" = "\n滑动以调节灵敏度。";
+
+"Source" = "播放源";
+
+/* Start */
+"Start" = "开始";
+
+/* Start Recording */
+"Start Recording" = "开始录像";
+
+/* Start Tour */
+"Start Tour" = "新手引导";
+
+/* Stop recording... */
+"Stop recording..." = "停止录像...";
+
+/* stopped */
+"stopped" = "已停止";
+
+/* stopping */
+"stopping" = "正在停止";
+
+/* streaming */
+"streaming" = "正在传输";
+
+/* Streaming */
+"Streaming" = "正在传输";
+
+/* Subscribe */
+"Subscribe" = "订阅";
+
+/* Subscribe a data plan */
+"Subscribe a data plan" = "订阅流量套餐";
+
+/* %@’s data plan is expired! */
+"SUBSCRIPTION_EXPIRED" = "%@的流量套餐已过期!";
+
+"SUBSCRIPTION_WILL_EXPIRE" = "%@的流量套餐即将在%@天后过期";
+
+"Super High" = "超高";
+
+/* Support */
+"Support" = "支持";
+
+/* Suspended */
+"Suspended" = "已暂停";
+
+/* Switch Camera Server */
+"Switch Camera Server" = "切换摄像机连接的服务器";
+
+/* switch to new server and reboot */
+"switch to new server and reboot" = "切换到新的服务器并重启";
+
+/* switch camera server to %@ and reboot? */
+"switch camera server to %@ and reboot?" = "切换摄像机服务器到 %@ 并重启？";
+
+/* Take a drive and come back later. */
+"Take a drive and come back later." = "先去兜个风，录一会儿视频。";
+
+/* Take a photo */
+"Take a photo" = "拍一张照片";
+
+/* Take a tour? */
+"Take a tour?" = "新手引导";
+
+/* Tap the button */
+"Tap the button" = "点击按钮";
+
+/* Tap the video on the timeline to export and delete. */
+"Tap the video on the timeline to export and delete." = "点击时间线上的视频以导出或删除。";
+
+"Tap to Save" = "点击保存";
+
+"Tap to Cancel" = "点击取消";
+
+/* Tap to switch from split screen to immsersive view */
+"Tap to switch from split screen to immsersive view" = "点这儿从分屏切换到全景观看";
+
+/* Tap to open the menu */
+"Tap to open the menu" = "点这儿打开菜单";
+
+/* Tap to view videos */
+"Tap to view videos" = "点这儿查看视频";
+
+/* Tap to view, export and delete */
+"Tap to view, export and delete" = "点这儿观看，导出或删除视频";
+
+"Tap to view and export" = "点这儿观看或导出视频";
+
+/* Tap to show more information */
+"Tap to show more information" = "点这儿展示更多信息";
+
+"Terms" = "条款";
+
+/* Terms of Use */
+"Terms of Use" = "使用条款";
+
+/* That's it! */
+"That's it!" = "就到这儿吧！";
+
+/* That's it!\nEnjoy the peace of mind that comes with owning a Secure360! */
+"that_is_it_enjoy_owning_secure360" = "就到这儿了！\n请享受Secure360带来的安心体验！";
+
+/* The camera is offline */
+"The camera is offline" = "摄像机已离线";
+
+/* The video will be deleted from the %@ */
+"The video will be deleted from the %@" = "视频将从%@删除";
+
+/* The video will be deleted from your phone's storage */
+"The video will be deleted from your phone's storage" = "视频将从手机里删除";
+
+/* The video(s) will be deleted from your phone's storage */
+"The video(s) will be deleted from your phone's storage" = "视频将从手机里删除";
+
+/* This camera has not been added to your account. */
+"This camera has not been added to your account." = "该摄像机尚未添加到你的账号。";
+
+/* time out */
+"time out" = "超时";
+
+"Time scale" = "时间尺度";
+
+"Timestamp" = "时间戳";
+
+"To" = "至";
+
+/* To change app and camera settings */
+"To change app and camera settings" = "修改应用程序和摄像机的设置";
+
+/* To change your profile and password */
+"To change your profile and password" = "修改个人资料和密码";
+
+/* To view exported video footage */
+"To view exported video footage" = "查看导出的视频片段";
+
+/* to watch the 360° videos in panorama mode. Drag and pinch to choose view angle. */
+"to watch the 360° videos in panorama mode. Drag and pinch to choose view angle." = "以全景模式观看360°视频。通过拖拽和缩放来选择视角。";
+
+/* Date format */
+"Today" = "今天";
+
+/* Date format */
+"Tomorrow" = "明天";
+
+/* Date format */
+"tomorrow" = "明天";
+
+/* Total cache size: %@ */
+"Total cache size: %@" = "总缓存大小: %@";
+
+"Total Storage" = "总容量";
+
+"Trial" = "试用";
+
+"Try Again" = "再试一次";
+
+"Try again" = "再试一次";
+
+/* Turn vehicle back on */
+"Turn vehicle back on." = "重新打开汽车电源。";
+
+/* video filter type */
+"Type" = "类型";
+
+/* Unknown */
+"Unknown" = "未知";
+
+/* UNLOCK */
+"UNLOCK" = "解锁";
+
+/* UNLOCKED */
+"UNLOCKED" = "已解锁";
+
+/* Up to date */
+"Up to date" = "已经是最新版本";
+
+/* Update */
+"Update" = "更新";
+
+/* Update failed */
+"Update failed" = "更新失败";
+
+/* Update failed(too many tasks) */
+"Update failed(too many tasks)" = "更新失败(任务太多)";
+
+/* Updating */
+"Updating" = "正在上传";
+
+/* Upload Done */
+"Upload Done" = "上传完成";
+
+/* Upload Failed */
+"Upload Failed" = "上传失败";
+
+/* Upload: Bump and More */
+"Upload: Bump and More" = "上传: 震动或更严重的事件";
+
+/* Upload: Motion and More */
+"Upload: Motion and More" = "上传: 有人靠近或更严重的事件";
+
+/* Upload: Off */
+"Upload: Off" = "上传: 关";
+
+/* Upload: Only Impact */
+"Upload: Only Impact" = "上传: 仅撞击事件";
+
+/* Uploading... */
+"Uploading..." = "正在上传...";
+
+"Username" = "用户名";
+
+/* Vehicle is powered OFF */
+"Vehicle is powered OFF" = "汽车电源已关闭";
+
+/* Vehicle is powered ON */
+"Vehicle is powered ON" = "汽车电源已打开";
+
+"Verify your email" = "验证你的邮箱地址";
+
+"Verify yourself" = "身份验证";
+
+/* We sent you a verification email. Please follow the instructions in that email to verify your account. */
+"verify_your_email_description" = "我们给你发了一封验证邮件，请按照邮件中的说明进行操作。";
+
+/* We sent you a verification email. Please follow the instructions in that email to verify your account %@. */
+"verify_your_email_description_format" = "我们给你发了一封验证邮件，请按照邮件中的说明来验证你的账号(%@)。";
+
+/* Please enter the verification code we sent to your email address. */
+"verify_yourself_description" = "验证码已发送至你的邮箱。";
+
+/* verification code */
+"verify_yourself_verification_code_description" = "6位验证码";
+
+/* firmware version */
+"Version" = "版本";
+
+/* Video is recorded when an impact is detected. */
+"Video is recorded when an impact is detected." = "检测到撞击时，会录制视频。";
+
+/* Video is recorded when any activity is detected. */
+"Video is recorded when any activity is detected." = "检测到任何事件时，都会录制视频。";
+
+/* Video is recorded when any bump or impact is detected. */
+"Video is recorded when any bump or impact is detected." = "检测到震动或撞击时，会录制视频。";
+
+/* Video Quality */
+"Video Quality" = "视频质量";
+
+/* Super High: 36Mbps.\nHigh: 28Mbps.\nNormal: 20Mbps.\nLow:10Mbps.\nSuper Low:5Mbps.\n* The bitrate will be effective from next recording. */
+"video_quality_description" = "极好: 36Mbps。\n高: 28Mbps。\n标准: 20Mbps。\n低: 10Mbps。\n超低: 5Mbps。\n* 比特率设置将在下一次录制时生效。";
+
+"Videos are labeled in different colors according to their type." = "视频根据其类型被标记为不同的颜色。";
+
+/* Videos are loop recorded on the SD card. */
+"Videos are loop recorded on the SD card." = "视频循环记录在SD卡上";
+
+/* Videos in SDCard */
+"Videos in SDCard" = "SD卡里的视频";
+
+/* Waking up */
+"Waking up" = "正在唤醒";
+
+/* waking up */
+"waking up" = "正在唤醒";
+
+/* Waylens 360 Camera */
+"Waylens 360 Camera" = "Waylens 360摄像机";
+
+/* Waylens Agreement */
+"Waylens Agreement" = "Waylens协议";
+
+/* Waylens Secure360 %@ */
+"Waylens Secure360 %@" = "Waylens Secure360 %@";
+
+/* We will send you a verification code shortly. */
+"We will send you a verification code shortly." = "我们会尽快发验证码给你。";
+
+"Welcome" = "欢迎";
+
+"What's New" = "最新特性";
+
+/* Yes */
+"Yes" = "确定";
+
+/* Date format */
+"Yesterday" = "昨天";
+
+/* Date format */
+"yesterday" = "昨天";
+
+/* You have been logged out */
+"You have been logged out" = "你已经退出登录";
+
+/* You will not receive any notifications when events are detected */
+"You will not receive any notifications when events are detected" = "检测到事件时，你不会收到任何通知。";
+
+/* You'll be notified when an impact is detected. */
+"You'll be notified when an impact is detected." = "检测到撞击时，会通知你。";
+
+/* You'll be notified when any activity is detected. */
+"You'll be notified when any activity is detected." = "检测到任何事件时，都会通知你。";
+
+/* You'll be notified when any bump or impact is detected. */
+"You'll be notified when any bump or impact is detected." = "检测到震动或撞击时，会通知你。";
+
+/* Your camera is not powered by direct wire. */
+"Your camera is not powered by direct wire." = "这台摄像机不是通过直连线供电的。";
+
+/* Your camera will go to sleep */
+"Your camera will go to sleep" = "摄像机即将进入睡眠";
+
+"Your firmware is up to date." = "摄像机的固件已是最新版本.";
+
+/* Your phone is not connected to \"Waylens-XXXXX\". Please try again. */
+"Your phone is not connected to \"Waylens-XXXXX\". Please try again." = "手机还没连接到Wi-Fi热点“Waylens-XXXXX”，请再试一次。";
+"Your phone is not connected to camera's Wi-Fi. Please try again." = "手机还没连接到相机的Wi-Fi热点，请再试一次。";
+
+/* Zoom in */
+"Zoom in" = "放大";
+
+/* Zoom out */
+"Zoom out" = "缩小";
+
+"Zoomed Out" = "已缩小";
+
+/* 4G */
+"4G" = "4G";
+
+/* Account not verified */
+"Account not verified" = "账号未验证";
+
+/* Contact support */
+"Contact support" = "联系客服";
+
+/* Get help from forum */
+"Get help from forum" = "向社区求助";
+
+/* Guide */
+"Guide" = "指南";
+
+/* Need more help? */
+"Need more help?" = "需要更多帮助？";
+
+/* Report an issue */
+"Report an issue" = "报告问题";
+
+"Report Issue" = "报告问题";
+
+/* SIM card error */
+"SIM card error" = "SIM卡有误";
+
+/* Take a tour of the camera and app */
+"Take a tour of the camera and app" = "开始上手摄像机和应用";
+
+/* Test 4G LTE connection */
+"Test 4G LTE connection" = "测试4G LTE网络状态";
+
+/* You are not the owner of the device */
+"You are not the owner of the device" = "你不是该设备的主人";
+
+/* Account is already verified. Please try to login again */
+"Account is already verified. Please try to login again" = "账号已通过验证。请重新登录";
+
+/* Ask Community */
+"Ask Community" = "询问社区";
+
+/* Camera is not added to this account. Please add the camera first
+ You are not the owner of the device */
+"Camera is not added to this account. Please add the camera first" = "设备尚未添加到当前账号，请先添加设备";
+
+/* Camera is not factory registered, please contact support */
+"Camera is not factory registered, please contact support" = "设备未经过出厂注册，请联系客服";
+
+/* Camera password incorrect, please contact support */
+"Camera password incorrect, please contact support" = "设备密码错误，请联系客服";
+
+/* Contact Support */
+"Contact Support" = "联系客服";
+
+/* Device Information */
+"Device Information" = "设备信息";
+
+/* Email already registered, please try another email or log in */
+"Email already registered, please try another email or log in" = "邮箱已注册，请尝试其他邮箱或者登录";
+
+/* Email does not exist, check the email and try again */
+"email_not_exist" = "邮箱未注册，请检查邮箱或创建账号";
+
+/* Email Invalid, check the email and try again */
+"Email Invalid, check the email and try again" = "无效的邮箱地址，请检查后重试";
+
+/* Join Now */
+"Join Now" = "现在加入";
+
+/* Joined */
+"Joined" = "已加入";
+
+/* Password is invalid, please try again */
+"Password is invalid, please try again" = "密码不合法，请重试";
+
+/* Please input correct verification code */
+"Please input correct verification code" = "请输入正确的验证码";
+
+/* Poor connection with the camera. Please try again later */
+"Poor connection with the camera. Please try again later" = "摄像机的网络连接不稳定，请稍后再试";
+
+/* Report an Issue */
+"Report an Issue" = "报告问题";
+
+/* Too many verification emails have been sent, please check your email again, including spam or junk folders */
+"Too many verification emails have been sent, please check your email again, including spam or junk folders" = "发送了太多封验证邮件，请重新检查收件箱，包括垃圾邮件";
+
+/* Username already taken, please choose another username */
+"Username already taken, please choose another username" = "用户名已被占用，请选择其他用户名";
+
+/* Username invalid, please try again */
+"Username invalid, please try again" = "无效的用户名，请重试";
+
+/* Verification code expired, please verify again */
+"Verification code expired, please verify again" = "验证码已过期，请重新验证";
+
+/* We've just sent a verification email, please wait 5 minutes, check your email and try again */
+"We've just sent a verification email, please wait 5 minutes, check your email and try again" = "刚才发送了一封验证邮件，请耐心等待5分钟后重试";
+
+/* Wi-Fi connected */
+"Wi-Fi connected" = "已连接Wi-Fi";
+
+"Get more answers" = "获取更多问答";
+
+"Custom Impact Sensitivity" = "自定义震动灵敏度";
+
+"IIO Event Detection Param" = "IIO事件检测参数";
+/* Error 202, please contact support */
+"Error 202, please contact support" = "错误号202，请联系客服";
+
+/* Continue tour */
+"Continue tour" = "继续引导";
+
+/* continue guide tip */
+"continue_guide" = "上次的新手引导还未完成，要继续进行吗？";
+
+/* Never */
+"Never" = "不再出现";
+
+/* Not now */
+"Not now" = "下次再说";
+
+/* skip guide tip */
+"skip_guide" = "为了让摄像机工作于最佳状态，建议完成新手引导。确定要跳过吗？";
+
+/* %@ remaining */
+"%@ remaining" = "剩余 %@";
+
+"Parking/Driving Detection" = "停车/开车检测";
+
+"Vehicle power" = "汽车电源";
+
+/* More accurate, recommended for most vehicles, except electric/plug-in hybrid vehicles with OBD-Ⅱ power cords. */
+"vehicle_power_description" = "更准确，推荐大多数汽车选此项，但带OBD-Ⅱ线的电动或插电式混合动力汽车除外。";
+
+"Vehicle movement" = "汽车移动";
+
+/* Not as accurate but viable for all vehicles. Choose this method if your vehicle is electric or plug-in hybrid with OBD-Ⅱ power cord. */
+"vehicle_movement_description" = "不是那么准确，但所有汽车都适用。如果你的是带OBD-Ⅱ线的电动或插电式混合动力汽车，请选择此方法。";
+
+/* feature status */
+"On" = "开";
+
+/* feature status */
+"Auto" = "自动";
+
+/* feature status */
+"Manual" = "手动";
+
+/* What decides if the car is driving */
+"What decides if the car is driving" = "通过什么方法检测开车状态";
+
+"Warnings:" = "警告：";
+
+/* Detection method may impact a lot when using Secure360.\n\nDetection method chosen can impact the Secure360’s event detection performance if the incorrect method is chosen for the vehicle the camera is installed to. */
+"driving_detecting_warning" = "使用Secure360时，不同的检测方法可能会产生很大影响。\n\n如果为安装摄像机的车辆选择了错误的方法，则Secure360的事件检测性能将会大打折扣。";
+
+"Power Cord Test" = "电源线测试";
+
+"Power Cord" = "电源线";
+
+"Please choose the power cord you’ve used to install the Secure360." = "请选择用于安装Secure360的电源线。";
+
+"OBD-Ⅱ" = "OBD-Ⅱ";
+
+"Direct Wire" = "直连线";
+
+"Please choose your type of Vehicle." = "请选择汽车类型。";
+
+/* vehicle type Electric */
+"Electric" = "电动";
+
+"Pure electric powered vehicles such as Tesla, BMW i3, Nissan Leaf or other fully electric powertrain vehicles." = "纯电动汽车，如Tesla、BMW i3、Nissan Leaf或其他全电动动力汽车。";
+
+/* vehicle type Plug-in Hybrid */
+"Plug-in Hybrid" = "插入式混合动力";
+
+"Plug-in hybrid vehicles such as Chevrolet Volt, Toyota Prius, Honda PHEV, or any vehicle that has both electric and gasoline/diesel drivetrains working together." = "插入式混合动力汽车，如Chevrolet Volt、Toyota Prius、Honda PHEV，或任何同时配备电动和汽油或柴油动力汽车。";
+
+/* vehicle type Traditional */
+"Traditional" = "传统";
+
+"Vehicles with gasoline or diesel powertrains that do not feature a hybrid power or plug-in charging." = "不具备混合动力或插入式充电功能的汽油或柴油动力汽车。";
+
+"Your Secure360 camera will use xx to decide if the vehicle is driving or parked." = "Secure360摄像机将使用%@来确定汽车是在行驶还是处于停车状态。";
+
+"testing power cord connection" = "测试电源线连接";
+
+/* Test power cord circuit */
+"Test power cord circuit" = "测试电源线的电路连接";
+
+"You can also get recommended by" = "也可以通过设置向导进行设置:";
+
+"Finished" = "已完成";
+/* Video Tutorials */
+"Video Tutorials" = "视频教程";
+
+/* Watch Video Tutorials */
+"Watch Video Tutorials" = "观看视频教程";
+
+"Failed to play!" = "无法播放!";
+
+"Profile" = "我";
+
+"Shop" = "商店";
+
+"Start your safe journey" = "开启你的安全之旅";
+
+"Only 4G connected Secure360 cameras provide event alerts to your phone through the Waylens Cloud." = "仅通过 4G 连接的 Secure360 相机才能从 Waylens 云服务获得实时的事件报警。";
+
+"Learn More" = "了解更多";
+
+"What’s available with Secure360 4G:" = "Secure360 4G 能带来什么：";
+
+"Automatic event uploading" = "自动事件上传";
+
+"Real-time event notifications" = "实时事件提醒";
+
+"Live video streaming" = "实时视频直播";
+
+"Failed to upload video to Waylens!" = "上传视频到Waylens失败!";
+
+"Go to Album" = "前往视频库";
+
+"Uploading" = "正在上传";
+
+"Events video uploading…" = "警报视频上传中...";
+
+"Video Saved in Album" = "视频已保存到视频库";
+
+"Saving video failed!" = "无法保存视频!";
+
+"Select" = "选择";
+
+"Select All" = "全选";
+
+"Deselect All" = "取消全选";
+
+"Share to Waylens" = "分享给Waylens";
+
+"Save to Album Only" = "只保存到视频库";
+
+"Save to Album" = "保存到视频库";
+
+"Go Live" = "去看直播";
+
+"Watch Detail" = "查看详情";
+
+"share_to_waylens_copy" = "分享你的精彩视频给我们，就有机会免费获得价值399美金的Secure360 4G相机一台！";
+
+"Videos Shared by Users" = "用户分享的视频";
+
+"No Video" = "没有视频";
+
+"Message" = "消息";
+
+"No Message" = "没有消息";
+
+"Nothing to Report" = "请静候佳音";
+
+"LEFT_DATA" = "%@ 还有 %@ 流量剩余。";
+
+"LEFT_DATA_TITLE" = "剩余流量不足";
+
+"LEFT_DATA_BODY" = "%@ 还有 %@ 流量剩余。要加购更多流量，可以打开“My Waylens”内的相应页面。";
+
+"DATA_WARN" = "%@ 已经在24小时内使用了 %@ 流量。";
+
+"DATA_WARN_TITLE" = "流量使用过多";
+
+"DATA_WARN_BODY" = "%@ 已经在24小时内使用了 %@ 的流量。我们发送了电子邮件告知您具体的用途。";
+
+"PLAN_WILL_EXPIRE" = "%@ 的流量套餐将在 %@ 天后到期！";
+
+"PLAN_WILL_EXPIRE_TITLE" = "流量套餐将要过期";
+
+"PLAN_WILL_EXPIRE_BODY" = "%@ 的流量套餐将在 %@ 天后到期！要延长您的套餐，您可以打开“My Waylens”内的相应页，以保持您的相机可以连接我们的云服务。";
+
+"PLAN_EXPIRED" = "%@ 的流量套餐到期了！";
+
+"PLAN_EXPIRED_TITLE" = "流量套餐过期了";
+
+"PLAN_EXPIRED_BODY" = "%@ 的流量套餐到期了！要延长您的套餐，您可以打开“My Waylens”内的相应页，以保持您的相机可以连接我们的云服务。";
+
+"CAM_ONLINE" = "您的相机 %@ 上线了!";
+
+"CAM_ONLINE_TITLE" = "相机上线了";
+
+"CAM_ONLINE_BODY" = "您的相机 %@ 上线了!";
+
+"CAM_OFFLINE" = "您的相机 %@ 下线了!";
+
+"CAM_OFFLINE_TITLE" = "相机下线了";
+
+"CAM_OFFLINE_BODY" = "您的相机 %@ 下线了!";
+
+"NEW_FIRMWARE" = "Secure360 相机新的固件版本 %@ 可以下载了!";
+
+"NEW_FIRMWARE_TITLE" = "有新版固件发布";
+
+"NEW_FIRMWARE_BODY" = "Secure360 相机新的固件版本 %@ 可以下载了！请升级您的相机固件以获得最好的用户体验。";
+
+"NEW_APP_VERSION" = "Secure360 App 新版本 %@ 更新了!";
+
+"NEW_APP_VERSION_TITLE" = "有新版App可升级";
+
+"NEW_APP_VERSION_BODY" = "Secure360 App 新版本 %@ 更新了！请升级您的App版本以获得最好的用户体验。";
+
+"OUT_OF_DATA" = "%@ 没有流量剩余了。";
+
+"OUT_OF_DATA_TITLE" = "流量用完了";
+
+"OUT_OF_DATA_BODY" = "%@ 没有流量剩余了。因此，云服务在当前套餐周期中暂停了。要加购更多流量，可以打开“My Waylens”内的相应页面。";
+
+"Lens Up" = "正向安装";
+
+"Lens Down" = "倒置安装";
+
+"Camera View" = "安装方式";
+
+"How was your camera installed?" = "您的摄像机是如何安装的?";
+
+"camera_setup_installation_mode_hint" = "预览画面看起来正常吗？如果不正常，请返回\n上一步并尝试其他选项。";
+
+"xx events in last 24 hours" = "%@ 个事件发生于过去24小时";
+
+"Hard Brake" = "急刹车";
+"Sharp Turn" = "急转弯";
+"Hard Accel" = "急加速";
+"Harsh Accel" = "急加速+";
+"Harsh Brake" = "急刹车+";
+"Harsh Turn" = "急转弯+";
+"Severe Accel" = "急加速++";
+"Severe Brake" = "急刹车++";
+"Severe Turn" = "急转弯++";
+
+"No Driver" = "未检到司机";
+"Drowsy" = "犯困";
+"Drinking" = "喝水";
+"Smoking" = "吸烟";
+"Phone Calling" = "打电话";
+"Using Phone" = "用手机";
+"Asleep" = "瞌睡";
+"Daydreaming" = "发呆";
+"Yawning" = "哈欠";
+"Distracted" = "分神";
+"Attentive" = "回神";
+"No SeatBelt" = "安全带";
+
+"Date" = "日期";
+
+"Ago" = "更早";
+
+"Required" = "必填";
+
+/* driving behavior */
+"Behavior" = "驾驶行为";
+
+"shows behavior includes Sharp Turn, Hard Brake and Hard Accel" = "驾驶行为：表示驾驶中的急转弯，急加速，急刹车行为";
+
+"Battery Protection" = "电池保护";
+
+"Which battery protection mode shall the camera utilize" = "摄像机将使用哪一种电池保护模式";
+
+/* Battery Protection Choice */
+"Daily Driver" = "日常行驶模式";
+
+"Maintain higher than minimum battery voltage for colder climate starting or for shorter parking duration needs. Best for Daily driven vehicles." = "使车辆的电池电压保持在较高水平，主要适用于较冷的气候及较短的停车模式时长。日常行驶适合选择该模式。";
+
+/* Battery Protection Choice */
+"Balanced" = "平衡模式";
+
+"Offers battery voltage protection and a generous parking mode time of up to 7 days. Best for business traveling and road trips." = "使车辆的电池电压保持在合适水平，并且支持最高7天的停车模式。商务旅行或者自驾游适合选择该模式。";
+
+/* Battery Protection Choice */
+"Extended" = "长续航模式";
+
+"Intended for long term parking mode users who need the full 15 days of secure protection. May reduce battery voltage to lower than normal levels in cold climates. If the vehicle is parked for a longer time, it is recommended to disconnect the camera power cord." = "可以支持最长15天的停车模式，但可能会使车辆的电池电压处于较低水平。在较冷的气候下请谨慎选择该模式。如果更长时间不开车，建议断开摄像机的电源线。";
+
+/* Battery Protection Choice */
+"Extreme" = "极限模式";
+
+"Designed for vehicle batteries with low working voltage. Select this mode only if the camera often enters battery protection mode and be offline. If you select this mode, the vehicle may have ignition problem." = "为电池工作电压比低的车辆所设计。仅当你的摄像机经常会进入电池保护模式时选择，否则你的车辆可能会有点火问题。";
+
+"When utilizing \"xx\", the vehicle may have ignition problem.\nAre you sure to select this mode?" = "当使用“%@”，你的车辆可能会有点火问题。\n是否确认选择该模式？";
+
+"The camera often enter battery protection mode." = "摄像机经常进入电池保护模式";
+
+"Driving Mode Timeout" = "停车休眠延时";
+
+"Your Secure360 will remain in Driving mode when connected by WIFI to your mobile App." = "当Secure360摄像机通过WiFi连接手机App时，摄像机会始终保持开车模式。";
+
+"Setup Camera" = "安装摄像机";
+
+/* %@ used in this month */
+"xx used in this month" = "本月已使用 %@";
+
+"Data Usage" = "流量使用";
+
+"Username or password is incorrect, please try again." = "用户名或密码不正确，请重试。";
+
+"Unknown Error" = "未知错误";
+
+/* Please enable Location Services for the %@ app from your phone Settings and Privacy menu to ensure the best experience. */
+"Please enable Location Services for the xxx App from your phone Settings and Privacy menu to ensure the best experience." = "请从“设置”-“隐私”菜单打开%@ App的位置权限，以获得更好的使用体验。";
+
+"Failed to apply settings, please check network connection." = "无法设置，请检查网络连接。";
+
+/* Please enable Location Services for the %@ app from your phone Settings and Privacy menu to ensure the best experience. */
+"Please enable Location Services for the xxx App from your phone Settings and Privacy menu to ensure the best experience." = "请从“设置”-“隐私”菜单打开%@ App的位置权限，以获得更好的使用体验。";
+
+"Failed to apply settings, please check network connection." = "无法设置，请检查网络连接。";
+
+"Apply settings successfully!" = "设置成功!";
+
+"Applying settings..." = "正在应用设置...";
+
+"Apply" = "应用";
+
+/* date range */
+"xx to xx" = "%@ 至 %@";
+
+/* length unit */
+"miles" = "英里";
+
+/* duration unit */
+"hour(s)" = "小时";
+
+"Events" = "事件";
+
+"\"Waylens xx\" App is not for this camera.\nFor individual customers, please use \"Waylens xx\" App." = "“Waylens %@”App不适用于您连接的相机。\n个人用户请使用“Waylens %@”App。";
+
+"\"Waylens xx\" App is not for this camera.\nFor fleet customers, please use \"Waylens xx\" App." = "“Waylens %@”App不适用于您连接的相机。\n车队用户请使用“Waylens %@”App.";
+
+"Go to \"Waylens xx\" App" = "打开“Waylens %@”App";
+
+"Sorry" = "抱歉";
+
+"Combined" = "组合";
+
+"Driver" = "司机";
+
+"Cabin" = "驾驶室";
+
+"Road" = "道路";
+
+"Combined View" = "组合视图";
+
+"Driver Facing" = "司机镜头";
+
+"Cabin Facing" = "驾驶室镜头";
+
+"Road Facing" = "道路镜头";
+
+"To export video, please allow this app to access your full photo library." = "要导出视频，请允许此App访问完整的照片图库。";
+
+/* Local network is currently disabled, to discover your camera, please enable %@ local network in your device\n\"Settings\"->\"Privacy\"->\"Local Network\"->\"%@\" */
+"enable_local_network_alert_message" = "当前已禁用本地网络，要发现你的摄像机，请在你的设备中启用%@的本地网络\n“设置”->“隐私”->“本地网络”->“%@”";
+
+/* remote notification */
+"Event_Driving_to_Parking" = "%@ went into parking mode.";
+
+/* remote notification */
+"Event_Parking_to_Driving" = "%@ went into driving mode.";
+
+/* remote notification */
+"Event_Sharp_Turn" = "%@ made a sharp turn at %@.";
+
+/* remote notification */
+"Event_Sharp_Turn_NL" = "%@ made a sharp turn.";
+
+/* remote notification */
+"Event_Harsh_Turn" = "%@ made a harsh turn at %@.";
+
+/* remote notification */
+"Event_Harsh_Turn_NL" = "%@ made a harsh turn.";
+
+/* remote notification */
+"Event_Severe_Turn" = "%@ made a severe turn at %@.";
+
+/* remote notification */
+"Event_Severe_Turn_NL" = "%@ made a severe turn.";
+
+/* remote notification */
+"Event_Hard_Accel" = "%@ made a hard accel at %@.";
+
+/* remote notification */
+"Event_Hard_Accel_NL" = "%@ made a hard accel.";
+
+/* remote notification */
+"Event_Harsh_Accel" = "%@ made a harsh accel at %@.";
+
+/* remote notification */
+"Event_Harsh_Accel_NL" = "%@ made a harsh accel.";
+
+/* remote notification */
+"Event_Severe_Accel" = "%@ made a severe accel at %@.";
+
+/* remote notification */
+"Event_Severe_Accel_NL" = "%@ made a severe accel.";
+
+/* remote notification */
+"Event_Hard_Brake" = "%@ made a hard brake at %@.";
+
+/* remote notification */
+"Event_Hard_Brake_NL" = "%@ made a hard brake.";
+
+/* remote notification */
+"Event_Harsh_Brake" = "%@ made a harsh brake at %@.";
+
+/* remote notification */
+"Event_Harsh_Brake_NL" = "%@ made a harsh brake.";
+
+/* remote notification */
+"Event_Severe_Brake" = "%@ made a severe brake at %@.";
+
+/* remote notification */
+"Event_Severe_Brake_NL" = "%@ made a severe brake.";
+
+/* remote notification */
+"Event_Driving_Bump" = "%@ had a bump while driving at %@.";
+
+/* remote notification */
+"Event_Driving_Bump_NL" = "%@ had a bump while driving.";
+
+/* remote notification */
+"Event_Parking_Bump" = "%@ had a bump while parking at %@.";
+
+/* remote notification */
+"Event_Parking_Bump_NL" = "%@ had a bump while parking.";
+
+/* remote notification */
+"Event_Driving_Impact" = "%@ had an impact while driving at %@.";
+
+/* remote notification */
+"Event_Driving_Impact_NL" = "%@ had an impact while driving.";
+
+/* remote notification */
+"Event_Parking_Impact" = "%@ had an impact while parking at %@.";
+
+/* remote notification */
+"Event_Parking_Impact_NL" = "%@ had an impact while parking.";
+
+/* remote notification */
+"Enter_Geo_Fence" = "%@ entered geo-fence %@ driving %@.";
+
+/* remote notification */
+"Exit_Geo_Fence" = "%@ exited geo-fence %@ driving %@.";
+
+"This device does not support the export of 4K video. The video will be exported after converting." = "This device does not support the export of 4K video. The video will be exported after converting.";
+
+"Exported video" = "Exported video";
+
+"Went into parking mode" = "Went into parking mode";
+
+"Went into driving mode" = "Went into driving mode";
+
+"%@ geo-fence %@" = "%@ geo-fence %@";
+
+"%@ %@ driving %@" = "%@ %@ driving %@";
+
+"Start Installation Test" = "Start Installation Test";
+
+"Please follow the installation guide to install the camera correctly.\n\nAnd power on your vehicle." = "Please follow the installation guide to install the camera correctly.\n\nAnd power on your vehicle.";
+
+"The camera installed successfully." = "The camera installed successfully.";
+
+"Almost Finished" = "Almost Finished";
+
+"Please contact the supplier for the cause of the network error." = "Please contact the supplier for the cause of the network error.";
+
+"Installation Guide for Secure360" = "Installation Guide for Secure360";
+
+"If the vehicle is left or right hand drive" = "Vô lăng bên trái hay bên phải";
+
+"Left" = "Left";
+
+"Right" = "Right";
+
+"Choose the type closest to yoru vehicle in driver cabin size" = "Choose the type closest to yoru vehicle in driver cabin size";
+
+"Truck" = "Truck";
+
+"Large SUV / Pickup" = "Large SUV / Pickup";
+
+"Car / Small SUV" = "Car / Small SUV";
+
+"Calibrate the camera." = "Calibrate the camera.";
+
+"Calib and Look Forward" = "Calib and Look Forward";
+
+"Look forward with the ordinary driving posture." = "Look forward with the ordinary driving posture.";
+
+"ⓘ Please turn up the volume." = "ⓘ Please turn up the volume.";
+
+"Back to adjust the camera" = "Back to adjust the camera";
+
+"Make sure that the video is upright." = "Make sure that the video is upright.";
+
+"Recommended installation position." = "Recommended installation position.";
+
+"Input the vehicle information." = "Input the vehicle information.";
+
+"Adjust the camera position." = "Adjust the camera position.";
+
+"Make sure that the driver kept an ordinary driving position and look forward from tapping the Calib button to completing the calibration." = "Make sure that the driver kept an ordinary driving position and look forward from tapping the Calib button to completing the calibration.";
+
+"I am sure" = "I am sure";
+
+"Not sure and calib again" = "Not sure and calib again";
+
+"Calib Failed" = "Calib Failed";
+
+"Calibration is required every time the DMS camera is moved!" = "Calibration is required every time the DMS camera is moved!";
+
+"Calib Done" = "Calib Done";
+
+"Calib the Driving Facing Camera" = "Calib the Driving Facing Camera";
+
+"Cancel Calibration" = "Cancel Calibration";
+
+"The camera has not been added to the fleet, please add it or change a camera." = "The camera has not been added to the fleet, please add it or change a camera.";
+
+"SecureES Network Setup" = "SecureES Network Setup";
+
+"Please select the way to connect internet." = "Please select the way to connect internet.";
+
+"Step 1: Make sure that the MiFi hotspot is powered on.\n\nStep 2: Power on the camera, the camera will connect to the MiFi Hotspots automatically. Please make sure that the MiFi hotspot is the one included in the package." = "Step 1: Make sure that the MiFi hotspot is powered on.\n\nStep 2: Power on the camera, the camera will connect to the MiFi Hotspots automatically. Please make sure that the MiFi hotspot is the one included in the package.";
+
+"Please connect your phone to camera Wi-Fi." = "Please connect your phone to camera Wi-Fi.";
+
+"Input the SSID and password of the hotspot." = "Input the SSID and password of the hotspot.";
+
+"You can find the Wi-Fi name and Wi-Fi password on the screen of the camera.\n\nUse your phone to connect to the camera's Wi-Fi." = "You can find the Wi-Fi name and Wi-Fi password on the screen of the camera.\n\nUse your phone to connect to the camera's Wi-Fi.";
+
+"Connect the camera to the mobile phone's WiFi." = "Connect the camera to the mobile phone's WiFi.";
+
+"The SSID and Password has been save on the camera successfully.\nTurn on the hotspot of the mobile phone, then the camera will connect to the WiFi automatically.\n\nYou can turn on the hotspot through:\nSettings > Cellular or Settings > Personal Hotspot." = "The SSID and Password has been save on the camera successfully.\nTurn on the hotspot of the mobile phone, then the camera will connect to the WiFi automatically.\n\nYou can turn on the hotspot through:\nSettings > Cellular or Settings > Personal Hotspot.";
+
+"Please select the camera type." = "Please select the camera type.";
+
+"Please make sure the SSID and password you input are completely correct. Including case, punctuation and numbers." = "Please make sure the SSID and password you input are completely correct. Including case, punctuation and numbers.";
+
+"The SSID and password has been successfully saved in the camera.\nPlease disconnect the phone from the camera WiFi and the camera will automatically connect to the hotspot." = "The SSID and password has been successfully saved in the camera.\nPlease disconnect the phone from the camera WiFi and the camera will automatically connect to the hotspot.";
+
+"Failed to save the SSID and Password. Please try again." = "Failed to save the SSID and Password. Please try again.";
+
+"APN Setting" = "APN Setting";
+
+"Vehicle Power Information" = "Vehicle Power Information";
+
+"Current Voltage" = "Current Voltage";
+
+"Battery Status" = "Battery Status";
+
+"OBD Work Mode" = "OBD Work Mode";
+
+"Select the OBD Work Mode suitable for the vehicle type." = "Select the OBD Work Mode suitable for the vehicle type.";
+
+"J1939 Only" = "J1939 Only";
+
+"Classical" = "Classical";
+
+"Voltage Only" = "Voltage Only";
+
+"Passive" = "Passive";
+
+"Ignition status events are triggered by Voltage and listen to OBD. Available for there are other OBD devices plugged." = "Ignition status events are triggered by Voltage and listen to OBD. Available for there are other OBD devices plugged.";
+
+"Ignition status events are triggered by Voltage and listen to J1939." = "Ignition status events are triggered by Voltage and listen to J1939.";
+
+"Ignition status events are triggered by Voltage and Scan OBD." = "Ignition status events are triggered by Voltage and Scan OBD.";
+
+"Ignition status events are triggered by Voltage only." = "Ignition status events are triggered by Voltage only.";
+
+"Ignition status events are triggered by Voltage and Scan OBD or J1939." = "Ignition status events are triggered by Voltage and Scan OBD or J1939.";
+
+"Using Current Connected Camera" = "Using Current Connected Camera";
+
+"Look forward with an ordinary driving posture.\n\nAdjust the camera to make the driver image fit in the mask." = "Look forward with an ordinary driving posture.\n\nAdjust the camera to make the driver image fit in the mask.";
+
+"ADAS Settings" = "ADAS Settings";
+
+"Please input the height of the camera to the ground" = "Please input the height of the camera to the ground";
+
+"Please input the width of the vehicle from wheel to wheel" = "Please input the width of the vehicle from wheel to wheel";
+
+"Meters" = "Meters";
+
+"Invalid Value" = "Invalid Value";
+
+"Value Range: 0.5 ≤ value ≤ 5.0" = "Value Range: 0.5 ≤ value ≤ 5.0";
+
+"Value Range: 20 ≤ value ≤ 200" = "Value Range: 20 ≤ value ≤ 200";
+
+"Value Range: 0 < value < 10" = "Value Range: 0 < value < 10";
+
+"The camera is in 'xx' mode, so the power cord test cannot be done.\n\nIf a power cord test is required, please contact the administrator to switch the camera to 'Trust Acc' mode." = "The camera is in '%@' mode, so the power cord test cannot be done.\n\nIf a power cord test is required, please contact the administrator to switch the camera to 'Trust Acc' mode.";
+
+"Virtual Ignition" = "Virtual Ignition";
+
+"Trust Acc Off" = "Trust Acc Off";
+
+"Skip Power Cord Test" = "Skip Power Cord Test";
+
+"Collision Warning" = "Collision Warning";
+"Lane Departure" = "Lane Departure";
+"Tail-Gating" = "Tail-Gating";
+"Close Following" = "Close Following";
+
+"Please input the windshield offset from center\n(Negative number for left, positive number for right)" = "Please input the windshield offset from center\n(Negative number for left, positive number for right)";

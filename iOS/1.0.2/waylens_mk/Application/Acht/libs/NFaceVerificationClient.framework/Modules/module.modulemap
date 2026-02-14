@@ -1,0 +1,6 @@
+framework module NFaceVerificationClient {
+  umbrella header "NFaceVerificationClient.h"
+
+  export *
+  module * { export * }
+}

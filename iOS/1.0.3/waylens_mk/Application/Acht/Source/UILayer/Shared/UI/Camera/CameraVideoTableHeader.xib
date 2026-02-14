@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CameraVideoListHeader" customModule="Acht" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nq3-d2-6zJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Otw-DG-jrH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEv-vt-KNq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="I9B-5L-SVS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mv-Wp-sRP">
+                    <rect key="frame" x="0.0" y="44.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="YZS-BA-93E"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-10-30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aD-8j-qfp">
+                    <rect key="frame" x="149" y="14.5" width="77" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.46274509803921571" green="0.47058823529411764" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Nq3-d2-6zJ" secondAttribute="bottom" id="49a-Mi-fgB"/>
+                <constraint firstItem="MEv-vt-KNq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79S-l3-9N9"/>
+                <constraint firstAttribute="trailing" secondItem="MEv-vt-KNq" secondAttribute="trailing" id="GLM-er-1xh"/>
+                <constraint firstItem="Nq3-d2-6zJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QJ5-LL-bVL"/>
+                <constraint firstItem="Nq3-d2-6zJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qmr-BI-yzh"/>
+                <constraint firstItem="3aD-8j-qfp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ieO-vf-LC4"/>
+                <constraint firstAttribute="bottom" secondItem="3Mv-Wp-sRP" secondAttribute="bottom" id="jC0-aw-riE"/>
+                <constraint firstItem="3aD-8j-qfp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="l9s-OP-XTN"/>
+                <constraint firstAttribute="trailing" secondItem="3Mv-Wp-sRP" secondAttribute="trailing" id="pmL-OR-Wkm"/>
+                <constraint firstItem="3Mv-Wp-sRP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="se5-Wi-uXO"/>
+                <constraint firstAttribute="trailing" secondItem="Nq3-d2-6zJ" secondAttribute="trailing" id="v4W-ud-NyJ"/>
+                <constraint firstItem="MEv-vt-KNq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ziN-mE-iab"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="3aD-8j-qfp" id="7eE-5I-iJl"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

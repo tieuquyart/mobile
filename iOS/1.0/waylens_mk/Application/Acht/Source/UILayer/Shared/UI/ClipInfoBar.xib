@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NS7-kZ-bHM" userLabel="info bar" customClass="ClipInfoBar" customModule="Acht" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIL-xh-nPn">
+                    <rect key="frame" x="40" y="0.0" width="5" height="38"/>
+                    <color key="backgroundColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="fNv-km-ays"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motion while parked · 30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXk-UT-85k" customClass="MonospacedLabel" customModule="Acht" customModuleProvider="target">
+                    <rect key="frame" x="53" y="11.666666666666668" width="320" height="14.666666666666668"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.79995929529999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Motion while parked"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-f2-3SB">
+                    <rect key="frame" x="371" y="7.6666666666666679" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="2oy-Bz-hmh"/>
+                        <constraint firstAttribute="width" secondItem="M5O-f2-3SB" secondAttribute="height" multiplier="1:1" id="d4Q-q0-GPO"/>
+                    </constraints>
+                    <state key="normal" image="icon_sign_information_w"/>
+                    <connections>
+                        <action selector="infoButtonTapped:" destination="NS7-kZ-bHM" eventType="touchUpInside" id="48x-Vd-qgc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DIL-xh-nPn" firstAttribute="leading" secondItem="vtt-Zw-agT" secondAttribute="leading" constant="40" id="39M-c3-xw9"/>
+                <constraint firstItem="M5O-f2-3SB" firstAttribute="centerY" secondItem="NS7-kZ-bHM" secondAttribute="centerY" id="8ye-0j-0dj"/>
+                <constraint firstItem="hXk-UT-85k" firstAttribute="centerY" secondItem="NS7-kZ-bHM" secondAttribute="centerY" id="Qi7-Jx-E44"/>
+                <constraint firstItem="DIL-xh-nPn" firstAttribute="top" secondItem="NS7-kZ-bHM" secondAttribute="top" id="R3R-Qf-FnP"/>
+                <constraint firstItem="DIL-xh-nPn" firstAttribute="centerY" secondItem="NS7-kZ-bHM" secondAttribute="centerY" id="VPX-ee-Dwx"/>
+                <constraint firstItem="hXk-UT-85k" firstAttribute="centerX" secondItem="NS7-kZ-bHM" secondAttribute="centerX" constant="6" id="VtE-2c-xtP"/>
+                <constraint firstItem="hXk-UT-85k" firstAttribute="leading" secondItem="DIL-xh-nPn" secondAttribute="trailing" constant="8" id="eku-Oi-R58"/>
+                <constraint firstItem="vtt-Zw-agT" firstAttribute="trailing" secondItem="M5O-f2-3SB" secondAttribute="trailing" constant="20" id="hZb-zS-8Ma"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vtt-Zw-agT"/>
+            <connections>
+                <outlet property="indicatorBar" destination="DIL-xh-nPn" id="Zpn-YU-BCX"/>
+                <outlet property="infoButton" destination="M5O-f2-3SB" id="Zho-yD-PZu"/>
+                <outlet property="infoLabel" destination="hXk-UT-85k" id="LAx-b7-pEP"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="393.75000000000006"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_sign_information_w" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module WaylensCarlos {
+  umbrella header "WaylensCarlos-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CameraTimeLineCell" id="wOP-NI-98M" customClass="CameraTimeLineCell" customModule="Acht" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtP-hE-DQM">
+                        <rect key="frame" x="86" y="0.0" width="5" height="135"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="085-Yh-b6a">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3592-3630 Jin Ke Lu, Pudong Xinqu, Shanghai Shi, China, 201203" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69l-KP-VPa">
+                        <rect key="frame" x="101" y="99" width="144" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-uH-3UC" customClass="MonospacedLabel" customModule="Acht" customModuleProvider="target">
+                        <rect key="frame" x="20" y="120.5" width="56" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        </variation>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vv-b2-XFL">
+                        <rect key="frame" x="255" y="0.0" width="100" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0CN-z6-OGu">
+                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="sye-lV-YYy"/>
+            <constraints>
+                <constraint firstItem="1Vv-b2-XFL" firstAttribute="leading" secondItem="69l-KP-VPa" secondAttribute="trailing" constant="10" id="1w4-Mc-9Mk"/>
+                <constraint firstItem="YtP-hE-DQM" firstAttribute="leading" secondItem="AKs-uH-3UC" secondAttribute="trailing" constant="10" id="Fi6-4B-Zp3">
+                    <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                </constraint>
+                <constraint firstAttribute="bottom" secondItem="1Vv-b2-XFL" secondAttribute="bottom" id="Gah-Wi-AXU"/>
+                <constraint firstAttribute="bottom" secondItem="YtP-hE-DQM" secondAttribute="bottom" id="NkI-JX-j5R"/>
+                <constraint firstAttribute="trailing" secondItem="1Vv-b2-XFL" secondAttribute="trailing" constant="20" id="Ocj-iN-Rkg">
+                    <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                </constraint>
+                <constraint firstItem="1Vv-b2-XFL" firstAttribute="top" secondItem="wOP-NI-98M" secondAttribute="top" id="PbR-PI-4xu"/>
+                <constraint firstItem="69l-KP-VPa" firstAttribute="bottom" secondItem="YtP-hE-DQM" secondAttribute="bottom" id="VQe-jY-F2e"/>
+                <constraint firstItem="AKs-uH-3UC" firstAttribute="bottom" secondItem="YtP-hE-DQM" secondAttribute="bottom" id="fAm-jD-OlZ"/>
+                <constraint firstItem="YtP-hE-DQM" firstAttribute="top" secondItem="wOP-NI-98M" secondAttribute="top" id="kMv-Wu-pXZ"/>
+                <constraint firstItem="69l-KP-VPa" firstAttribute="leading" secondItem="YtP-hE-DQM" secondAttribute="trailing" constant="10" id="xYc-uP-0Ee">
+                    <variation key="heightClass=regular-widthClass=regular" constant="14"/>
+                </constraint>
+                <constraint firstItem="YtP-hE-DQM" firstAttribute="leading" secondItem="wOP-NI-98M" secondAttribute="leading" constant="86" id="zPg-G5-zCf">
+                    <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                </constraint>
+            </constraints>
+            <size key="customSize" width="375" height="135"/>
+            <connections>
+                <outlet property="locationLabel" destination="69l-KP-VPa" id="1mp-kH-QMa"/>
+                <outlet property="thumbnailArea" destination="1Vv-b2-XFL" id="1qC-Ka-uME"/>
+                <outlet property="thumbnailAreaTrailingConstraint" destination="Ocj-iN-Rkg" id="yLj-We-EWA"/>
+                <outlet property="timeLabel" destination="AKs-uH-3UC" id="dKL-fk-x4K"/>
+                <outlet property="timeline" destination="YtP-hE-DQM" id="K1K-GO-6MD"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="154"/>
+        </collectionViewCell>
+    </objects>
+</document>

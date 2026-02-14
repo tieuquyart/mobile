@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_fleet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_320">
+
+        <LinearLayout
+            android:id="@+id/ll_dash_fleet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_33"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/ll_date_picker"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_dash_date"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/tv_date_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorBaseFleet"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        tools:text="2019-6-25 to 2019-7-08" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_15"
+                        android:layout_height="@dimen/dp_15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp_8"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:src="@drawable/ic_calendar"
+                        android:tint="@color/colorBaseFleet"
+                        tools:ignore="UseAppTint" />
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/spTimeReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:background="@drawable/border_spinner"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_252"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:background="@drawable/background_section"
+                android:elevation="@dimen/dp_3"
+                android:orientation="vertical">
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/magic_indicator"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_65" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/refresh_fleet_layout"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_46"
+                android:background="@color/transparent"
+                android:elevation="@dimen/dp_3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:text="@string/report_with"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sort_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbJourney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/vehicleFleet"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbSpeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/vehicleSpeed"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_continuous_driving_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/continuous_driving_time_rp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/vehicleStop"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_totalReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/reportTotal"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_detailPicture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:background="@drawable/background_overview_filter"
+                        android:button="@null"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:text="@string/detailPicture"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:background="@color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_25">
+
+                <LinearLayout
+                    android:id="@+id/llRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rdB21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/b2_1_vehicleSpeed" />
+
+                    <RadioButton
+                        android:id="@+id/rdB22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/b2_2_overSpeed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llRadioB5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rdB51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/b2_1_vehicleSpeed" />
+
+                    <RadioButton
+                        android:id="@+id/rdB52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/b2_2_overSpeed" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llPlateNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txTitleReport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/driver_name"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spTypeReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@drawable/border_spinner"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_date_picker_report"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_33"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/background_dash_date"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_date_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/colorBaseFleet"
+                        android:textSize="@dimen/sp_12"
+                        android:textStyle="bold"
+                        tools:text="2019-6-25 to 2019-7-08" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_15"
+                        android:layout_height="@dimen/dp_15"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:src="@drawable/ic_calendar"
+                        android:tint="@color/colorBaseFleet"
+                        tools:ignore="UseAppTint" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnExportReport"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/button_blue_border"
+                    android:drawableEnd="@drawable/icon_arrow_dn"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:text="@string/download"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_14"
+                    tools:ignore="SpUsage" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

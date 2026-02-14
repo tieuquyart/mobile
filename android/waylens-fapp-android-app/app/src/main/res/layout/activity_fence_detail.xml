@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mk.autosecure.ui.activity.settings.FenceDetailActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <fragment
+        android:id="@+id/googleMap"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/rl_fence_detail"
+        app:layout_constraintTop_toBottomOf="@id/default_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fence_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:background="@color/colorBackgroundBlue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            tools:text="Create time: 12:05, June 19" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_create_time"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            tools:text="Location: 1000 Massachusetts Avenue" />
+
+        <TextView
+            android:id="@+id/tv_trigger_mode"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            tools:text="Trigger mode: When vehicles exit and enter" />
+
+        <Button
+            android:id="@+id/btn_triggering_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_above="@id/btn_delete"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/blue_rectangle_bg"
+            android:text="@string/triggering_vehicles"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBaseFleet" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:background="@drawable/red_rectangle_bg"
+            android:text="@string/video_action_delete"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRedWarn" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

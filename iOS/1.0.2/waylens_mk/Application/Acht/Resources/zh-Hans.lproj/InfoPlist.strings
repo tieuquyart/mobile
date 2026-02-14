@@ -1,0 +1,19 @@
+/* 
+  InfoPlist.strings
+  Acht
+
+  Created by forkon on 2018/11/23.
+  Copyright © 2018 waylens. All rights reserved.
+*/
+
+/* This lets you take photos for your avatars */
+"NSCameraUsageDescription" = "为了让你可以拍照做自己的头像";
+
+/* This lets you view your current location on the map */
+"NSLocationWhenInUseUsageDescription" = "为了让你更顺畅的连接摄像机Wi-Fi以及在地图上查看自己当前的位置";
+
+/* This lets you choose avatar from your library, also save photos and videos to your library */
+"NSPhotoLibraryUsageDescription" = "为了让你可以从相册中选择头像以及保存照片和视频到相册里。";
+
+/* This app uses the local network to discover Waylens camera on your Wi-Fi network. */
+"NSLocalNetworkUsageDescription" = "此App使用本地网络来连接你的Waylens摄像机";

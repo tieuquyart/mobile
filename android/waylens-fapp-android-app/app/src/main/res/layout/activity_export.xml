@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorExportView"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/toolbar_export"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+            android:id="@+id/media_window"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            app:farfl_xratio="16dp"
+            app:farfl_yratio="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/gl_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_timeStamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/black"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+<!--            <com.mk.autosecure.ui.view.BoundaryProgressBar-->
+<!--                android:id="@+id/pb_export"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:barBackgroundColor="@color/transparent"-->
+<!--                app:progress="0"-->
+<!--            app:progressColor="@color/colorAccent"-->
+<!--                app:strokeWidth="8dp" />-->
+
+        </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_touch_screen"
+            android:layout_width="@dimen/dp_158"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_119"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:src="@drawable/icon_export_touch" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:text="@string/export_touch"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_downloadInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/media_window"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/media_window">
+
+            <TextView
+                android:id="@+id/tv_downloadInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_export_info"
+                android:paddingStart="12dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="3dp"
+                android:textColor="#253238"
+                android:textSize="@dimen/sp_12"
+                tools:text="00:00:30   40.75 MB" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ViewAnimator
+        android:id="@+id/va_export"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_surface">
+
+        <include layout="@layout/layout_save_album" />
+
+        <include layout="@layout/layout_export_library" />
+
+        <include layout="@layout/layout_share_waylens" />
+    </ViewAnimator>
+
+    <View
+        android:id="@+id/top_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorExportShadow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/rl_surface"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorExportShadow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_surface">
+
+        <TextView
+            android:id="@+id/tv_export_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_35"
+            android:gravity="center_horizontal"
+            android:text="@string/export_progress"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <ViewAnimator
+            android:id="@+id/va_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.mk.autosecure.ui.view.SlideToUnlockView
+                android:id="@+id/cancel_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_76" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_done"
+                    style="@style/BorderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:text="@string/export_done" />
+
+                <TextView
+                    android:id="@+id/tv_go_album"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:padding="10dp"
+                    android:text="@string/go_to_album"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_23"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_retry_share"
+                    style="@style/BorderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:text="@string/retry" />
+
+                <TextView
+                    android:id="@+id/tv_cancel_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </ViewAnimator>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

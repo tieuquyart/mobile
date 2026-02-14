@@ -1,0 +1,1483 @@
+<resources>
+
+    <string name="slogan">Chúc bạn một chuyến đi an toàn</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Huỷ</string>
+    <string name="camera_setting_title">Cài đặt</string>
+
+    <string name="error_network_unknown">Không có mạng</string>
+    <string name="error_network_timeout">Mất kết nối</string>
+    <string name="error_network_unavailable">Không có mạng</string>
+
+    <string name="emergency_alert_setting_title">Cảnh báo khẩn cấp</string>
+
+    <string name="navigation_drawer_open">Mở điều hướng</string>
+    <string name="navigation_drawer_close">Đóng điều hướng</string>
+
+    <string name="menu_me">Chủ xe</string>
+    <string name="menu_album">Bộ sưu tập</string>
+    <string name="menu_wallet">Ví điện tử</string>
+    <string name="settings">Cài đặt</string>
+    <string name="log_in">Đăng nhập</string>
+
+    <string name="setting_item_camera">Camera</string>
+    <string name="add_new_camera">Thêm camera</string>
+    <string name="edit_camera">Sửa camera</string>
+
+    <string name="set_up_camera">Cài đặt camera</string>
+    <string name="setting_item_about">Giới thiệu</string>
+    <string name="setting_item_clean_cache">Xoá bộ nhớ cache</string>
+    <string name="setting_item_feedback_camera">Hỗ trợ kỹ thuật</string>
+    <string name="setting_item_faq">Câu hỏi thường gặp</string>
+    <string name="faq_request_1">Hướng dẫn kết nối nguồn AutoSecure?</string>
+    <string name="faq_response_1">Kết nối nhanh chóng với các cách sau: Kết nối dây trực tiếp sẽ có 3 đầu dây:1) Dây ổn định2) Dây ACC (để xác định xe nổ máy)3) Dây nối đấtSản phẩm sẽ được đính kèm hướng dẫn lắp đặt cụ thể Bất kỳ ai quen thuộc với hệ thống điện ô tô đều có thể lắp kiểu dây trực tiếp. Nếu chưa chắc chắn bạn có thể đi đến các gẩge được chúng tôi giới thiệu để nhờ hỗ trợ</string>
+    <string name="watch_video_tutorial">Xem video hướng dẫn</string>
+    <string name="faq_request_2">Chế độ ghi hình của MK Vision AutoSecure?</string>
+    <string name="faq_response_2">Video được quay ở hai chế độ, chế độ lái xe và chế độ đỗ xe. AutoSecure tự động chuyển đổi giữa các chế độ này. Khi ở chế độ đỗ xe, tính năng tiết kiệm điện thông minh của AutoSecure giúp chiếc xe của bạn luôn được giám sát mà vẫn không làm tiêu hao quá nhiều điện từ ắc quy. Khi phát hiện một sự kiện như va chạm hoặc đột nhập, AutoSecure sẽ tự khởi động và ghi lại sự kiện đó, sau đó sẽ quay về chế độ "ngủ" và chờ sự kiện tiếp theo. Khi ở chế độ lái xe, camera sẽ ghi hình ở chế độ vòng lặp. Nếu Autosecure phát hiện điều bất thường, chẳng hạn như một vụ va chạm, một video nổi bật sẽ tự động được tạo để người dùng dễ dàng xác định vị trí. Với kết nối 4G, video nổi bật này ngay lập tức được tải lên MK Vision Cloud.</string>
+    <string name="faq_request_3">Autosecure quản lý bộ nhớ trên thẻ microSD như thế nào?</string>
+    <string name="faq_response_3">Để lưu trữ video trên Autosecure, MK Vision đề xuất sử dụng thẻ SD độ bền cao (thẻ MicroSD MLC class 10 trở lên) với dung lượng tối thiểu là 32GB, tối đa có thể lên đến 256GB. Trong chế độ lái xe, Autosecure ghi video theo vòng lặp, tức là camera sẽ tự động ghi đè các data cũ khi bộ nhớ đầy. Các video về sự kiện nổi bật do người dùng chỉ định cũng sẽ theo chế độ vòng lặp, nhưng không thể bị ghi đè bởi những data lái xe thông thường. Để đảm bảo lưu giữ những bằng chứng quan trọng, cần phân bổ tối thiểu 8GB cho các data này. Khi kết nối 4G, tất cả data sự kiện đã ghi cũng được tự động tải lên MK Vision Cloud theo thời gian thực.</string>
+    <string name="get_more_answers"><u>Câu hỏi khác</u></string>
+    <string name="need_more_help">Cần trợ giúp</string>
+    <string name="get_help">Diễn đàn</string>
+    <string name="contact_support">Liên hệ hỗ trợ</string>
+    <string name="report_an_issue">Báo lỗi</string>
+    <string name="report_an_issue_"><u>Báo lỗi</u></string>
+    <string name="watch_support_video">Xem video hướng dẫn</string>
+    <string name="support">Hỗ trợ</string>
+
+    <string name="report_issues">Báo lỗi</string>
+    <string name="report_title_activity">Báo lỗi</string>
+    <string name="camera_log_tips">Nhật ký camera chỉ khả dụng qua kết nối Wifi</string>
+    <string name="which_camera">Lỗi xảy ra trên camera %s</string>
+    <string name="secure360_app">Ứng dụng Autosecure</string>
+    <string name="fleet_app">Ứng dụng Fleet</string>
+
+    <string name="network_error_title">Đã có lỗi xảy ra</string>
+    <string name="network_error_content">Vui lòng kiểm tra kết nối mạng của bạn và thử lại.</string>
+
+    <string name="setting_item_log_out">Đăng xuất</string>
+
+    <string name="logout_confirm">Đăng xuất khỏi tài khoản của bạn?</string>
+    <string name="toolbar_alerts">Cảnh báo</string>
+    <string name="toolbar_messages">Tin nhắn</string>
+    <string name="mark_all_alert">Đánh dấu tất cả đã đọc?</string>
+    <string name="empty_alert">Không có cảnh báo</string>
+    <string name="no_notification">Không có thông báo</string>
+    <string name="no_notification_tips">Không có data báo cáo</string>
+    <string name="empty_alert_tips">Cảnh báo từ Autosecure 4G sẽ có ở đây</string>
+    <string name="wifi_camera_alerts">Chỉ khi kết nối 4G cho camera bạn mới có thể nhận thông báo sự kiện qua MK Vision Cloud</string>
+    <string name="learn_more">Tìm hiểu thêm</string>
+    <string name="available_with_fourg">Kết nối 4G cho phép bạn:</string>
+    <string name="automatic_event_uploading">Tải lên sự kiện tự động</string>
+    <string name="realtime_event_notifications">Thông báo sự kiện thời gian thực</string>
+    <string name="live_video_streaming">Phát video trực tiếp</string>
+
+    <string name="empty_album_tips">Xem videos đã xuất</string>
+
+    <string name="action_settings">Cài đặt</string>
+    <string name="login_title">Đăng nhập Fleet</string>
+    <string name="email">Email</string>
+    <string name="account">Tài khoản</string>
+    <string name="login_placeholder_password">Mật khẩu</string>
+    <string name="login_lead_to_register">Tạo tài khoản</string>
+    <string name="new_fleet_title">Tạo Fleet</string>
+    <string name="check_serial_title">Kiểm tra Camera S/N</string>
+    <string name="btn_check">Kiểm tra</string>
+    <string name="email_error">Nhập một địa chỉ email hợp lệ</string>
+    <string name="password_error">Mật khẩu phải có ít nhất 8 ký tự, số và chữ cái</string>
+
+    <string name="log_in_manager">Đăng nhập của người quản lý</string>
+    <string name="skip_log_in">Bỏ qua đăng nhập của lái xe</string>
+
+    <string name="login_forget_password">Quên mật khẩu?</string>
+    <string name="login_buttons_forgot_password_html">&lt;u&gt;Quên mật khẩu?&lt;/u&gt;</string>
+    <string name="login_errors_unable_to_log_in">Không thể đăng nhập.</string>
+    <string name="login_errors_does_not_match">Tài khoản hoặc mật khẩu không chính xác.</string>
+
+    <string name="forget_password">Quên mật khẩu</string>
+    <string name="forget_password_back">Quay lại</string>
+    <string name="forget_password_next">Kế tiếp</string>
+
+    <string name="signup_button">Đăng ký</string>
+    <string name="waylens_agreement">Thỏa thuận MK Vision</string>
+    <string name="waylens_agreement_underline"><u>Thỏa thuận MK Vision</u></string>
+
+    <string name="video_sd_card">Thẻ SD</string>
+    <string name="video_cloud">Cloud</string>
+
+    <string name="setup_meet_problems">&lt;u&gt;Bạn gặp phải sự cố?&lt;/u&gt;</string>
+    <string name="setup_first_plug_in">Cắm dây nguồn và khởi động xe của bạn.</string>
+    <string name="setup_first_red_light">Đèn sáng</string>
+    <string name="setup_continue">Tiếp tục</string>
+    <string name="setup_second_wifi_setting">Đi tới Cài đặt Wifi</string>
+    <string name="setup_second_instruction">Tìm mật khẩu Wifi trên nhãn sản phẩm. Kết nối điện thoại của bạn với "MK Vision-XXXXX" và Quay lại ứng dụng này.</string>
+    <string name="setup_third_input_name">Đặt tên cho camera của bạn</string>
+    <string name="setup_third_done">Hoàn thành</string>
+    <string name="setup_third_camera_name">Tên camera</string>
+    <string name="setup_default_name">Autosecure</string>
+
+
+    <string name="camera_setting_parking_alert_title">Cảnh báo: Phát hiện chuyển động</string>
+
+    <string name="camera_setting_parking_alert_content">Gửi thông báo cho bạn khi phát hiện va chạm và chuyển động.</string>
+
+    <string name="camera_setting_parking_upload_title">Tải lên: Sự kiện va chạm</string>
+    <string name="camera_setting_parking_upload_content">Tải các sự kiện lên đám mây dưới dạng bản sao trong trường hợp bị đâm mạnh.</string>
+
+    <string name="emergency_alert_setting_title_off">Cảnh báo khẩn cấp: Tắt</string>
+    <string name="emergency_alert_setting_content_off">Không cần liên hệ với mọi người khi trường hợp khẩn cấp xảy ra.</string>
+
+    <string name="camera_setting_drive">Lái xe</string>
+    <string name="camera_setting_park">Đỗ xe</string>
+    <string name="camera_mode_active">XE HOẠT ĐỘNG</string>
+
+    <string name="emergency_contacts">Liên hệ khẩn cấp</string>
+
+    <string name="advanced_setting">Cài đặt nâng cao</string>
+
+    <string name="left">Trái</string>
+    <string name="center">Giữa</string>
+    <string name="right">Phải</string>
+
+    <!-- add camera -->
+    <string name="add_camera">Thêm camera</string>
+
+    <string name="retry">Thử lại</string>
+
+    <string name="firmware">Firmware</string>
+    <string name="firmware_update_old">Có bản cập nhật mới</string>
+    <string name="firmware_update_new">Đã cập nhật mới nhất</string>
+
+    <string name="firmware_update_pause_download_firmware">Tạm dừng tải xuống</string>
+    <string name="firmware_update_resume_download_firmware">Tiếp tục tải xuống</string>
+    <string name="firmware_update_error_download_firmware">Tải xuống không thành công. Hãy thử lại sau.</string>
+
+    <string name="firmware_update_downloading_firmware">Đang tải xuống…</string>
+
+    <string name="firmware_update_check_firmware">Kiểm tra firmware</string>
+    <string name="firmware_update_check_firmware_failed">Firmware bị hỏng</string>
+
+    <string name="firmware_update_upgrade_failed">Nâng cấp không thành công. Hãy thử lại sau.</string>
+
+    <string name="found_new_firmware">Đã tìm thấy firmware mới</string>
+    <string name="dialog_action_download">Cập nhật</string>
+
+    <string name="camera_updating">Camera đang cập nhật</string>
+    <string name="camera_may_reboot">Camera có thể khởi động lại nhiều lần trong quá trình cập nhật. Chờ.</string>
+
+    <string name="cloud">Cloud</string>
+    <string name="sdcard">Thẻ SD</string>
+    <string name="detection">Phát hiện đỗ xe / lái xe</string>
+    <string name="recording">Đang ghi hình</string>
+    <string name="record_idle">Chờ</string>
+    <string name="idle">Chờ</string>
+    <string name="factory_reset">Khôi phục cài đặt gốc</string>
+    <string name="record_config" translatable="false">Cài đặt ghi hình</string>
+    <string name="force_codec" translatable="false">ForceH264</string>
+    <string name="vin_mirror" translatable="false">Xoay ảnh</string>
+    <string name="remove_camera">Xóa camera</string>
+
+    <string name="sdcard_title">Thẻ SD</string>
+    <string name="sdcard_working">Thẻ SD đang hoạt động tốt</string>
+    <string name="sdcard_not_found">Xe %s không có thẻ SD.</string>
+    <string name="sdcard_unknown">Trạng thái thẻ SD không xác định.</string>
+    <string name="sdcard_format_success">Định dạng thẻ SD thành công</string>
+    <string name="sdcard_format_failed">Định dạng thẻ SD thất bại</string>
+    <string name="sdcard_format">Định dạng</string>
+    <string name="sdcard_format_notification">Trước tiên, bạn cần dừng theo dõi trước khi định dạng</string>
+
+    <string name="avatar_title">Hình đại diện</string>
+    <string name="avatar_menu_confirm">Xác nhận</string>
+    <string name="avatar_cancel">Huỷ</string>
+    <string name="avatar_take_photo">Chụp ảnh</string>
+    <string name="avatar_choose_photo">Chọn một bức ảnh</string>
+
+    <string name="profile_title">Tài khoản</string>
+    <string name="profile_account_change_password">Đổi mật khẩu</string>
+
+    <string name="username_title">Tên đăng nhập</string>
+    <string name="username_menu_save">Lưu</string>
+
+    <string name="forgot_password_error">Đặt lại mật khẩu</string>
+    <string name="general_error_oops">Oops</string>
+
+    <string name="reset_password_send_email">Gửi lại</string>
+    <string name="reset_password_send_email_format">Gửi lại (%1$ds)</string>
+    <string name="verification_fragment_title">Xác minh</string>
+    <string name="verification_fragment_content">Vui lòng nhập mã xác minh mà chúng tôi đã gửi đến địa chỉ email của bạn.</string>
+    <string name="verification_fragment_go_back">Quay lại</string>
+    <string name="verification_fragment_code">Mã 6 số</string>
+
+    <string name="two_factor_error_message">Mã không khớp</string>
+    <string name="two_factor_title">Đặt lại mật khẩu</string>
+    <string name="two_factor_password">Đặt lại mật khẩu</string>
+    <string name="password_requirement">Vui lòng nhập mật khẩu mới của bạn (ít nhất 8 ký tự có cả số và chữ cái)</string>
+    <string name="reset_password_new_password">Mật khẩu mới</string>
+    <string name="reset_password_repeat_password">Lặp lại mật khẩu</string>
+    <string name="reset_password_submit">Gửi</string>
+    <string name="reset_password">Quên mật khẩu?</string>
+
+    <string name="change_password_title">Mật khẩu</string>
+    <string name="password_rule">Mật khẩu phải có ít nhất 8 ký tự, bao gồm cả chữ và số.</string>
+
+    <string name="verify_email_title">Xác nhận email của bạn</string>
+    <string name="verify_email_content_origin">Chúng tôi sẽ sớm gửi cho bạn mã xác minh. Vui lòng làm theo hướng dẫn trong email đó để xác minh tài khoản của bạn.</string>
+    <string name="verify_email_content">Chúng tôi sẽ sớm gửi cho bạn mã xác minh. Vui lòng làm theo hướng dẫn trong email đó để xác minh tài khoản của bạn.</string>
+    <string name="verify_email_btn_text">Gủi lại thư xác nhận</string>
+    <string name="verify_email_use_different_email">Bạn vẫn chưa nhận được email? Hãy sử dụng một địa chỉ email khác thử xem</string>
+    <string name="verify_email_btn_text_format">Gủi lại thư xác nhận</string>
+
+    <string name="register_fragment_title">Chào mừng</string>
+    <string name="register_fragment_button_text">Tạo tài khoản</string>
+    <string name="register_device">Đăng ký thiết bị</string>
+
+    <string name="camera_setting_audio_title">Âm thanh</string>
+    <string name="camera_setting_microphone_title">Microphone</string>
+    <string name="camera_setting_audioPrompts_title">Cảnh báo âm thanh</string>
+    <string name="camera_setting_nightVision_title">Tầm nhìn ban đêm</string>
+
+    <string name="camera_setting_nightVision_title_parking">Tầm nhìn ban đêm ở chế độ đỗ xe</string>
+    <string name="nightVision_parking_on">Tầm nhìn ban đêm sẽ tự động bật trong điều kiện ánh sáng yếu khi Autosecure ở chế độ đỗ xe.</string>
+    <string name="nightVision_parking_off">Tầm nhìn ban đêm sẽ không bật khi Autosecure ở chế độ đỗ xe.</string>
+
+    <string name="camera_setting_nightVision_title_driving">Tầm nhìn ban đêm ở chế độ đỗ xe</string>
+    <string name="nightVision_driving_auto">Tầm nhìn ban đêm sẽ tự động bật trong điều kiện ánh sáng yếu khi Autosecure ở chế độ lái xe.</string>
+    <string name="nightVision_driving_on">Tầm nhìn ban đêm sẽ bật trong khoảng thời gian sau khi Autosecure vào chế độ lái xe.</string>
+    <string name="nightVision_driving_off">Tầm nhìn ban đêm sẽ không bật khi Autosecure ở chế độ lái xe.</string>
+    <string name="camera_setting_nightVision_driving_start">Từ</string>
+    <string name="camera_setting_nightVision_driving_end">Đến</string>
+    <string name="camera_setting_pick_time">Chọn thời gian</string>
+
+    <string name="nightVision_hour_minute_string">%1$s:%2$s</string>
+
+    <string name="camera_setting_logoLED_title">Logo LED</string>
+    <string name="camera_setting_logoLED_content">Logo LED nhấp nháy. Xem hướng dẫn sử dụng để biết chi tiết.</string>
+    <string name="camera_setting_siren_title">Còi báo động</string>
+    <string name="camera_setting_siren_content">Autosecure sẽ phát cảnh báo âm thanh khi các sự kiện được phát hiện.</string>
+
+    <string name="camera_setting_hdr_title">HDR</string>
+    <string name="camera_setting_hdr_content">HDR cân bằng độ phơi sáng của video.</string>
+
+    <string name="camera_setting_factory_reset">Camera của bạn sẽ được đặt lại về mặc định ban đầu (các video đã lưu sẽ không bị ảnh hưởng).</string>
+    <string name="camera_setting_factory_reset_successfully">Khôi phục cài đặt gốc thành công</string>
+    <string name="camera_setting_factory_reset_failed">Khôi phục cài đặt gốc thất bại</string>
+
+    <string name="camera_setting_unbind">Bạn có chắc chắn muốn xóa camera này khỏi Fleet của mình không?</string>
+    <string name="camera_setting_unbind_successfully">Thêm camera thành công</string>
+    <string name="camera_setting_unbind_failed">Thêm camera thất bại</string>
+
+    <string name="copy_right">MK Vision Copyright. All Rights Reserved.</string>
+    <string name="terms">Điều kiện</string>
+    <string name="and"> và </string>
+    <string name="privacy">Quyền riêng tư</string>
+
+    <string name="license_agreement">Thỏa thuận bản quyền</string>
+    <string name="terms_of_use">Điều khoản sử dụng</string>
+    <string name="privacy_policy">Quyền riêng tư</string>
+
+    <string name="current_version">v%1$s</string>
+    <string name="cache_cleaned">Đã xoá cache</string>
+
+    <string name="today">Hôm nay</string>
+    <string name="yesterday">Hôm qua</string>
+
+    <string name="feedback">Gửi phản hồi</string>
+    <string name="feedback_button">Gửi</string>
+    <string name="on_which_camera">Xảy ra trên camera</string>
+    <string name="feedback_send_log">Gửi nhật ký ứng dụng</string>
+    <string name="feedback_send_camera_log">Gửi nhật ký Camera</string>
+    <string name="feedback_hint">Hãy mô tả chi tiết vấn đề của thiết bị mà bạn đang gặp phải</string>
+    <string name="feedback_empty">Vui lòng nhập phản hồi của bạn.</string>
+    <string name="feedback_success">Cảm ơn phản hồi của bạn.</string>
+
+    <string name="feedback_preparing">Chuẩn bị</string>
+    <string name="feedback_downloading">Đang tải xuống</string>
+    <string name="feedback_sending">Đang gửi</string>
+    <string name="feedback_reading">Đang đọc</string>
+
+    <string name="to_live">Trực tiếp</string>
+    <string name="camera_disconnected">Đã ngắt kết nối camera!</string>
+
+    <string name="download_info_mb_string">%1$s %2$sMB</string>
+    <string name="download_info_kb_string">%1$s %2$sKB</string>
+
+    <string name="video_count_string">%1$s%2$d %3$s</string>
+
+    <string name="camera_error_sdcardError">Thẻ nhớ không đọc được. Hãy định dạng lại thẻ.</string>
+    <string name="camera_error_sdcardNotDetected">Chưa lắp thẻ nhớ.</string>
+    <string name="camera_error_recordError">Đã ghi sự cố.</string>
+
+    <string name="camera_warning_sdcardShouldFormat">Thẻ SD chưa được tối ưu hóa. Định dạng thẻ SD để tối ưu hóa.</string>
+    <string name="camera_warning_sdcardCapacityTooLow">Dung lượng thẻ SD quá thấp. Hãy sử dụng thẻ SD có ít nhất 16 GB.</string>
+
+    <string name="camera_information_recordStopped">Dừng việc giám sát và ghi hình.  Bắt đầu ghi hình để bảo vệ xe. </string>
+    <string name="camera_information_logIn">Đăng nhập để kích hoạt thêm nhiều tính năng.</string>
+    <string name="camera_information_addAccount">Camera chưa được thêm tài khoản của bạn.</string>
+    <string name="camera_information_subscribePlan">Đăng ký gói data để kích hoạt các tính năng 4G.</string>
+
+    <string name="camera_action_format_sdcard">Định dạng</string>
+    <string name="camera_action_start_record">Bắt đầu ghi hình</string>
+    <string name="camera_action_add_account">Thêm</string>
+
+    <string name="camera_warning_offline_title">Camera offline</string>
+
+    <string name="camera_error_no_sdcard_detail">Gắn thẻ SD để kích hoạt giám sát.</string>
+
+    <string name="camera_offline">Camera offline</string>
+    <string name="camera_offline_tips">Kết nối Wifi của camera để truy cập vào xem video.</string>
+
+    <string name="sdcard_error">Lỗi thẻ SD</string>
+    <string name="sdcard_error_tips">Hãy định dạng lại thẻ.</string>
+
+    <string name="sdcard_no_detected_tips">Lắp thẻ SD để kích hoạt giám sát.</string>
+
+    <string name="no_videos">Không có video</string>
+    <string name="sdcard_no_videos">Hãy lái xe và quay lại sau.</string>
+    <string name="cloud_no_videos">Không có video nào được tải lên trong 7 ngày qua.</string>
+
+    <string name="no_more_videos">Không có video</string>
+    <string name="no_more_events">Không có sự kiện</string>
+    <string name="sdcard_no_more_videos">Video được ghi hình vòng lặp trên thẻ SD.</string>
+    <string name="cloud_no_more_videos">Video của 7 ngày qua được lưu trữ trên Cloud.</string>
+
+    <string name="camera_not_logged">Chưa đăng nhập</string>
+
+    <string name="camera_unbind">Camera chưa được thêm</string>
+    <string name="camera_unbind_action">Thêm vào tài khoản của tôi</string>
+
+    <string name="clear_cache_string">Xóa data đã lưu trong bộ nhớ cache của %1$s?</string>
+
+    <string name="video_action_export">Xuất</string>
+    <string name="video_action_delete">Xóa</string>
+
+    <string name="video_delete_tips">Video sẽ bị xóa khỏi thẻ SD của camera</string>
+    <string name="cloud_delete_tips">Video sẽ bị xóa khỏi Cloud</string>
+    <string name="album_delete_tips">Video sẽ bị xóa khỏi bộ nhớ trên điện thoại của bạn</string>
+
+    <string name="save_to_album">Lưu vào album</string>
+    <string name="save_album_only">Chỉ lưu vào album</string>
+    <string name="export_to_photo_library">Xuất sang thư viện ảnh</string>
+    <string name="share_to_waylens">Chia sẻ với MK Vision</string>
+
+    <string name="toolbar_scale">Chọn phạm vi</string>
+
+    <string name="toolbar_export">Xuất</string>
+    <string name="export_done">Hoàn thành</string>
+
+    <string name="export_tap_to_export">Nhấn để lưu</string>
+    <string name="export_tap_to_cancel">Nhấn để hủy</string>
+    <string name="export_video_saved">Video được lưu trong album</string>
+    <string name="export_cancel">Huỷ</string>
+    <string name="export_slide_to_cancel">Trượt để hủy</string>
+
+    <string name="event_video_space">Quản lý video</string>
+    <string name="event_video_management_tips">Đặt dung lượng bộ nhớ tối đa để phân bổ cho video. Khi các video đã chiếm dung lượng tối đa, video cũ nhất sẽ tự động bị xóa.</string>
+
+    <string name="sensitivity">Độ nhạy</string>
+    <string name="sensitivity_medium">Trung bình</string>
+    <string name="motion_sensitivity_tips">Điều chỉnh cài đặt độ nhạy chuyển động nếu bạn muốn phát hiện các sự cố va chạm ít hoặc nhiều hơn.</string>
+    <string name="impact_sensitivity_tips">Điều chỉnh cài đặt độ nhạy cảm biến va chạm nếu bạn muốn phát hiện các sự cố va chạm ít hoặc nhiều hơn.</string>
+    <string name="sensitivity_custom">Tùy chỉnh</string>
+    <string name="impact_sensitivity_custom_tips">[park_heavy park_light drive_heavy drive_light]; cho mỗi nhóm, {odr width threshold} Ví dụ [80 4 12 80 4 3 112 2 64 112 20 21]</string>
+
+    <string name="video_quality">Chất lượng video</string>
+    <string name="quality_release_tips">Chất lượng cao: khoảng 300 MB/phút. Trung bình: Khoảng 170 MB/phút. Tốc độ bitrate sẽ có hiệu lực bắt đầu từ lần ghi hình tiếp theo.</string>
+    <string name="quality_debug_tips">Rất cao 36 MB/giây. Bình thường 20 MB/giây. Cao 28 MB/giây. Thấp 10 MB/giây. Rất thấp 5 fps.</string>
+
+    <string name="battery_protection">Bảo vệ ắc quy</string>
+    <string name="which_protection_mode">Camera sẽ sử dụng chế độ bảo vệ ắc quy nào?</string>
+    <string name="daily_driver">Lái xe hàng ngày</string>
+    <string name="daily_driver_tips">Duy trì điện áp ắc quy cao hơn mức tối thiểu khi khởi động tại nơi có khí hậu lạnh hoặc nhu cầu đỗ xe ngắn. Phù hợp nhất với các phương tiện được sử dụng hàng ngày.</string>
+    <string name="balanced">Cân bằng</string>
+    <string name="balanced_tips">Cung cấp khả năng bảo vệ điện áp ắc quy và thời gian ở chế độ đỗ xe lên đến 7 ngày. Phù hợp nhất cho các chuyến đi công tác và các chuyến đi đường dài.</string>
+    <string name="extended">Tiết kiệm</string>
+    <string name="extended_tips">Dành cho những người sử dụng chế độ đỗ xe trong thời gian dài hơn 15 ngày. Có thể giảm điện áp của ắc quy xuống thấp hơn mức bình thường trong điều kiện khí hậu lạnh. Nếu đỗ xe trong thời gian dài hơn, bạn nên rút dây nguồn của camera.</string>
+    <string name="extreme">Siêu tiết kiệm </string>
+    <string name="extreme_tips">Được thiết kế cho ắc quy xe có điện áp thấp. Chỉ chọn chế độ này nếu camera hay chuyển sang chế độ bảo vệ ắc quy và ở chế độ offline. Nếu bạn chọn chế độ này, xe có thể gặp vấn đề về việc khởi động.</string>
+    <string name="the_camera_often_enter_battery_protection_mode"><u>Camera thường ở chế độ bảo vệ ắc quy.</u></string>
+    <string name="utilizing_extreme_mode">Khi sử dụng chế độ siêu tiết kiệm, xe có thể gặp vấn đề trong việc khởi động. Bạn có chắc chắn chọn chế độ này không?</string>
+
+    <string name="driving_mode_timeout">Thời gian chờ chế độ lái xe</string>
+    <string name="driving_timeout_tips">AutoSecure sẽ ở chế độ lái xe khi được kết nối với ứng dụng trên điện thoại của bạn qua Wifi</string>
+    <string name="_30s" translatable="false">30 giây</string>
+    <string name="_1min" translatable="false">1 phút</string>
+    <string name="_2min" translatable="false">2 phút</string>
+    <string name="_5min" translatable="false">5 phút</string>
+
+    <string name="record_stream" translatable="false">Luồng data ghi</string>
+    <string name="sub_stream_only" translatable="false">Chỉ luồng phụ</string>
+    <string name="main_stream" translatable="false">Luồng chính</string>
+    <string name="sub_stream" translatable="false">Luồng phụ</string>
+
+    <string name="apn" translatable="false">APN</string>
+
+    <string name="wifi_mode" translatable="false">Chế độ Wifi</string>
+
+    <string name="ap_mode" translatable="false">AP</string>
+    <string name="client_mode" translatable="false">Khách hàng</string>
+    <string name="p2p_mode" translatable="false">P2P</string>
+
+    <string name="manage_hosts" translatable="false">Quản lý máy chủ của bạn</string>
+    <string name="add_host" translatable="false">Thêm máy chủ</string>
+
+    <string name="empty_host" translatable="false">Máy chủ trống</string>
+    <string name="ssid" translatable="false">Tên Wifi</string>
+    <string name="password" translatable="false">Mật khẩu</string>
+
+    <string name="switch_wifi_alert" translatable="false">Chuyển chế độ Wifi sẽ khiến Wifi khởi động lại. Bạn cần kết nối lại Wifi của camera.</string>
+
+    <string name="this_host">Máy chủ này</string>
+
+    <string name="event_detection_param" translatable="false">Thông số phát hiện sự kiện</string>
+
+    <string name="risk_drive_event" translatable="false">Sự kiện lái xe rủi ro</string>
+
+    <string name="apply" translatable="false">Áp dụng</string>
+    <string name="apn_no_change" translatable="false">APN không thay đổi</string>
+    <string name="param_no_change" translatable="false">Thông số không thay đổi </string>
+    <string name="apply_success" translatable="false">Áp dụng thành công</string>
+
+    <string name="device_fourg_plan">Gói 4G</string>
+    <string name="device_plan_trial">Dùng thử</string>
+    <string name="device_expired_tips">Dịch vụ của bạn sẽ hết hạn sau 7 ngày.</string>
+    <string name="device_plan_renew">Làm mới </string>
+
+    <string name="support_start_tour">Bắt đầu</string>
+    <string name="start_tour_des">Tham quan ứng dụng</string>
+    <string name="tour_button_skip">Bỏ qua</string>
+    <string name="tour_btn_started">Bắt đầu</string>
+    <string name="tour_take">Tham quan ứng dụng?</string>
+    <string name="tour_welcome">Cảm ơn bạn đã chọn AutoSecure của MK Vision. Hãy cùng tìm hiểu về camera và ứng dụng!</string>
+    <string name="tour_connect_camera">Kết nối AutoSecure của bạn</string>
+    <string name="tour_add_camera">Thêm camera</string>
+    <string name="tour_direct_wire">Kiểm tra dây nguồn</string>
+    <string name="tour_insert_simcard">Lắp thẻ SIM và cắm lại dây nguồn</string>
+    <string name="tour_subscribe_plan">Đăng ký gói data 4G</string>
+    <string name="tour_check_network">Kiểm tra kết nối</string>
+    <string name="tour_insert_sdcard">Lắp thẻ SD</string>
+    <string name="tour_format_sdcard">Định dạng thẻ SD</string>
+    <string name="tour_tap_menu">Nhấn để mở menu</string>
+
+    <string name="support_power_cord">Dây nguồn</string>
+    <string name="power_cord_description">Kiểm tra mạch dây nguồn</string>
+    <string name="choose_power_cable">Vui lòng chọn dây nguồn bạn đã sử dụng để cài đặt AutoSecure.</string>
+    <string name="obd_cable">OBD-II</string>
+    <string name="direct_wire">Dây nguồn trực tiếp</string>
+    <string name="choose_vehicle">Vui lòng chọn loại xe của bạn:</string>
+    <string name="electric">Xe điện</string>
+    <string name="electric_des">Các loại xe chạy bằng điện thuần túy như Tesla, BMW i3, Nissan Leaf hoặc các loại xe sử dụng hệ thống truyền động hoàn toàn bằng điện khác.</string>
+    <string name="hybrid_plug_in">Xe hybrid</string>
+    <string name="hybrid_plug_in_des">Các loại xe hybrid như Chevrolet Volt, Toyota Prius, Honda PHEV, hoặc bất kỳ loại xe nào có cả hệ dẫn động điện lẫn xăng / diesel cùng hoạt động.</string>
+    <string name="traditional">Xe chạy xăng</string>
+    <string name="traditional_des">Xe sử dụng hệ truyền động xăng hoặc diesel không có nguồn điện hybrid hoặc sạc.</string>
+    <string name="direct_connect_camera">Vui lòng kết nối Wifi camera của bạn.</string>
+    <string name="direct_disconnect_camera">Vui lòng ngắt kết nối Wifi camera của bạn.</string>
+    <string name="direct_power_tips">Vui lòng khởi động xe của bạn.</string>
+    <string name="direct_start_direct">Quy trình này giúp bạn xác minh kết nối dây nguồn tiếp. Quy trình này bao gồm hai bước và diễn ra nhanh gọn trong vài giây:</string>
+    <string name="direct_step_one">Tắt máy xe của bạn;</string>
+    <string name="direct_step_two">Khởi động xe của bạn.</string>
+    <string name="direct_power_icon">Phát hiện nguồn điện của xe</string>
+    <string name="direct_connect_check">Rất tiếc, kết nối dây nguồn trực tiếp không hoạt động. </string>
+    <string name="direct_connect_try_again">Vui lòng kiểm tra kết nối và thử lại.</string>
+    <string name="direct_connect_install"><u>Làm thế nào để cài đặt dây nguồn trực tiếp?</u></string>
+    <string name="direct_manual_power_off">Xe đang TẮT MÁY</string>
+    <string name="direct_manual_power_on">Xe đang KHỞI ĐỘNG</string>
+    <string name="direct_connect_done">Kết thúc. Kết nối dây nguồn của bạn đã được xác minh!</string>
+    <string name="direct_test_step1">Vui lòng hãy tắt máy xe của bạn.</string>
+    <string name="direct_test_step2_fail">Khởi động xe của bạn.</string>
+    <string name="direct_test_step2">Khởi động lại xe</string>
+    <string name="direct_lose_connection">Camera sẽ ở chế độ ngủ và mất kết nối sau %d giây</string>
+
+    <string name="support_network_test">Kết nối</string>
+    <string name="network_test_description">Kiểm tra kết nối 4G LTE</string>
+    <string name="network_connect_prompt">Vui lòng kết nối camera của bạn với Wifi</string>
+    <string name="network_support_prompt">Wifi của AutoSecure không có quyền truy cập Internet.</string>
+    <string name="network_fw_prompt">Firmware cần được cập nhật.</string>
+    <string name="network_login_prompt">Đăng nhập vào tài khoản của bạn.</string>
+    <string name="network_bind_prompt">Thêm camera vào tài khoản của bạn.</string>
+    <string name="network_status_checking">Đang kiểm tra</string>
+    <string name="network_status_error">Lỗi</string>
+    <string name="network_status_finish">Đã kết nối</string>
+    <string name="network_checking_des">Có thể mất vài giây.</string>
+    <string name="network_error_sim_card_not_detected">Chưa lắp thẻ SIM. Vui lòng lắp thẻ SIM đi kèm và cắm cáp.</string>
+    <string name="network_error_sim_card_not_supported">Thẻ SIM không được hỗ trợ. Vui lòng sử dụng thẻ SIM được cung cấp cho AutoSecure.</string>
+    <string name="network_error_sim_card_wrong_state">Trạng thái của thẻ SIM không chính xác. Kiểm tra thẻ SIM, cắm lại cáp và thử lại.</string>
+    <string name="network_error_data_plan_not_subscribed">Không có đăng ký data 4G. Vui lòng đăng ký gói data 4G.</string>
+    <string name="network_error_data_plan_expired">Đăng ký hết hạn. Vui lòng gia hạn hoặc chọn một đăng ký gói data 4G mới.</string>
+    <string name="network_error_data_plan_suspended">Dịch vụ bị tạm ngừng. Bạn có thể mua tiện ích bổ sung để khôi phục dịch vụ.</string>
+    <string name="network_error_signal_outage">Kết nối di động không khả dụng. Vui lòng di chuyển đến vị trí khác và thử lại.</string>
+    <string name="network_error_signal_roaming">Xin lỗi, chuyển vùng không được hỗ trợ.</string>
+    <string name="network_error_server_client_failure">Kết nối không thành công. Thử nhấn và giữ nút trên đế camera để khởi động lại.</string>
+    <string name="network_error_server_not_reachable">Dịch vụ tạm thời không khả dụng. Vui lòng thử lại sau.</string>
+    <string name="network_finish">Trạng thái tốt</string>
+    <string name="network_sim_card">Thẻ SIM</string>
+    <string name="network_data_plan">Gói data</string>
+    <string name="network_signal">Tín hiệu</string>
+    <string name="network_server">Server</string>
+    <string name="network_action_continue">Tiếp tục</string>
+    <string name="network_send_feedback">Gửi phản hồi</string>
+
+    <string name="location_must_allow">Điều này cho phép bạn kết nối với camera thông qua Wifi</string>
+    <string name="storage_must_allow">Điều này cho phép bạn lưu video và firmwares</string>
+    <string name="camera_must_allow">Điều này cho phép bạn chụp ảnh</string>
+    <string name="must_allow">Vui lòng cho phép truy cập, nếu không ứng dụng có thể không hoạt động như mong đợi</string>
+    <string name="wifi_enable">Vui lòng bật kết nối Wifi, nếu không ứng dụng có thể không hoạt động như mong đợi</string>
+    <string name="setting_must_allow">Điều này cho phép bạn tùy chỉnh cài đặt hệ thống</string>
+    <string name="audio_must_allow">Điều này cho phép bạn ghi âm</string>
+
+    <string name="switch_server_alert">Chuyển hay không chuyển server, đều cần phải đăng nhập lại </string>
+    <string name="switch_camera_server_alert">Chuyển hay không chuyển server, camera có thể không có khả năng kết nối được với máy chủ</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="direct_location">Vị trí</string>
+
+    <string name="format_alert_title">Định dạng thẻ SD</string>
+    <string name="format_alert_content">Tất cả data sẽ bị xóa khỏi thẻ SD. Bạn có chắc chắn không?</string>
+
+    <string name="about_network_info">Kết nối</string>
+    <string name="network_info_iccid">ICCID</string>
+    <string name="network_info_cereg">CEREG</string>
+    <string name="network_info_band">Band</string>
+    <string name="network_info_signal">Cường độ tín hiệu</string>
+    <string name="network_info_ip">Địa chỉ IP</string>
+
+    <string name="sense_motion">Độ nhạy chuyển động</string>
+    <string name="sense_impact">Độ nhạy cảm biến va chạm</string>
+
+    <string name="less_events">Thu nhỏ</string>
+    <string name="more_events">Xem thêm</string>
+
+    <string name="notify_setting_request">Bật thông báo qua menu thiết bị của bạn "Cài đặt"&gt;"Thông báo"</string>
+
+    <string name="permission_setting_title">Cài đặt quyền sử dụng</string>
+    <string name="permission_setting_request">Cần phải có sự cho phép của bạn để kích hoạt các tính năng của ứng dụng.</string>
+    <string name="permission_setting_close">Đóng</string>
+    <string name="permission_setting_go">Tiếp</string>
+
+    <string name="live_status_offline">Camera offline</string>
+    <string name="live_status_awake">Đánh thức</string>
+    <string name="live_status_publish">Đang kết nối</string>
+    <string name="live_status_live">Đang phát online</string>
+    <string name="live_status_stop">Dừng lại</string>
+    <string name="live_status_stopped">Phát trực tiếp đã dừng</string>
+
+    <string name="setting_request">Vui lòng kết nối qua Wifi để kích hoạt cài đặt này</string>
+
+    <string name="setting_request_fail">Không kích hoạt được cài đặt camera.</string>
+    <string name="setting_request_success">Đã áp dụng cài đặt camera.</string>
+    <string name="setting_requesting">Đang áp dụng cài đặt camera...</string>
+
+    <string name="notification">Thông báo</string>
+    <string name="notification_total_prompt">Khi phát hiện có sự kiện, thông báo từ AutoSecure sẽ được gửi qua điện thoại bằng 4G. </string>
+
+    <string name="notification_total_closed">Tắt thông báo cho tất cả các sự kiện? Bạn sẽ không nhận được bất kỳ thông báo nào khi các sự kiện được phát hiện.</string>
+    <string name="notification_total_closed_ensure">Tắt cảnh báo</string>
+    <string name="notification_total_closed_refuse">Huỷ</string>
+
+    <string name="notification_park_motion_prompt">Cảnh báo khi phát hiện chuyển động khi đang đỗ</string>
+
+    <string name="notification_bump_title">Va chạm</string>
+    <string name="notification_park_bump_prompt">Cảnh báo xảy ra va chạm khi đang đỗ xe</string>
+    <string name="notification_drive_bump_prompt">Cảnh báo xảy ra va chạm khi đang lái xe</string>
+
+    <string name="notification_impact_title">Đâm xe</string>
+    <string name="notification_park_impact_prompt">Cảnh báo khi phát hiện đâm xe khi đỗ xe</string>
+    <string name="notification_drive_impact_prompt">Cảnh báo khi phát hiện đâm xe khi lái xe</string>
+
+    <string name="support_beta_firmware">Thử nghiệm Beta Firmware</string>
+    <string name="support_beta_tester_no">Tham gia ngay</string>
+    <string name="support_beta_tester_yes">Có</string>
+    <string name="no">Không</string>
+    <string name="support_beta_join">Tham gia </string>
+    <string name="support_join_title">Tham gia chương trình beta?</string>
+    <string name="support_join_content">Vì các tính năng đang được phát triển nên firmware beta có thể không ổn định. Vui lòng kiểm tra firmware từ "Cài đặt camera"&gt;"Firmware".</string>
+    <string name="support_beta_leave">Thoát</string>
+    <string name="support_leave_title">Thoát chương trình beta?</string>
+    <string name="support_leave_content">Nếu bạn thoát, bạn có thể muốn cài đặt lại phiên bản firmware công khai.</string>
+
+    <string name="export_as">Xuất file</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="split_screen">Màn hình chia nhỏ</string>
+    <string name="full_screen">Toàn màn hình</string>
+    <string name="export_warning">Để có chất lượng video cao hơn và hoàn chỉnh hơn, hãy thử xuất video từ thẻ SD qua kết nối Wifi.</string>
+    <string name="export_touch"> </string>
+    <string name="export_timestamp">MK Vision AutoSecure %s</string>
+    <string name="export_progress">Đang xử lý %s</string>
+    <string name="export_success">Đã lưu thành công</string>
+
+    <string name="video_videos">Videos</string>
+    <string name="video_source">Nguồn</string>
+    <string name="video_type">Phân loại</string>
+    <string name="video_type_motion">Chuyển động</string>
+    <string name="video_type_bump">Va chạm</string>
+    <string name="video_type_highlight">Nổi bật</string>
+    <string name="video_type_buffered">Data đệm</string>
+    <string name="unknown_error">Đã có lỗi xảy ra</string>
+
+    <string name="live_remote">4G online</string>
+    <string name="fourg_offline">4G offline</string>
+    <string name="offline">Offline</string>
+    <string name="remote_offline_tips">Rất tiếc, Camera của bạn hiện đang offline</string>
+
+    <string name="recording_stopped">Đã dừng ghi âm</string>
+
+    <string name="guide_pinch_drag">Phóng to</string>
+    <string name="guide_switch_projection"> </string>
+    <string name="guide_tap_view">Nhấn để xem video</string>
+    <string name="guide_account">Để thay đổi thông tin liên hệ và mật khẩu của bạn</string>
+    <string name="guide_album">Để xem video đã xuất</string>
+    <string name="guide_setting">Để thay đổi cài đặt ứng dụng và camera</string>
+    <string name="guide_export_delete">Nhấn để xem, xuất và xóa</string>
+    <string name="guide_export_info">Các video được dán nhãn bằng các màu khác nhau tùy theo loại của chúng.</string>
+    <string name="type_buffered_info">Hiển thị video được quay khi xe đang bật hoặc phát trực tiếp</string>
+    <string name="type_motion_info">Hiển thị chuyển động được phát hiện gần xe đang đỗ</string>
+    <string name="type_bump_info">Hiển thị va chạm xảy ra khi xe đang đỗ hoặc đang lái xe</string>
+    <string name="type_impact_info">Hiển thị va chạm mạnh khi xe đang đỗ hoặc đang đi</string>
+    <string name="type_behavior_info">Hiển thị hành vi lái xe ẩu bao gồm cua gấp, phanh gấp và tăng tốc đột ngột</string>
+    <string name="type_highlight_info">Hiển thị các clip do người dùng đánh dấu</string>
+    <string name="_8_20_am">8:20 AM</string>
+    <string name="_8_16_am">8:16 AM</string>
+    <string name="_8_05_am">8:05 AM</string>
+    <string name="_5_01_am">5:01 AM</string>
+    <string name="type_location_1">40 đường Nguyễn Trãi, Quận Thanh Xuân, TP Hà Nội</string>
+    <string name="type_location_2">1300 phố Duy Tân, Quận Cầu Giấy, TP Hà Nội</string>
+    <string name="type_location_3">2300 đường Phan Chu Trinh, Quận 1, TP Hồ Chí Minh</string>
+    <string name="guide_complete">Hãy tận hưởng cảm giác an toàn khi sở hữu AutoSecure!</string>
+    <string name="guide_show_info">Nhấn để hiển thị thêm thông tin</string>
+    <string name="guide_skip_tips">Bỏ qua có thể khiến camera không hoạt động bình thường, bạn vẫn muốn bỏ qua?</string>
+    <string name="guide_continue_tips">Camera hành trình của bạn vẫn chưa tắt, bạn có muốn tiếp tục không?</string>
+
+    <string name="guide_not_now">Không phải bây giờ</string>
+    <string name="guide_never">Không bao giờ</string>
+
+    <string name="camera_plan_gb">%dGB còn lại</string>
+    <string name="camera_plan_mb">%dMB còn lại</string>
+
+    <string name="_gb" translatable="false">%dGB được sử dụng trong tháng này</string>
+    <string name="_mb" translatable="false">%dMB được sử dụng trong tháng này</string>
+
+    <string name="highlight_successfully">Đánh dấu thành công</string>
+
+    <string name="finished">Đã kết thúc</string>
+    <string name="detection_decide">Cách phát hiện trạng thái của xe</string>
+    <string name="power_cable">Nguồn điện</string>
+    <string name="power_cable_des">Chính xác hơn, được khuyến nghị cho hầu hết các loại xe, ngoại trừ xe hybrid chạy điện plug-in có dây nguồn OBD-II.</string>
+    <string name="camera_sensors">Chuyển động xe</string>
+    <string name="camera_sensors_des">Không chính xác nhưng dùng được cho tất cả các loại xe. Chọn chế độ này nếu xe của bạn chạy điện hoặc plug-in hybrid với dây nguồn OBD-II.</string>
+    <string name="detection_warning">Cảnh báo:</string>
+    <string name="detection_warning_1">Cách phát hiện trạng thái của xe có thể ảnh hưởng rất nhiều đến việc sử dụng AutoSecure. </string>
+    <string name="detection_warning_2">Cách phát hiện trạng thái của xe có thể ảnh hưởng đến khả năng cảnh báo va chạm và thông báo các sự kiện của AutoSecure nếu chọn không chính xác.</string>
+    <string name="camera_sensors_finished">Camera AutoSecure của bạn sẽ sử dụng cách <b>Chuyển động xe</b> để quyết định xem chiếc xe đang lái hay đang đỗ.</string>
+    <string name="power_cable_finished">Camera AutoSecure của bạn sẽ sử dụng cách <b>Nguồn điện</b> để quyết định xem chiếc xe đang lái hay đang đỗ.</string>
+    <string name="recommended_by">Bạn cũng có thể được giới thiệu bởi</string>
+    <string name="testing_connection"><u>kiểm tra kết nối dây nguồn</u></string>
+
+    <string name="wifi_direct">WiFi Direct</string>
+    <string name="wifi_searching">Tìm kiếm MK Vision AutoSecure Wifi Direct</string>
+    <string name="wifi_choose">Vui lòng chọn Wifi camera của bạn</string>
+    <string name="wifi_not_found">Không tìm thấy camera của tôi</string>
+    <string name="wifi_direct_enable">Vui lòng bật Wifi Direct camera của bạn</string>
+    <string name="wifi_triple_click">Nhấp ba lần vào nút để bật Wifi Direct</string>
+    <string name="wifi_heard">Nghe thấy \"Đã bật Wifi Direct\"</string>
+    <string name="connect_wifi_direct">Kết nối Wifi Direct</string>
+    <string name="wifi_enable_tips">Phiên bản firmware bên dưới \"1.13.0 \" không thể bật Wifi Direct, nếu bạn không thể nghe thấy \"Đã bật Wifi Direct\", vui lòng kết nối Wifi bình thường và cập nhật firmware.</string>
+    <string name="wifi_pairing_tips">Phiên bản firmware bên dưới \"1.13.0 \" không thể bật Wifi Direct, nếu bạn không thể nghe thấy \\ "Kết nối Wifi Direct \\", vui lòng kết nối Wifi bình thường và cập nhật firmware.</string>
+    <string name="wifi_connect_normal">Kết nối Wifi bình thường</string>
+    <string name="direct_not_found">Không tìm thấy bất kỳ Wifi Direct MK Vision nào.</string>
+    <string name="connect_normal_wifi">Kết nối với Wifi bình thường</string>
+    <string name="wifi_direct_on">Bật Wifi Direct </string>
+    <string name="wifi_direct_off">Tắt Wifi Direct </string>
+    <string name="wifi_direct_warning">Khi tắt Wifi Direct, điện thoại của bạn có thể không kết nối được với Internet bằng mạng di động. Kết nối Wifi Direct sẽ không ảnh hưởng đến kết nối Internet di động của bạn. Sẽ không cần mật khẩu để kết nối.</string>
+    <string name="switch_wifi_direct">Chuyển đổi Wifi Direct sẽ khiến Wifi khởi động lại. Bạn phải kết nối lại Wifi Camera của bạn.</string>
+    <string name="switch_direct">Chuyển đổi</string>
+    <string name="wifi_direct_connected">Bạn đã kết nối thành công với Wifi Direct.</string>
+    <string name="direct_manage_trusted">Quản lý thiết bị tin cậy của bạn</string>
+    <string name="wifi_direct_tips">Nhấn nút MK Vision để ghép nối camera với điện thoại và điện thoại được ghép nối sẽ được thêm danh sách tin cậy. Chỉ điện thoại đáng tin cậy mới tự động kết nối với camera.</string>
+
+    <string name="direct_not_connect">Không thể kết nối Wifi Direct, bạn cần kết nối Wifi theo cách thủ công.</string>
+    <string name="wifi_not_connect">Wifi Direct đã tắt, vui lòng kết nối Wifi bình thường của bạn.</string>
+    <string name="connect_device_tips">Kết nối thiết bị của bạn với điểm phát sóng \"MK Vision-XXXXX\" hoặc \"DIRECT-MK Vision-XXXXX\" và quay lại ứng dụng.</string>
+    <string name="password_">Mật khẩu: %s</string>
+    <string name="copy">Sao chép</string>
+    <string name="copy_clipboard">Sao chép vào clipboard</string>
+
+    <string name="this_phone">Điện thoại này</string>
+    <string name="turn_into_pairing">Vui lòng chuyển camera sang chế độ ghép nối</string>
+    <string name="single_click">Nhấp một lần vào nút để vào chế độ ghép nối</string>
+
+    <string name="camera">Camera</string>
+    <string name="alerts">Cảnh báo</string>
+    <string name="album">Bộ sưu tập</string>
+    <string name="profile">Hồ sơ</string>
+
+    <string name="shop">Cửa hàng</string>
+    <string name="continue_tour">Tiếp tục</string>
+    <string name="wifi_trouble">Khắc phục sự cố Wifi</string>
+
+    <string name="alerts_video_uploading">Đang tải lên video sự kiện…</string>
+    <string name="watch_detail">Xem chi tiết</string>
+    <string name="go_live">Xem Trực tiếp</string>
+
+    <string name="guide">Hướng dẫn</string>
+
+    <string name="wifi_connected">Đã kết nối Wifi</string>
+
+    <string name="firmware_current_version">Hiện tại: %1$s (%2$s)</string>
+    <string name="firmware_latest_version">Mới nhất: %1$s (%2$s)</string>
+
+    <string name="uploading">Đang tải lên</string>
+    <string name="uploading_point">Đang tải lên…</string>
+    <string name="downloading">Đang tải xuống…</string>
+
+    <string name="downloaded">Đã tải xuống</string>
+    <string name="connect_camera_wifi_update">Kết nối Wifi trong camera của bạn và cập nhật.</string>
+    <string name="keep_camera_power">Luôn bật camera trong khi cập nhật.</string>
+    <string name="up_to_date">Firmware của bạn đã được cập nhật</string>
+    <string name="what_is_new">Khám phá</string>
+    <string name="download">Tải xuống</string>
+
+    <string name="device_information">Thông tin thiết bị</string>
+
+    <string name="description_of_rules">Mô tả Quy tắc</string>
+
+    <string name="des_rules_tips">Chia sẻ video của bạn để có cơ hội giành được một camera 4G AutoSecure!  </string>
+
+    <string name="go_to_album">Đi tới thư viện</string>
+
+    <string name="select">Chọn</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="deselect">Bỏ chọn</string>
+
+    <string name="waylens_account" translatable="false">contact@mkvision.com</string>
+    <string name="waylens_password" translatable="false"> </string>
+
+    <string name="uploading_failed">Tải lên không thành công</string>
+    <string name="uploading_failed_tips">Không tải được video lên MK Vision</string>
+
+    <string name="no_message">Không có tin nhắn</string>
+    <string name="no_message_tips">Không có data báo cáo</string>
+    <string name="version">Phiên bản</string>
+    <string name="name">Tên</string>
+    <string name="model">Model</string>
+    <string name="network">Kết nối</string>
+    <string name="help">Hỗ trợ</string>
+    <string name="serial_number">Số sê-ri</string>
+    <string name="mount_model">Cách mount</string>
+    <string name="mount_version">Phiên bản mount</string>
+    <string name="modem_version">Phiên bản Modem</string>
+    <string name="host_server">Máy chủ</string>
+    <string name="_97_server">Server 97</string>
+    <string name="aliyun_server">Server Aliyun</string>
+    <string name="aws_server">Server AWS</string>
+    <string name="production_server">Server nhà sản xuất</string>
+    <string name="web_url">URL web</string>
+    <string name="debug_url_beta_waylens_cn" translatable="false">URL gỡ lỗi (beta.mkvision.vn)</string>
+    <string name="release_url_www_waylens_com" translatable="false">URL phát hành (www.mkvision.com)</string>
+    <string name="wifi_direct_setup" translatable="false">Cài đặt Wifi Direct</string>
+    <string name="access_to_b_camera" translatable="false">Truy cập Camera B</string>
+    <string name="access_to_c_camera" translatable="false">Truy cập Camera C </string>
+    <string name="voice_call_test" translatable="false">Kiểm tra cuộc gọi thoại</string>
+    <string name="show_all_waylens_camera" translatable="false">Hiển thị tất cả Camera MK Vision</string>
+    <string name="press_to_crash" translatable="false">Nhấn để đóng</string>
+    <string name="park_mode">Chế độ đỗ xe</string>
+    <string name="drive_mode">Chế độ lái xe</string>
+    <string name="thick_stick" translatable="false"> / </string>
+    <string name="setup">Cài đặt</string>
+    <string name="total_storage">Tổng dung lượng</string>
+    <string name="available">Có sẵn</string>
+    <string name="video_highlights">Video nổi bật</string>
+    <string name="buffered_videos">Data videos đệm</string>
+    <string name="other_files">Data khác</string>
+    <string name="format">Định dạng</string>
+    <string name="enter_debug_menu" translatable="false">Vào trình gỡ lỗi</string>
+    <string name="enter_camera_server_menu" translatable="false">Vào menu máy chủ camera</string>
+    <string name="i_agree_to">Tôi đồng ý </string>
+    <string name="send_verification">Chúng tôi sẽ gửi cho bạn mã xác minh để thực hiện thao tác đổi mật khẩu</string>
+    <string name="devices">Thiết bị</string>
+    <string name="devices_manage">Quản lý thiết bị</string>
+    <string name="debug">Gỡ lỗi</string>
+    <string name="read">Đọc</string>
+    <string name="hide">Giấu</string>
+    <string name="checking_for_update">Kiểm tra bản cập nhật…</string>
+    <string name="connect">Kết nối</string>
+    <string name="try_again">Thử lại</string>
+    <string name="fix_it_later">Sửa sau</string>
+    <string name="on">Bật</string>
+    <string name="off">Tắt</string>
+    <string name="done">Hoàn thành</string>
+    <string name="start">Khởi động</string>
+    <string name="motion">Chuyển động</string>
+    <string name="bump">Va chạm</string>
+    <string name="impact">Đâm đụng</string>
+    <string name="behavior">Hành vi</string>
+    <string name="suspended">Tạm ngưng</string>
+    <string name="expired">Hết hạn</string>
+    <string name="subscribe">Đăng ký</string>
+    <string name="auto">Tự động</string>
+    <string name="super_high">Siêu nét</string>
+    <string name="normal">Bình thường</string>
+    <string name="low">Thấp</string>
+    <string name="high">Cao</string>
+    <string name="super_low">Siêu thấp</string>
+    <string name="normal_5fps">5FPS bình thường</string>
+    <string name="low_5fps">5FPS thấp</string>
+    <string name="super_low_5fps">5FPS siêu thấp</string>
+    <string name="ready">Sẵn sàng</string>
+    <string name="searching">Đang tìm kiếm</string>
+    <string name="refused">Từ chối</string>
+    <string name="unknown">Không xác định</string>
+    <string name="roaming">Chuyển vùng</string>
+    <string name="manual">Thủ công</string>
+    <string name="deleted">Đã xóa</string>
+    <string name="disconnect">Ngắt kết nối</string>
+    <string name="bind_camera_successfully">Thêm camera thành công</string>
+    <string name="not_enough_storage">Không đủ dung lượng</string>
+    <string name="play_error">Phát lỗi</string>
+    <string name="username_empty">Tên người dùng trống.</string>
+    <string name="update_firmware">Vui lòng cập nhật firmware của bạn!</string>
+    <string name="map_not_available">Bản đồ không có sẵn</string>
+    <string name="not_connect_camera">Không thể kết nối với camera</string>
+    <string name="connecting">Đang kết nối…</string>
+    <string name="selected">Đã chọn</string>
+    <string name="videos"> videos</string>
+    <string name="video"> video</string>
+    <string name="release_to">Phát </string>
+    <string name="zoom_in">Phóng to</string>
+    <string name="zoom_out">Thu nhỏ</string>
+    <string name="increase_data_usage"><![CDATA[<font color=\"#ff0000\">Có thể tăng mức sử dụng data nhanh chóng.</font>]]></string>
+
+    <string name="LEFT_DATA">%1$s còn lại %2$s data.</string>
+    <string name="LEFT_DATA_TITLE">Data sắp hết</string>
+    <string name="LEFT_DATA_BODY">%1$s còn lại %2$s data. Để thêm data, vui lòng truy cập tài khoản \"My MK Vision\" [nhấp vào đây].</string>
+
+    <string name="DATA_WARN">%1$s đã sử dụng hơn %2$s data trong 24 giờ qua.</string>
+    <string name="DATA_WARN_TITLE">Sử dụng data tốc độ cao</string>
+    <string name="DATA_WARN_BODY">%1$s đã sử dụng hơn %2$s data trong 24 giờ qua. Chúng tôi đã gửi email phân tích việc sử dụng data để giúp hiểu rõ lý do.</string>
+
+    <string name="OUT_OF_DATA">%s hết data.</string>
+    <string name="OUT_OF_DATA_TITLE">Hết data</string>
+    <string name="OUT_OF_DATA_BODY">%s hết data. Do đó, dịch vụ data bị tạm ngưng trong chu kỳ hiện tại. Để thêm data, vui lòng truy cập tài khoản \"My MK Vision\" [nhấp vào đây].</string>
+
+    <string name="PLAN_WILL_EXPIRE">Gói data của %1$s sẽ hết hạn sau %2$s ngày!</string>
+    <string name="PLAN_WILL_EXPIRE_TITLE">Gói data sắp hết hạn</string>
+    <string name="PLAN_WILL_EXPIRE_BODY">Gói data của %1$s sẽ hết hạn sau %2$s ngày! Để gia hạn đăng ký của bạn, vui lòng truy cập trang tài khoản \"My MK Vision\" và giữ cho camera của bạn được kết nối với Cloud.</string>
+
+    <string name="PLAN_EXPIRED">Gói data của %s đã hết hạn!</string>
+    <string name="PLAN_EXPIRED_TITLE">Gói data đã hết hạn</string>
+    <string name="PLAN_EXPIRED_BODY">Gói data của %s đã hết hạn! Để gia hạn đăng ký của bạn, vui lòng truy cập trang tài khoản \"My MK Vision\" và giữ cho camera của bạn được kết nối với Cloud.</string>
+
+    <string name="CAM_ONLINE">%S của bạn đang online!</string>
+    <string name="CAM_ONLINE_TITLE">Camera online</string>
+    <string name="CAM_ONLINE_BODY">%S của bạn đang online!</string>
+
+    <string name="CAM_OFFLINE">%S của bạn đang offline!</string>
+    <string name="CAM_OFFLINE_TITLE">Camera offline</string>
+    <string name="CAM_OFFLINE_BODY">%S của bạn đang offline!</string>
+
+    <string name="NEW_FIRMWARE">Firmware AutoSecure %s mới đã có thể tải xuống!</string>
+    <string name="NEW_FIRMWARE_TITLE">Có firmware mới</string>
+    <string name="NEW_FIRMWARE_BODY">Firmware AutoSecure %s mới đã có thể tải xuống! Vui lòng nâng cấp firmware cho camera của bạn để có trải nghiệm người dùng tốt nhất.</string>
+
+    <string name="NEW_APP_VERSION">Ứng dụng cho AutoSecure mới %s hiện đang hoạt động!</string>
+    <string name="NEW_APP_VERSION_TITLE">Có phiên bản ứng dụng mới</string>
+    <string name="NEW_APP_VERSION_BODY">Ứng dụng cho AutoSecure mới %s hiện đang hoạt động! Vui lòng cập nhật Ứng dụng AutoSecure của bạn để có trải nghiệm người dùng tốt nhất.</string>
+
+    <string name="one_minute_ago">1 phút trước</string>
+    <string name="minutes_ago">%d phút trước</string>
+    <string name="one_hour_ago">1 giờ trước</string>
+    <string name="hours_ago">%d giờ trước</string>
+
+    <string name="unenable_access_2b">Không thể truy cập camera 2B ngay lúc này!</string>
+    <string name="enable_access_2b">Cho phép truy cập camera 2B ngay lúc này!</string>
+
+    <string name="unenable_access_2c">Không thể truy cập camera 2C ngay lúc này!</string>
+    <string name="enable_access_2c">Cho phép truy cập camera 2C ngay lúc này!</string>
+
+    <string name="unenable_video_quality" translatable="false">Không hiển thị cài đặt chất lượng video ngay lúc này!</string>
+    <string name="enable_video_quality" translatable="false">Hiển thị cài đặt chất lượng video ngay lúc này!</string>
+
+    <string name="unenable_debug_setting" translatable="false">Không hiển thị cài đặt gỡ lỗi ngay lúc này!</string>
+    <string name="enable_debug_setting" translatable="false">Hiển thị cài đặt gỡ lỗi ngay lúc này!</string>
+
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="repeat_new_password">Lặp lại mật khẩu mới</string>
+
+    <string name="password_incorrect">Mật khẩu không đúng</string>
+    <string name="email_password_incorrect">Email hoặc mật khẩu không đúng</string>
+    <string name="invalid_email">Email không hợp lệ</string>
+    <string name="invalid_password">Mật khẩu không hợp lệ</string>
+    <string name="email_has_registered">Email đã được đăng ký</string>
+    <string name="account_already_verified">Tài khoản đã được xác minh</string>
+    <string name="username_has_registered">Tên người dùng đã được đăng ký</string>
+    <string name="email_not_exist">Email không tồn tại</string>
+    <string name="retry_exceed_limit">Số lần thử lại vượt quá giới hạn</string>
+    <string name="reach_max_interval">Vui lòng đợi thêm chút nữa</string>
+    <string name="token_expired">Mã xác minh đã hết hạn</string>
+    <string name="token_incorrect">Mã xác minh không chính xác</string>
+    <string name="camera_not_exist">Camera không tồn tại</string>
+    <string name="camera_password_error">Mật khẩu camera không đúng</string>
+    <string name="camera_already_bound_user">Camera đã được thêm bởi tài khoản khác</string>
+    <string name="camera_already_bound_your">Camera đã được thêm bởi bạn</string>
+    <string name="camera_name_illegal">Tên camera chưa phù hợp</string>
+    <string name="camera_is_offline">Camera đang offline</string>
+    <string name="camera_not_report">Camera không có tín hiệu báo cáo</string>
+
+    <string name="DRIVING_HEAVY_HIT">%s đã phát hiện bị đâm khi lái xe</string>
+    <string name="DRIVING_HIT">%s đã phát hiện va chạm khi lái xe</string>
+    <string name="PARKING_HEAVY_HIT">%s đã phát hiện bị đâm khi đỗ xe</string>
+    <string name="PARKING_HIT">%s đã phát hiện va chạm khi đỗ xe</string>
+    <string name="PARKING_MOTION">%s đã phát hiện chuyển động khi đang đỗ xe</string>
+
+    <string name="no_iccid_found">Không tìm thấy ICCID cho camera</string>
+
+    <string name="enable">Kích hoạt</string>
+    <string name="go_back">Quay lại</string>
+    <string name="wifi_trouble_des">Ứng dụng AutoSecure hoạt động tốt nhất khi bật GPS và Wifi Direct. Hãy đảm bảo rằng GPS và Wifi Direct đều được bật cho ứng dụng AutoSecure trong menu cài đặt điện thoại.</string>
+
+    <string name="lens_up">Ống kính trên</string>
+    <string name="lens_down">Ống kính dưới</string>
+    <string name="camera_view">Xem camera</string>
+    <string name="lens_installed">Camera của bạn đã được cài đặt như thế nào?</string>
+    <string name="setup_lens_tips">Kiểm tra tầm nhìn Nếu không, vui lòng quay lại và chọn vị trí khác.</string>
+
+    <string name="camera_server">Máy chủ Camera</string>
+    <string name="fleet_camera_server_dev" translatable="false">ws://dev.Fleet.mkvision.com:9000</string>
+    <string name="fleet_camera_server_test" translatable="false">ws://test.Fleet.mkvision.com</string>
+    <string name="fleet_camera_server_production" translatable="false">wss://Fleet.mkvision.com</string>
+    <string name="events_24_hours"> Sự kiện trong 24 giờ qua</string>
+    <string name="date">Ngày</string>
+    <string name="ago">Trước</string>
+
+    <string name="ip_address">Địa chỉ IP</string>
+
+    <string name="data_usage">Sử dụng data</string>
+
+    <string name="total">Tổng</string>
+    <string name="overview">Tổng quan</string>
+    <string name="my_fleet">Tài khoản</string>
+    <string name="go_detail">Xem chi tiết</string>
+    <string name="detail_title">Chi tiết</string>
+    <string name="miles">Km</string>
+    <string name="hours">Giờ</string>
+    <string name="events">Sự kiện</string>
+    <string name="talkback">Nói chuyện</string>
+    <string name="release_to_stop">Bỏ ra để dừng</string>
+    <string name="export_the_video">Xuất ra video</string>
+    <string name="hold_to_talk">Giữ để nói chuyện</string>
+    <string name="active">Hoạt động</string>
+    <string name="role">Vai trò</string>
+    <string name="email_address">Địa chỉ email</string>
+    <string name="you_have_not_reset_the_initial_password_please_reset_your_password_to_continue_using_waylens_service">Bạn chưa đặt lại mật khẩu, vui lòng đặt lại mật khẩu của bạn để tiếp tục sử dụng dịch vụ MK Vision.</string>
+    <string name="personnel_management">Quản lý nhân sự</string>
+    <string name="asset_management">Quản lý tài sản</string>
+    <string name="geo_fencing">Ranh giới địa lý</string>
+    <string name="connect_camera_wifi">Kết nối Wifi Camera</string>
+    <string name="alert_settings">Cài đặt cảnh báo</string>
+    <string name="please_select_the_type_of_alert_you_would_like_to_receive">Vui lòng chọn loại cảnh báo bạn muốn nhận</string>
+    <string name="driver_return_the_vehicle">Tài xế trả xe</string>
+    <string name="drivers_driving_or_parking">Tài xế đang lái xe hoặc đang đỗ xe</string>
+    <string name="drivers_enter_or_exit">Tài xế vào hoặc ra khỏi ranh giới địa lý</string>
+    <string name="drivers_confirm_start_arrive_orders">Tài xế xác nhận/bắt đầu/đến nơi đặt hàng</string>
+    <string name="video_events">Sự kiện</string>
+    <string name="behavior_type_events">Sự kiện hành vi</string>
+    <string name="hit_type_events">Sự kiện sự cố</string>
+    <string name="double_click_exit">Nhấn lại để thoát khỏi chương trình</string>
+    <string name="_add_new_member">+ Thêm nhân sự mới</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="remove">Xóa</string>
+    <string name="add_new_member">Thêm nhân sự mới</string>
+    <string name="set_as_fleet_owner">Đặt làm chủ sở hữu AutoSecure</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="finish">Hoàn thành</string>
+    <string name="fleet_owner">Chủ sở hữu Fleet</string>
+    <string name="not_verified">Chưa xác minh</string>
+    <string name="phone_number_can_be_empty">Số điện thoại có thể để trống.</string>
+    <string name="email_can_be_entered_at_any_time_to_activate_the_driver_account">Có thể nhập email bất cứ lúc nào để kích hoạt tài khoản tài xế.</string>
+    <string name="if_so_the_driver_will_be_created_in_the_fleet_but_the_driver_account_will_not_take_effect_until_the_email_is_entered">Nếu vậy, tài xế sẽ được tạo trong nhóm, nhưng tài khoản tài xế sẽ không có hiệu lực cho đến khi email được nhập.</string>
+    <string name="email_address_can_be_empty">Địa chỉ email có thể để trống.</string>
+    <string name="set">Cài đặt</string>
+    <string name="_add_new_vehicle">+ Thêm xe mới</string>
+    <string name="_add_new_camera">+ Thêm camera mới</string>
+    <string name="_add_new_driver" translatable="false">+ Thêm tài xế mới</string>
+    <string name="add_new_driver" translatable="false">Thêm tài xế mới</string>
+    <string name="bind">Thêm</string>
+    <string name="unbind">Gỡ</string>
+    <string name="activate">Kích hoạt</string>
+    <string name="go_to_setup">Cài đặt</string>
+    <string name="remove_and_deactivate">Xóa và hủy kích hoạt</string>
+    <string name="bound_by_sth">Đang gán với xe %s</string>
+    <string name="not_bound">Không được thêm</string>
+    <string name="are_you_sure_you_want_to_remove_this_camera_from_your_fleet">Bạn có chắc chắn muốn xóa camera này khỏi Fleet của mình không?</string>
+    <string name="if_removed_your_camera_will_be_deactivated">Nếu bị xóa, camera của bạn sẽ bị vô hiệu hóa.</string>
+    <string name="camera_detail">Chi tiết camera</string>
+    <string name="vehicle">Xe</string>
+    <string name="vehicle_manage">Quản lý xe</string>
+    <string name="serial_number_s_n">Số sê-ri (S/N)</string>
+    <string name="status">Trạng thái</string>
+    <string name="bind_a_camera">Thêm một camera</string>
+    <string name="please_choose_a_camera_serial_number_s_n">Vui lòng chọn S/N của camera</string>
+    <string name="_8_digit_s_n">8 ký tự S/N</string>
+    <string name="_8_digit_password">Mật khẩu 8 chữ số</string>
+    <string name="add_new_vehicle">Thêm xe mới</string>
+    <string name="plate_number">Biển số xe</string>
+    <string name="vehicle_model">Loại xe</string>
+    <string name="vehicle_brand">Hãng xe</string>
+    <string name="driver">Tài xế</string>
+    <string name="driver_manage">Quản lý tài xế</string>
+    <string name="bind_camera">Thêm camera</string>
+    <string name="please_choose_a_driver_of_your_vehicle">Hãy chọn 1 mục hoặc thêm mới</string>
+    <string name="not_activated">Chưa kích hoạt</string>
+    <string name="sure">Chắc chắn rồi</string>
+    <string name="set_as_fleet_owner_tips">Mỗi Fleet chỉ có một chủ sở hữu. Bạn có chắc chắn đặt thành viên này làm chủ sở hữu Fleet và đặt chủ sở hữu hiện tại làm quản lý không?</string>
+    <string name="remove_personnel_tips">Bạn có chắc chắn xóa thành viên này khỏi Fleet của mình không? Nếu thành viên bị xóa, tất cả data lịch sử sẽ bị xóa.</string>
+    <string name="activate_camera_tips">Xác nhận kích hoạt?</string>
+    <string name="bind_driver_failed">Đã thêm xe. Nhưng chưa gán được cho tài xế. Vui lòng gán lại theo cách thủ công.</string>
+    <string name="bind_camera_failed">Đã thêm xe. Nhưng chưa gán được cho xe. Vui lòng gán lại theo cách thủ công.</string>
+    <string name="bind_driver_camera_failed">Đã thêm xe. Nhưng chưa gán được cho xe và tài xế. Hãy thêm và gán lại theo cách thủ công.</string>
+    <string name="call">Gọi</string>
+    <string name="are_you_sure_you_want_to_add">Bạn có chắc chắn muốn thêm camera này vào Fleet của mình không?</string>
+    <string name="are_you_sure_you_want_to_edit">Bạn có chắc chắn muốn sửa thông tin camera này không?</string>
+    <string name="this_month_in_total">Tổng data tháng</string>
+    <string name="gb">GB</string>
+    <string name="billing_date_every_19th_next_month">Ngày thanh toán: Ngày 19 hàng tháng</string>
+    <string name="expected_to_charge">Chi phí dự kiến</string>
+    <string name="billing_history">Lịch sử Thanh toán</string>
+    <string name="billing_cycle_from">Chu kỳ thanh toán từ</string>
+    <string name="new_plate_number">Biển số mới</string>
+    <string name="mileage_driven">Quãng đường</string>
+    <string name="time_driven">Thời gian</string>
+    <string name="event">Sự kiện</string>
+    <string name="sort_by">Sắp xếp theo</string>
+    <string name="setup_successfully">Cài đặt thành công</string>
+    <string name="fleet_number">Số Fleet</string>
+    <string name="bound_camera">Camera được thêm</string>
+
+    <string name="hard_accel">Tăng tốc đột ngột</string>
+    <string name="hard_brake">Phanh đột ngột</string>
+    <string name="sharp_turn">Cua đột ngột</string>
+    <string name="harsh_accel">Tăng tốc gấp</string>
+    <string name="harsh_brake">Phanh gấp</string>
+    <string name="harsh_turn">Cua gấp</string>
+    <string name="severe_accel">Tăng tốc khá gấp</string>
+    <string name="severe_brake">Phanh khá gấp</string>
+    <string name="severe_turn">Cua khá gấp</string>
+    <string name="add_new_plate_number">Thêm biển số mới</string>
+    <string name="sure_to_add_the_vehicle">Chắc chắn thêm xe?</string>
+    <string name="the_plate_number_can_not_be_changed_once_the_vehicle_added_to_the_fleet">Không thể thay đổi biển số sau khi đã thêm xe vào Fleet.</string>
+    <string name="activate_the_sim_card_of_the_camera">Kích hoạt thẻ SIM của camera!</string>
+    <string name="camera_s_n">Camera S/N:</string>
+    <string name="activate_camera_warning">Khi bạn kích hoạt camera, chúng tôi sẽ ngay lập tức tính phí dịch vụ cho camera và phí data có thể tùy thuộc vào mức sử dụng.</string>
+    <string name="time">Thời gian</string>
+    <string name="clear">Xoá</string>
+    <string name="please_connect_bound_camera">Vui lòng kết nối với camera đã được thêm!</string>
+    <string name="setup_vehicle_and_camera">Gán thiết bị</string>
+    <string name="fleet">Đội xe</string>
+    <string name="fleet_name">Tên đội xe</string>
+    <string name="fleet_default_error">Lỗi, vui lòng thử lại</string>
+    <string name="incorrect_username_password">Vui lòng nhập địa chỉ email và mật khẩu chính xác</string>
+    <string name="fleet_user_not_exist">Vui lòng kiểm tra địa chỉ email</string>
+    <string name="incorrect_old_password">Vui lòng nhập mật khẩu cũ chính xác</string>
+    <string name="reach_retry_limit">Chúng tôi vừa gửi một email xác minh, vui lòng đợi 5 phút, kiểm tra email của bạn và thử lại</string>
+    <string name="fleet_retry_exceed_limit">Quá nhiều email xác minh đã được gửi, vui lòng kiểm tra lại email của bạn, bao gồm cả thư rác</string>
+    <string name="verification_token_expired">Mã xác minh hết hạn. Vui lòng xác minh lại</string>
+    <string name="verification_token_incorrect">Vui lòng nhập mã xác nhận chính xác</string>
+    <string name="driver_already_has_email">Không thể thay đổi địa chỉ email</string>
+    <string name="camera_already_added">Camera đã được thêm vào Fleet. Nếu đó không phải là Fleet của bạn, vui lòng liên hệ với MK Vision để được hỗ trợ</string>
+    <string name="plate_number_already_added">Biển số bị trùng</string>
+    <string name="email_already_signed">Địa chỉ email đã được sử dụng</string>
+    <string name="vehicle_id_already_bound_driver_id">Xe đã được giao cho một tài xế</string>
+    <string name="vehicle_id_already_bound_camera_sn">Xe đã được thêm một camera</string>
+    <string name="vehicle_driver_not_bound">Xe chưa được gán cho tài xế</string>
+    <string name="vehicle_camera_not_bound">Xe chưa được gán camera</string>
+    <string name="camera_in_driving_mode">Xe đang lái, vui lòng đỗ xe để điều chỉnh</string>
+    <string name="camera_sn_already_bound">Camera đã được gắn vào một chiếc xe</string>
+    <string name="vehicle_id_not_bound">Xe chưa được giao cho tài xế</string>
+    <string name="driver_id_already_bound">Tài xế đã được gán cho xe</string>
+    <string name="fleet_camera_not_exist">Vui lòng kiểm tra camera</string>
+    <string name="slide_the_thumbnail_to_change_a_camera"> </string>
+    <string name="mode_combined_view">Khung hình đôi</string>
+    <string name="mode_combined">Khung hình đôi</string>
+    <string name="mode_road_facing">Phía trước</string>
+    <string name="mode_road">Đường</string>
+    <string name="mode_cabin_facing">Quay về phía cabin</string>
+    <string name="mode_cabin">Cabin</string>
+    <string name="mode_driver_facing">Trước mặt tài xế</string>
+    <string name="mode_driver">Tài xế</string>
+
+    <string name="horz_vert">Horz_vert</string>
+
+    <string name="Event_Driving_to_Parking" translatable="false">%s đã chuyển sang chế độ đỗ xe.</string>
+    <string name="Event_Parking_to_Driving" translatable="false">%s đã chuyển sang chế độ lái xe.</string>
+
+    <string name="Event_Sharp_Turn" translatable="false">%1$s đã cua đột ngột ở %2$s.</string>
+    <string name="Event_Sharp_Turn_NL" translatable="false">%s đã thực hiện cua đột ngột.</string>
+    <string name="Event_Harsh_Turn" translatable="false">%1$s đã cua gấp ở %2$s.</string>
+    <string name="Event_Harsh_Turn_NL" translatable="false">% s đã cua gấp.</string>
+    <string name="Event_Severe_Turn" translatable="false">%1$s đã cua khá gấp ở %2$s.</string>
+    <string name="Event_Severe_Turn_NL" translatable="false">%s đã cua khá gấp.</string>
+
+    <string name="Event_Hard_Accel" translatable="false">%1$s đã tăng tốc đột ngột ở %2$s.</string>
+    <string name="Event_Hard_Accel_NL" translatable="false">%s đã tăng tốc đột ngột.</string>
+    <string name="Event_Harsh_Accel" translatable="false">%1$s đã tăng tốc gấp ở %2$s.</string>
+    <string name="Event_Harsh_Accel_NL" translatable="false">%s đã tăng tốc gấp.</string>
+    <string name="Event_Severe_Accel" translatable="false">%1$s đã tăng tốc khá gấp ở %2$s.</string>
+    <string name="Event_Severe_Accel_NL" translatable="false">%s đã tăng tốc gấp.</string>
+
+    <string name="Event_Hard_Brake" translatable="false">%1$s đã phanh đột ngột ở %2$s.</string>
+    <string name="Event_Hard_Brake_NL" translatable="false">%s đã phanh đột ngột.</string>
+    <string name="Event_Harsh_Brake" translatable="false">%1$s đã phanh gấp ở %2$s.</string>
+    <string name="Event_Harsh_Brake_NL" translatable="false">%s đã phanh gấp.</string>
+    <string name="Event_Severe_Brake" translatable="false">%1$s đã phanh khá gấp ở %2$s.</string>
+    <string name="Event_Severe_Brake_NL" translatable="false">%s đã phanh khá gấp.</string>
+
+    <string name="Event_Driving_Bump" translatable="false">%1$s đã có một va chạm khi lái xe ở %2$s.</string>
+    <string name="Event_Driving_Bump_NL" translatable="false">%s đã có một va chạm khi lái xe.</string>
+    <string name="Event_Parking_Bump" translatable="false">%1$s đã có một va chạm khi đỗ xe ở %2$s.</string>
+    <string name="Event_Parking_Bump_NL" translatable="false">%s đã có một va chạm khi đỗ xe</string>
+
+    <string name="Event_Driving_Impact" translatable="false">%1$s đã bị đâm khi lái xe ở %2$s.</string>
+    <string name="Event_Driving_Impact_NL" translatable="false">%s đã bị đâm khi lái xe.</string>
+    <string name="Event_Parking_Impact" translatable="false">%1$s đã bị đâm khi đỗ xe ở %2$s.</string>
+    <string name="Event_Parking_Impact_NL" translatable="false">%s đã bị đâm khi đỗ xe.</string>
+
+    <string name="Event_SD_Card_Error" translatable="false">Thẻ SD của xe %s bị lỗi.</string>
+    <string name="Event_SD_Card_Slow" translatable="false">Thẻ SD của xe %s bị chậm.</string>
+    <string name="Event_SD_Card_Fatal" translatable="false">Thẻ SD của xe %s bị hỏng.</string>
+    <string name="Event_NO_SD_Card" translatable="false">Xe %s không có thẻ SD.</string>
+    <string name="Event_SD_Card_Formatting" translatable="false">Thẻ SD của xe %s đang được định dạng.</string>
+    <string name="Event_SD_Card_Unrecongnized" translatable="false">Thẻ SD của xe %s chưa được định dạng.</string>
+
+    <string name="Event_Distracted_Driving" translatable="false">%1$s tài xế mất tập trung ở %2$s.</string>
+    <string name="Event_Distracted_Driving_NL" translatable="false">%s tài xế mất tập trung.</string>
+
+    <string name="Exit_Geo_Fence" translatable="false">%1$s đã lái xe ra khỏi hàng rào địa lý %2$s %3$s.</string>
+    <string name="Enter_Geo_Fence" translatable="false">%1$s đã lái xe vào hàng rào địa lý %2$s %3$s.</string>
+
+    <string name="waylens_secure360_mismatch">Xin lỗi Ứng dụng \"MK Vision AutoSecure\" không dành cho camera này.  Đối với khách hàng của Fleet, vui lòng sử dụng Ứng dụng \"MK Vision Fleet\".</string>
+    <string name="waylens_fleet_mismatch">Xin lỗi Ứng dụng \"MK Vision Fleet\" không dành cho camera này.  Đối với khách hàng của Fleet, vui lòng sử dụng Ứng dụng \"MK Vision AutoSecure\".</string>
+
+    <string name="go_waylens_fleet">Đi tới ứng dụng \"MK Vision Fleet\"</string>
+    <string name="go_waylens_secure360">Đi tới ứng dụng \"MK Vision AutoSecure\"</string>
+
+    <string name="add">Thêm</string>
+    <string name="add_new_zone">Thêm vùng mới</string>
+    <string name="draft_box">Bản nháp</string>
+
+    <string name="triggering_vehicles">Xe kích hoạt</string>
+    <string name="no_triggering_vehicle">Không có xe kích hoạt</string>
+    <string name="please_select_the_vehicles_trigger_this_geo_fence_when_entering">Vui lòng chọn phương tiện kích hoạt hàng rào địa lý này khi đi vào.</string>
+    <string name="all_vehicles_in_the_fleet_will_trigger_this_geo_fence">Tất cả các xe trong Fleet sẽ kích hoạt hàng rào địa lý này</string>
+    <string name="on_the_next_page_you_need_to_do_the_following_steps_to_build_your_geo_fenceing_area_n_n1_select_the_central_point_on_the_map_n2_fill_in_the_range_of_the_geo_fencing_area">Trên trang tiếp theo, bạn cần thực hiện các bước sau để xây dựng khu vực hàng rào địa lý của mình.1. Chọn điểm trung tâm trên bản đồ.2. Điền vào phạm vi của khu vực hàng rào địa lý.</string>
+    <string name="on_the_next_page_you_need_to_select_a_existing_graph_to_build_your_geo_fence_area">Trên trang tiếp theo, bạn cần chọn một biểu đồ hiện có để xây dựng khu vực hàng rào địa lý của mình.</string>
+    <string name="on_the_next_page_you_need_to_do_the_following_steps_to_build_your_geo_fence_area_n_n1_tap_on_the_map_to_get_a_start_point_n2_build_the_area_by_adding_more_point_on_the_map_n3_tap">Trên trang tiếp theo, bạn cần thực hiện các bước sau để xây dựng khu vực hàng rào địa lý của mình.1. Nhấn vào bản đồ để có điểm bắt đầu.2. Xây dựng khu vực bằng cách thêm nhiều điểm trên bản đồ.3. Nhấn vào \"Xong\" để xác nhận khu vực.</string>
+    <string name="_0_20_characters">0–20 ký tự</string>
+    <string name="range_miles">Phạm vi (km)</string>
+    <string name="range">Phạm vi</string>
+
+    <string name="input_fence_name_tips">Vui lòng nhập tên khu vực.</string>
+    <string name="exceed_fence_name_tips">Các ký tự của tên vùng vượt quá giới hạn.</string>
+    <string name="how_will_the_vehicles_trigger_the_geo_fence">Các xe sẽ kích hoạt hàng rào địa lý như thế nào?</string>
+    <string name="enter">Đi vào</string>
+    <string name="exit">Đi ra</string>
+    <string name="specific_vehicles">Tên xe</string>
+    <string name="all_vehicles_in_the_fleet">Tất cả các xe trong Fleet</string>
+    <string name="all_vehicles_in_the_fleet_are_included_including_vehicles_added_to_the_fleet_later">Tất cả các xe trong Fleet đều được đưa vào, kể cả những xe được bổ sung vào Fleet sau này.</string>
+    <string name="which_vehicles_will_trigger_the_geo_fence">Những xe nào sẽ kích hoạt hàng rào địa lý?</string>
+    <string name="geo_fence_zone_added_successfully">Đã thêm thành công vùng hàng rào địa lý.</string>
+    <string name="select_the_central_point_on_the_map">Chọn điểm trung tâm trên bản đồ</string>
+    <string name="tap_on_the_map_to_siege_the_geo_fencing_area">Chạm vào bản đồ để khoanh tròn khu vực hàng rào địa lý:</string>
+    <string name="select_one_existing_graph_to_create_a_new_zone">Chọn một biểu đồ hiện có để tạo vùng mới:</string>
+    <string name="the_vehicles_that_trigger_this_geo_fence_whenentering">Các xe kích hoạt hàng rào địa lý này khi đi vào</string>
+    <string name="are_you_sure_to_remove_this_geo_fence">Bạn có chắc chắn loại bỏ hàng rào địa lý này không?</string>
+    <string name="geo_fence_zone_failed_to_add_please_try_again">Không thêm được khu vực hàng rào địa lý, vui lòng thử lại.</string>
+    <string name="the_vehicles_trigger_this_geo_fence_has_been_updated_n_nwhen_the_vehicle_restarts_the_geo_fence_takes_effect">Các xe kích hoạt hàng rào địa lý này đã được cập nhật. Khi xe khởi động lại, hàng rào địa lý sẽ có hiệu lực.</string>
+    <string name="the_number_entered_exceeds_the_limit">Số lượng đã nhập vượt quá giới hạn</string>
+    <string name="fence_reached_the_limit">Số lượng hàng rào địa lý đã đạt đến giới hạn (32), không thể bổ sung thêm lúc này.</string>
+    <string name="more_points_are_not_supported">Không thể thêm điểm nữa</string>
+    <string name="the_maximal_range_is_500_miles">Phạm vi tối đa là 805km.</string>
+    <string name="not_used">Không được sử dụng</string>
+    <string name="firebase_notification_token">Mã thông báo Firebase</string>
+    <string name="search_a_location">Tìm kiếm một vị trí</string>
+    <string name="the_graph_is_for_preview_only_and_cannot_be_edited">Biểu đồ chỉ để xem trước và không thể chỉnh sửa</string>
+    <string name="exported_video">Video đã xuất</string>
+
+    <string name="installation">Cài đặt</string>
+    <string name="maintenance">Bảo trì</string>
+    <string name="start_installation_test">Bắt đầu kiểm tra cài đặt</string>
+    <string name="installation_guide_for_secure360"><u>Hướng dẫn cài đặt cho AutoSecure</u></string>
+    <string name="please_follow_the_installation_guide_to_install_the_camera_correctly">Vui lòng làm theo hướng dẫn cài đặt để cài đặt camera một cách chính xác.</string>
+    <string name="and_power_on_your_vehicle">Khởi động xe của bạn.</string>
+    <string name="please_connect_the_camera_via_wifi_to_view_videos_in_the_sd_card">Vui lòng kết nối camera qua Wifi để xem video trong Thẻ SD.</string>
+    <string name="camera_installed_successfully">Đã cài đặt camera thành công.</string>
+    <string name="contact_supplier_for_network_error">Vui lòng liên hệ với nhà cung cấp để biết nguyên nhân lỗi mạng.</string>
+    <string name="almost_finished">Sắp hoàn thành</string>
+    <string name="sign_up_installer">Đăng ký người cài đặt</string>
+    <string name="make_sure_signal_try_again">Hãy đảm bảo rằng bạn đang ở một nơi có sóng tốt và thử lại.</string>
+    <!--eventType-->
+    <string name="type_no_driver">Không có tài xế</string>
+    <string name="type_drowsy">Buồn ngủ</string>
+    <string name="type_drinking">Uống rượu</string>
+    <string name="type_smoking">Hút thuốc</string>
+    <string name="type_phone_calling">Gọi điện thoại</string>
+    <string name="type_using_phone">Sử dụng điện thoại</string>
+    <string name="type_asleep">Ngủ</string>
+    <string name="type_daydreaming">Mơ màng</string>
+    <string name="type_yawning">Ngáp</string>
+    <string name="type_distracted">Mất tập trung</string>
+    <string name="type_attentive">Tập trung</string>
+    <string name="type_no_seatbelt">Không thắt dây an toàn</string>
+    <string name="upload_fail">Tải ảnh lên lỗi</string>
+    <string name="get_service_status_fail">Không có trạng thái</string>
+    <string name="account_lock">Tài khoản bị khóa</string>
+    <string name="account_unlock">Tài khoản được mở khóa</string>
+    <string name="simcardinfochanged">Đã đổi SIM</string>
+    <string name="cameratiled_check">Camera bị lệch</string>
+    <string name="login">Đăng nhập</string>
+    <string name="login_face">Đăng nhập bằng khuôn mặt</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="over_speed_warning">Vượt quá tốc độ</string>
+    <string name="success">Thành công</string>
+    <string name="failure">Lỗi</string>
+    <string name="power_lost">Camera bị tắt nguồn</string>
+    <!--category-->
+    <string name="driver_managemant">Quản lý tài xế</string>
+    <string name="parking_hit">Đỗ xe</string>
+    <string name="system">Thiết bị</string>
+    <string name="ignition">Trạng thái xe</string>
+    <string name="drvn">Tải ảnh lên NĐ10</string>
+    <string name="payment">Thanh toán</string>
+    <string name="accelerator">Hành vi lái xe</string>
+
+    <string name="_1_recommended_installation_position">1 Vị trí lắp đặt được đề xuất</string>
+    <string name="the_camera_should_not_be_higher_than_the_driver_s_eyes">Camera không đặt cao hơn mắt người lái xe.</string>
+    <string name="installation_guide"><u>Hướng dẫn cài đặt</u></string>
+    <string name="_1_5">1/5</string>
+    <string name="_2_make_sure_that_the_video_is_upright">2. Đảm bảo video đang ở chế độ thẳng đứng.</string>
+    <string name="_2_5">2/5</string>
+    <string name="_3_input_the_vehicle_information">3 Nhập thông tin xe</string>
+    <string name="input_the_side_of_the_vehicle_rudder">Vô lằng bên trái hay bên phải</string>
+    <string name="choose_the_type_closest_to_yoru_vehicle_in_driver_cabin_size">Chọn loại gần giống với kích thước cabin xe của bạn </string>
+    <string name="truck">Xe tải</string>
+    <string name="large_suv_pickup">SUV/ Bán tải cỡ lớn </string>
+    <string name="car_small_suv">Xe hơi/ SUV cỡ nhỏ</string>
+    <string name="_3_5">3/5</string>
+    <string name="_4_adjust_the_camera_position">4 Điều chỉnh vị trí camera.</string>
+    <string name="adjust_the_camera_position">Điều chỉnh vị trí camera.</string>
+    <string name="let_the_driver_look_forward_with_an_ordinary_driving_posture_adjust_the_camera_to_make_the_driver_image_fit_in_the_mask_keep_adjusting_till_the_mask_turn_into_green">Để lái xe nhìn về phía trước với tư thế lái xe bình thường. Điều chỉnh camera để hình ảnh người lái xe vào đúng khung hình. Tiếp tục điều chỉnh cho đến khi khung hình chuyển sang màu xanh.</string>
+    <string name="ready_to_calib">Sẵn sàng hiệu chỉnh</string>
+    <string name="_4_5">4/5</string>
+    <string name="_5_calibrate_the_camera">5. Hiệu chỉnh camera.</string>
+    <string name="tap_calib_and_let_the_driver_maintain_the_current_position_and_look_forward_for_at_least">Nhấn Hiệu chỉnh, để tài xế duy trì vị trí hiện tại &amp; nhìn về phía trước trong vòng ít nhất 3 giây. Cho đến khi bạn nghe thấy "Hiệu chỉnh hoàn thành" từ camera.</string>
+    <string name="calib_and_look_forward">Hiệu chỉnh và nhìn về phía trước </string>
+    <string name="_5_5">5/5</string>
+    <string name="let_the_driver_look_ahead_with_an_ordinary_driving_posture">Để lái xe nhìn về phía trước với tư thế lái xe bình thường.</string>
+    <string name="back_to_adjust_the_camera"><u><![CDATA[Quay lại điều chỉnh camera]]></u></string>
+    <string name="calib_the_driving_facing_camera">Hiệu chỉnh Camera đối diện Lái xe</string>
+    <string name="camera_tour">Cài đặt camera</string>
+    <string name="camera_not_fleet_devices">Camera chưa được thêm vào fleet, vui lòng thêm camera hoặc thay đổi thông tin</string>
+    <string name="calib_failed">Hiệu chỉnh không thành công </string>
+    <string name="calib_done">Hiệu chỉnh thành công</string>
+    <string name="calibration_is_required_every_time_the_dms_camera_is_moved">Cần phải hiệu chỉnh mỗi khi di chuyển camera DMS!</string>
+    <string name="make_sure_that_the_driver_kept_an_ordinary_driving_position_and_look_forward_from_tapping_the_calib_button_to_completing_the_calibration">Đảm bảo rằng lái xe duy trì tư thế lái xe bình thường &amp; nhìn về phía trước từ lúc nhấn nút "Hiệu chỉnh" để hoàn thành hiệu chỉnh camera. </string>
+    <string name="i_am_sure">Tôi chắc chắn</string>
+    <string name="not_sure_and_calib_again"><u>Chưa chắc chắn. Hiệu chỉnh lại</u></string>
+    <string name="calibration">Hiệu chỉnh</string>
+
+    <string name="please_select_the_camera_type">Vui lòng chọn loại camera.</string>
+    <string name="secure360_secure4k">Autosecure</string>
+    <string name="securees">SecureES</string>
+    <string name="_1_please_connect_your_phone_to_camera_wifi">1 Vui lòng kết nối điện thoại của bạn với Wi-Fi của camera.</string>
+    <string name="you_can_find_the_wifi_name_and_wifi_password_on_the_screen_of_the_camera">Bạn có thể tìm thấy tên Wi-Fi và mật khẩu Wi-Fi trên màn hình của camera.</string>
+    <string name="use_your_phone_to_connect_to_the_camera_s_wifi">Sử dụng điện thoại của bạn để kết nối với WiFi của camera</string>
+    <string name="_2_input_the_ssid_and_password_of_the_hotspot">2. Nhập SSID và mật khẩu của điểm phát sóng.</string>
+    <string name="ssid_big">TÊN WIFI</string>
+    <string name="please_make_sure_the_ssid_and_password_you_input_are_completely_correct_including_case_punctuation_and_numbers">Vui lòng đảm bảo rằng SSID và mật khẩu bạn nhập là hoàn toàn chính xác. Bao gồm cả chữ hoa, số và dấu câu.</string>
+    <string name="the_ssid_and_password_has_been_successfully_saved_in_the_camera">SSID và mật khẩu đã được lưu thành công trong camera.</string>
+    <string name="please_disconnect_the_phone_from_the_camera_wifi_and_the_camera_will_automatically_connect_to_the_hotspot">Vui lòng ngắt kết nối điện thoại khỏi Wi-Fi của camera và camera sẽ tự động kết nối với điểm phát sóng.</string>
+    <string name="fail_to_save_the_ssid_and_password_please_try_again">Không lưu được SSID và Mật khẩu. Vui lòng thử lại.</string>
+    <string name="securees_network_setup">Thiết lập mạng SecureES</string>
+
+    <string name="make_sure_your_face_is_clear">Vui lòng nhìn vào DMS và đảm bảo khuôn mặt của bạn có thể quan sát rõ ràng.</string>
+    <!--    <string name="make_sure_your_face_is_clear">Đảm bảo rằng khuôn mặt của bạn có thể quan sát rõ ràng</string>-->
+    <string name="please_enter_a_name">Vui lòng nhập tên người dùng</string>
+    <string name="please_enter_full_info">Vui lòng nhập đẩy đủ thông tin</string>
+    <string name="please_enter_numberId">Vui lòng nhập số CCCD</string>
+    <string name="please_enter_cccd">Vui lòng nhập CCCD</string>
+    <string name="tap_the_face_button_again_to_hide_this_page">Nhấn lại vào icon khuôn mặt để ẩn trang này.</string>
+    <string name="remove_all_faces">Xóa tất cả các khuôn mặt</string>
+    <string name="add_new_face">Thêm khuôn mặt mới</string>
+    <string name="tap_to_remove">Xoá</string>
+
+    <string-array name="camera_modes">
+        <item>LOW</item>
+        <item>FRONT_ONLY</item>
+        <item>Main</item>
+    </string-array>
+
+    <string-array name="night_mode">
+        <item>AUTO</item>
+        <item>SET</item>
+    </string-array>
+
+    <!--app mới bổ sung-->
+    <string name="adas_settings">Cài đặt ADAS</string>
+    <string name="vui_l_ng_nh_p_chi_u_cao_c_a_m_y_nh_so_v_i_m_t_t">Vui lòng nhập chiều cao của máy ảnh so với mặt đất.</string>
+    <string name="please_input_the_width_of_the_vehicle_from_wheel_to_wheel">Vui lòng nhập khoảng cách giữa 2 bánh xe.</string>
+    <string name="meters">m</string>
+    <string name="please_input_the_windshield_offset">Vui lòng nhập độ lệch kính chắn gió từ trung tâm. (Số âm cho bên trái, số dương cho bên phải.)</string>
+    <string name="the_camera_is_in_virtual_ignition_mode_so_the_power_test_cannot_be_done">Máy ảnh đang ở chế độ \'%s\' nên không thể thực hiện kiểm tra nguồn.</string>
+    <string name="if_a_power_test_is_required_please_contact_the_administrator_to_switch_the_camera_to_trust_acc_mode">Nếu cần kiểm tra nguồn điện, vui lòng liên hệ với quản trị viên để chuyển máy ảnh sang chế độ \'Trust Acc\'.</string>
+    <string name="are_you_sure_you_want_to_add_driver">Bạn có chắc chắn muốn thêm tài xế này vào đội xe của mình không?</string>
+    <string name="are_you_sure_you_want_to_edit_driver">Bạn có chắc chắn muốn sửa thông tin tài xế này không?</string>
+    <string name="report_with">Báo cáo theo</string>
+    <string name="vehicleFleet">B1.Hành trình xe chạy</string>
+    <string name="vehicleSpeed">B2.Tốc độ của xe</string>
+    <string name="vehicleStop">B4.Dừng dỗ</string>
+    <string name="overSpeed">Xe quá tốc độ giới hạn</string>
+    <string name="reportTotal">B5.Báo cáo tổng hợp</string>
+    <string name="detailPicture">B6.Chi tiết ảnh từ CMRGSHT</string>
+
+    <string name="title_activity_view_log">ViewLogActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Tiếp tục</string>
+    <string name="previous">Quay lại</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="time_end">Thời gian kết thúc</string>
+    <string name="setup_date">Ngày lắp đặt</string>
+    <string name="input_setup_date">Nhập thông tin ngày lắp đặt</string>
+    <string name="no_trips">No trips</string>
+    <string name="total_time_stop">Tổng thời gian dừng đỗ: %s (phút)</string>
+    <string name="total_time_driving">Tổng thời gian lái xe: %s (phút)</string>
+    <string name="seconds">Giây</string>
+    <string name="mins">Phút</string>
+    <string name="title_alert">Thông báo:</string>
+    <string name="category">Phân loại:</string>
+    <string name="eventTime">Thời gian:</string>
+    <string name="videoTime">Thời gian:</string>
+    <string name="eventType">Hành vi:</string>
+    <string name="fleetName">Tên Fleet:</string>
+    <string name="driverName">Tên Tài xế:</string>
+    <string name="plateNo">Biển số xe:</string>
+    <string name="speed">Tốc độ:</string>
+    <string name="eventType2">Trạng thái:</string>
+    <string name="accountName">Tên tài khoản:</string>
+    <string name="note">Lí do:</string>
+    <string name="oderId">Đơn hàng:</string>
+    <string name="subsName">Sản phẩm:</string>
+    <string name="amount">Số tiền:</string>
+    <string name="currency">Đơn vị:</string>
+    <string name="errorMsg">Lí do:</string>
+    <string name="eventLevel">Mức độ:</string>
+    <string name="cameraSn">Thiết bị:</string>
+    <string name="imageNoti">Hình ảnh:</string>
+    <string name="mapGps">Vị trí:</string>
+    <string name="play_clip">Bấm nút Play để xem clip</string>
+    <string name="b2_2_overSpeed">B2.2 Quá tốc độ giới hạn</string>
+    <string name="b2_1_vehicleSpeed">B2.1 Tốc độ của xe</string>
+    <string name="b5_2">B5.2 Báo cáo tổng hợp theo lái xe</string>
+    <string name="b5_1">B5.1 Báo cáo tổng hợp theo xe</string>
+    <string name="btn_yes">Đồng ý</string>
+    <string name="notice">Thông báo</string>
+    <string name="remember_login">Lưu thông tin đăng nhập</string>
+    <string name="update_phone">Số điện thoại trên camera của quý khách đã thay đổi! Quý khách vui lòng nhập số điện thoại để cập nhật lên FMS.</string>
+    <string name="text_signup">Bạn chưa có tài khoản?</string>
+    <string name="text_signin">Bạn đã có tài khoản?</string>
+    <string name="btn_signup">Đăng ký</string>
+    <string name="btn_signin">Đăng nhập</string>
+    <string name="camera_sn">Camera S/N</string>
+    <string name="send">Gửi</string>
+    <string name="confirm_btn">Xác nhận</string>
+    <string name="contact_call">Liên hệ</string>
+    <string name="one_week">1 Tuần</string>
+    <string name="one_month">1 Tháng</string>
+    <string name="time_driving_out_4h">Lái xe liên tục quá 4 giờ</string>
+    <string name="all">Tất cả</string>
+    <string name="save_video">Lưu video</string>
+    <string name="miss_driver">Thiếu tài xế</string>
+    <string name="miss_device">Thiếu camera</string>
+    <string name="input_search">Nhập thông tin tìm kiếm</string>
+    <string name="click_to_connect">Bấm để kết nối %s</string>
+    <string name="click_to_setting">Bấm để cài đặt Wifi</string>
+    <string name="status_update_phone_title">Trạng thái:</string>
+    <string name="phone_updated">Đã cập nhật</string>
+    <string name="phone_not_update">Chưa cập nhật</string>
+    <string name="please_input_phone_no">Vui lòng nhập số điện thoại</string>
+    <string name="add_driver">Thêm tài xế</string>
+    <string name="assign_driver">Phân công tài xế</string>
+    <string name="warning_remove_vehicle">Are you sure to remove the vehicle from your fleet?</string>
+    <string name="warning_remove_driver">Bạn chắc chắn muốn xóa tài xế?</string>
+    <string name="warning_unbind_device">Are you sure to unbind the camera to the vehicle?</string>
+    <string name="input_plate_no">Nhập biển số xe</string>
+    <string name="input_vehicle_brand">Nhập hãng xe</string>
+    <string name="input_vehicle_no">Nhập mã hiệu xe</string>
+    <string name="input_vehicle_type">Nhập kiểu xe</string>
+    <string name="edit_vehicle_info">Sửa thông tin xe</string>
+    <string name="replace_driver">Đổi tài xế</string>
+    <string name="replace_camera">Đổi camera</string>
+    <string name="title_driver_list">Danh sách tài xế</string>
+    <string name="title_camera_list">Danh sách camera</string>
+    <string name="select_driver">Chọn tài xế</string>
+    <string name="driver_name_na">Rỗng</string>
+    <string name="select_device_of_of_vehicle">Chọn camera</string>
+    <string name="data_sdcard">Dữ liệu thẻ nhớ</string>
+    <string name="check_sim_card">Kiểm tra thẻ SIM</string>
+    <string name="camera_base_info">Thông tin cơ bản</string>
+    <string name="check_data_4g">Kiểm tra dung lượng 4G của SIM</string>
+    <string name="account_info">Thông tin tài khoản</string>
+    <string name="config_login_face">Cài đặt đăng nhập</string>
+    <string name="btn_get_log">Lấy thông tin báo cáo</string>
+    <string name="vehicles">Xe</string>
+    <string name="cameras">Camera</string>
+    <string name="no_func">Chưa có tính năng này</string>
+    <string name="driving">Lái xe</string>
+    <string name="parking">Đỗ xe</string>
+    <string name="warning_upgrade_vip">Vui lòng nâng cấp tài khoản để sử dụng chức năng này!</string>
+    <string name="change_pwd_success">Đổi mật khẩu thành công</string>
+    <string name="select_mobile_cfg_login">Mobile: sử dụng mobile chụp và gửi ảnh xuống camera để đăng nhập.</string>
+    <string name="btn_cfg_mobile">Mobile</string>
+    <string name="btn_cfg_auto">Tự động</string>
+    <string name="select_auto_login_face">Tự động: camera sẽ tự động lấy ảnh và thực hiện đăng nhập.</string>
+    <string name="cfg_login_title">Cài đặt đăng nhập</string>
+    <string name="new_app_version_title">Ứng dụng có phiên bản mới</string>
+    <string name="app_new_version_content">Ứng dụng đã có phiên bản mới!\nQuý khách vui lòng cập nhật bản mới nhất để có trải nghiệm tốt hơn!</string>
+    <string name="app_new_version_content_force_update">Ứng dụng đã có phiên bản mới!\nQuý khách vui lòng cập nhật bản mới nhất để tiếp tục sử dụng ứng dụng!</string>
+    <string name="btn_confirm_forgot_pwd">Gửi yêu cầu</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="get_driver_name_err">Không lấy được tên tài xế</string>
+    <string name="json_format_err">Lỗi định dạng json</string>
+    <string name="json_empty">Lỗi,json rỗng</string>
+    <string name="remove_faceId_in_vehicle_err">Lỗi, không thể xóa faceId trong dữ liệu xe</string>
+    <string name="driver_not_found">Lỗi, không tìm thấy tài xế</string>
+    <string name="camera_in_vehicle_not_found">Lỗi, không tìm thấy cameraSn trong dữ liệu xe</string>
+    <string name="remove_old_driver_in_vehicle_err">Lỗi, không thể xóa tài xế cũ trong dữ liệu xe</string>
+    <string name="camera_driver_not_match">Lỗi, tài xế và camera không khớp</string>
+    <string name="add_faceId_to_vehicle_data_err">Lỗi, không thể thêm faceId vào dữ liệu xe</string>
+    <string name="add_faceId_to_driver_data_err">Lỗi, không thể thêm faceId vào dữ liệu tài xế</string>
+    <string name="fms_response_timeout">Lỗi, không nhận được thông tin từ FMS</string>
+    <string name="unknown_err">Lỗi không xác định</string>
+    <string name="remove_success">Xóa thành công!</string>
+    <string name="remove_failure">Xóa lỗi!</string>
+    <string name="send_add_faceid_failure">Gửi lệnh lỗi!</string>
+    <string name="send_add_faceid_success">Gửi lệnh thêm khuôn mặt thành công!</string>
+    <string name="warning_remove_faceId">Bạn chắc chắn muốn xóa khuôn mặt (%s)?</string>
+    <string name="invalid_idnumber_format">Số CCCD không đúng định dạng</string>
+    <string name="timeFrom">From: </string>
+    <string name="timeTo">To: </string>
+    <string name="expired_license">expired license</string>
+    <string name="register_success">device registration successful</string>
+    <string name="register_failure">device registration failed</string>
+    <string name="scan">Tìm kiếm</string>
+    <string name="verify_face_title">Xác thực khuôn mặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="get_license">Get license...</string>
+    <string name="moc_faceId">Xác thực khuôn mặt</string>
+    <string name="using_moc">Sử dụng MOC</string>
+    <string name="capture_face">Chụp ảnh khuôn mặt</string>
+    <string name="waiting_process">Please waiting</string>
+    <string name="loading_process">Loading...</string>
+</resources>

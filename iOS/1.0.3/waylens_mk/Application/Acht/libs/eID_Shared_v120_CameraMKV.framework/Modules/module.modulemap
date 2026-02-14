@@ -1,0 +1,6 @@
+framework module eID_Shared_v120_CameraMKV {
+  umbrella header "eID_Shared_v120.h"
+
+  export *
+  module * { export * }
+}

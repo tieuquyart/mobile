@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Medium.ttf">
+            <string>BeVietnamPro-Medium</string>
+        </array>
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WireDiagnosisPrepareViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="E16-PI-C4N" id="E8X-2S-vgC"/>
+                <outlet property="detailLabel" destination="ErK-xs-phB" id="e45-2A-bmF"/>
+                <outlet property="stepOneLabel" destination="Lma-92-fWR" id="u3N-nG-bDv"/>
+                <outlet property="stepTwoLabel" destination="oca-Nh-48l" id="Tpm-wP-4cB"/>
+                <outlet property="stepsView" destination="LH4-nH-FGq" id="INj-Ip-KEK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErK-xs-phB">
+                    <rect key="frame" x="24" y="120" width="327" height="71"/>
+                    <string key="text">We'll walk you through the procedure to test the direct wire connection.
+
+It takes two steps and a few seconds:</string>
+                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                    <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="pre_diagnosis_description"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E16-PI-C4N">
+                    <rect key="frame" x="20" y="597" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.37254901959999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="By9-jp-5vp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="16"/>
+                    <state key="normal" title="Start">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Start"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicBackgroundColor" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onAction:" destination="-1" eventType="touchUpInside" id="khb-Yb-jgR"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LH4-nH-FGq">
+                    <rect key="frame" x="24" y="207" width="327" height="56"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_step_one_s" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-n2-BpI">
+                            <rect key="frame" x="0.0" y="1" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="EYo-gX-nhQ"/>
+                                <constraint firstAttribute="width" secondItem="vUa-n2-BpI" secondAttribute="height" multiplier="1:1" id="hXH-xR-Rpr"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_step_two_s" translatesAutoresizingMaskIntoConstraints="NO" id="sCL-PK-xtJ">
+                            <rect key="frame" x="0.0" y="39" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sCL-PK-xtJ" secondAttribute="height" multiplier="1:1" id="TOC-wu-fwS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lma-92-fWR" userLabel="Power off">
+                            <rect key="frame" x="25" y="0.0" width="302" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Power off"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power on" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oca-Nh-48l">
+                            <rect key="frame" x="25" y="38" width="63.5" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Power on"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4q-4o-DJw">
+                            <rect key="frame" x="7.5" y="17" width="1" height="22"/>
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.68235294117647061" blue="0.8901960784313725" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="Grb-zI-e0l"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Lma-92-fWR" firstAttribute="leading" secondItem="vUa-n2-BpI" secondAttribute="trailing" constant="9" id="V52-Hy-NXx"/>
+                        <constraint firstItem="vUa-n2-BpI" firstAttribute="leading" secondItem="LH4-nH-FGq" secondAttribute="leading" id="ZY7-2O-bnt"/>
+                        <constraint firstItem="oca-Nh-48l" firstAttribute="firstBaseline" secondItem="sCL-PK-xtJ" secondAttribute="centerY" constant="5" id="Zk0-tk-MA0"/>
+                        <constraint firstItem="Y4q-4o-DJw" firstAttribute="top" secondItem="vUa-n2-BpI" secondAttribute="bottom" id="a9b-gq-wxd"/>
+                        <constraint firstItem="Lma-92-fWR" firstAttribute="top" secondItem="LH4-nH-FGq" secondAttribute="top" id="aja-3D-OyI"/>
+                        <constraint firstAttribute="bottom" secondItem="oca-Nh-48l" secondAttribute="bottom" id="dCu-xa-esz"/>
+                        <constraint firstItem="sCL-PK-xtJ" firstAttribute="centerX" secondItem="vUa-n2-BpI" secondAttribute="centerX" id="eHa-kg-C3a"/>
+                        <constraint firstItem="oca-Nh-48l" firstAttribute="top" secondItem="Lma-92-fWR" secondAttribute="bottom" constant="20" id="hN1-GZ-k2e"/>
+                        <constraint firstItem="oca-Nh-48l" firstAttribute="leading" secondItem="sCL-PK-xtJ" secondAttribute="trailing" constant="9" id="kK2-q1-dyC"/>
+                        <constraint firstAttribute="trailing" secondItem="Lma-92-fWR" secondAttribute="trailing" id="mLo-Gj-rBm"/>
+                        <constraint firstItem="sCL-PK-xtJ" firstAttribute="top" secondItem="Y4q-4o-DJw" secondAttribute="bottom" id="poC-TA-Pwr"/>
+                        <constraint firstItem="sCL-PK-xtJ" firstAttribute="height" secondItem="vUa-n2-BpI" secondAttribute="height" id="sjW-kG-6eF"/>
+                        <constraint firstItem="Y4q-4o-DJw" firstAttribute="centerX" secondItem="vUa-n2-BpI" secondAttribute="centerX" id="w14-9u-pCG"/>
+                        <constraint firstItem="Lma-92-fWR" firstAttribute="firstBaseline" secondItem="vUa-n2-BpI" secondAttribute="centerY" constant="5" id="wHA-W5-HY1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LH4-nH-FGq" firstAttribute="top" secondItem="ErK-xs-phB" secondAttribute="bottom" constant="16" id="1pZ-Yu-RUC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="E16-PI-C4N" secondAttribute="bottom" constant="20" id="573-sf-XLa"/>
+                <constraint firstItem="ErK-xs-phB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="66f-oL-uH6"/>
+                <constraint firstItem="LH4-nH-FGq" firstAttribute="leading" secondItem="ErK-xs-phB" secondAttribute="leading" id="9iN-m5-ulX"/>
+                <constraint firstItem="E16-PI-C4N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AuB-xE-SQh"/>
+                <constraint firstItem="LH4-nH-FGq" firstAttribute="trailing" secondItem="ErK-xs-phB" secondAttribute="trailing" id="CrS-RD-qHQ"/>
+                <constraint firstItem="E16-PI-C4N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EDu-6d-lDy"/>
+                <constraint firstItem="ErK-xs-phB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="KTv-wd-Mxg"/>
+                <constraint firstItem="ErK-xs-phB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="qeF-DE-8dU"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_step_one_s" width="24" height="24"/>
+        <image name="icon_step_two_s" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

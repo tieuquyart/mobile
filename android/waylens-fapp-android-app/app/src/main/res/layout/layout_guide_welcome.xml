@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_tour_welcome"
+        android:orientation="vertical"
+        app:layout_heightPercent="63.7%"
+        app:layout_marginTopPercent="12.0%"
+        app:layout_widthPercent="81.9%">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/tour_take"
+            android:textColor="#4A4A4A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="@string/tour_welcome"
+            android:textColor="#4A4A4A"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_15"
+            android:src="@drawable/icon_guide_welcome" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_56"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/dp_60">
+
+        <Button
+            android:id="@+id/btn_skip_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tour_button_skip"
+            android:textAllCaps="false"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_getStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_started"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tour_btn_started"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

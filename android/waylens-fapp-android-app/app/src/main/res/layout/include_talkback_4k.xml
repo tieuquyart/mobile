@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_talkback_voice"
+        android:layout_width="@dimen/dp_110"
+        android:layout_height="@dimen/dp_104"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_42"
+        android:layout_marginBottom="@dimen/dp_49"
+        android:background="@drawable/background_talkback"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_talkback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:text="@string/release_to_stop"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_hold_talk_4k"
+        style="@style/SettingItemGraySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_34"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/hold_to_talk" />
+
+    <Button
+        android:id="@+id/btn_talkback_4k"
+        style="@style/BorderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:text="@string/hold_to_talk" />
+</LinearLayout>

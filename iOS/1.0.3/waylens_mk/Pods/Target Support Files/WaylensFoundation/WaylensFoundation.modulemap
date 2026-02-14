@@ -1,0 +1,6 @@
+framework module WaylensFoundation {
+  umbrella header "WaylensFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

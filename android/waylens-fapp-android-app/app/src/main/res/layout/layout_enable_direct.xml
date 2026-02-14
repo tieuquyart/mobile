@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_wifi_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_42"
+        android:text="@string/wifi_direct_enable"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_wifi_enable">
+
+        <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:farfl_xratio="@dimen/dp_64"
+            app:farfl_yratio="@dimen/dp_27">
+
+            <SurfaceView
+                android:id="@+id/enable_surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_triple_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_35"
+        android:text="@string/wifi_triple_click"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_media" />
+
+    <LinearLayout
+        android:id="@+id/ll_heard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_triple_click">
+
+        <CheckBox
+            android:id="@+id/cb_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="@string/wifi_heard"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_connect_direct"
+        style="@style/BorderButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_46"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_35"
+        android:enabled="false"
+        android:text="@string/connect_wifi_direct"
+        app:layout_constraintBottom_toTopOf="@id/ll_firmware"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_heard" />
+
+    <LinearLayout
+        android:id="@+id/ll_firmware"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayBackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_firmware_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:text="@string/wifi_enable_tips"
+            android:textColor="#99A0A9"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/tv_connect_normal_enable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            android:text="@string/wifi_connect_normal"
+            android:textColor="@color/buttonColor"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Bold.ttf">
+            <string>BeVietnamPro-Bold</string>
+        </array>
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+        <array key="BeVietnamPro-SemiBold.ttf">
+            <string>BeVietnamPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverPanelViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDetail" destination="vSI-Ra-4Us" id="NM0-5f-KGf"/>
+                <outlet property="btnLive" destination="R4V-6x-Yzh" id="zyX-Ky-C9h"/>
+                <outlet property="btnShare" destination="K33-5z-VYI" id="gca-Ya-Uux"/>
+                <outlet property="collectionView" destination="yIv-pA-u2U" id="f2v-Kb-NBW"/>
+                <outlet property="lblCurrentTrip" destination="LAc-oi-RpW" id="QLW-80-vkS"/>
+                <outlet property="lblNoTrips" destination="fLE-RN-aoH" id="Y2B-MB-uX8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="h89-85-2Ub"/>
+                <outlet property="viewLine" destination="Ht2-dY-VqV" id="0tc-B3-YXj"/>
+                <outlet property="viewSharedTrip" destination="fhn-wG-Fhk" id="4oF-zT-3dU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="870" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNp-0j-aJj">
+                    <rect key="frame" x="0.0" y="8" width="870" height="192"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-fW-VNd">
+                            <rect key="frame" x="8" y="0.0" width="854" height="172"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhn-wG-Fhk">
+                                    <rect key="frame" x="0.0" y="0.0" width="854" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K33-5z-VYI">
+                                            <rect key="frame" x="819" y="0.0" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="006-G0-lnL"/>
+                                                <constraint firstAttribute="width" constant="35" id="Xgo-dM-1yE"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="4" minY="0.0" maxX="2" maxY="2"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="btn_share_n"/>
+                                            <connections>
+                                                <action selector="shareTrip:" destination="-1" eventType="touchUpInside" id="5Tr-SG-Edi"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAc-oi-RpW">
+                                            <rect key="frame" x="327" y="7.5" width="200" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="V0J-7s-K7I"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Bold" family="Be Vietnam Pro" pointSize="16"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="LAc-oi-RpW" firstAttribute="centerY" secondItem="fhn-wG-Fhk" secondAttribute="centerY" id="Fr8-6K-ib4"/>
+                                        <constraint firstAttribute="height" constant="35" id="OI4-pK-VFA"/>
+                                        <constraint firstItem="K33-5z-VYI" firstAttribute="centerY" secondItem="fhn-wG-Fhk" secondAttribute="centerY" id="WkJ-FC-nR4"/>
+                                        <constraint firstAttribute="trailing" secondItem="K33-5z-VYI" secondAttribute="trailing" id="Z3X-S5-atm"/>
+                                        <constraint firstItem="LAc-oi-RpW" firstAttribute="centerX" secondItem="fhn-wG-Fhk" secondAttribute="centerX" id="yXB-Mg-mfB"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ht2-dY-VqV">
+                                    <rect key="frame" x="0.0" y="43" width="854" height="1"/>
+                                    <color key="backgroundColor" red="0.87058823529411766" green="0.8784313725490196" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Q4v-7K-gKA"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Trips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-RN-aoH">
+                                    <rect key="frame" x="0.0" y="52" width="854" height="22"/>
+                                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="17"/>
+                                    <color key="textColor" red="0.043137254899999998" green="0.25882352939999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yIv-pA-u2U">
+                                    <rect key="frame" x="0.0" y="82" width="854" height="42"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZxW-lg-ZGl">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXG-pU-C5N">
+                                    <rect key="frame" x="0.0" y="132" width="854" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSI-Ra-4Us">
+                                            <rect key="frame" x="0.0" y="0.0" width="423" height="40"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-SemiBold" family="Be Vietnam Pro" pointSize="16"/>
+                                            <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Chi tiết" image="ic_detail_popup">
+                                                <color key="titleColor" red="0.043137254901960784" green="0.25882352941176467" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onDetail:" destination="-1" eventType="touchUpInside" id="j0T-2d-PvA"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4V-6x-Yzh">
+                                            <rect key="frame" x="431" y="0.0" width="423" height="40"/>
+                                            <color key="backgroundColor" red="0.043137254899999998" green="0.25882352939999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-SemiBold" family="Be Vietnam Pro" pointSize="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Trực tiếp" image="ic_video_popup">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onLive:" destination="-1" eventType="touchUpInside" id="RK5-YJ-P26"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="vSI-Ra-4Us" firstAttribute="top" secondItem="wXG-pU-C5N" secondAttribute="top" id="8He-Ep-fjx"/>
+                                        <constraint firstAttribute="bottom" secondItem="vSI-Ra-4Us" secondAttribute="bottom" id="QBe-hH-KJ1"/>
+                                        <constraint firstAttribute="bottom" secondItem="R4V-6x-Yzh" secondAttribute="bottom" id="Vyx-rz-Z7L"/>
+                                        <constraint firstItem="vSI-Ra-4Us" firstAttribute="width" secondItem="R4V-6x-Yzh" secondAttribute="width" id="j5M-a8-3qa"/>
+                                        <constraint firstAttribute="trailing" secondItem="R4V-6x-Yzh" secondAttribute="trailing" id="mSQ-8G-gRf"/>
+                                        <constraint firstAttribute="height" constant="40" id="mUZ-5G-WLz"/>
+                                        <constraint firstItem="vSI-Ra-4Us" firstAttribute="leading" secondItem="wXG-pU-C5N" secondAttribute="leading" id="pu4-5r-BOh"/>
+                                        <constraint firstItem="R4V-6x-Yzh" firstAttribute="leading" secondItem="vSI-Ra-4Us" secondAttribute="trailing" constant="8" id="vVZ-v6-Pxn"/>
+                                        <constraint firstItem="R4V-6x-Yzh" firstAttribute="top" secondItem="wXG-pU-C5N" secondAttribute="top" id="yyx-SS-T06"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Kck-fW-VNd" firstAttribute="top" secondItem="dNp-0j-aJj" secondAttribute="top" id="PHS-8o-c08"/>
+                        <constraint firstAttribute="trailing" secondItem="Kck-fW-VNd" secondAttribute="trailing" constant="8" id="hJG-G9-gEa"/>
+                        <constraint firstItem="Kck-fW-VNd" firstAttribute="leading" secondItem="dNp-0j-aJj" secondAttribute="leading" constant="8" id="nMD-d8-Kp4"/>
+                        <constraint firstAttribute="bottom" secondItem="Kck-fW-VNd" secondAttribute="bottom" constant="20" id="tgu-IO-gW9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dNp-0j-aJj" secondAttribute="bottom" id="8mF-co-4l2"/>
+                <constraint firstItem="dNp-0j-aJj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Cva-XG-FKN"/>
+                <constraint firstItem="dNp-0j-aJj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="qrq-MD-Ba7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dNp-0j-aJj" secondAttribute="trailing" id="spP-t9-oZm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="442.02898550724643" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_share_n" width="23" height="17"/>
+        <image name="ic_detail_popup" width="20" height="20"/>
+        <image name="ic_video_popup" width="23.5" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

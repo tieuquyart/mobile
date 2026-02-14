@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_alert_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorNaviText"
+        android:textSize="@dimen/sp_12"
+        tools:text="4 minutes ago" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_3"
+        android:background="@drawable/background_section"
+        android:elevation="@dimen/dp_3">
+
+        <RelativeLayout
+            android:id="@+id/rl_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_videoType"
+            android:layout_alignBottom="@id/tv_videoLocation"
+            android:layout_marginStart="@dimen/dp_18"
+            android:layout_marginEnd="@dimen/dp_18">
+
+            <View
+                android:id="@+id/view_event"
+                android:layout_width="@dimen/dp_4"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:id="@+id/view_buffered"
+                android:layout_width="@dimen/dp_7"
+                android:layout_height="@dimen/dp_7"
+                android:layout_centerVertical="true"
+                android:background="@drawable/background_status_point"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_videoType"
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_toEndOf="@id/rl_timeline"
+            tools:text="Peter Parker · Sharp Turn" />
+
+        <TextView
+            android:id="@id/tv_videoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_videoType"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:layout_toEndOf="@+id/rl_timeline"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_20"
+            tools:text="23:12" />
+
+        <TextView
+            android:id="@+id/tv_videoLocation"
+            style="@style/SettingItemGrayBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_videoTime"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:layout_toEndOf="@+id/rl_timeline"
+            tools:text="2300 E Ocean Blvd, Long Beach, CA" />
+
+        <ImageView
+            android:id="@+id/iv_next_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_14"
+            android:src="@drawable/icon_next_grey" />
+
+    </RelativeLayout>
+</LinearLayout>

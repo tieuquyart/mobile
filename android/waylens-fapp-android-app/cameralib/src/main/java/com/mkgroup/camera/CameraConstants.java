@@ -1,0 +1,197 @@
+package com.mkgroup.camera;
+
+/**
+ * Created by DoanVT on 2017/11/29.
+ * Email: doanvt-hn@mk.com.vn
+ */
+
+public interface CameraConstants {
+
+    String HW_MODEL = "SC_";
+    String HW_MODEL_2C_ONLY = "SC_V0";
+    String HW_MODEL_2B_ONLY = "SC_V1";
+    String HW_MODEL_2H_ONLY = "SC_V2"; // 等同 HW_MODEL_2B_ONLY
+
+    String HW_TAG = "HORN_";
+    String HW_TAG_2C_ONLY = "HORN_V0";
+    String HW_TAG_2B_ONLY = "HORN_V1";
+
+    String EV_MODEL = "SAXHORN_";
+    String EV_MODEL_2C_ONLY = "SAXHORN_V0";
+    String EV_MODEL_2B_ONLY = "SAXHORN_V1";
+
+    String EV_TAG = "SH_";
+
+    String TMP_MODEL = "LONGHORN_";
+
+    String TMP_TAG = "LH_";
+
+    String ES_MODEL = "TW03_";
+
+    int MONITOR_MODE_UNKNOWN = -1;
+    int MONITOR_MODE_PARK = 0;
+    int MONITOR_MODE_DRIVE = 1;
+
+    String PARK_MODE_STR = "park";
+    String DRIVE_MODE_STR = "drive";
+
+    String POWER_INFO_KEY_CAPACITY_LEVEL = "temp.power_supply.capacity_level";
+    String POWER_INFO_KEY_VOLTAGE_NOW = "temp.power_supply.voltage_now";
+
+    int BATTERY_CAPACITY_LEVEL_UNKNOWN = -1;
+    int BATTERY_CAPACITY_LEVEL_CRITICAL = 0;
+    int BATTERY_CAPACITY_LEVEL_LOW = 1;
+    int BATTERY_CAPACITY_LEVEL_NORMAL = 2;
+    int BATTERY_CAPACITY_LEVEL_HIGH = 3;
+    int BATTERY_CAPACITY_LEVEL_FULL = 4;
+
+    /**
+     * milli vol
+     */
+    int BATTERY_VOLTAGE_CRITERIA = 9_000;
+
+    String BATTERY_CAPACITY_CRITICAL_VALUE = "Critical";
+    String BATTERY_CAPACITY_LOW_VALUE = "Low";
+    String BATTERY_CAPACITY_NORMAL_VALUE = "Normal";
+    String BATTERY_CAPACITY_HIGH_VALUE = "High";
+    String BATTERY_CAPACITY_FULL_VALUE = "Full";
+
+    int HALF_MARK_TIME_MS = 15 * 1000; //
+
+    int STATE_MIC_UNKNOWN = -1;
+    int STATE_MIC_ON = 0;
+    int STATE_MIC_OFF = 1;
+
+    int STATE_SPEAKER_UNKNOWN = -1;
+    int STATE_SPEAKER_OFF = 0;
+    int STATE_SPEAKER_ON = 1;
+
+    int STATE_BATTERY_UNKNOWN = -1;
+    int STATE_BATTERY_FULL = 0;
+    int STATE_BATTERY_NOT_CHARGING = 1;
+    int STATE_BATTERY_DISCHARGING = 2;
+    int STATE_BATTERY_CHARGING = 3;
+
+    int STATE_POWER_UNKNOWN = -1;
+    int STATE_POWER_NO = 0;
+    int STATE_POWER_YES = 1;
+
+    int STATE_RECORD_UNKNOWN = -1;
+    int STATE_RECORD_STOPPED = 0;
+    int STATE_RECORD_STOPPING = 1;
+    int STATE_RECORD_STARTING = 2;
+    int STATE_RECORD_RECORDING = 3;
+    int STATE_RECORD_CLOSED = 4;
+    int STATE_RECORD_OPENING = 5;
+    int STATE_RECORD_ERROR = 6;
+    int STATE_RECORD_SWITCHING = 7;
+
+    int STATE_STORAGE_UNKNOWN = -1;
+    int STATE_STORAGE_NO_STORAGE = 0;
+    int STATE_STORAGE_LOADING = 1;
+    int STATE_STORAGE_READY = 2;
+    int STATE_STORAGE_ERROR = 3;
+    int STATE_STORAGE_USBDISC = 4;
+    int STATE_STORAGE_FORMATTING = 5;
+    int STATE_STORAGE_UNMOUNTED = 6;
+
+    int OVERLAY_FLAG_NAME = 0x01;
+    int OVERLAY_FLAG_TIME = 0x02;
+    int OVERLAY_FLAG_GPS = 0x04;
+    int OVERLAY_FLAG_SPEED = 0x08;
+
+    int VIDEO_RESOLUTION_UNKNOWN = -1;
+    int VIDEO_RESOLUTION_1080P30 = 0;
+    int VIDEO_RESOLUTION_1080P60 = 1;
+    int VIDEO_RESOLUTION_720P30 = 2;
+    int VIDEO_RESOLUTION_720P60 = 3;
+    int VIDEO_RESOLUTION_4KP30 = 4;
+    int VIDEO_RESOLUTION_4KP60 = 5;
+    int VIDEO_RESOLUTION_480P30 = 6;
+    int VIDEO_RESOLUTION_480P60 = 7;
+    int VIDEO_RESOLUTION_720P120 = 8;
+    int VIDEO_RESOLUTION_STILL = 9;
+    int VIDEO_RESOLUTION_NUM = 10;
+
+    int VIDEO_RESOLUTION_720P = 0;
+    int VIDEO_RESOLUTION_1080P = 1;
+
+    int VIDEO_FRAMERATE_30FPS = 0;
+    int VIDEO_FRAMERATE_60FPS = 1;
+    int VIDEO_FRAMERATE_120FPS = 2;
+
+    int VIDEO_QUALITY_UNKNOWN = -1;
+    int VIDEO_QUALITY_SUPPER = 0;
+    int VIDEO_QUALITY_HI = 1;
+    int VIDEO_QUALITY_MID = 2; //Normal
+    int VIDEO_QUALITY_LOW = 3;
+    int VIDEO_QUALITY_SUPER_LOW = 4;
+    int VIDEO_QUALITY_MID_5FPS = 5;
+    int VIDEO_QUALITY_LOW_5FPS = 6;
+    int VIDEO_QUALITY_SUPER_LOW_5FPS = 7;
+    int VIDEO_QUALITY_NUM = 8;
+
+    int SLEEP_DELAY_30S = 0;
+    int SLEEP_DELAY_60S = 1;
+    int SLEEP_DELAY_120S = 2;
+    int SLEEP_DELAY_300S = 3;
+    int SLEEP_DELAY_600S = 4;
+
+    int REC_MODE_UNKNOWN = -1;
+    int FLAG_AUTO_RECORD = 1;
+    int FLAG_LOOP_RECORD = 1 << 1;
+    int REC_MODE_MANUAL = 0;
+    int REC_MODE_AUTOSTART = FLAG_AUTO_RECORD;
+    int REC_MODE_MANUAL_LOOP = FLAG_LOOP_RECORD;
+    int REC_MODE_AUTOSTART_LOOP = (FLAG_AUTO_RECORD | FLAG_LOOP_RECORD);
+
+    int COLOR_MODE_UNKNOWN = -1;
+    int COLOR_MODE_NORMAL = 0;
+    int COLOR_MODE_SPORT = 1;
+    int COLOR_MODE_CARDV = 2;
+    int COLOR_MODE_SCENE = 3;
+    int COLOR_MODE_NUM = 4;
+
+    int ERROR_START_RECORD_OK = 0;
+    int ERROR_START_RECORD_NO_CARD = 1;
+    int ERROR_START_RECORD_CARD_FULL = 2;
+    int ERROR_START_RECORD_CARD_ERROR = 3;
+
+    int WIFI_MODE_UNKNOWN = -1;
+    int WIFI_MODE_AP = 0;
+    int WIFI_MODE_CLIENT = 1;
+    int WIFI_MODE_OFF = 2;
+    int WIFI_MODE_MULTIROLE = 3;
+    int WIFI_MODE_P2P = 4;
+
+    int BT_STATE_UNKNOWN = -1;
+    int BT_STATE_DISABLED = 0;
+    int BT_STATE_ENABLED = 1;
+
+    int TRACK_STATE_NORMAL = -1;
+    int TRACK_STATE_INITIAL = 0;
+    int TRACK_STATE_GOTINFO = 1;
+
+    int HDR_MODE_UNKNOWN = -1;
+    int HDR_MODE_ON = 0;
+    int HDR_MODE_AUTO = 1;
+    int HDR_MODE_OFF = 2;
+
+    int AUDIO_PROMPTS_MODE_UNKNOWN = -1;
+    int AUDIO_PROMPTS_MODE_ON = 0;
+    int AUDIO_PROMPTS_MODE_OFF = 1;
+
+    int MOUNT_LEVEL_CUSTOM = -1;
+    int MOUNT_LEVEL_HIGH = 0;
+    int MOUNT_LEVEL_MEDIUM = 1;
+    int MOUNT_LEVEL_LOW = 2;
+
+    int MOUNT_ACC_UNKNOWN = -1;
+    int MOUNT_ACC_NOT_TRUST = 0;
+    int MOUNT_ACC_TRUST = 1;
+
+    int VIRTUAL_IGNITION_UNKNOWN = -1;
+    int VIRTUAL_IGNITION_OFF = 0;
+    int VIRTUAL_IGNITION_ON = 1;
+
+}

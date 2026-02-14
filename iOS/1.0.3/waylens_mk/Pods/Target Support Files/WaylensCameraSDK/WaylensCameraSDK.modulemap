@@ -1,0 +1,6 @@
+framework module WaylensCameraSDK {
+  umbrella header "WaylensCameraSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

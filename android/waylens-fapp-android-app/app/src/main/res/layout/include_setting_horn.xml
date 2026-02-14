@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_cameras"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/item_common_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_25"
+                android:text="@string/setting_item_camera" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackgroundWhite" />
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:descendantFocusability="blocksDescendants">-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cameras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--        </RelativeLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackgroundWhite" />
+
+        <RelativeLayout
+            android:id="@+id/rl_add_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/item_common_background"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_25"
+                android:background="@drawable/icon_settings_add_new_camera" />
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_toRightOf="@+id/iv_add"
+                android:text="@string/add_new_camera" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@android:color/white"
+        android:divider="@drawable/divider_small"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:id="@+id/ll_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_common_background"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:text="@string/help" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/btn_settings_list_next" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/item_common_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_25"
+                android:text="@string/setting_item_about" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_clean_cache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/item_common_background"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_25"
+                android:text="@string/setting_item_clean_cache" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_firmware_test"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:background="@drawable/item_common_background"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_25"
+                android:layout_weight="1"
+                android:text="@string/support_beta_firmware" />
+
+            <TextView
+                android:id="@+id/tv_beta"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:text="@string/support_beta_tester_yes" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

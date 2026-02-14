@@ -1,0 +1,15 @@
+//
+//  FinishUserInterface.swift
+//  Fleet
+//
+//  Created by forkon on 2019/10/31.
+//  Copyright © 2019 waylens. All rights reserved.
+//
+
+import UIKit
+
+typealias FinishUserInterfaceView = FinishUserInterface & UIView
+
+protocol FinishUserInterface {
+    func render(newState: FinishViewControllerConfig)
+}

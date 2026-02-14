@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/border_color_bg_main"
+    android:orientation="horizontal">
+
+    <include layout="@layout/include_item_layout_add"/>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rlItemDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:src="@drawable/ic_avatar_person" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_30"
+            android:layout_toEndOf="@+id/icon"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/tv_driver_name"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="NY ABC234" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                tools:text="0988724504  " />
+
+            <TextView
+                android:id="@+id/tv_license_type"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:visibility="gone"
+                tools:text="A2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+</RelativeLayout>

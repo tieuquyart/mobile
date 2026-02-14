@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_data_sdcard"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_live_s"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tv_sd_card"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:text="@string/data_sdcard"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_base_info"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_info"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tv_base_info"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:text="@string/data_basic"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_check_sim_card"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_sms"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tv_check_sim_data"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:text="@string/check_sim_card"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_setting_5"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tv_setting"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:text="@string/setting_config"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/dp_20"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="1">-->
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_setting"-->
+<!--            android:layout_width="@dimen/dp_0"-->
+<!--            android:layout_height="@dimen/dp_40"-->
+<!--            android:layout_marginEnd="@dimen/dp_5"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/border_ed">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/dp_20"-->
+<!--                android:layout_height="@dimen/dp_20"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="@dimen/dp_10"-->
+<!--                android:src="@drawable/ic_setting_5"-->
+<!--                android:tint="@color/colorNaviText"-->
+<!--                tools:ignore="UseAppTint" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/showMirror_settings"-->
+<!--                style="@style/PrimaryNormalText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="@dimen/dp_30"-->
+<!--                android:text="@string/showMirror_settings"-->
+<!--                android:textColor="@color/colorNaviText"-->
+<!--                android:textSize="@dimen/sp_15" />-->
+<!--        </RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rl_get_log"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_info"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/tv_get_log"
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:text="@string/get_logs"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_config_login_face"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/border_ed">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_setting_5"
+                android:tint="@color/colorNaviText"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_30"
+                android:text="@string/cfg_login_title"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_login_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:background="@drawable/button_blue_border"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:src="@drawable/ic_user_account"
+                android:tint="@color/white"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                style="@style/PrimaryNormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login_face"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

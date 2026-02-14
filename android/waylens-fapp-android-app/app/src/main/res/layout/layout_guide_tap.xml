@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guide"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_guide_menu" />
+
+        <ImageView
+            android:id="@+id/iv_menu_tapShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_tap_shadow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icon_guide_tap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_tap"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tour_tap_menu"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/btn_skip_tapMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tour_button_skip"
+            android:textAllCaps="false"
+            android:textColor="#F2F2F2"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

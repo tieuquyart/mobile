@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BillingDetailHeaderView" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing cycle from " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSv-aj-Bul">
+                    <rect key="frame" x="30" y="10" width="115" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.62745098039215685" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 19 - July 19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-Kf-weP">
+                    <rect key="frame" x="30" y="33" width="109.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 cameras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-tJ-mC9">
+                    <rect key="frame" x="316" y="33" width="68" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JSv-aj-Bul" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="8q8-Qd-2JV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7tG-tJ-mC9" secondAttribute="trailing" constant="30" id="Xak-Dq-jXU"/>
+                <constraint firstItem="IaH-Kf-weP" firstAttribute="leading" secondItem="JSv-aj-Bul" secondAttribute="leading" id="dZP-DK-dXC"/>
+                <constraint firstAttribute="bottom" secondItem="IaH-Kf-weP" secondAttribute="bottom" constant="10" id="i5F-aJ-I97"/>
+                <constraint firstItem="JSv-aj-Bul" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="tVP-Rv-N3O"/>
+                <constraint firstAttribute="bottom" secondItem="7tG-tJ-mC9" secondAttribute="bottom" constant="10" id="xRj-Ei-Bpe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cameraCountLabel" destination="7tG-tJ-mC9" id="cPZ-MM-X9m"/>
+                <outlet property="dateRangeLabel" destination="IaH-Kf-weP" id="iqF-aw-NlK"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="142"/>
+        </view>
+    </objects>
+</document>

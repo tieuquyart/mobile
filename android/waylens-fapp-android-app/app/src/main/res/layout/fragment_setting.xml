@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:id="@+id/frSetting"
+    android:background="@color/white"
+    tools:context=".eid.SettingFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ln"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/bg_tv_info"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/liveness_ic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/black"
+            android:text="Liveness type"
+            android:tag="language"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/next"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/bg_tv_info"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/google"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:textSize="@dimen/size_normal"
+            android:textColor="@color/black"
+            android:text="@string/language"
+            android:tag="language"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/next"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/media_window"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/media_window"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_camera_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:hint="@string/setup_third_camera_name"
+                android:maxLength="20"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_30"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_lens_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_65"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_65"
+            android:gravity="center"
+            android:text="@string/setup_lens_tips"
+            android:textColor="@color/colorNaviText"
+            android:textSize="@dimen/sp_14"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:id="@id/media_window"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home_camera"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bind"
+        app:layout_constraintDimensionRatio="99:105"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/gl_view"
+            android:layout_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="76.1%"
+            app:layout_marginTopPercent="3.87%"
+            app:layout_widthPercent="80.7%" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/connecting_pic"
+            app:layout_heightPercent="76.1%"
+            app:layout_marginTopPercent="3.87%"
+            app:layout_widthPercent="80.7%" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/home_camera_inner_shadow_n"
+            app:layout_heightPercent="76.1%"
+            app:layout_marginTopPercent="3.87%"
+            app:layout_widthPercent="80.7%" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            app:layout_heightPercent="76.1%"
+            app:layout_marginTopPercent="3.87%">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_bind"
+        style="@style/BorderButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:enabled="false"
+        android:text="@string/setup_third_input_name"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/spinner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_projection"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:minWidth="100dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

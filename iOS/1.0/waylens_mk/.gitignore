@@ -1,0 +1,12 @@
+*.DS_Store
+DerivedData
+xcshareddata
+xcshareddata/*
+xcuserdata
+xcuserdata/*
+Acht.xcworkspace
+project.xcworkspace
+Podfile.lock
+Pods
+Cartfile.resolved
+Carthage

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+    <!-- <script src="https://widget.flowxo.com/embed.js?callback=messengerReady" data-fxo-widget="eyJ0aGVtZSI6IiM0OTkwZTIiLCJ3ZWIiOnsiYm90SWQiOiI1YWUwMGQ5NjM0NDcyZDAwOTg1YTNjZjYiLCJ0aGVtZSI6IiM0OTkwZTIiLCJsYWJlbCI6IkNvbnRhY3QgV2F5bGVucyJ9fQ=="
+        async defer></script> -->
+    <script src="https://widget.flowxo.com/embed.js?callback=messengerReady"
+            data-fxo-widget="eyJ0aGVtZSI6IiM0OTkwZTIiLCJ3ZWIiOnsiYm90SWQiOiI1YzM1YTgwNzI1MTM0ODAwM2YyMWQ2N2YiLCJ0aGVtZSI6IiM0OTkwZTIiLCJsYWJlbCI6IkNvbnRhY3QgV2F5bGVucyJ9fQ=="
+            async defer></script>
+    <script>
+        let metadata = {};
+        function setMetadata(product, username, account) {
+            <!--console.log("setMetadata:"+product)-->
+                                <!--console.log("setMetadata:"+username)-->
+                                                <!--console.log("setMetadata:"+account)-->
+            metadata.product = product;
+            metadata.username = username;
+            metadata.account = account;
+        }
+        function messengerReady() {
+            // Wait until the messenger is fully
+            // ready, then send a message
+
+            FxoMessenger.on('created', function (cc) {
+                console.log('created')
+            });
+
+            FxoMessenger.on('destroyed', function (cc) {
+                console.log('destroyed')
+                window.android.close()
+                window.webkit.messageHandlers.waylens.postMessage('close')
+            });
+
+            FxoMessenger.on('stateChanged', function (state) {
+                console.log("state:" + state);
+                if (state == 'initialised') {
+                } else if (state == 'connected') {
+                }
+            });
+            // Subscribe to all messages received,
+            // logging them to the console
+            FxoMessenger.on('messageReceived', function (message) {
+                console.log(message);
+            });
+
+            FxoMessenger.setConfig({
+                mode: 'fullscreen',
+                metadata: metadata
+            })
+            FxoMessenger.create();
+        }
+
+
+    </script>
+
+</head>
+
+</html>

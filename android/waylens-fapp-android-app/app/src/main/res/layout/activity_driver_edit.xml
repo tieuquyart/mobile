@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlue"
+    android:divider="@drawable/divider_small"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.mk.autosecure.ui.activity.settings.DriverEditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:theme="@style/ToolbarStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back">
+
+        <TextView
+            android:id="@+id/tv_toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_driver_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:text="@string/id" />
+
+            <EditText
+                android:id="@+id/ed_driver_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@color/medium_gray"
+                android:enabled="false"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:text="@string/driver_name" />
+
+            <EditText
+                android:id="@+id/ed_driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/ed_driver_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/id_number" />
+
+            <EditText
+                android:id="@+id/ed_driver_idNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/driver_license" />
+
+            <EditText
+                android:id="@+id/ed_driver_license"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/license_type" />
+
+
+            <Spinner
+                android:id="@+id/sp_licenceType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/driving_years" />
+
+            <TextView
+                android:id="@+id/ed_driving_years"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:background="@drawable/gray_rectangle_bg"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/employee_id" />
+
+            <EditText
+                android:id="@+id/ed_employeeId"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@color/medium_gray"
+                android:enabled="false"
+                android:gravity="start|center_vertical"
+                android:maxLines="0"
+                android:paddingLeft="@dimen/dp_5"
+                android:singleLine="true"
+                android:textColor="@color/colorNaviText"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

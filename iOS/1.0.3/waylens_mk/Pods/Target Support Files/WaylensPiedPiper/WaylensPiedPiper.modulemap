@@ -1,0 +1,6 @@
+framework module WaylensPiedPiper {
+  umbrella header "WaylensPiedPiper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,393 @@
+
+#ifndef __AVF_STD_MEDIA_H__
+#define __AVF_STD_MEDIA_H__
+
+#define UUID_LEN	36
+
+#define _90kHZ	90000
+
+//-----------------------------------------------------------------------
+//
+//  video type
+//
+//-----------------------------------------------------------------------
+
+enum {
+	VideoCoding_Unknown = 0,
+	VideoCoding_AVC = 1,
+	VideoCoding_MJPEG = 2,
+	VideoCoding_HEVC = 3,
+};
+
+//-----------------------------------------------------------------------
+//
+//  video frame rate
+//
+//-----------------------------------------------------------------------
+
+enum {
+	FrameRate_Unknown = 0,
+	FrameRate_12_5 = 1,
+	FrameRate_6_25 = 2,
+	FrameRate_23_976 = 3,
+	FrameRate_24 = 4,
+	FrameRate_25 = 5,
+	FrameRate_29_97 = 6,
+	FrameRate_30 = 7,
+	FrameRate_50 = 8,
+	FrameRate_59_94 = 9,
+	FrameRate_60 = 10,
+	FrameRate_120 = 11,
+	FrameRate_240 = 12,
+	FrameRate_20 = 13,
+	FrameRate_15 = 14,
+	FrameRate_14_985 = 15,
+	FrameRate_1 = 16,
+	FrameRate_10 = 17,
+	FrameRate_7_5 = 18,
+	FrameRate_5 = 19,
+	FrameRate_6 = 20,
+	FrameRate_Variable = 0xFF,
+};
+
+//-----------------------------------------------------------------------
+//
+//  audio type
+//
+//-----------------------------------------------------------------------
+enum {
+	AudioCoding_Unknown = 0,
+	AudioCoding_PCM = 1,
+	AudioCoding_AAC = 2,	// MPEG2, LC, after-burner=0
+	AudioCoding_MP3 = 3,
+	AudioCoding_MPEG4_AAC = 4,
+};
+
+
+#define VIDEO_TYPE_TS		0
+#define VIDEO_TYPE_MP4		1
+#define VIDEO_TYPE_MJPEG	2
+
+#define CURRENT_STREAM_VERSION	2
+
+
+#define IIO_VERSION			1
+
+#define IIO_F_ACCEL			(1 << 0)	// accel_x,y,z are valid
+#define IIO_F_GYRO			(1 << 1)	// gyro_x,y,z are valid
+#define IIO_F_MAGN			(1 << 2)	// magn_x,y,z are valid
+#define IIO_F_EULER			(1 << 3)	// euler are valid
+#define IIO_F_QUATERNION	(1 << 4)	// obsolete
+#define IIO_F_PRESSURE		(1 << 5)	// pressure is valid
+#define IIO_F_GRAVITY		(1 << 6)	// gravity_x,y,z are valid
+#define IIO_F_RAW			(1 << 7)	// raw_x,y,z are valid
+
+//-----------------------------------------------------------------------
+//
+//	gps raw data structure
+//
+//-----------------------------------------------------------------------
+#define GPS_F_LATLON	(1 << 0)	// latitude and longitude are valid
+#define GPS_F_ALTITUDE	(1 << 1)	// altitude is valid
+#define GPS_F_SPEED		(1 << 2)	// speed is valid
+#define GPS_F_TIME		(1 << 3)	// time is valid
+#define GPS_F_TRACK		(1 << 4)	// track is valid
+#define GPS_F_DOP		(1 << 5)	// obsolete
+#define GPS_F_HDOP		(1 << 6)	// _hdop is valid
+#define GPS_F_VDOP		(1 << 7)	// _vdop is valid
+
+/* obsolete
+// size: 32 bytes
+typedef struct gps_raw_data_s {
+	uint32_t flags;	// GPS_F_LATLON, GPS_F_ALTITUDE, GPS_F_SPEED
+	float speed;
+	double latitude;
+	double longitude;
+	double altitude;
+} gps_raw_data_t;
+*/
+
+/* obsolete
+// size: 88 bytes
+typedef struct gps_raw_data_v2_s {
+	uint32_t flags;	// GPS_F_LATLON, GPS_F_ALTITUDE, GPS_F_SPEED
+	float speed;
+	double latitude;
+	double longitude;
+	double altitude;
+	///
+	uint32_t utc_time;
+	struct tm utc_tm;	// 44 bytes
+	float track;
+	float accuracy;
+} gps_raw_data_v2_t;
+*/
+
+
+#define OBD_VERSION_1	1
+#define OBD_VERSION_2	2
+
+//-----------------------------------------------------------------------
+//
+//	obd raw data v1
+//
+//-----------------------------------------------------------------------
+
+typedef struct obd_index_s {
+	uint16_t flag;		// 0x1: valid
+	uint16_t offset;		// offset into data[]
+} obd_index_t;
+
+typedef struct obd_raw_data_s {
+	uint32_t revision;	// OBD_VERSION_1
+	uint32_t total_size;
+	uint32_t pid_info_size;
+	uint32_t pid_data_size;
+	uint64_t pid_pts;
+	uint64_t pid_polling_delay;
+	uint64_t pid_polling_diff;
+//	obd_index_t index[];	// bytes: pid_info_size
+//	uint8_t data[];		// bytes: pid_data_size
+} obd_raw_data_t;
+
+//-----------------------------------------------------------------------
+//
+//	obd raw data v2
+//
+//-----------------------------------------------------------------------
+
+
+#define TOTAL_PID	128
+static const uint8_t g_pid_data_size_table[TOTAL_PID] =
+{
+	4,4,2,2,1,1,2,2,		// 00 - 07
+	2,2,1,1,2,1,1,1,		// 08 - 0F
+
+	2,1,1,1,2,2,2,2,		// 10 - 17
+	2,2,2,2,1,1,1,2,		// 18 - 1F
+
+	4,2,2,2,4,4,4,4,		// 20 - 27
+	4,4,4,4,1,1,1,1,		// 28 - 2F
+
+	1,2,2,1,4,4,4,4,		// 30 - 37
+	4,4,4,4,2,2,2,2,		// 38 - 3F
+
+	4,4,2,2,2,1,1,1,		// 40 - 47
+	1,1,1,1,1,2,2,4,		// 48 - 4F
+
+	4,1,1,2,2,2,2,2,		// 50 - 57
+	2,2,1,1,1,2,2,1,		// 58 - 5F
+
+	4,1,1,2,5,2,5,3,		// 60 - 67
+	7,7,5,5,5,6,5,3,		// 68 - 6F
+
+	9,5,5,5,5,7,7,5,		// 70 - 77
+	9,9,7,7,9,1,1,13,		// 78 - 7F
+};
+
+
+//-----------------------------------------------------------------------
+//
+//	raw data structure
+//
+//-----------------------------------------------------------------------
+typedef struct raw_dentry_s {
+	int32_t time_ms;		// offset relative to seg_start_time or clip_start_time
+	uint32_t fpos;		// offset relative to seg_start_addr or raw data block
+} raw_dentry_t;
+
+//-----------------------------------------------------------------------
+//
+//	clip desc
+//
+//-----------------------------------------------------------------------
+
+//typedef struct vdb_clip_desc_s {
+//	uint32_t clip_type;
+//	uint32_t clip_id;
+//	uint32_t clip_date;			// seconds from 1970 (when the clip was created)
+//	uint32_t clip_duration_ms;
+//	uint64_t clip_start_time;
+//	uint16_t num_streams;
+//	uint16_t reserved;
+//	char *vdb_id;	//
+//	avf_stream_attr_t _stream_attr[2];
+//} vdb_clip_desc_t;
+
+//-----------------------------------------------------------------------
+//
+//	vin config info
+//
+//-----------------------------------------------------------------------
+
+typedef struct vin_config_info_s {
+	uint8_t		version;	// 0
+
+	uint8_t		bits;
+	uint8_t		mirror_horizontal;
+	uint8_t		mirror_vertical;
+	uint8_t		hdr_mode;
+	uint8_t		enc_mode;
+	uint8_t		anti_flicker;
+	uint8_t		exposure;
+
+	uint8_t		dev_name[8];
+	uint32_t	source_id;
+	uint32_t	video_mode;
+	uint32_t	fps_q9;
+} vin_config_info_t;
+
+typedef struct sys_info_s {
+//	for (;;) {
+		uint32_t fcc;
+		uint16_t version;	// 0 for now
+		uint8_t type;	// 0: binary; 1: c-string; 2: int32_t; 3: int64_t; 4: double
+		uint8_t flags;	// 0 for now
+
+//		if (fcc == 0)
+//			break;
+
+//		if (type == 2) {
+//			int32_t i32_value;
+//		} else if (type == 3) {
+//			int64_t i64_value;
+//		} else if (type == 4) {
+//			double d_value;
+//		} else {
+//			uint32_t size;
+//			uint8_t data[size];
+//			uint8_t padding[align_to_4n_bytes];
+//		}
+//	}
+} sys_info_t;
+
+typedef struct upload_info_s {
+	uint8_t clip_uuid[36];	// like "07687993-48e4-48bf-a9af-6614fddaef7e"
+	uint32_t reserved;		// 0
+
+	uint32_t clip_date;	// seconds from 1970-1-1, when the clip was created
+	int32_t gmtoff;		// timezone offset in seconds, may be negative
+	uint64_t clip_offset_ms;	// clip_date+clip_offset is the start point of uploaded part
+
+	uint32_t flags;		// reserved; now is 0
+	uint32_t extra_data_size;	// the size of following extra_data
+
+//	uint8_t extra_data[extra_data_size];
+} upload_info_t;
+
+//-----------------------------------------------------------------------
+//
+//	raw data structure
+//
+//-----------------------------------------------------------------------
+enum {
+	__VDB_DATA_UNKNOWN = 0,	// should not be used
+
+	// 0: normal mode
+	VDB_DATA_VIDEO = 1,	// ts per second
+
+	// jpeg picture: for all modes
+	VDB_DATA_JPEG = 2,
+
+	// raw data types: for all modes
+	RAW_DATA_GPS = 3,
+	RAW_DATA_OBD = 4,
+	RAW_DATA_ACC = 5,
+	VDB_RAW_DATA_BLOCK = 6,	// contains gps/obd/acc
+
+	// 1: rtsp mode
+	VDB_VIDEO_INFO = 7,	// avf_stream_attr_t
+	VDB_TS_FRAME = 8,	// ts_packets
+
+	// 2: rtmp mode
+	VDB_VIDEO_FRAME = 9,
+	VDB_AUDIO_FRAME = 10,
+	VDB_STREAM_ATTR = 11,	// avf_stream_attr_t
+
+	// extra raw data
+	VDB_EXTRA_RAW_DATA = 21,	// u_stream is fcc
+
+	// info
+	__UPLOAD_INFO = -3U,
+	__UPLOAD_END = -2U,
+	__RAW_DATA_END = -1U
+};
+
+#define RAW_DATA_GPS_FLAG	(1 << RAW_DATA_GPS)
+#define RAW_DATA_OBD_FLAG	(1 << RAW_DATA_OBD)
+#define RAW_DATA_ACC_FLAG	(1 << RAW_DATA_ACC)
+
+#define UPLOAD_OPT_VIDEO	(1 << 0)
+#define UPLOAD_OPT_AUDIO	(1 << 1)
+#define UPLOAD_OPT_JPEG		(1 << 2)
+#define UPLOAD_OPT_GPS		(1 << 3)
+#define UPLOAD_OPT_OBD		(1 << 4)
+#define UPLOAD_OPT_ACC		(1 << 5)
+
+#define UPLOAD_OPT_ALL		0x00FF
+
+//-----------------------------------------------------------------------
+// upload data block structure:
+//	item + item + ... + item + end
+//	item:
+//		upload_header_t + data
+//		data:
+//			VDB_DATA_VIDEO - avf_stream_attr_t + ts_packet + ts_packet + ... + ts_packet
+//			VDB_DATA_JPEG - .jpg
+//			RAW_DATA_GPS - gps_raw_data_v3_t
+//			RAW_DATA_OBD - obd_raw_data_t
+//			RAW_DATA_ACC - acc_raw_data_t
+//	end:
+//		upload_header_t (data_type == __RAW_DATA_END)
+//			data_type: __RAW_DATA_END
+//			data_size: summary of all previous items
+//-----------------------------------------------------------------------
+
+#define UPLOAD_VERSION	1
+
+// total 32 bytes
+typedef struct upload_header_s {
+	uint32_t data_type;		// VDB_DATA_VIDEO etc
+	uint32_t data_size;		// data size, NOT including this header
+	uint64_t timestamp;		// 90 khz for video & picture; 1 khz for raw; 0 for others
+	uint32_t stream;		// 0 or 1 for VDB_DATA_VIDEO; 0 for others
+	uint32_t duration;		// 90 khz for video; for picture & raw, it is 0
+	// uint64_t reserved; => extra
+	struct extra_s {
+		uint8_t version;	// should be UPLOAD_VERSION
+		uint8_t reserved1;	// reserved; must be 0
+		uint16_t reserved2;	// reserved; must be 0
+		uint32_t reserved3;	// reserved; must be 0
+	} extra;
+} upload_header_t;
+
+//-----------------------------------------------------------------------
+// upload data sequence V2:
+//	item + item + ... + item + end
+//	item:
+//		upload_header_t + data
+//	end:
+//		upload_header_t
+//			data_type: __UPLOAD_END
+//			data_size: 0
+//			timestamp: end time(ms) of the uploaded clip
+//			duration: 0
+//-----------------------------------------------------------------------
+
+#define UPLOAD_VERSION_v2	2
+
+// total 32 bytes
+typedef struct upload_header_v2_s {
+	uint32_t u_data_type;	// VDB_DATA_VIDEO etc
+	uint32_t u_data_size;	// data size, NOT including this header
+	uint64_t u_timestamp;	// unit: ms
+	uint32_t u_stream;		// 0 or 1 for VDB_DATA_VIDEO; FCC for VDB_EXTRA_RAW_DATA
+	uint32_t u_duration;	// unit: ms
+	uint8_t u_version;		// UPLOAD_VERSION_v2
+	uint8_t u_flags;		// 
+	uint16_t u_param1;		//
+	uint32_t u_param2;		//
+} upload_header_v2_t;
+
+#endif
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mk.autosecure.ui.view.CustomViewPager
+        android:id="@+id/vp_navi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navi_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mk.autosecure.ui.view.BottomNavigationViewEx
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+        android:background="@color/colorBottomTab"
+        app:itemIconTint="@color/selector_btm_navi"
+        app:itemTextColor="@color/selector_btm_navi"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewAnimator
+            android:id="@+id/va_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateFirstView="true"
+            android:animateLayoutChanges="true"
+            android:inAnimation="@anim/fade_in_slide_in_left"
+            android:outAnimation="@anim/fade_out_slide_out_left"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/layout_guide_welcome"
+                layout="@layout/layout_guide_welcome" />
+
+            <include
+                android:id="@+id/layout_guide_connect"
+                layout="@layout/layout_guide_connect" />
+
+            <include
+                android:id="@+id/layout_guide_direct"
+                layout="@layout/layout_guide_direct" />
+
+            <include
+                android:id="@+id/layout_guide_sdcard_insert"
+                layout="@layout/layout_guide_sdcard_insert" />
+
+            <include
+                android:id="@+id/layout_guide_sdcard_format"
+                layout="@layout/layout_guide_sdcard_format" />
+
+            <include
+                android:id="@+id/layout_guide_simcard"
+                layout="@layout/layout_guide_simcard" />
+
+            <include
+                android:id="@+id/layout_guide_subscribe"
+                layout="@layout/layout_guide_subscribe" />
+
+            <include
+                android:id="@+id/layout_guide_network"
+                layout="@layout/layout_guide_network" />
+
+            <include
+                android:id="@+id/layout_guide_complete"
+                layout="@layout/layout_guide_complete" />
+
+            <!--<include-->
+            <!--android:id="@+id/layout_guide_tap"-->
+            <!--layout="@layout/layout_guide_tap" />-->
+
+            <!--<include-->
+            <!--android:id="@+id/layout_guide_preview"-->
+            <!--layout="@layout/layout_guide_preview" />-->
+
+        </ViewAnimator>
+
+        <LinearLayout
+            android:id="@+id/ll_waitFor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

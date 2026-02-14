@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:layout_scrollFlags="scroll"
+        app:navigationIcon="@drawable/ic_back"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/camera_setting_nightVision_title"
+            android:textColor="@color/colorToolbarTitle"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorBackgroundWhite"
+            android:divider="@drawable/divider_small"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_nightVision_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bg_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title_nightVision_parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/switch_nightVision_parking"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/camera_setting_nightVision_title_parking"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switch_nightVision_parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_parking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_nightVision_parking"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/switch_nightVision_parking"
+                    android:text="@string/nightVision_parking_on"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_nightVision_driving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/border_bg_white">
+
+                <TextView
+                    android:id="@+id/tv_title_nightVision_driving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/switch_nightVision_driving"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/camera_setting_nightVision_title_driving"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switch_nightVision_driving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_driving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title_nightVision_driving"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toLeftOf="@+id/switch_nightVision_driving"
+                    android:text="@string/nightVision_driving_on"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/dp_15"
+               android:layout_width="match_parent"
+               android:background="@drawable/border_bg_white"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <RelativeLayout
+                   android:id="@+id/rl_nightVision_driving_auto"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginBottom="@dimen/dp_13"
+                       android:layout_marginEnd="@dimen/dp_109"
+                       android:layout_marginStart="16dp"
+                       android:layout_marginTop="@dimen/dp_13"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/camera_setting_nightVision_title_driving"
+                           android:textColor="@color/colorPrimary"
+                           android:textSize="16sp" />
+
+                       <TextView
+                           android:id="@+id/tv_driving_auto"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/dp_4"
+                           android:text="@string/nightVision_driving_auto"
+                           android:textSize="12sp" />
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/tv_nightVision_driving"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_toStartOf="@id/iv_next"
+                       android:textSize="14sp" />
+
+                   <ImageView
+                       android:id="@+id/iv_next"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:layout_margin="16dp"
+                       android:src="@drawable/btn_settings_list_next" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:id="@+id/ll_nightVision_start"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:clickable="true">
+
+                   <TextView
+                       style="@style/SettingItemPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="16dp"
+                       android:text="@string/camera_setting_nightVision_driving_start" />
+
+                   <ImageView
+                       android:id="@+id/iv_nightVision_start_next"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_margin="16dp"
+                       android:src="@drawable/btn_settings_list_next" />
+
+                   <TextView
+                       android:id="@+id/tv_parking_nightVision_start"
+                       style="@style/SettingItemPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="16dp"
+                       android:layout_toLeftOf="@+id/iv_nightVision_start_next" />
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:id="@+id/ll_nightVision_end"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:clickable="true"
+                   android:orientation="horizontal">
+
+
+                   <TextView
+                       style="@style/SettingItemPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="16dp"
+                       android:text="@string/camera_setting_nightVision_driving_end" />
+
+                   <ImageView
+                       android:id="@+id/ll_nightVision_end_next"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_margin="16dp"
+                       android:src="@drawable/btn_settings_list_next" />
+
+                   <TextView
+                       android:id="@+id/tv_parking_nightVision_end"
+                       style="@style/SettingItemPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginLeft="16dp"
+                       android:layout_toLeftOf="@+id/ll_nightVision_end_next" />
+
+               </RelativeLayout>
+           </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/id_timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

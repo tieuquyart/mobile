@@ -1,0 +1,185 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name eID_SDK_MKV
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import CoreNFC
+import CryptoKit
+import CryptoTokenKit
+import Foundation
+import OpenSSL
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import eID_Shared_v120_CameraMKV
+public struct QKMRZResult {
+  public let documentType: Swift.String
+  public let countryCode: Swift.String
+  public let surnames: Swift.String
+  public let givenNames: Swift.String
+  public let documentNumber: Swift.String
+  public let nationality: Swift.String
+  public let birthDate: Foundation.Date?
+  public let sex: Swift.String?
+  public let expiryDate: Foundation.Date?
+  public let personalNumber: Swift.String
+  public let personalNumber2: Swift.String?
+  public let isDocumentNumberValid: Swift.Bool
+  public let isBirthDateValid: Swift.Bool
+  public let isExpiryDateValid: Swift.Bool
+  public let isPersonalNumberValid: Swift.Bool?
+  public let allCheckDigitsValid: Swift.Bool
+}
+@objc public enum NFCViewDisplayMessage : Swift.Int {
+  case licenseExpires = -1
+  case templateNull = 2
+  case INVALID_SDK = 004
+  case error_connect_server = 7
+  case device_not_supported = 9
+  case iosVerisionERROR = 11
+  case reading = 12
+  case not_success = 93
+  case CARD_TIMEOUT = 203
+  case NOT_ACTIVATED = 600
+  case VERIFY_MOC_SERVER_ERROR = 4301
+  case ICAO_ERROR = 4302
+  case VERIFY_SOD_SERVER_ERROR = 4303
+  case FAILED_TO_VERIFY_SOD = 4601
+  case VERIFY_MOC_FAILED_WRONG_FACE = 4403
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NFCPassportReaderError : Swift.Int {
+  case ResponseError = 0
+  case InvalidResponse = 1
+  case UnexpectedError = 2
+  case NFCNotSupported = 3
+  case NoConnectedTag = 4
+  case D087Malformed = 5
+  case InvalidResponseChecksum = 6
+  case MissingMandatoryFields = 7
+  case CannotDecodeASN1Length = 8
+  case InvalidASN1Value = 9
+  case UnableToProtectAPDU = 10
+  case UnableToUnprotectAPDU = 11
+  case UnsupportedDataGroup = 12
+  case DataGroupNotRead = 13
+  case UnknownTag = 14
+  case UnknownImageFormat = 15
+  case NotImplemented = 16
+  case TagNotValid = 17
+  case ConnectionError = 18
+  case UserCanceled = 19
+  case InvalidMRZKey = 20
+  case MoreThanOneTagFound = 21
+  case InvalidHashAlgorithmSpecified = 22
+  case InvalidDataPassed = 23
+  case NotYetSupported = 24
+  case wrong_key_card = 25
+  case No_face_data = 26
+  case requestdoMoC_NFC = 27
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class PassportUtils : ObjectiveC.NSObject {
+  public static func shareLogs()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct ErrorMessageCard {
+  public let index: Swift.Int
+  public let value: Swift.String
+}
+@available(iOS 13, *)
+extension eID_SDK_MKV.PassportReader : CoreNFC.NFCTagReaderSessionDelegate {
+  public func tagReaderSessionDidBecomeActive(_ session: CoreNFC.NFCTagReaderSession)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didInvalidateWithError error: any Swift.Error)
+  public func tagReaderSession(_ session: CoreNFC.NFCTagReaderSession, didDetect tags: [CoreNFC.NFCTag])
+}
+@available(iOS 13, *)
+@objc public protocol UpdateReaderSessionMessageDelegate {
+  @objc func getInfoCard(_ value: eID_SDK_MKV.CardInfo)
+  @objc func errorMessage(_ value: eID_SDK_MKV.NFCViewDisplayMessage)
+  @objc func errorCard(_ value: eID_SDK_MKV.NFCPassportReaderError)
+  @objc func closeNfcPopUp()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, *)
+@objc public class PassportReader : ObjectiveC.NSObject {
+  public static let shared: eID_SDK_MKV.PassportReader
+  @objc deinit
+  @objc public func readIdInfo(nfcPopupTitle: Swift.String, bankTransactionId: Swift.String, andBankTransInfo: Swift.String, andBankTransType: Swift.Int32, delegate: any eID_SDK_MKV.UpdateReaderSessionMessageDelegate)
+}
+@available(iOS 13, *)
+@objc public class MKIDNFCHelper : ObjectiveC.NSObject {
+  @objc public init(appId: Swift.Int32, providerSecret: Swift.String)
+  @objc public func setUrl(value: Swift.String)
+  @objc public func getUrl() -> Swift.String
+  @objc public func getDeviceInfoForRegisterDevice(successHandler: @escaping (Swift.String) -> Swift.Void, errorHandlerSDK: @escaping (any Swift.Error) -> Swift.Void, errorHandler: @escaping (eID_SDK_MKV.NFCViewDisplayMessage) -> ())
+  @objc public func checkAppActivated(successHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (eID_SDK_MKV.NFCViewDisplayMessage) -> ())
+  @objc public func doActivate(andCustomerId: Swift.String, andBranchId: Swift.String, successHandler: @escaping () -> Swift.Void, andFailureHandler: @escaping (any Swift.Error) -> (), errorHandler: @escaping (eID_SDK_MKV.NFCViewDisplayMessage) -> ())
+  @objc public func isNFCAvailable() -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CardInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var imageData: Foundation.Data?
+  @objc public var IDNumber: Swift.String
+  @objc public var FullName: Swift.String
+  @objc public var DOB: Swift.String
+  @objc public var Gender: Swift.String
+  @objc public var Nationality: Swift.String
+  @objc public var Hometown: Swift.String
+  @objc public var Resident: Swift.String
+  @objc public var DDND: Swift.String
+  @objc public var ValidDate: Swift.String
+  @objc public var ExpiredDate: Swift.String
+  @objc public var OldIDNumber: Swift.String
+  @objc public var transactionId: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class QKMRZParser {
+  public init(ocrCorrection: Swift.Bool = false)
+  public func parse(mrzLines: [Swift.String]) -> eID_SDK_MKV.QKMRZResult?
+  public func parse(mrzString: Swift.String) -> eID_SDK_MKV.QKMRZResult?
+  @objc deinit
+}
+@available(iOS 13, *)
+extension eID_SDK_MKV.PassportReader {
+  @objc dynamic public func errorReaderMessage(_ value: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class GuidelineNFCView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var backHandler: (() -> ())?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public func setLanguage(isEnglish: Swift.Bool)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ErrorTemplate : ObjectiveC.NSObject {
+  final public let code: Swift.String
+  final public let message: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class GuidelineNFCViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public var backHandler: (() -> ())?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc @_Concurrency.MainActor(unsafe) public func setLanguage(isEnglish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension eID_SDK_MKV.NFCViewDisplayMessage : Swift.Equatable {}
+extension eID_SDK_MKV.NFCViewDisplayMessage : Swift.Hashable {}
+extension eID_SDK_MKV.NFCViewDisplayMessage : Swift.RawRepresentable {}
+extension eID_SDK_MKV.NFCPassportReaderError : Swift.Equatable {}
+extension eID_SDK_MKV.NFCPassportReaderError : Swift.Hashable {}
+extension eID_SDK_MKV.NFCPassportReaderError : Swift.RawRepresentable {}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_12"
+        android:background="@color/colorGrayBackground" />
+
+    <TextView
+        android:id="@+id/tvPowerMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="@string/the_camera_is_in_virtual_ignition_mode_so_the_power_test_cannot_be_done"
+        android:textColor="#344254"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPowerMode"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="start"
+        android:text="@string/if_a_power_test_is_required_please_contact_the_administrator_to_switch_the_camera_to_trust_acc_mode"
+        android:textColor="#344254"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@color/colorBaseFleet"
+        android:text="@string/ok"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

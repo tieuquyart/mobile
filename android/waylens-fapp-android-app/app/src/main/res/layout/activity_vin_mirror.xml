@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    tools:context="com.mk.autosecure.ui.activity.settings.VinMirrorActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/border_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_small"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintTop_toBottomOf="@id/default_toolbar">
+
+        <LinearLayout
+            android:id="@+id/ll_mirror_first"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="Vin Mirror First" />
+
+            <TextView
+                android:id="@+id/tv_first"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mirror_second"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="Vin Mirror Second" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mirror_third"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="Vin Mirror Third" />
+
+            <TextView
+                android:id="@+id/tv_third"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetLogViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="btnGetLog" destination="6va-nd-P7J" id="rGi-6o-iHu"/>
+                <outlet property="btnReportSpeed" destination="Ubo-d2-acf" id="N6G-D6-bb7"/>
+                <outlet property="btnTime" destination="spy-Z6-yJJ" id="B9w-ew-LQ9"/>
+                <outlet property="btnTimeDriver" destination="Uy6-rQ-53v" id="F9I-ye-KFd"/>
+                <outlet property="day_tf" destination="f4a-xE-4RZ" id="VM7-Vu-MVX"/>
+                <outlet property="infoCameraLabel" destination="xiv-Ew-tTb" id="Gi7-o7-Ibg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="asz-Lv-qiK">
+                    <rect key="frame" x="16" y="60" width="382" height="371"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ff6-fu-JPB">
+                            <rect key="frame" x="8" y="0.0" width="366" height="44"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-xE-4RZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cml-8b-Dki">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="btnShowDate:" destination="-1" eventType="touchUpInside" id="R0M-6b-OTF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="f4a-xE-4RZ" firstAttribute="leading" secondItem="ff6-fu-JPB" secondAttribute="leading" id="9m3-mi-nBK"/>
+                                <constraint firstAttribute="bottom" secondItem="cml-8b-Dki" secondAttribute="bottom" id="CeE-py-L0L"/>
+                                <constraint firstAttribute="height" constant="44" id="EeA-5c-a37"/>
+                                <constraint firstAttribute="trailing" secondItem="f4a-xE-4RZ" secondAttribute="trailing" id="Eju-aE-Mdj"/>
+                                <constraint firstAttribute="trailing" secondItem="cml-8b-Dki" secondAttribute="trailing" id="FnW-Xn-7wc"/>
+                                <constraint firstItem="cml-8b-Dki" firstAttribute="top" secondItem="ff6-fu-JPB" secondAttribute="top" id="IAA-bz-tj0"/>
+                                <constraint firstItem="cml-8b-Dki" firstAttribute="leading" secondItem="ff6-fu-JPB" secondAttribute="leading" id="TeH-ta-Ars"/>
+                                <constraint firstAttribute="trailing" secondItem="cml-8b-Dki" secondAttribute="trailing" id="WsC-Ik-tYH"/>
+                                <constraint firstItem="cml-8b-Dki" firstAttribute="leading" secondItem="ff6-fu-JPB" secondAttribute="leading" id="kr6-vX-Jgl"/>
+                                <constraint firstItem="f4a-xE-4RZ" firstAttribute="top" secondItem="ff6-fu-JPB" secondAttribute="top" id="lSU-Sd-Ovu"/>
+                                <constraint firstAttribute="bottom" secondItem="f4a-xE-4RZ" secondAttribute="bottom" id="mch-8W-moH"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiv-Ew-tTb">
+                            <rect key="frame" x="166" y="61" width="50" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.11399652809999999" green="0.11851143090000001" blue="0.1238832399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6va-nd-P7J">
+                            <rect key="frame" x="0.0" y="128" width="382" height="48"/>
+                            <color key="backgroundColor" red="0.07351463288" green="0.24078339339999999" blue="0.47685694690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Jg1-QE-umu"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Get Log">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonGetLog:" destination="-1" eventType="touchUpInside" id="iq3-4D-mJN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spy-Z6-yJJ">
+                            <rect key="frame" x="0.0" y="193" width="382" height="48"/>
+                            <color key="backgroundColor" red="0.07351463288" green="0.24078339339999999" blue="0.47685694690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="hik-U9-PbD"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Thời gian dừng đỗ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnTimeInfo:" destination="-1" eventType="touchUpInside" id="y3W-pk-xLF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy6-rQ-53v" userLabel="Thời gian lái xe liên tục">
+                            <rect key="frame" x="0.0" y="258" width="382" height="48"/>
+                            <color key="backgroundColor" red="0.07351463288" green="0.24078339339999999" blue="0.47685694690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="Wyz-4W-imI"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Thời gian lái xe liên tục">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnTimeDriver:" destination="-1" eventType="touchUpInside" id="GTU-kd-Ukd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubo-d2-acf">
+                            <rect key="frame" x="0.0" y="323" width="382" height="48"/>
+                            <color key="backgroundColor" red="0.07351463288" green="0.24078339339999999" blue="0.47685694690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ltC-3A-uTh"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Báo cáo tốc độ">
+                                <color key="titleColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnReportSpeed:" destination="-1" eventType="touchUpInside" id="RpA-WC-FNC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ubo-d2-acf" secondAttribute="trailing" id="16H-44-lPl"/>
+                        <constraint firstItem="Uy6-rQ-53v" firstAttribute="leading" secondItem="asz-Lv-qiK" secondAttribute="leading" id="3sr-pV-K3B"/>
+                        <constraint firstAttribute="trailing" secondItem="ff6-fu-JPB" secondAttribute="trailing" constant="8" id="46N-KS-yB5"/>
+                        <constraint firstAttribute="trailing" secondItem="Uy6-rQ-53v" secondAttribute="trailing" id="7so-om-hUv"/>
+                        <constraint firstAttribute="trailing" secondItem="spy-Z6-yJJ" secondAttribute="trailing" id="AWW-l6-Oy0"/>
+                        <constraint firstAttribute="trailing" secondItem="6va-nd-P7J" secondAttribute="trailing" id="Fy9-eH-Rzt"/>
+                        <constraint firstItem="Ubo-d2-acf" firstAttribute="leading" secondItem="asz-Lv-qiK" secondAttribute="leading" id="aV1-WN-T3D"/>
+                        <constraint firstItem="6va-nd-P7J" firstAttribute="leading" secondItem="asz-Lv-qiK" secondAttribute="leading" id="cbm-ed-5t3"/>
+                        <constraint firstItem="spy-Z6-yJJ" firstAttribute="leading" secondItem="asz-Lv-qiK" secondAttribute="leading" id="i8Q-V2-dgZ"/>
+                        <constraint firstItem="ff6-fu-JPB" firstAttribute="leading" secondItem="asz-Lv-qiK" secondAttribute="leading" constant="8" id="ivX-gx-YFy"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="asz-Lv-qiK" secondAttribute="trailing" constant="16" id="FZB-ET-dUb"/>
+                <constraint firstItem="asz-Lv-qiK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="f40-bS-dbM"/>
+                <constraint firstItem="asz-Lv-qiK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="q8W-D1-l49"/>
+            </constraints>
+            <point key="canvasLocation" x="-59" y="-32"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

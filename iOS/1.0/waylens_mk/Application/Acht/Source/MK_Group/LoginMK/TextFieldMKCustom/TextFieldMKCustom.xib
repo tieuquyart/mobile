@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldMKCustom" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="aPU-N8-WqP"/>
+                <outlet property="infoTextField" destination="xB2-RZ-EwK" id="B6L-Md-HGm"/>
+                <outlet property="titleLbl" destination="nTG-gl-Esh" id="3yT-b9-VU4"/>
+                <outlet property="viewTf" destination="09B-Cy-bxU" id="xDi-cU-TDG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-uh-Vhf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email or UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTG-gl-Esh">
+                            <rect key="frame" x="0.0" y="0.0" width="136" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="9mC-Aq-wbi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
+                            <color key="textColor" red="0.44709253310000002" green="0.4717460275" blue="0.5009645224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09B-Cy-bxU">
+                            <rect key="frame" x="0.0" y="28" width="406" height="60"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-RZ-EwK">
+                                    <rect key="frame" x="0.0" y="0.0" width="406" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="xB2-RZ-EwK" secondAttribute="trailing" id="5tT-Kc-86l"/>
+                                <constraint firstItem="xB2-RZ-EwK" firstAttribute="leading" secondItem="09B-Cy-bxU" secondAttribute="leading" id="D9u-S9-Hdo"/>
+                                <constraint firstItem="xB2-RZ-EwK" firstAttribute="top" secondItem="09B-Cy-bxU" secondAttribute="top" id="g0W-Cj-t3w"/>
+                                <constraint firstAttribute="bottom" secondItem="xB2-RZ-EwK" secondAttribute="bottom" id="u2Z-Y3-N0b"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="09B-Cy-bxU" secondAttribute="trailing" constant="8" id="Bw6-pj-AeM"/>
+                        <constraint firstItem="09B-Cy-bxU" firstAttribute="leading" secondItem="ZkQ-uh-Vhf" secondAttribute="leading" id="Fqd-GZ-S0H"/>
+                        <constraint firstItem="nTG-gl-Esh" firstAttribute="leading" secondItem="ZkQ-uh-Vhf" secondAttribute="leading" id="Kvd-cx-3Fe"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZkQ-uh-Vhf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fq8-z3-XuK"/>
+                <constraint firstItem="ZkQ-uh-Vhf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UHU-Ph-d0X"/>
+                <constraint firstItem="ZkQ-uh-Vhf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="laJ-Zr-HlA"/>
+                <constraint firstAttribute="bottom" secondItem="ZkQ-uh-Vhf" secondAttribute="bottom" id="pzG-iB-9ep"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZkQ-uh-Vhf" secondAttribute="trailing" id="tS3-4p-X8z"/>
+                <constraint firstItem="ZkQ-uh-Vhf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ubT-PH-ss5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="146.37681159420291" y="14.732142857142856"/>
+        </view>
+    </objects>
+</document>

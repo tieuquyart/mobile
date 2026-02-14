@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/default_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/guide"
+                    android:textColor="@color/colorNaviText"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_start_tour"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_67"
+                android:background="@drawable/item_common_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support_start_tour" />
+
+                    <TextView
+                        style="@style/SettingItemGraySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="@string/start_tour_des" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@color/colorBackgroundWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_network_test"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_67"
+                android:background="@drawable/item_common_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support_network_test" />
+
+                    <TextView
+                        style="@style/SettingItemGraySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="@string/network_test_description" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@color/colorBackgroundWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_power_cord"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_67"
+                android:background="@drawable/item_common_background">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SettingItemPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/support_power_cord" />
+
+                    <TextView
+                        style="@style/SettingItemGraySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="@string/power_cord_description" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:text="@string/setting_item_faq"
+                        android:textColor="@color/colorNaviText"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_common_background">
+
+                    <LinearLayout
+                        android:id="@+id/ll_faq_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/faq_request_1" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:src="@drawable/btn_settings_list_show" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_response_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_faq_1"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/faq_response_1" />
+
+                        <TextView
+                            android:id="@+id/tv_watch_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:text="@string/watch_video_tutorial"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@id/ll_response_1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:background="@color/colorBackgroundWhite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/item_common_background">
+
+                    <LinearLayout
+                        android:id="@+id/ll_faq_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/faq_request_2" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:src="@drawable/btn_settings_list_show" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_response_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_faq_2"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/faq_response_2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@id/ll_response_2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:background="@color/colorBackgroundWhite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_common_background">
+
+                    <LinearLayout
+                        android:id="@+id/ll_faq_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/SettingItemPrimary"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/faq_request_3" />
+
+                        <ImageView
+                            android:id="@+id/iv_show_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:src="@drawable/btn_settings_list_show" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_response_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_faq_3"
+                        android:layout_marginStart="@dimen/dp_26"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/SettingItemGraySmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/faq_response_3" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_below="@id/ll_response_3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginEnd="@dimen/dp_20"
+                        android:background="@color/colorBackgroundWhite" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_get_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_43"
+                    android:background="@drawable/item_common_background"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_more_answers"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/need_more_help"
+                    android:textColor="@color/colorNaviText"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_get_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_57"
+                android:background="@drawable/item_common_background">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/get_help" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@color/colorBackgroundWhite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_contact_support"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_57"
+                android:background="@drawable/item_common_background">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/contact_support" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@color/colorBackgroundWhite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_report_issue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_57"
+                android:background="@drawable/item_common_background">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/report_an_issue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:background="@color/colorBackgroundWhite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_watch_support"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_57"
+                android:background="@drawable/item_common_background"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/SettingItemPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_26"
+                    android:text="@string/watch_support_video" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:src="@drawable/btn_settings_list_next" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_36" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

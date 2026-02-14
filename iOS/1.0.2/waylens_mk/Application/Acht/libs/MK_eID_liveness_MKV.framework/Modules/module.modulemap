@@ -1,0 +1,6 @@
+framework module MK_eID_liveness_MKV {
+  umbrella header "MK_eID_liveness.h"
+
+  export *
+  module * { export * }
+}

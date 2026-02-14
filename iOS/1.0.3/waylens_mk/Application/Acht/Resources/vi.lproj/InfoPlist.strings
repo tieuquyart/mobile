@@ -1,0 +1,13 @@
+/* 
+  InfoPlist.strings
+  Acht
+
+  Created by forkon on 2018/11/23.
+  Copyright © 2018 waylens. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "This lets you take photos for your avatars";
+"NSLocationWhenInUseUsageDescription" = "This lets you connect to camera Wi-Fi favourably and view your current location on the map";
+"NSPhotoLibraryUsageDescription" = "This lets you choose avatar from your library, also save photos and videos to your library";
+"NSLocalNetworkUsageDescription" = "This app uses the local network to discover Waylens camera on your Wi-Fi network.";
+

@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9E2B928E-B3BF-4A89-AB1A-7517B8D7E55C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "377FDAEE-00A4-4894-BB57-231179C8C835"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "init(event:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "377FDAEE-00A4-4894-BB57-231179C8C835 - 6eccd415350ee7e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNClip.__allocating_init(event: Fleet.Event) -&gt; Fleet.HNClip"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "992">
+               </Location>
+               <Location
+                  uuid = "377FDAEE-00A4-4894-BB57-231179C8C835 - 6eccd415350ee7e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNClip.__allocating_init(event: Fleet.Event) -&gt; Fleet.HNClip"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "2444">
+               </Location>
+               <Location
+                  uuid = "377FDAEE-00A4-4894-BB57-231179C8C835 - 6eccd415350ee7e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNClip.__allocating_init(event: Fleet.Event) -&gt; Fleet.HNClip"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "1076">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F480414-9ABF-4179-AB43-3D8A8EA73F67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/MK_Group/NotificationView/NotiListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "476"
+            endingLineNumber = "476"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F480414-9ABF-4179-AB43-3D8A8EA73F67 - 3460960720fabd29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.NotiListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/MK_Group/NotificationView/NotiListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "476"
+                  endingLineNumber = "476"
+                  offsetFromSymbolStart = "1296">
+               </Location>
+               <Location
+                  uuid = "0F480414-9ABF-4179-AB43-3D8A8EA73F67 - 3460960720fabd29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.NotiListViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/MK_Group/NotificationView/NotiListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "476"
+                  endingLineNumber = "476"
+                  offsetFromSymbolStart = "1084">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F2F8E8D-4BB4-45C3-93EA-F58209C28F54"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "init(notiItem:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F2F8E8D-4BB4-45C3-93EA-F58209C28F54 - 5db84072ad5a2add"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNClip.__allocating_init(notiItem: Fleet.NotiItem) -&gt; Fleet.HNClip"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1324">
+               </Location>
+               <Location
+                  uuid = "6F2F8E8D-4BB4-45C3-93EA-F58209C28F54 - 5db84072ad5a2add"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNClip.__allocating_init(notiItem: Fleet.NotiItem) -&gt; Fleet.HNClip"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/DataLayer/Shared/Model/Overview/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "2192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1439DA66-C9C1-4149-BFBC-0CA48ED95EF6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/MK_Group/DetailTimeline/TripDetailTimelineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B7D0AD6-5507-45CC-8454-739118C17CEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/MK_Group/DetailTimeline/TripDetailTimelineViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB011E91-E878-46E6-A318-05DF5953F90E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/misc/CardFlowView/ChartCardContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "refreshContent(entry:highlight:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD6D7397-7E47-4911-AA56-23F91E4BB000"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/MK_Group/ConstantMK.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "602"
+            endingLineNumber = "602"
+            landmarkName = "getVehicleWithPlateNo(str:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5A5125D-6AEE-455A-A4F2-17990D033AD9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCameraSettingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "575"
+            endingLineNumber = "575"
+            landmarkName = "refreshUI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A5A5125D-6AEE-455A-A4F2-17990D033AD9 - c277888ea40b3754"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNCameraSettingViewController.refreshUI() -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Camera/HNCameraSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "2512">
+               </Location>
+               <Location
+                  uuid = "A5A5125D-6AEE-455A-A4F2-17990D033AD9 - c277888ea40b3754"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNCameraSettingViewController.refreshUI() -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Camera/HNCameraSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "A5A5125D-6AEE-455A-A4F2-17990D033AD9 - c277888ea40b3754"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNCameraSettingViewController.refreshUI() -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Camera/HNCameraSettingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "575"
+                  endingLineNumber = "575"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CA56747-29BF-4882-A846-5760CC1DF48D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Fleet/Maintenance/MaintenanceViewControllerState.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "sections"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4471F9FA-5E57-463B-90BB-FC47542EBC1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "refreshUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C37E0600-E545-4D09-AF10-855704B85670"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "refreshUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EE2AC2E-B8B0-47DE-AB63-97ED30599DAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSRadioChoiceBaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FB3294C-8FB1-431E-898B-A4381CE65257"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSRadioChoiceBaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C478C9D-361F-4BE0-B24C-221FDD827F55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSRadioChoiceBaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90DFB260-46D5-414C-A4EB-CC8B7D680254"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSSettingsBaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90DFB260-46D5-414C-A4EB-CC8B7D680254 - 1292ee7562d658cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNCSSettingsBaseViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSSettingsBaseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "90DFB260-46D5-414C-A4EB-CC8B7D680254 - db22ec0e1f4ff910"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.HNCSSettingsBaseViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Camera/HNCSSettingsBaseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EA9652A-7ED8-42BC-A2EC-0E33994944C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Guide/WireDiagnosisPrepareViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "onAction(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4EA9652A-7ED8-42BC-A2EC-0E33994944C3 - f1d57a5948b8464d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.WireDiagnosisPrepareViewController.onAction(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Guide/WireDiagnosisPrepareViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "4EA9652A-7ED8-42BC-A2EC-0E33994944C3 - f1d57a5948b8464d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Fleet.WireDiagnosisPrepareViewController.onAction(Any) -&gt; ()"
+                  moduleName = "Fleet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/devops/Documents/MKVision_Job/autosecure/01062023/iOS/1.0.3/waylens_mk%20/Application/Acht/Source/UILayer/Shared/UI/Guide/WireDiagnosisPrepareViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66A1728C-FBA5-4615-9D25-CAA7ED6ABA53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/CameraTimeLineDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "sectionFor(date:in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E2D6338A-3324-43F6-ABB0-CD3AC596DC3A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/CameraTimeLineLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "calcLayout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36F70F7F-882B-40D4-A3FB-9E8CDAC05A4F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/CameraTimeLineLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "calcLayout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D4EAC4C-3D3A-452A-9632-4A4B0516B563"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/Camera/CameraTimeLineLayout.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "calcLayout()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "971187BB-5D6A-4F32-8BF8-A557E9709BFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Application/Acht/Source/UILayer/Shared/UI/VideoFilterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

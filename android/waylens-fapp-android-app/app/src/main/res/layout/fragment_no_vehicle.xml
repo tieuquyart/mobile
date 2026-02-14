@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundBlue"
+    tools:context="com.mk.autosecure.ui.fragment.NoVehicleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SettingItemPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_triggering_vehicle" />
+
+        <TextView
+            style="@style/SettingItemGrayBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:gravity="center"
+            android:text="@string/please_select_the_vehicles_trigger_this_geo_fence_when_entering" />
+
+        <Button
+            android:id="@+id/btn_add_vehicle"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/bg_add_vehicle"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</FrameLayout>

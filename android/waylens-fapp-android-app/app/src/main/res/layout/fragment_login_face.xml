@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.autosecure.ui.fragment.DoCalibFragment">
+
+    <TextView
+        android:id="@+id/tv_calib_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="@string/adjust_the_camera_position"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14" />
+
+    <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+        android:id="@+id/media_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_16"
+        app:farfl_xratio="8dp"
+        app:farfl_yratio="5dp">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:farfl_xratio="8dp"
+            app:farfl_yratio="5dp">
+
+            <ImageView
+                android:id="@+id/iv_calib_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_calib_unvalid" />
+        </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+
+    </com.mk.autosecure.ui.view.FixedAspectRatioFrameLayout>
+
+    <ViewAnimator
+        android:id="@+id/va_calib_step"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_login_finish" />
+    </ViewAnimator>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Mvd-8d-ici" customClass="HNTranslucentControlView" customModule="Acht" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSk-so-85W" userLabel="Play Bar" customClass="PassThroughView" customModule="Acht" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="362" width="375" height="52"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="video_gradient_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-Ar-YgT" customClass="PassThroughImageView" customModule="Acht" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="-18" width="375" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="G3v-Oe-UNn"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOQ-v7-1Q9">
+                            <rect key="frame" x="12" y="6" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="1kP-xN-o8c"/>
+                                <constraint firstAttribute="height" constant="40" id="L1e-VJ-rJj"/>
+                            </constraints>
+                            <state key="normal" image="playbar_play_n"/>
+                            <connections>
+                                <action selector="playButtonTapped:" destination="Mvd-8d-ici" eventType="touchUpInside" id="kog-vg-0Qg"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gge-fT-eWO">
+                            <rect key="frame" x="319" y="6" width="40" height="40"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4T-HZ-geS">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="XZe-nQ-2IS"/>
+                                        <constraint firstAttribute="width" priority="750" constant="40" id="ntc-7j-8F1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="HD"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-E4-cFC">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="1JL-Ai-dgU"/>
+                                        <constraint firstAttribute="width" constant="40" id="Im1-5H-Slt"/>
+                                    </constraints>
+                                    <state key="normal" image="btn_panorama_normal_n"/>
+                                    <state key="highlighted" image="btn_panorama_n"/>
+                                    <connections>
+                                        <action selector="viewModeButtonTapped:" destination="Mvd-8d-ici" eventType="touchUpInside" id="VNg-qb-UoC"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkp-yl-1wF">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="40" id="YPn-od-7Vk"/>
+                                        <constraint firstAttribute="height" constant="40" id="bgQ-QF-NWK"/>
+                                    </constraints>
+                                    <state key="normal" image="playbar_screen_full_n"/>
+                                    <connections>
+                                        <action selector="fullScreenButtonTapped:" destination="Mvd-8d-ici" eventType="touchUpInside" id="gZr-GS-oMK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-av-zbJ" customClass="TLProgressSlider">
+                            <rect key="frame" x="54" y="11" width="263" height="31"/>
+                            <connections>
+                                <action selector="progressSliderValueChanged:" destination="Mvd-8d-ici" eventType="valueChanged" id="snY-uG-SHZ"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 / 00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-X3-HVc">
+                            <rect key="frame" x="148.5" y="6" width="78.5" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="pKj-qx-m1m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gge-fT-eWO" secondAttribute="trailing" constant="16" id="1Jm-mr-xrZ"/>
+                        <constraint firstItem="fOQ-v7-1Q9" firstAttribute="leading" secondItem="xSk-so-85W" secondAttribute="leading" constant="12" id="91c-52-M1G"/>
+                        <constraint firstItem="tqu-X3-HVc" firstAttribute="centerX" secondItem="xSk-so-85W" secondAttribute="centerX" id="FyH-Nh-3wT"/>
+                        <constraint firstItem="WPF-av-zbJ" firstAttribute="centerY" secondItem="xSk-so-85W" secondAttribute="centerY" id="KWZ-Td-RfM"/>
+                        <constraint firstItem="WPF-av-zbJ" firstAttribute="leading" secondItem="fOQ-v7-1Q9" secondAttribute="trailing" constant="4" id="USs-hi-ZPq"/>
+                        <constraint firstAttribute="bottom" secondItem="Bb7-Ar-YgT" secondAttribute="bottom" id="dJP-h7-PEI"/>
+                        <constraint firstItem="fOQ-v7-1Q9" firstAttribute="centerY" secondItem="xSk-so-85W" secondAttribute="centerY" id="frz-IC-fxe"/>
+                        <constraint firstAttribute="trailing" secondItem="Bb7-Ar-YgT" secondAttribute="trailing" id="hDi-tg-Dtn"/>
+                        <constraint firstItem="tqu-X3-HVc" firstAttribute="top" secondItem="xSk-so-85W" secondAttribute="top" constant="6" id="hit-EF-VhZ"/>
+                        <constraint firstItem="gge-fT-eWO" firstAttribute="leading" secondItem="WPF-av-zbJ" secondAttribute="trailing" constant="4" id="l7c-Sg-LsS"/>
+                        <constraint firstItem="Bb7-Ar-YgT" firstAttribute="leading" secondItem="xSk-so-85W" secondAttribute="leading" id="lhQ-Ny-DBi"/>
+                        <constraint firstAttribute="height" constant="52" id="qO2-u2-MLl"/>
+                        <constraint firstItem="gge-fT-eWO" firstAttribute="centerY" secondItem="xSk-so-85W" secondAttribute="centerY" id="yZf-KW-hVL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xSk-so-85W" firstAttribute="leading" secondItem="e3y-4J-Zaz" secondAttribute="leading" id="F9W-Fs-fBL"/>
+                <constraint firstItem="e3y-4J-Zaz" firstAttribute="trailing" secondItem="xSk-so-85W" secondAttribute="trailing" id="Ha4-Bu-Eww"/>
+                <constraint firstItem="xSk-so-85W" firstAttribute="bottom" secondItem="Mvd-8d-ici" secondAttribute="bottom" id="HdE-qi-K8Y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="e3y-4J-Zaz"/>
+            <connections>
+                <outlet property="currentTimeLabel" destination="tqu-X3-HVc" id="tRy-WN-cRv"/>
+                <outlet property="fullScreenButton" destination="gkp-yl-1wF" id="mVV-ts-XRT"/>
+                <outlet property="playBar" destination="xSk-so-85W" id="f6L-AZ-fax"/>
+                <outlet property="playButton" destination="fOQ-v7-1Q9" id="uCj-H2-LKp"/>
+                <outlet property="progressSlider" destination="WPF-av-zbJ" id="NhE-Ng-gpp"/>
+                <outlet property="viewModeButton" destination="M5K-E4-cFC" id="Bnw-am-N7p"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="-1092"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_panorama_n" width="30" height="30"/>
+        <image name="btn_panorama_normal_n" width="30" height="30"/>
+        <image name="playbar_play_n" width="30" height="30"/>
+        <image name="playbar_screen_full_n" width="30" height="30"/>
+        <image name="video_gradient_bottom" width="1" height="70"/>
+    </resources>
+</document>

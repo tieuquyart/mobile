@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rYl-eg-mlE" customClass="TimeFilterView" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="333"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaM-s1-mUv" userLabel="Seperator">
+                    <rect key="frame" x="0.0" y="282" width="384" height="1"/>
+                    <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="saH-n8-Kny"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eM-eY-L58">
+                    <rect key="frame" x="0.0" y="283" width="192" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SdN-mQ-itg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Clear"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clearButtonTapped:" destination="rYl-eg-mlE" eventType="touchUpInside" id="t6K-XW-WvV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-8W-gxe">
+                    <rect key="frame" x="192" y="283" width="192" height="50"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.56862745100000001" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DR0-qe-8rt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Done"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonTapped:" destination="rYl-eg-mlE" eventType="touchUpInside" id="g9P-uH-0gl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWA-It-MX1">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="282"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-Ut-Kw6" customClass="CalendarView" customModule="Fleet" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="282"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7hd-Ut-Kw6" secondAttribute="trailing" id="AKm-Jn-XVs"/>
+                        <constraint firstItem="7hd-Ut-Kw6" firstAttribute="top" secondItem="cWA-It-MX1" secondAttribute="top" id="FrO-C5-cWN"/>
+                        <constraint firstAttribute="bottom" secondItem="7hd-Ut-Kw6" secondAttribute="bottom" id="UDa-OM-DB5"/>
+                        <constraint firstItem="7hd-Ut-Kw6" firstAttribute="leading" secondItem="cWA-It-MX1" secondAttribute="leading" id="gYr-ol-Cpe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jaM-s1-mUv" secondAttribute="trailing" id="9AG-fj-cuX"/>
+                <constraint firstItem="jaM-s1-mUv" firstAttribute="leading" secondItem="rYl-eg-mlE" secondAttribute="leading" id="D6J-pc-W6m"/>
+                <constraint firstItem="CUK-8W-gxe" firstAttribute="top" secondItem="jaM-s1-mUv" secondAttribute="bottom" id="PoN-7W-C3S"/>
+                <constraint firstAttribute="trailing" secondItem="CUK-8W-gxe" secondAttribute="trailing" id="Vt6-Wy-skV"/>
+                <constraint firstItem="7eM-eY-L58" firstAttribute="top" secondItem="jaM-s1-mUv" secondAttribute="bottom" id="epU-8S-dDE"/>
+                <constraint firstItem="Pfc-cB-Dsf" firstAttribute="bottom" secondItem="CUK-8W-gxe" secondAttribute="bottom" id="hEQ-fH-I8x"/>
+                <constraint firstItem="jaM-s1-mUv" firstAttribute="top" secondItem="cWA-It-MX1" secondAttribute="bottom" id="hLv-ZS-ZGn"/>
+                <constraint firstItem="Pfc-cB-Dsf" firstAttribute="trailing" secondItem="cWA-It-MX1" secondAttribute="trailing" id="khr-Jv-Vpo"/>
+                <constraint firstItem="CUK-8W-gxe" firstAttribute="width" secondItem="7eM-eY-L58" secondAttribute="width" id="mrf-mE-Qhp"/>
+                <constraint firstItem="CUK-8W-gxe" firstAttribute="leading" secondItem="7eM-eY-L58" secondAttribute="trailing" id="oVh-TS-FvO"/>
+                <constraint firstItem="cWA-It-MX1" firstAttribute="top" secondItem="rYl-eg-mlE" secondAttribute="top" id="ohQ-KD-6nt"/>
+                <constraint firstItem="cWA-It-MX1" firstAttribute="leading" secondItem="Pfc-cB-Dsf" secondAttribute="leading" id="olf-5Q-gAp"/>
+                <constraint firstItem="7eM-eY-L58" firstAttribute="leading" secondItem="rYl-eg-mlE" secondAttribute="leading" id="suR-wB-Tha"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Pfc-cB-Dsf"/>
+            <connections>
+                <outlet property="calendarView" destination="7hd-Ut-Kw6" id="qL7-xW-Mks"/>
+                <outlet property="doneButton" destination="CUK-8W-gxe" id="VnE-pX-naP"/>
+                <outlet property="seperatorView" destination="jaM-s1-mUv" id="dgT-zK-0af"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="-79.352678571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navi_overview"
+        android:icon="@drawable/ic_overview"
+        android:title="@string/overview" />
+
+    <item
+        android:id="@+id/navi_dashboard"
+        android:icon="@drawable/ic_report_dash"
+        android:title="@string/dashboard" />
+
+    <item
+        android:visible="false"
+        android:id="@+id/navi_profile"
+        android:icon="@drawable/ic_setting_device"
+        android:title="@string/devices" />
+    <item
+        android:visible="true"
+        android:id="@+id/navi_device"
+        android:icon="@drawable/ic_setting_device"
+        android:title="@string/devices" />
+</menu>

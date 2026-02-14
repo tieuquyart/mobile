@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_input_hotspot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/_2_input_the_ssid_and_password_of_the_hotspot"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hotspot_ssid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:text="@string/ssid_big"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_hotspot" />
+
+    <EditText
+        android:id="@+id/et_hotspot_ssid"
+        style="@style/SettingItemGrayBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:background="@drawable/gray_rectangle_bg"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/dp_8"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_hotspot_ssid" />
+
+    <TextView
+        android:id="@+id/tv_hotspot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:text="@string/login_placeholder_password"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/et_hotspot_ssid" />
+
+    <EditText
+        android:id="@+id/et_hotspot_password"
+        style="@style/SettingItemGrayBig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:background="@drawable/gray_rectangle_bg"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="@dimen/dp_8"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_hotspot_password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_32"
+        android:layout_marginEnd="@dimen/dp_36"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/et_hotspot_password">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:src="@drawable/icon_export_warning"
+            android:tint="@color/colorRedWarn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_make_sure_the_ssid_and_password_you_input_are_completely_correct_including_case_punctuation_and_numbers"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_es_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="#4EAEE3"
+        android:text="@string/forget_password_next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b3344254"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

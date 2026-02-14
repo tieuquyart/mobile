@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <TextView
+        android:id="@+id/tv_export_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_export_info"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        app:layout_marginEndPercent="13.1%"
+        app:layout_marginStartPercent="13.1%"
+        app:layout_marginTopPercent="7.0%" />
+
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_export_info"
+        android:orientation="vertical"
+        app:layout_marginEndPercent="9.6%"
+        app:layout_marginStartPercent="8.3%"
+        app:layout_marginTopPercent="3.2%">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/video_type_buffered"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_buffered_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/video_type_motion"
+                android:textColor="@color/colorSettingMotion"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_motion_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/video_type_bump"
+                android:textColor="@color/colorSettingHit"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_bump_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/impact"
+                android:textColor="@color/colorSettingHeavyHit"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_impact_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/behavior"
+                android:textColor="@color/colorBehavior"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_behavior_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_63"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:gravity="end"
+                android:text="@string/video_type_highlight"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_highlight_info"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/ll_type"
+        android:orientation="horizontal"
+        app:layout_heightPercent="33.1%"
+        app:layout_marginStartPercent="11.5%"
+        app:layout_marginTopPercent="5.9%">
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_8_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_8_20_am"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_8_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_8_20"
+                android:text="@string/_8_16_am"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="14.0%" />
+
+            <TextView
+                android:id="@+id/tv_8_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_8_16"
+                android:text="@string/_8_05_am"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="15.4%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_8_05"
+                android:text="@string/_5_01_am"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="26.6%" />
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:id="@+id/ll_line"
+            android:layout_width="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_toEndOf="@id/ll_time"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/dp_5"
+                android:background="@drawable/bg_type_sample1"
+                app:layout_heightPercent="70.1%" />
+
+            <View
+                android:layout_width="@dimen/dp_5"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_type_sample2"
+                app:layout_heightPercent="23.4%" />
+
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+
+        <androidx.percentlayout.widget.PercentRelativeLayout
+            android:id="@+id/ll_location"
+            android:layout_width="@dimen/dp_117"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ll_line"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_location_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_location_1"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/tv_location_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_location_1"
+                android:text="@string/type_location_2"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="7.1%" />
+
+            <TextView
+                android:id="@+id/tv_location_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_location_2"
+                android:text="@string/type_location_2"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="8.5%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_location_3"
+                android:text="@string/type_location_3"
+                android:textColor="#B3FFFFFF"
+                android:textSize="@dimen/sp_12"
+                app:layout_marginTopPercent="19.7%" />
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+
+    <include
+        android:id="@+id/layout_guide_detail"
+        layout="@layout/include_guide_skiporgo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

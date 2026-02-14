@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Bold.ttf">
+            <string>BeVietnamPro-Bold</string>
+        </array>
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CameraTimeLineFooter" customModule="Fleet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="267"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GIs-xd-wbP">
+                    <rect key="frame" x="113" y="85" width="97.5" height="44"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eyo-TU-mX8" customClass="APNGImageView" customModule="WaylensAPNGKit">
+                            <rect key="frame" x="23.5" y="-30" width="50" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="p6b-ON-JM5"/>
+                                <constraint firstAttribute="height" constant="30" id="spc-OK-J3Y"/>
+                            </constraints>
+                        </view>
+                        <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_sign_error" translatesAutoresizingMaskIntoConstraints="NO" id="lR2-Kd-DaE">
+                            <rect key="frame" x="23.5" y="-50" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="gWe-Cj-G10"/>
+                                <constraint firstAttribute="width" secondItem="lR2-Kd-DaE" secondAttribute="height" multiplier="1:1" id="oeJ-AG-vUn"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SD Card Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hco-eT-eGu">
+                            <rect key="frame" x="0.0" y="0.0" width="97.5" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Bold" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156862745098" green="0.25882352941176467" blue="0.32941176470588235" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="SD Card Error"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn9-n4-Tig">
+                            <rect key="frame" x="9" y="26" width="79.5" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156862745098" green="0.25882352941176467" blue="0.32941176470588235" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkR-dz-AJ2">
+                            <rect key="frame" x="7.5" y="44" width="82" height="40"/>
+                            <color key="backgroundColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rBF-ao-bd9"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="18" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="GIs-xd-wbP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VXr-Tz-HHm" secondAttribute="top" id="SFR-yh-JlI"/>
+                <constraint firstItem="GIs-xd-wbP" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="VVi-OC-6r5"/>
+                <constraint firstItem="GIs-xd-wbP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="i4K-at-95Z"/>
+                <constraint firstItem="GIs-xd-wbP" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" multiplier="0.8" id="xyj-UJ-kzB"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="mkR-dz-AJ2" id="EPo-yE-LVP"/>
+                <outlet property="detailLabel" destination="mn9-n4-Tig" id="7ZM-co-opo"/>
+                <outlet property="icon" destination="lR2-Kd-DaE" id="zDD-d1-fQN"/>
+                <outlet property="loadingIcon" destination="Eyo-TU-mX8" id="3HX-rk-1oq"/>
+                <outlet property="titleLabel" destination="hco-eT-eGu" id="IWb-HI-lvl"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="186.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_sign_error" width="50" height="50"/>
+    </resources>
+</document>

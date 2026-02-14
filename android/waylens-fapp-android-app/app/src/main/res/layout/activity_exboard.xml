@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_color"
+    tools:context=".MacInfoActivity">
+
+    <include
+        android:id="@+id/default_toolbar"
+        layout="@layout/default_toolbar" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:background="@drawable/border_bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/default_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="USB Port" />
+
+            <TextView
+                android:id="@+id/tv_textPort"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="Firmware Version" />
+
+            <TextView
+                android:id="@+id/tv_textFW_Version"
+                style="@style/SettingItemGrayBig"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/dp_26"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_Exboard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingItemPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_weight="1"
+                android:text="Mode" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/btn_settings_list_next" />
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnSave"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Lưu thông tin"-->
+<!--            android:layout_marginTop="16dp" />-->
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

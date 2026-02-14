@@ -1,0 +1,153 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/font_sfpro</item>
+        <item name="fontFamily">@font/font_sfpro</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/font_sfpro</item>
+        <item name="fontFamily">@font/font_sfpro</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#000</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">#000</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">@drawable/button_blue_border</item> <!-- checkbox text color -->
+    </style>
+
+    <style name="BorderButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_blue_border</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="FleetButton" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_navy_border_gray</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="SettingTitleStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="SettingContentStyle" parent="Base.V7.Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="WhiteBoldText" parent="@android:style/Widget">
+        <item name="android:textColor">?attr/colorControlNormal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PrimaryNormalText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/sf_pro_display_bold</item>
+    </style>
+
+    <style name="ToggleStyle">
+        <item name="android:padding">@dimen/button_text_padding</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColorSecondary">?attr/colorControlNormal</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+    </style>
+
+    <style name="EdgeStyle">
+        <item name="android:padding">@dimen/button_text_padding</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColorSecondary">?attr/colorControlNormal</item>
+    </style>
+
+
+    <style name="DescriptionTextStyle">
+        <item name="android:textColor">@color/colorDescription</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="SettingItemPrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="SettingItemGrayBig">
+        <item name="android:textColor">@color/colorNaviText</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="SettingItemGraySmall">
+        <item name="android:textColor">@color/colorNaviText</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Toast">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_hidden</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="ToolbarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/colorBaseFleet</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MyTablayoutstyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">@dimen/dp_1</item>
+        <item name="tabIndicatorColor">@color/colorBaseFleet</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navi_installation"
+        android:icon="@drawable/icon_installation"
+        android:title="@string/installation" />
+
+    <item
+        android:id="@+id/navi_camera"
+        android:icon="@drawable/icon_camera_unselect"
+        android:title="@string/camera" />
+
+    <item
+        android:id="@+id/navi_maintenance"
+        android:icon="@drawable/icon_maintenance"
+        android:title="@string/maintenance" />
+</menu>

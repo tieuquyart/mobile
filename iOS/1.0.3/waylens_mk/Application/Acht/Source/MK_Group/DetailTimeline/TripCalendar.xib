@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TripCalendar" customModule="Acht" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="yCL-Fx-f1O">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-v4-F5G" customClass="FSCalendar">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j9l-2J-g1p">
+                            <rect key="frame" x="0.0" y="350" width="414" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZl-6x-mv1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <color key="backgroundColor" red="0.35284507269999998" green="0.74683511260000002" blue="0.38198184969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                    <connections>
+                                        <action selector="clearButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="LD6-gV-JiV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="44q-Ka-9Mn"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Rdg-v4-F5G" firstAttribute="leading" secondItem="yCL-Fx-f1O" secondAttribute="leading" id="H5a-3Q-YaL"/>
+                        <constraint firstAttribute="trailing" secondItem="Rdg-v4-F5G" secondAttribute="trailing" id="IXH-kj-UwW"/>
+                        <constraint firstAttribute="trailing" secondItem="j9l-2J-g1p" secondAttribute="trailing" id="MPH-9y-Cdj"/>
+                        <constraint firstAttribute="bottom" secondItem="j9l-2J-g1p" secondAttribute="bottom" id="TlW-ob-CXI"/>
+                        <constraint firstItem="j9l-2J-g1p" firstAttribute="leading" secondItem="yCL-Fx-f1O" secondAttribute="leading" id="kcQ-3z-7Qz"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yCL-Fx-f1O" secondAttribute="trailing" id="OlS-KC-pNT"/>
+                <constraint firstItem="yCL-Fx-f1O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TLJ-fV-kBy"/>
+                <constraint firstAttribute="bottom" secondItem="yCL-Fx-f1O" secondAttribute="bottom" id="eeJ-Pj-Sw8"/>
+                <constraint firstItem="yCL-Fx-f1O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uYG-YQ-bI1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calendarView" destination="Rdg-v4-F5G" id="Xvf-ul-ieY"/>
+                <outlet property="doneButton" destination="BZl-6x-mv1" id="oS4-FY-Z7G"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

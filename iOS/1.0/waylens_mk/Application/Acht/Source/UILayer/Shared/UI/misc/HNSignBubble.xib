@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HNSignBubble" customModule="Acht" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="dnW-0P-STK" id="cjQ-Ha-mo2"/>
+                <outlet property="backgroundView" destination="JVG-7p-T3E" id="Tnv-lG-Ciw"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="FBX-Gp-Rue"/>
+                <outlet property="icon" destination="WYH-pr-UlC" id="ecm-iO-EfH"/>
+                <outlet property="titleLabel" destination="fBQ-FK-xpp" id="asC-fB-RwY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="195"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVG-7p-T3E">
+                    <rect key="frame" x="0.0" y="10" width="200" height="185"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VID-eK-fxJ">
+                            <rect key="frame" x="47.5" y="35.5" width="105.5" height="114.5"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_sign_information_w" translatesAutoresizingMaskIntoConstraints="NO" id="WYH-pr-UlC">
+                                    <rect key="frame" x="34.5" y="0.0" width="36" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="9zZ-w7-kQs"/>
+                                        <constraint firstAttribute="width" constant="36" id="Bfb-QW-rhT"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label hahaha hahahah hahah" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBQ-FK-xpp">
+                                    <rect key="frame" x="0.0" y="46" width="105.5" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnW-0P-STK" customClass="InsetButton" customModule="Acht" customModuleProvider="target">
+                                    <rect key="frame" x="12.5" y="89.5" width="80" height="25"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="YaQ-vw-F03"/>
+                                        <constraint firstAttribute="height" constant="25" id="yNR-ff-TU9"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="contentEdgeInsets" minX="18" minY="4" maxX="18" maxY="4"/>
+                                    <state key="normal" title="Add">
+                                        <color key="titleColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Add"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onAction:" destination="-1" eventType="touchUpInside" id="YQI-32-cbe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VID-eK-fxJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JVG-7p-T3E" secondAttribute="leading" constant="20" id="Wef-s4-ArG"/>
+                        <constraint firstItem="VID-eK-fxJ" firstAttribute="centerY" secondItem="JVG-7p-T3E" secondAttribute="centerY" id="bUd-T1-bhZ"/>
+                        <constraint firstItem="VID-eK-fxJ" firstAttribute="centerX" secondItem="JVG-7p-T3E" secondAttribute="centerX" id="jIZ-qK-5an"/>
+                        <constraint firstItem="VID-eK-fxJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JVG-7p-T3E" secondAttribute="top" constant="20" id="tmM-Zg-aAx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="JVG-7p-T3E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="NEL-gA-i6Z"/>
+                <constraint firstItem="JVG-7p-T3E" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Sgr-Jb-QSJ"/>
+                <constraint firstItem="JVG-7p-T3E" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gG7-BO-LKC"/>
+                <constraint firstItem="JVG-7p-T3E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nX8-2p-I7l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="6Y6-lw-zfj" appends="YES" id="amE-R3-74d"/>
+            </connections>
+            <point key="canvasLocation" x="-53" y="-142.5"/>
+        </view>
+        <tapGestureRecognizer id="6Y6-lw-zfj">
+            <connections>
+                <action selector="onTap:" destination="-1" id="QcP-OC-USO"/>
+                <outlet property="delegate" destination="-1" id="sfw-vF-SaK"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon_sign_information_w" width="50" height="50"/>
+    </resources>
+</document>

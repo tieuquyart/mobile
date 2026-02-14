@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_cameras"
+            android:icon="@drawable/menu_360_album_n"
+            android:title="360 Album" />
+
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/menu_wallet_n"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/menu_setting_n"
+            android:title="Settings" />
+    </group>
+
+</menu>

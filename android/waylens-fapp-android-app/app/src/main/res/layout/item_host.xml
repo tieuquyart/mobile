@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_host"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_26"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_14"
+                tools:text="Joseph’s S10+" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_26"
+            android:text="@string/this_host"
+            android:textColor="#99A0A9"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ib_connect"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_26"
+            android:layout_toStartOf="@id/ib_remove"
+            android:background="@drawable/icon_add_camera"
+            android:padding="@dimen/dp_10"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ib_remove"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_26"
+            android:background="@drawable/icon_remove_paired"
+            android:padding="@dimen/dp_10"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorBackgroundWhite"
+        app:layout_constraintTop_toBottomOf="@id/rl_host" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

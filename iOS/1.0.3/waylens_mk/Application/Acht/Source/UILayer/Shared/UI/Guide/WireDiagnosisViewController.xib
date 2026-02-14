@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Medium.ttf">
+            <string>BeVietnamPro-Medium</string>
+        </array>
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WireDiagnosisViewController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="detailLabel" destination="rf6-a4-yfX" id="oyv-dW-Wxi"/>
+                <outlet property="doneButton" destination="VQQ-sJ-baX" id="0bl-Az-Ec0"/>
+                <outlet property="failButton" destination="T7I-Fx-3Ai" id="9le-HV-tpG"/>
+                <outlet property="failButtonContainer" destination="v5Y-ts-ECR" id="ok7-mv-Bd7"/>
+                <outlet property="powerIndicator" destination="TYA-d5-kzD" id="Dpu-nn-xaT"/>
+                <outlet property="stepOneIcon" destination="3IA-ck-wwD" id="2sq-Ue-FVR"/>
+                <outlet property="stepOneLabel" destination="PkT-YY-k9e" id="hwp-ft-4zJ"/>
+                <outlet property="stepTwoIcon" destination="Hh8-rs-Ucw" id="n02-hj-FVR"/>
+                <outlet property="stepTwoLabel" destination="mmd-X3-pIO" id="YcM-c6-8y1"/>
+                <outlet property="stepsView" destination="6bn-Mj-ah2" id="j3G-UM-cSB"/>
+                <outlet property="successLabel" destination="wSe-ui-TPg" id="W6J-ry-iYv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQQ-sJ-baX">
+                    <rect key="frame" x="20" y="533" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8iA-ML-Fz6"/>
+                    </constraints>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Done"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicBackgroundColor" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onDone:" destination="-1" eventType="touchUpInside" id="6Yf-jw-T5f"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_powered_off" translatesAutoresizingMaskIntoConstraints="NO" id="ZBO-Q8-z1p">
+                    <rect key="frame" x="131.5" y="245.5" width="112" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="3Lt-np-AW1"/>
+                        <constraint firstAttribute="height" constant="112" id="CkG-yj-Kwy"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_powered_on" translatesAutoresizingMaskIntoConstraints="NO" id="TYA-d5-kzD">
+                    <rect key="frame" x="131.5" y="245.5" width="112" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="0p0-64-mYh"/>
+                        <constraint firstAttribute="height" constant="112" id="nhu-W6-vcP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detected vehicle power" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob4-fR-FCL">
+                    <rect key="frame" x="106" y="211.5" width="163" height="18"/>
+                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Detected vehicle power"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcM-Th-7dS">
+                    <rect key="frame" x="125.5" y="377.5" width="124" height="30"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_small_power_off" translatesAutoresizingMaskIntoConstraints="NO" id="QGa-RN-r1g">
+                            <rect key="frame" x="74.5" y="8.5" width="13" height="13"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_small_power_on" translatesAutoresizingMaskIntoConstraints="NO" id="B2i-dd-fBO">
+                            <rect key="frame" x="0.0" y="8.5" width="13" height="13"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFv-cG-fnM">
+                            <rect key="frame" x="20" y="6" width="22" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="ON"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgm-n5-bmo">
+                            <rect key="frame" x="94.5" y="6" width="29.5" height="18"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="OFF"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QGa-RN-r1g" firstAttribute="centerY" secondItem="B2i-dd-fBO" secondAttribute="centerY" id="Mlf-Kk-5h7"/>
+                        <constraint firstItem="dFv-cG-fnM" firstAttribute="centerY" secondItem="B2i-dd-fBO" secondAttribute="centerY" id="Qj8-Bf-8im"/>
+                        <constraint firstItem="vgm-n5-bmo" firstAttribute="centerY" secondItem="QGa-RN-r1g" secondAttribute="centerY" id="RB6-iE-5rI"/>
+                        <constraint firstItem="B2i-dd-fBO" firstAttribute="centerY" secondItem="EcM-Th-7dS" secondAttribute="centerY" id="RJf-D5-Vgm"/>
+                        <constraint firstItem="vgm-n5-bmo" firstAttribute="leading" secondItem="QGa-RN-r1g" secondAttribute="trailing" constant="7" id="bBb-N4-NXz"/>
+                        <constraint firstAttribute="height" constant="30" id="i9i-NU-Cr8"/>
+                        <constraint firstAttribute="trailing" secondItem="vgm-n5-bmo" secondAttribute="trailing" id="lFV-qi-Vsy"/>
+                        <constraint firstItem="B2i-dd-fBO" firstAttribute="leading" secondItem="EcM-Th-7dS" secondAttribute="leading" id="lJb-uE-QUi"/>
+                        <constraint firstItem="dFv-cG-fnM" firstAttribute="leading" secondItem="B2i-dd-fBO" secondAttribute="trailing" constant="7" id="ofP-fE-ioa"/>
+                        <constraint firstAttribute="width" constant="124" id="ynK-yh-oBq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bn-Mj-ah2">
+                    <rect key="frame" x="34" y="40" width="307" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera will sleep and lose connection after 30s" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf6-a4-yfX">
+                            <rect key="frame" x="34" y="68.5" width="273" height="35.5"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                            <color key="textColor" red="0.51764705879999995" green="0.51764705879999995" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Camera will sleep and lose connection after 30s"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn vehicle back on" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmd-X3-pIO">
+                            <rect key="frame" x="34" y="41" width="273" height="25.5"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="20"/>
+                            <color key="textColor" white="0.79995929529999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Turn vehicle back on"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqw-GO-EVP">
+                            <rect key="frame" x="11.5" y="24" width="1" height="17.5"/>
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.68235294117647061" blue="0.8901960784313725" alpha="1" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="kYc-AM-Nw3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicBackgroundColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_step_one_s" translatesAutoresizingMaskIntoConstraints="NO" id="3IA-ck-wwD">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="3IA-ck-wwD" secondAttribute="height" id="CWM-UD-Ikf"/>
+                                <constraint firstAttribute="height" constant="24" id="ZIZ-4I-ErA"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power off your vehicle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkT-YY-k9e">
+                            <rect key="frame" x="34" y="-0.5" width="273" height="25.5"/>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="20"/>
+                            <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Power off your vehicle"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_step_two_n" translatesAutoresizingMaskIntoConstraints="NO" id="Hh8-rs-Ucw">
+                            <rect key="frame" x="0.0" y="41.5" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Hh8-rs-Ucw" secondAttribute="height" multiplier="1:1" id="ne3-Mg-Orc"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rf6-a4-yfX" secondAttribute="bottom" id="0gC-Ue-A8X"/>
+                        <constraint firstItem="3IA-ck-wwD" firstAttribute="leading" secondItem="6bn-Mj-ah2" secondAttribute="leading" id="1Sj-8f-bO2"/>
+                        <constraint firstAttribute="trailing" secondItem="mmd-X3-pIO" secondAttribute="trailing" id="5rA-nx-Xa1"/>
+                        <constraint firstItem="Hh8-rs-Ucw" firstAttribute="top" secondItem="Mqw-GO-EVP" secondAttribute="bottom" id="6RW-OE-UgX"/>
+                        <constraint firstItem="3IA-ck-wwD" firstAttribute="top" secondItem="6bn-Mj-ah2" secondAttribute="top" id="6sW-C7-6Ap"/>
+                        <constraint firstItem="mmd-X3-pIO" firstAttribute="centerY" secondItem="Hh8-rs-Ucw" secondAttribute="centerY" id="8ns-so-5gn"/>
+                        <constraint firstItem="Hh8-rs-Ucw" firstAttribute="width" secondItem="3IA-ck-wwD" secondAttribute="width" id="9O0-XE-Tae"/>
+                        <constraint firstItem="Hh8-rs-Ucw" firstAttribute="centerX" secondItem="3IA-ck-wwD" secondAttribute="centerX" id="9aU-CE-lfz"/>
+                        <constraint firstAttribute="trailing" secondItem="PkT-YY-k9e" secondAttribute="trailing" id="CMB-2q-tnE"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mmd-X3-pIO" secondAttribute="bottom" id="CVY-XD-VyB"/>
+                        <constraint firstItem="rf6-a4-yfX" firstAttribute="leading" secondItem="mmd-X3-pIO" secondAttribute="leading" id="CdD-YD-cyt"/>
+                        <constraint firstAttribute="trailing" secondItem="rf6-a4-yfX" secondAttribute="trailing" id="Iz1-8V-kxS"/>
+                        <constraint firstItem="mmd-X3-pIO" firstAttribute="leading" secondItem="Hh8-rs-Ucw" secondAttribute="trailing" constant="10" id="M4B-dG-Jrv"/>
+                        <constraint firstItem="Mqw-GO-EVP" firstAttribute="centerX" secondItem="3IA-ck-wwD" secondAttribute="centerX" id="cQ3-nR-CAu"/>
+                        <constraint firstItem="PkT-YY-k9e" firstAttribute="centerY" secondItem="3IA-ck-wwD" secondAttribute="centerY" id="geu-Z2-FxM"/>
+                        <constraint firstItem="Mqw-GO-EVP" firstAttribute="top" secondItem="3IA-ck-wwD" secondAttribute="bottom" id="jWM-VI-ZOB"/>
+                        <constraint firstItem="mmd-X3-pIO" firstAttribute="top" secondItem="PkT-YY-k9e" secondAttribute="bottom" constant="16" id="n9K-C8-t79"/>
+                        <constraint firstItem="rf6-a4-yfX" firstAttribute="top" secondItem="mmd-X3-pIO" secondAttribute="bottom" constant="2" id="ori-At-mnE"/>
+                        <constraint firstItem="PkT-YY-k9e" firstAttribute="leading" secondItem="3IA-ck-wwD" secondAttribute="trailing" constant="10" id="rmL-gl-zBd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5Y-ts-ECR">
+                    <rect key="frame" x="139.5" y="533" width="96" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7I-Fx-3Ai">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="pwH-Qu-AQb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="16"/>
+                            <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="30" maxY="0.0"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onFail:" destination="-1" eventType="touchUpInside" id="fXT-iy-tAq"/>
+                            </connections>
+                        </button>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="btn_settings_list_next" translatesAutoresizingMaskIntoConstraints="NO" id="PwG-YY-9xW">
+                            <rect key="frame" x="67" y="18" width="8.5" height="14"/>
+                            <color key="tintColor" red="0.30588235289999999" green="0.68235294120000001" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="T7I-Fx-3Ai" secondAttribute="trailing" id="6v0-Bv-oFq"/>
+                        <constraint firstItem="PwG-YY-9xW" firstAttribute="leading" secondItem="T7I-Fx-3Ai" secondAttribute="trailing" constant="-29" id="AJx-6o-SX7"/>
+                        <constraint firstItem="T7I-Fx-3Ai" firstAttribute="leading" secondItem="v5Y-ts-ECR" secondAttribute="leading" id="TKh-lR-bNd"/>
+                        <constraint firstItem="T7I-Fx-3Ai" firstAttribute="top" secondItem="v5Y-ts-ECR" secondAttribute="top" id="c3B-iM-ZyG"/>
+                        <constraint firstAttribute="bottom" secondItem="T7I-Fx-3Ai" secondAttribute="bottom" id="mI2-j8-Yjb"/>
+                        <constraint firstItem="PwG-YY-9xW" firstAttribute="centerY" secondItem="T7I-Fx-3Ai" secondAttribute="centerY" id="qOc-0q-w17"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSe-ui-TPg">
+                    <rect key="frame" x="30" y="80" width="315" height="25.5"/>
+                    <fontDescription key="fontDescription" name="BeVietnamPro-Medium" family="Be Vietnam Pro" pointSize="20"/>
+                    <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeString" value="Finished."/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="usingDynamicTextColor" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EcM-Th-7dS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0dn-oO-EDO"/>
+                <constraint firstItem="wSe-ui-TPg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0l7-e2-Mbd"/>
+                <constraint firstItem="6bn-Mj-ah2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="1OG-aC-6IP"/>
+                <constraint firstItem="TYA-d5-kzD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G45-6Y-uq3"/>
+                <constraint firstItem="ZBO-Q8-z1p" firstAttribute="centerY" secondItem="TYA-d5-kzD" secondAttribute="centerY" id="Hjj-P4-JgK"/>
+                <constraint firstItem="v5Y-ts-ECR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OGu-KR-B7W"/>
+                <constraint firstItem="wSe-ui-TPg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="PnG-TS-0iZ"/>
+                <constraint firstItem="EcM-Th-7dS" firstAttribute="top" secondItem="ZBO-Q8-z1p" secondAttribute="bottom" constant="20" id="RUq-Bs-6dk"/>
+                <constraint firstItem="ZBO-Q8-z1p" firstAttribute="centerX" secondItem="TYA-d5-kzD" secondAttribute="centerX" id="TgC-oe-SfF"/>
+                <constraint firstItem="6bn-Mj-ah2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VNN-V7-Tuu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VQQ-sJ-baX" secondAttribute="bottom" constant="20" id="YWL-8a-X9f"/>
+                <constraint firstItem="6bn-Mj-ah2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="b6b-vu-2Qg"/>
+                <constraint firstItem="TYA-d5-kzD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c1j-ck-yxC"/>
+                <constraint firstItem="VQQ-sJ-baX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cr4-TK-0iK"/>
+                <constraint firstItem="ob4-fR-FCL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eOA-p0-iJA"/>
+                <constraint firstItem="wSe-ui-TPg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="ici-Ps-1Cu"/>
+                <constraint firstItem="TYA-d5-kzD" firstAttribute="top" secondItem="ob4-fR-FCL" secondAttribute="bottom" constant="16" id="mpv-SS-Pin"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="v5Y-ts-ECR" secondAttribute="bottom" constant="20" id="uUi-R3-uDM"/>
+                <constraint firstItem="VQQ-sJ-baX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ugv-2e-6H4"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="-489.5" y="-20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_settings_list_next" width="8.5" height="14"/>
+        <image name="icon_powered_off" width="161" height="162"/>
+        <image name="icon_powered_on" width="161" height="162"/>
+        <image name="icon_small_power_off" width="13" height="13"/>
+        <image name="icon_small_power_on" width="13" height="13"/>
+        <image name="icon_step_one_s" width="24" height="24"/>
+        <image name="icon_step_two_n" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

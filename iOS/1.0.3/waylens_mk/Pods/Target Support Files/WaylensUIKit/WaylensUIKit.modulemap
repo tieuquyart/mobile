@@ -1,0 +1,6 @@
+framework module WaylensUIKit {
+  umbrella header "WaylensUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

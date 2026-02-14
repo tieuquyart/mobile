@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BeVietnamPro-Regular.ttf">
+            <string>BeVietnamPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddVehicleController" customModule="Fleet" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="O2h-Nk-OBw" id="FiK-SW-bCa"/>
+                <outlet property="internalNumberTf" destination="6Hc-bL-QO0" id="j82-H0-c71"/>
+                <outlet property="licensePlateNuberTf" destination="0Hx-Ot-pU7" id="qky-07-slX"/>
+                <outlet property="okBtn" destination="MvE-pk-JgP" id="tOe-d1-cxf"/>
+                <outlet property="vehicleBrandTf" destination="cAP-gR-duE" id="OHb-cA-The"/>
+                <outlet property="vehicleTypeTf" destination="X0i-sF-MAr" id="74c-ff-hph"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBrand" destination="m6z-ys-Cbi" id="qDm-iy-Wxd"/>
+                <outlet property="viewInternalNumber" destination="oHi-Ow-rFg" id="sAp-y3-Zvg"/>
+                <outlet property="viewOut" destination="8Pp-Xr-Nht" id="AT3-dK-euN"/>
+                <outlet property="viewPlateNo" destination="6LE-D7-6Bw" id="CKv-uQ-WCT"/>
+                <outlet property="viewVehicleType" destination="Xc4-Ay-Meu" id="AfI-xB-11j"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHk-Y4-zGa">
+                    <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Pp-Xr-Nht">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="439.66666666666669"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ccl-Gj-v98">
+                                    <rect key="frame" x="16" y="30" width="343" height="318.66666666666669"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biển số xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYC-gi-TX7">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="21.666666666666668"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LE-D7-6Bw">
+                                            <rect key="frame" x="0.0" y="29.666666666666671" width="343" height="44"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Hx-Ot-pU7">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="44"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="0Hx-Ot-pU7" firstAttribute="leading" secondItem="6LE-D7-6Bw" secondAttribute="leading" constant="10" id="6x6-PM-vdc"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Hx-Ot-pU7" secondAttribute="trailing" constant="10" id="LaY-U9-Ecf"/>
+                                                <constraint firstAttribute="height" constant="44" id="Lxz-he-RBV"/>
+                                                <constraint firstItem="0Hx-Ot-pU7" firstAttribute="top" secondItem="6LE-D7-6Bw" secondAttribute="top" id="TKm-Sj-SMb"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Hx-Ot-pU7" secondAttribute="bottom" id="wOz-o1-SJM"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hãng xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-Ck-pSj">
+                                            <rect key="frame" x="0.0" y="81.666666666666657" width="343" height="21.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6z-ys-Cbi">
+                                            <rect key="frame" x="0.0" y="111.33333333333334" width="343" height="44"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAP-gR-duE">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="44"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="cAP-gR-duE" firstAttribute="leading" secondItem="m6z-ys-Cbi" secondAttribute="leading" constant="10" id="Ei1-pw-s17"/>
+                                                <constraint firstAttribute="height" constant="44" id="Fix-iU-gj8"/>
+                                                <constraint firstAttribute="trailing" secondItem="cAP-gR-duE" secondAttribute="trailing" constant="10" id="Qfb-gL-vHk"/>
+                                                <constraint firstAttribute="bottom" secondItem="cAP-gR-duE" secondAttribute="bottom" id="SUr-aB-AvT"/>
+                                                <constraint firstItem="cAP-gR-duE" firstAttribute="top" secondItem="m6z-ys-Cbi" secondAttribute="top" id="etW-DL-D0l"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã hiệu xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJX-ai-VxU">
+                                            <rect key="frame" x="0.0" y="163.33333333333334" width="343" height="21.666666666666657"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHi-Ow-rFg">
+                                            <rect key="frame" x="0.0" y="193" width="343" height="44"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Hc-bL-QO0">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="44"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6Hc-bL-QO0" secondAttribute="bottom" id="6hC-qQ-ScG"/>
+                                                <constraint firstItem="6Hc-bL-QO0" firstAttribute="top" secondItem="oHi-Ow-rFg" secondAttribute="top" id="8um-qN-zpR"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Hc-bL-QO0" secondAttribute="trailing" constant="10" id="Q2P-CP-UM4"/>
+                                                <constraint firstItem="6Hc-bL-QO0" firstAttribute="leading" secondItem="oHi-Ow-rFg" secondAttribute="leading" constant="10" id="SZf-NY-oqm"/>
+                                                <constraint firstAttribute="height" constant="44" id="hRW-pg-e5e"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kiểu xe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYr-zb-HwJ">
+                                            <rect key="frame" x="0.0" y="245" width="343" height="21.666666666666686"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-Ay-Meu">
+                                            <rect key="frame" x="0.0" y="274.66666666666669" width="343" height="44"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0i-sF-MAr">
+                                                    <rect key="frame" x="10" y="0.0" width="323" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="uHK-RJ-GYe"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="X0i-sF-MAr" firstAttribute="top" secondItem="Xc4-Ay-Meu" secondAttribute="top" id="7Cc-ea-0zk"/>
+                                                <constraint firstAttribute="trailing" secondItem="X0i-sF-MAr" secondAttribute="trailing" constant="10" id="Mtr-8G-30r"/>
+                                                <constraint firstAttribute="bottom" secondItem="X0i-sF-MAr" secondAttribute="bottom" id="Z6o-F0-2na"/>
+                                                <constraint firstItem="X0i-sF-MAr" firstAttribute="leading" secondItem="Xc4-Ay-Meu" secondAttribute="leading" constant="10" id="sxW-5t-NrM"/>
+                                                <constraint firstAttribute="height" constant="44" id="xCT-z0-UQg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="uYC-gi-TX7" secondAttribute="trailing" id="4QQ-rE-JJN"/>
+                                        <constraint firstItem="uYC-gi-TX7" firstAttribute="leading" secondItem="Ccl-Gj-v98" secondAttribute="leading" id="TI1-H3-Add"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d4v-zS-QnS">
+                                    <rect key="frame" x="16" y="378.66666666666669" width="343" height="46"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2h-Nk-OBw">
+                                            <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="46"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Cancel"/>
+                                            <connections>
+                                                <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="5SS-Lg-TWp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvE-pk-JgP">
+                                            <rect key="frame" x="175.66666666666663" y="0.0" width="167.33333333333337" height="46"/>
+                                            <fontDescription key="fontDescription" name="BeVietnamPro-Regular" family="Be Vietnam Pro" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="OK"/>
+                                            <connections>
+                                                <action selector="okButton:" destination="-1" eventType="touchUpInside" id="k2G-Yl-qCv"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="gfj-0i-DrE"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="d4v-zS-QnS" secondAttribute="trailing" constant="16" id="JUJ-ys-VKd"/>
+                                <constraint firstAttribute="trailing" secondItem="Ccl-Gj-v98" secondAttribute="trailing" constant="16" id="RQs-XP-Gq6"/>
+                                <constraint firstItem="Ccl-Gj-v98" firstAttribute="top" secondItem="8Pp-Xr-Nht" secondAttribute="top" constant="30" id="Ujb-Gc-U5x"/>
+                                <constraint firstAttribute="bottom" secondItem="d4v-zS-QnS" secondAttribute="bottom" constant="15" id="gXl-zP-F6V"/>
+                                <constraint firstItem="d4v-zS-QnS" firstAttribute="leading" secondItem="8Pp-Xr-Nht" secondAttribute="leading" constant="16" id="mlw-fR-F5t"/>
+                                <constraint firstItem="Ccl-Gj-v98" firstAttribute="leading" secondItem="8Pp-Xr-Nht" secondAttribute="leading" constant="16" id="pqW-4m-T2m"/>
+                                <constraint firstItem="d4v-zS-QnS" firstAttribute="top" secondItem="Ccl-Gj-v98" secondAttribute="bottom" constant="30" id="v1H-A5-mvG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8Pp-Xr-Nht" secondAttribute="bottom" id="1fw-eI-ZS1"/>
+                        <constraint firstItem="8Pp-Xr-Nht" firstAttribute="top" secondItem="eHk-Y4-zGa" secondAttribute="top" id="9Fr-ut-5Wc"/>
+                        <constraint firstAttribute="trailing" secondItem="8Pp-Xr-Nht" secondAttribute="trailing" id="HWC-sL-MaS"/>
+                        <constraint firstItem="8Pp-Xr-Nht" firstAttribute="width" secondItem="eHk-Y4-zGa" secondAttribute="width" id="Tl4-R1-JJF"/>
+                        <constraint firstItem="8Pp-Xr-Nht" firstAttribute="leading" secondItem="eHk-Y4-zGa" secondAttribute="leading" id="dUY-XN-eES"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eHk-Y4-zGa" secondAttribute="trailing" id="5FN-BZ-iDR"/>
+                <constraint firstItem="eHk-Y4-zGa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fnu-VZ-dcm"/>
+                <constraint firstItem="eHk-Y4-zGa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kXb-4U-Qdh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eHk-Y4-zGa" secondAttribute="bottom" id="meD-od-2pj"/>
+            </constraints>
+            <point key="canvasLocation" x="130.40000000000001" y="74.630541871921181"/>
+        </view>
+    </objects>
+</document>
