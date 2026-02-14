@@ -1,0 +1,2 @@
+include ':app', ':maputils'
+include ':cameralib'

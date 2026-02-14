@@ -1,0 +1,349 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.alibaba.arouter'
+apply plugin: 'org.greenrobot.greendao'
+
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    signingConfigs {
+        hornRelease {
+            keyAlias keystoreProperties['hornKeyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['hornStoreFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+
+        hornDebug {
+            keyAlias keystoreProperties['hornKeyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['hornStoreFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+
+        fleetRelease {
+            keyAlias keystoreProperties['fleetKeyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['fleetStoreFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+
+        fleetDebug {
+            keyAlias keystoreProperties['fleetKeyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['fleetStoreFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    compileSdkVersion 33
+    ndkVersion "21.1.6352462"
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a' , 'x86', 'x86_64'
+        }
+
+        /* renderscript */
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+
+        /* ARouter */
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+        preDexLibraries false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            jniDebuggable true
+        }
+    }
+
+    flavorDimensions "project"
+
+    productFlavors {
+
+        autosecure {
+            applicationId = "com.mkgroup.fms"
+            versionCode = 4
+            versionName = '1.0'
+            signingConfig = signingConfigs.fleetRelease
+
+
+            dimension "project"
+            resValue "string", "app_name", "AutoSecure"
+            buildConfigField "String", "FLAVOR_NAME", "\"autosecure\""
+            buildConfigField "String", "WOWZA_LICENSE_KEY", "\"GOSK-BD46-010C-5DDC-451B-F336\""
+            buildConfigField "String", "google_maps_key", "\"AIzaSyBYarY6_L9Oy_hO1bjSkbeW1Ss5VTj_PR4\""
+            manifestPlaceholders = [app_icon       : "@mipmap/ic_launcher",
+                                    provider_name  : "com.mkgroup.fms.provider",
+                                    google_maps_key: "AIzaSyBYarY6_L9Oy_hO1bjSkbeW1Ss5VTj_PR4",
+                                    PUSH_CHANNEL: "default_developer",
+            ]
+
+        }
+
+        /*fleet {
+            applicationId = "com.mkgroup.fms"
+            versionCode = 4
+            versionName = '1.0'
+            signingConfig = signingConfigs.fleetRelease
+
+
+            dimension "project"
+            resValue "string", "app_name", "AutoSecure"
+            buildConfigField "String", "FLAVOR_NAME", "\"fleet\""
+            buildConfigField "String", "WOWZA_LICENSE_KEY", "\"GOSK-BD46-010C-5DDC-451B-F336\""
+            buildConfigField "String", "google_maps_key", "\"AIzaSyBYarY6_L9Oy_hO1bjSkbeW1Ss5VTj_PR4\""
+            manifestPlaceholders = [app_icon       : "@mipmap/ic_launcher",
+                                    provider_name  : "com.mkgroup.fms.provider",
+//                                    google_maps_key: "AIzaSyChNvaWqGYzz0OS2Xnvq71JQBRMEJEG5uU",
+                                    google_maps_key: "AIzaSyBYarY6_L9Oy_hO1bjSkbeW1Ss5VTj_PR4",
+//                                    JPUSH_PKGNAME: applicationId,
+//                                    JPUSH_APPKEY : "571281eb431b877b3b040adb",
+//                                    JPUSH_APPKEY : "09a08bc5979e34ad7897db84",
+//                                    JPUSH_CHANNEL: "default_developer",
+            ]
+
+        }*/
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "${variant.flavorName}-${buildType.name}-${variant.versionName}_${variant.versionCode}.apk"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+//        google()
+//        jcenter()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath "com.alibaba:arouter-register:1.0.2"
+    }
+}
+
+
+greendao {
+    schemaVersion 3
+}
+
+repositories {
+//    mavenCentral()
+//    flatDir {
+//        dirs 'libs'
+//    }
+//    google()
+//    maven { url "https://dl.bintray.com/xfdingustc/maven" }
+//    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    /* 打印Log */
+    implementation 'com.orhanobut:logger:2.2.0'
+    /* Rxandroid */
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+//    /* Rxjava2 */
+//    implementation 'io.reactivex.rxjava2:rxjava:2.2.3'
+
+
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0"
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    /* Rxrelay2 */
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
+    /* Rxlifecycle */
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    /* Retrofit2 */
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    /* 支持Gson解析 */
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    /* 衔接 Retrofit & RxJava2 */
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation('com.roughike:bottom-bar:2.3.1') {
+        exclude group: 'com.android.support'
+    }
+    /* ButterKnife */
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0-alpha01'
+    /* Jmdns */
+    implementation 'javax.jmdns:jmdns:3.4.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+    /* Auto-Parcel */
+    implementation 'com.github.frankiesardo:auto-parcel:0.3.1'
+    annotationProcessor 'com.github.frankiesardo:auto-parcel-processor:0.3.1'
+
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+//    implementation("com.squareup.okhttp3:okhttp:4.10.0")
+
+//    implementation 'com.google.dagger:dagger:2.4'
+//    annotationProcessor 'com.google.dagger:dagger-compiler:2.4'
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    implementation 'com.google.dagger:dagger-android-support:2.20' // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.20'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.20'
+
+    /* google firebase */
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    implementation 'org.apache.mina:mina-core:2.0.19'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    implementation "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar"
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.0.2'
+
+    implementation 'com.flipboard:bottomsheet-core:1.5.3'
+
+    implementation 'com.flipboard:bottomsheet-commons:1.5.3' // optional
+
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46'
+
+    implementation 'com.tubb.smrv:swipemenu-recyclerview:5.4.8'
+
+    implementation 'com.github.anzaizai:EasyRefreshLayout:1.3.1'
+
+    implementation 'com.github.florent37:viewanimator:1.0.5'
+
+    implementation 'org.greenrobot:greendao:3.3.0'
+
+    implementation 'io.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    /* leakcanary */
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+//
+//    /* blockcanary */
+//    debugImplementation 'com.github.markzhai:blockcanary-android:1.5.0'
+//    releaseImplementation 'com.github.markzhai:blockcanary-no-op:1.5.0'
+//    implementation 'com.google.maps.android:maps-compose:2.7.2'
+
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+
+    implementation 'q.rorbin:badgeview:1.1.3'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+//    implementation(name: 'com.wowza.gocoder.sdk', ext: 'aar')
+
+    //noinspection GradlePath
+    implementation files('../app/libs/com.wowza.gocoder.sdk.aar')
+
+    implementation project(path: ':maputils')
+
+    implementation project(path: ':cameralib')
+
+    /* ARouter */
+    implementation 'com.alibaba:arouter-api:1.5.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    /* MPAndroidChart */
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    /* DateRangePicker */
+    implementation 'com.borax12.materialdaterangepicker:library:2.0'
+    /* MagicIndicator */
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    /* CalendarView */
+    implementation('com.haibin:calendarview:3.6.6') {
+        exclude group: 'com.android.support'
+    }
+
+
+    implementation 'com.opencsv:opencsv:4.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:27.0.0'
+
+    annotationProcessor("javax.annotation:javax.annotation-api:1.3.2")
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation 'com.hjq:toast:8.8'
+    implementation 'com.tencent:mmkv-static:1.2.4'
+    implementation 'com.google.code.gson:gson:2.8.6'
+//    implementation 'com.waylens.camerasdk:camerasdk:1.6.0'
+
+//    implementation 'com.github.bumptech.glide:glide:4.11.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+//    implementation(name: 'face_verify_moc_camera_log', ext: 'aar')
+    //noinspection GradlePath
+//    implementation files('/Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/waylens-fapp-android-app/app/libs/face_verify_moc_camera_log.aar')
+    //noinspection GradlePath
+//    implementation files('/Users/mrfunlife/Documents/DoanVT/GitMK/Autosecure/waylens-fapp-android-app/app/libs/register_device1.aar')
+//    implementation(name: 'register_device1', ext: 'aar')
+    implementation 'net.java.dev.jna:jna:5.6.0@aar'
+    implementation 'org.threeten:threetenbp:1.3.5'
+    implementation 'io.swagger:swagger-annotations:1.5.18'
+    implementation 'io.gsonfire:gson-fire:1.8.0'
+    implementation 'com.squareup.okhttp:logging-interceptor:2.7.5'
+
+    //lib support eid
+    implementation 'net.java.dev.jna:jna:5.5.0@aar'
+}

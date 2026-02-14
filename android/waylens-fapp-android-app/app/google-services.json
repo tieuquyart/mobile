@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1033905468231",
+    "project_id": "auto-ea7db",
+    "storage_bucket": "auto-ea7db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033905468231:android:605bf0336f18611731d262",
+        "android_client_info": {
+          "package_name": "com.mkgroup.fms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033905468231-vd3tbbmjm8i13c59l0m88npkjb0f74hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIztBBEIcUuAOz9CG7vRxCm2CBBn5mrwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033905468231-vd3tbbmjm8i13c59l0m88npkjb0f74hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

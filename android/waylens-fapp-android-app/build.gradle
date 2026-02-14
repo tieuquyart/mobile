@@ -1,0 +1,52 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+//    ext.kotlin_version = '1.3.50'
+    ext.kotlin_version = '1.6.10'
+    repositories {
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.google.gms:google-services:4.3.14' // google-services plugin
+        classpath 'com.google.android.gms:play-services-location:20.0.0'
+        classpath 'com.google.android.gms:play-services-maps:18.1.0'
+        classpath 'com.google.android.gms:play-services-maps:18.1.0@aar'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public/" }
+        google()
+        mavenCentral()
+        maven { url "https://www.jitpack.io" }
+        maven {
+            credentials {
+                username '5f27c7481d62073cee108fe6'
+                password '6ZRQ9A2BD](N'
+            }
+            url "https://packages.aliyun.com/maven/repository/2048602-snapshot-031Gnf/"
+        }
+        maven {
+            credentials {
+                username '5f27c7481d62073cee108fe6'
+                password '6ZRQ9A2BD](N'
+            }
+            url "https://packages.aliyun.com/maven/repository/2048602-release-kwWunE/"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
